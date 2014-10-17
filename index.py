@@ -3,6 +3,7 @@
 
 from libxml2 import parseDoc
 import codecs
+import xml.etree.cElementTree as ET
 
 def getH1(doc):
 	div1 = doc.xpathEval("//div/H1|h1")
@@ -11,12 +12,24 @@ def getH1(doc):
 	except Exception as E:
 		print("No H1 \n\t" + E)
 
+def getNotH1(doc):	
+	div = doc.xpathEval("//div/*[not(self::H1|h1)]") #Should return text only
+	try:
+		return " ".join([element.getContent() for element in div])
+	except Exception as E:
+		print("No H1 \n\t" + E)
 i = 0
-limit = 400
+limit = 10
 #Corrected = 400
 with codecs.open("Georges_1913_no_header.xml", "r", "utf-8") as f:
+
+	georges = ET.Element("div")
 	#In this document, we have one line = one word definition, h1 represent orth
 	for word in f.readlines():
+		#We create a node for this element
+		entryFree = ET.SubElement(georges, "entryFree")
+
+		#We get the word into xml format to parse it...
 		word = word.encode("utf-8")
 		line = "<div>{0}</div>".format(word)
 
@@ -24,13 +37,17 @@ with codecs.open("Georges_1913_no_header.xml", "r", "utf-8") as f:
 			doc = parseDoc(line)
 			ctxt = doc.xpathNewContext()
 		except Exception as E:
-			print E
-			print i
-			print line
+			print( E)
+			print( i)
+			print( line)
 			break
 
 		if doc:
 			h1 = getH1(ctxt)
+			orth = ET.SubElement(entryFree, "orth")
+			orth.set("key", h1)
+			orth.text = h1
+			print getNotH1(ctxt)
 			
 		"""
 		<H1>A. 1. A, a,</H1>
@@ -66,3 +83,6 @@ with codecs.open("Georges_1913_no_header.xml", "r", "utf-8") as f:
 		if i == limit:
 			break
 		i += 1 
+
+tree = ET.ElementTree(georges)
+tree.write("here.xml", encoding="utf-8")
