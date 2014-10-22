@@ -7,28 +7,28 @@ import xml.etree.cElementTree as cElementTree
 import xml.etree.ElementTree as ElementTree
 import re
 
-def getH1(doc):
-	div1 = doc.findall(".//H1") + doc.findall(".//h1")
-	try:
-		doc.remove(div1[0])
-		text = div1[0].text
-		if text[-1:] == ",":
-			text = text[0:-1]
-		return text, doc
-	except Exception as E:
-		print("No H1 \n\t" + E)
 
-def getNotH1(doc):
+
+def polishH1(text):
+	if text[-1:] == ",":
+		text = text[0:-1]
+	return text
+
+def divideText(text):
+	regexp = re.compile("^<[hH]{1}1>([\w\d\.,\s\(\)\*-]+)<\/[hH]{1}1>(.*)$", flags= re.UNICODE)
+	match = regexp.match(text)
 	try:
-		return ElementTree.tostring(doc, encoding="unicode", method="text")
-	except Exception as E:
-		print("No H1 \n\t" + E)
+		return match.group(1), match.group(2)
+	except:
+		print (text)
+		raise ValueError("No H1 for this line")
 
 #Match number
+
 ol_match = re.compile("^([1-9]{1,3}|[abcdefABCDEF]{1}|IX|IV|V?I{0,3})$")
 
 i = 0
-limit = 100
+limit = 407
 #Corrected = 400
 with open("Georges_1913_no_header.xml") as f:
 
@@ -38,44 +38,48 @@ with open("Georges_1913_no_header.xml") as f:
 		#We create a node for this element
 		entryFree = cElementTree.SubElement(georges, "entryFree")
 
-		#We get the word into xml format to parse it...
-		line = "<div>{0}</div>".format(line)
+		#We split the line around the <h1> tag
+		h1, senses_text = divideText(line)
 
-		try:
-			doc = cElementTree.fromstring(line)
-		except Exception as E:
-			print(E)
+		#We set a orth node according to the content in h1
+		orth = cElementTree.SubElement(entryFree, "orth")
+		orth.set("key", h1)
+		orth.text = h1
 
-		if doc:
-			h1, doc = getH1(doc)
-			orth = cElementTree.SubElement(entryFree, "orth")
-			orth.set("key", h1)
-			orth.text = h1
+		#Now we get to the senses : 
+		# - we set up a list where we'll store our new nodes
+		# - we split up our senses part so we can find each level of definition
+		# - we set up an index counter
+		# - we reset id to None. id is the key for the numeric identifier of the sense
+		senses = []
+		senses_text_split = re.split('[–]{0,1}\s([1-9]{1,3}|[abcdefABCDEF]{1}|IX|IV|V?I{0,3})\)\s', senses_text)
+		index_sense = 1
+		id = None
 
-			senses_text = getNotH1(doc)
-			senses = []
-			senses_text_split = re.split('[–]{0,1}\s([1-9]{1,3}|[abcdefABCDEF]{1}|IX|IV|V?I{0,3})\)\s', senses_text)
-			index_sense = 1
+		#We make a loop around our data
+		for index_sense in range(1, len(senses_text_split)):
 
-			id = None
-			while index_sense <= len(senses_text_split):
-				text = senses_text_split[index_sense - 1] #Text gotten from re.splut
-				matching = ol_match.match(text)
-				print (matching)
-				print (text)
-				if not matching:
-					if id:
-						senses.append(cElementTree.SubElement(entryFree, "sense"))
-						senses[len(senses) - 1 ].text = text
-						senses[len(senses) - 1 ].set("n", id)
-					else:
-						#When a sense has no number before it
-						senses.append(cElementTree.SubElement(entryFree, "sense"))
-						senses[len(senses) - 1 ].text = text
+			#The text correspond to our element in senses_text_split with index (index_sense - 1)
+			text = senses_text_split[index_sense - 1]
+			#We match it against our simple numeric matcher
+			matching = ol_match.match(text)
+
+			#If this doesn't match, we have a sense's text
+			#If this match, we have a numeric identifier : we set id to it
+			if not matching:
+				#id was set on previous iteration, we set n attribute to it
+				if id:
+					senses.append(cElementTree.SubElement(entryFree, "sense"))
+					senses[len(senses) - 1 ].text = text
+					senses[len(senses) - 1 ].set("n", id)
+				#For some reason, we don't have a numerical identifier (sole definition for this lemma)
 				else:
-					id = text
+					#When a sense has no number before it
+					senses.append(cElementTree.SubElement(entryFree, "sense"))
+					senses[len(senses) - 1 ].text = text
+			else:
+				id = text
 
-				index_sense += 1
 			
 		"""
 		<H1>A. 1. A, a,</H1>
