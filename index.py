@@ -124,23 +124,25 @@ def opusFinder(text, node):
 
 
 def polishSenses(text):
-	text = re.sub("<[\/]{0,1}[A-Za-z]+>", "", text)
+	text = re.sub("<[\/]{0,1}[A-Za-z0-9]+>", "", text)
 	return text
 
-def divideText(text):
-	regexp = re.compile("^<[hH]{1}1>([\w\d\.,\s\(\)\*-]+)<\/[hH]{1}1>(.*)$", flags= re.UNICODE)
+def divideText(text, index):
+	text = polishSenses(text)
+	regexp = re.compile("^([\w]+)(?:[,\.]{0,1})(.*)$", flags= re.UNICODE)
 	match = regexp.match(text)
 	try:
 		return match.group(1), match.group(2)
 	except:
-		raise ValueError("No H1 for this line")
+		print (text)
+		raise ValueError("No H1 for line {0}".format(index))
 
 #Match number
 
 ol_match = re.compile("^([1-9]{1,3}|[abcdefABCDEF]{1}|IX|IV|V?I{0,3})$")
 
 i = 0
-limit = 10
+limit = 90000
 #Corrected = 400
 with open("Georges_1913_no_header.xml") as f:
 
@@ -152,7 +154,7 @@ with open("Georges_1913_no_header.xml") as f:
 		entryFree.set("n", str(i))
 
 		#We split the line around the <h1> tag
-		h1, senses_text = divideText(line)
+		h1, senses_text = divideText(line, i)
 		h1 = polishH1(h1)
 		senses_text = polishSenses(senses_text)
 
