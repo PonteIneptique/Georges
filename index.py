@@ -5,12 +5,16 @@
 import codecs
 import xml.etree.cElementTree as cElementTree
 import xml.etree.ElementTree as ElementTree
+import re
 
 def getH1(doc):
 	div1 = doc.findall(".//H1") + doc.findall(".//h1")
 	try:
 		doc.remove(div1[0])
-		return div1[0].text, doc
+		text = div1[0].text
+		if text[-1:] == ",":
+			text = text[0:-1]
+		return text, doc
 	except Exception as E:
 		print("No H1 \n\t" + E)
 
@@ -19,8 +23,12 @@ def getNotH1(doc):
 		return ElementTree.tostring(doc, encoding="unicode", method="text")
 	except Exception as E:
 		print("No H1 \n\t" + E)
+
+#Match number
+ol_match = re.compile("^([1-9]{1,3}|[abcdefABCDEF]{1}|IX|IV|V?I{0,3})$")
+
 i = 0
-limit = 10
+limit = 100
 #Corrected = 400
 with open("Georges_1913_no_header.xml") as f:
 
@@ -44,8 +52,30 @@ with open("Georges_1913_no_header.xml") as f:
 			orth.set("key", h1)
 			orth.text = h1
 
-			sense = cElementTree.SubElement(entryFree, "sense")
-			sense.text = getNotH1(doc)
+			senses_text = getNotH1(doc)
+			senses = []
+			senses_text_split = re.split('[–]{0,1}\s([1-9]{1,3}|[abcdefABCDEF]{1}|IX|IV|V?I{0,3})\)\s', senses_text)
+			index_sense = 1
+
+			id = None
+			while index_sense <= len(senses_text_split):
+				text = senses_text_split[index_sense - 1] #Text gotten from re.splut
+				matching = ol_match.match(text)
+				print (matching)
+				print (text)
+				if not matching:
+					if id:
+						senses.append(cElementTree.SubElement(entryFree, "sense"))
+						senses[len(senses) - 1 ].text = text
+						senses[len(senses) - 1 ].set("n", id)
+					else:
+						#When a sense has no number before it
+						senses.append(cElementTree.SubElement(entryFree, "sense"))
+						senses[len(senses) - 1 ].text = text
+				else:
+					id = text
+
+				index_sense += 1
 			
 		"""
 		<H1>A. 1. A, a,</H1>
@@ -83,4 +113,4 @@ with open("Georges_1913_no_header.xml") as f:
 		i += 1 
 
 tree = cElementTree.ElementTree(georges)
-print (ElementTree.tostring(georges, encoding="unicode", method="xml"))
+tree.write("here.xml", encoding="unicode")
