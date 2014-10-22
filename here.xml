@@ -11,7 +11,8 @@
 	</entryFree>
 	<entryFree n="1">
 		<orth key="A (Ah)">A (Ah)</orth>
-		<sense> Interj. unser ah! ach! od. ha! hm! zum Ausdruck der Wehmut, Überraschung, Verwunderung, auch der Zurückweisung (dah. auch der Begütigung, s. Spengel zu Ter. Andr. 868), aber auch der Verwünschung, Komik., Verg., Poët. eleg., Ov. u.a. Dichter. </sense>
+		<gen>Interj</gen>
+		<sense> unser ah! ach! od. ha! hm! zum Ausdruck der Wehmut, Überraschung, Verwunderung, auch der Zurückweisung (dah. auch der Begütigung, s. Spengel zu Ter. Andr. 868), aber auch der Verwünschung, Komik., Verg., Poët. eleg., Ov. u.a. Dichter. </sense>
 	</entryFree>
 	<entryFree n="2">
 		<orth key="A, ab, abs">A, ab, abs</orth>
@@ -49,27 +50,42 @@
 	</entryFree>
 	<entryFree n="3">
 		<orth key="abacinus">abacinus</orth>
-		<sense> a, um (abacus), der Prunktische, spatia, Plin. 35, 3 ed. Detl. </sense>
+		<itype>a, um</itype>
+		<etym>abacus</etym>
+		<sense>, der Prunktische, spatia, Plin. 35, 3 ed. Detl. </sense>
 	</entryFree>
 	<entryFree n="4">
 		<orth key="abāctio">abāctio</orth>
-		<sense> ōnis, f. (abigo) = εξέλασις, das Wegtreiben, Hier. in Ierem. 1, 5, 15. Gloss. II, 302, 50. </sense>
+		<itype>ōnis</itype>
+		<gen>f</gen>
+		<etym>abigo</etym>
+		<etym>εξέλασις</etym>
+		<sense>, das Wegtreiben, Hier. in Ierem. 1, 5, 15. Gloss. II, 302, 50. </sense>
 	</entryFree>
 	<entryFree n="5">
 		<orth key="abāctor">abāctor</orth>
-		<sense> ōris, m. (abigo), der Wegtreiber des Viehes, Viehdieb, boum, Firm. de err. 5, 2: pecorum, Firm. math. 6, 31: animalium, Cassiod. var. 4, 49: absol., Apul., Sulp. Sev. u.a. Spät. </sense>
+		<itype>ōris</itype>
+		<gen>m</gen>
+		<etym>abigo</etym>
+		<sense>, der Wegtreiber des Viehes, Viehdieb, boum, Firm. de err. 5, 2: pecorum, Firm. math. 6, 31: animalium, Cassiod. var. 4, 49: absol., Apul., Sulp. Sev. u.a. Spät. </sense>
 	</entryFree>
 	<entryFree n="6">
 		<orth key="abāctus">abāctus</orth>
-		<sense> a, um, s. abigo. </sense>
+		<itype>a, um</itype>
+		<sense> s. abigo. </sense>
 	</entryFree>
 	<entryFree n="7">
 		<orth key="abāctus,²">abāctus,²</orth>
-		<sense> Us, m. (abigo), das (gewaltsame) Wegtreiben, Plur., cum abactus hospitum exerceret, da er den Gastfreunden ihr Vieh wegtrieb, Plin. pan. 20, 4. </sense>
+		<itype>Us</itype>
+		<gen>m</gen>
+		<etym>abigo</etym>
+		<sense>, das (gewaltsame) Wegtreiben, Plur., cum abactus hospitum exerceret, da er den Gastfreunden ihr Vieh wegtrieb, Plin. pan. 20, 4. </sense>
 	</entryFree>
 	<entryFree n="8">
 		<orth key="abaculus">abaculus</orth>
-		<sense> ī, m. (Demin. v. abacus), ein kleiner Würfel von gefärbtem Glas zu Mosaikarbeiten, Plin. 36, 199. </sense>
+		<itype>ī</itype>
+		<gen>m</gen>
+		<sense> (Demin. v. abacus), ein kleiner Würfel von gefärbtem Glas zu Mosaikarbeiten, Plin. 36, 199. </sense>
 	</entryFree>
 	<entryFree n="9">
 		<orth key="abacus">abacus</orth>
@@ -82,6 +98,7 @@
 	</entryFree>
 	<entryFree n="10">
 		<orth key="abaddir">abaddir</orth>
-		<sense> n. indecl. od. Genet. iris, m. = βαίτυλος, ein Meteorstein, bes. aber der Stein, den Rhea dem Saturnus zu verschlingen gab, Prisc. 2, 6 (wo auch Nbf. abaddier) u. 5, 18 a.: Plur. abaddires, Augustin. ep. 17, 2. – Nbf. abidir, Mythogr. Lat. 1, 104. </sense>
+		<gen>n</gen>
+		<sense> indecl. od. Genet. iris, m. = βαίτυλος, ein Meteorstein, bes. aber der Stein, den Rhea dem Saturnus zu verschlingen gab, Prisc. 2, 6 (wo auch Nbf. abaddier) u. 5, 18 a.: Plur. abaddires, Augustin. ep. 17, 2. – Nbf. abidir, Mythogr. Lat. 1, 104. </sense>
 	</entryFree>
 </div>

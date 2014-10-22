@@ -21,6 +21,56 @@ def polishH1(text):
 		text = text[0:-1]
 	return text
 
+def getListFromDictRegExp(items, groupName, max):
+	i = 1
+	ret = []
+	while i <= max:
+		key = "{0}{1}".format(groupName, i)
+		if items[key]:
+			ret.append(items[key])
+		i += 1
+
+	if len(ret) == 0:
+		return None
+	return ret
+
+def firstLine(text, node):
+	#<itype>a, um</itype>, = <foreign lang="greek">u)bu(skantos</foreign> Maybe some sense here
+	regexp = "^(?:\s{0,1}(?P<itype1>[\w]+)[,\s]){0,1}(?:\s{0,1}(?P<itype2>[\w]+)[,\s]){0,1}(?:\s{0,1}(?P<itype3>[\w]+)[,\s]){0,1}(?:\s{0,1}(?P<itype4>[\w]+)[,\s]){0,1}(?:\s(?P<gen>f|m|n|v|indecl|Interj+)\.){0,1}(?:\s*\((?P<etym1>[\w\s]+)\)){0,1}(?:\s*=\s*(?P<etym2>[\w]+)){0,1}(?P<rest>.*)"
+	regexp = re.compile(regexp)
+	matches = [m.groupdict() for m in regexp.finditer(text)][0]
+
+	#We join the itype
+	itype = getListFromDictRegExp(matches, "itype", 4)
+
+	#We then set the gen
+	gen = matches["gen"]
+
+	#We set the etym
+	etym = getListFromDictRegExp(matches, "etym", 2)
+
+	#We set the rest
+	rest = matches["rest"]
+
+	#Now we create the nodes
+
+	if itype:
+		iTypeNode = cElementTree.SubElement(node, "itype")
+		iTypeNode.text = ", ".join(itype)
+
+	if gen:
+		iTypeNode = cElementTree.SubElement(node, "gen")
+		iTypeNode.text = gen
+
+	if etym:
+		for e in etym:
+			eNode = cElementTree.SubElement(node, "etym")
+			eNode.text = e
+
+
+	return rest
+
+
 def polishSenses(text):
 	text = re.sub("<[\/]{0,1}[A-Za-z]+>", "", text)
 	return text
@@ -70,10 +120,13 @@ with open("Georges_1913_no_header.xml") as f:
 		id = None
 
 		if len(senses_text_split) == 1:
+
+			#We check for itype, etym, gen...
+			text = firstLine(senses_text, entryFree)
+
 			#When a sense has no number before it
 			senses.append(cElementTree.SubElement(entryFree, "sense"))
-			
-			senses[len(senses) - 1 ].text = senses_text
+			senses[len(senses) - 1 ].text = text
 		else:
 			#We make a loop around our data
 			for index_sense in range(1, len(senses_text_split)):
