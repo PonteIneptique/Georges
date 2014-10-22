@@ -6,12 +6,23 @@ import codecs
 import xml.etree.cElementTree as cElementTree
 import xml.etree.ElementTree as ElementTree
 import re
+from xml.dom import minidom
 
 
+def prettify(elem):
+	"""Return a pretty-printed XML string for the Element.
+	"""
+	rough_string = cElementTree.tostring(elem, 'unicode')
+	reparsed = minidom.parseString(rough_string)
+	return reparsed.toprettyxml(indent="\t")
 
 def polishH1(text):
 	if text[-1:] == ",":
 		text = text[0:-1]
+	return text
+
+def polishSenses(text):
+	text = re.sub("<[\/]{0,1}[A-Za-z]+>", "", text)
 	return text
 
 def divideText(text):
@@ -20,7 +31,6 @@ def divideText(text):
 	try:
 		return match.group(1), match.group(2)
 	except:
-		print (text)
 		raise ValueError("No H1 for this line")
 
 #Match number
@@ -28,18 +38,21 @@ def divideText(text):
 ol_match = re.compile("^([1-9]{1,3}|[abcdefABCDEF]{1}|IX|IV|V?I{0,3})$")
 
 i = 0
-limit = 407
+limit = 10
 #Corrected = 400
 with open("Georges_1913_no_header.xml") as f:
 
-	georges = cElementTree.Element("div")
+	root = cElementTree.Element("div")
 	#In this document, we have one line = one word definition, h1 represent orth
 	for line in f.readlines():
 		#We create a node for this element
-		entryFree = cElementTree.SubElement(georges, "entryFree")
+		entryFree = cElementTree.SubElement(root, "entryFree")
+		entryFree.set("n", str(i))
 
 		#We split the line around the <h1> tag
 		h1, senses_text = divideText(line)
+		h1 = polishH1(h1)
+		senses_text = polishSenses(senses_text)
 
 		#We set a orth node according to the content in h1
 		orth = cElementTree.SubElement(entryFree, "orth")
@@ -56,29 +69,35 @@ with open("Georges_1913_no_header.xml") as f:
 		index_sense = 1
 		id = None
 
-		#We make a loop around our data
-		for index_sense in range(1, len(senses_text_split)):
+		if len(senses_text_split) == 1:
+			#When a sense has no number before it
+			senses.append(cElementTree.SubElement(entryFree, "sense"))
+			
+			senses[len(senses) - 1 ].text = senses_text
+		else:
+			#We make a loop around our data
+			for index_sense in range(1, len(senses_text_split)):
 
-			#The text correspond to our element in senses_text_split with index (index_sense - 1)
-			text = senses_text_split[index_sense - 1]
-			#We match it against our simple numeric matcher
-			matching = ol_match.match(text)
+				#The text correspond to our element in senses_text_split with index (index_sense - 1)
+				text = senses_text_split[index_sense - 1]
+				#We match it against our simple numeric matcher
+				matching = ol_match.match(text)
 
-			#If this doesn't match, we have a sense's text
-			#If this match, we have a numeric identifier : we set id to it
-			if not matching:
-				#id was set on previous iteration, we set n attribute to it
-				if id:
-					senses.append(cElementTree.SubElement(entryFree, "sense"))
-					senses[len(senses) - 1 ].text = text
-					senses[len(senses) - 1 ].set("n", id)
-				#For some reason, we don't have a numerical identifier (sole definition for this lemma)
+				#If this doesn't match, we have a sense's text
+				#If this match, we have a numeric identifier : we set id to it
+				if not matching:
+					#id was set on previous iteration, we set n attribute to it
+					if id:
+						senses.append(cElementTree.SubElement(entryFree, "sense"))
+						senses[len(senses) - 1 ].text = text
+						senses[len(senses) - 1 ].set("n", id)
+					#For some reason, we don't have a numerical identifier (sole definition for this lemma)
+					else:
+						#When a sense has no number before it
+						senses.append(cElementTree.SubElement(entryFree, "sense"))
+						senses[len(senses) - 1 ].text = text
 				else:
-					#When a sense has no number before it
-					senses.append(cElementTree.SubElement(entryFree, "sense"))
-					senses[len(senses) - 1 ].text = text
-			else:
-				id = text
+					id = text
 
 			
 		"""
@@ -116,5 +135,8 @@ with open("Georges_1913_no_header.xml") as f:
 			break
 		i += 1 
 
-tree = cElementTree.ElementTree(georges)
-tree.write("here.xml", encoding="unicode")
+tree = cElementTree.ElementTree(root)
+
+with open("here.xml", "w") as f:
+	f.write(prettify(root))
+	f.close()
