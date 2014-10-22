@@ -1,53 +1,51 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
+#!/usr/bin/python3
+# -*- coding: UTF-8 -*-
 
-from libxml2 import parseDoc
+
 import codecs
-import xml.etree.cElementTree as ET
+import xml.etree.cElementTree as cElementTree
+import xml.etree.ElementTree as ElementTree
 
 def getH1(doc):
-	div1 = doc.xpathEval("//div/H1|h1")
+	div1 = doc.findall(".//H1") + doc.findall(".//h1")
 	try:
-		return div1[0].getContent()
+		doc.remove(div1[0])
+		return div1[0].text, doc
 	except Exception as E:
 		print("No H1 \n\t" + E)
 
-def getNotH1(doc):	
-	div = doc.xpathEval("//div/*[not(self::H1|h1)]") #Should return text only
+def getNotH1(doc):
 	try:
-		return " ".join([element.getContent() for element in div])
+		return ElementTree.tostring(doc, encoding="unicode", method="text")
 	except Exception as E:
 		print("No H1 \n\t" + E)
 i = 0
 limit = 10
 #Corrected = 400
-with codecs.open("Georges_1913_no_header.xml", "r", "utf-8") as f:
+with open("Georges_1913_no_header.xml") as f:
 
-	georges = ET.Element("div")
+	georges = cElementTree.Element("div")
 	#In this document, we have one line = one word definition, h1 represent orth
-	for word in f.readlines():
+	for line in f.readlines():
 		#We create a node for this element
-		entryFree = ET.SubElement(georges, "entryFree")
+		entryFree = cElementTree.SubElement(georges, "entryFree")
 
 		#We get the word into xml format to parse it...
-		word = word.encode("utf-8")
-		line = "<div>{0}</div>".format(word)
+		line = "<div>{0}</div>".format(line)
 
 		try:
-			doc = parseDoc(line)
-			ctxt = doc.xpathNewContext()
+			doc = cElementTree.fromstring(line)
 		except Exception as E:
-			print( E)
-			print( i)
-			print( line)
-			break
+			print(E)
 
 		if doc:
-			h1 = getH1(ctxt)
-			orth = ET.SubElement(entryFree, "orth")
+			h1, doc = getH1(doc)
+			orth = cElementTree.SubElement(entryFree, "orth")
 			orth.set("key", h1)
 			orth.text = h1
-			print getNotH1(ctxt)
+
+			sense = cElementTree.SubElement(entryFree, "sense")
+			sense.text = getNotH1(doc)
 			
 		"""
 		<H1>A. 1. A, a,</H1>
@@ -84,5 +82,5 @@ with codecs.open("Georges_1913_no_header.xml", "r", "utf-8") as f:
 			break
 		i += 1 
 
-tree = ET.ElementTree(georges)
-tree.write("here.xml", encoding="utf-8")
+tree = cElementTree.ElementTree(georges)
+print (ElementTree.tostring(georges, encoding="unicode", method="xml"))
