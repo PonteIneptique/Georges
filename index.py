@@ -70,6 +70,58 @@ def firstLine(text, node):
 
 	return rest
 
+def opus(text, node):
+	#<bibl><author>Sen.</author> <title>Q. N.</title> 4, 2, 7</bibl>
+	regexp = "(?P<author>[A-Z]{1}[a-z]+\.){1}(?:\s(?P<opus>(?:in\s){0,1}[A-Za-z]+\.)){0,1}(?:\s(?P<identifier1>[0-9]+\,)){0,1}(?:\s(?P<identifier2>[0-9]+\,)){0,1}(?:\s(?P<identifier3>[0-9]+\,)){0,1}(?:\s(?P<identifier4>[0-9]+[\.:])){1}"
+	regexp = re.compile(regexp)
+	items = [m.groupdict() for m in regexp.finditer(text)][0]
+
+	author = items["author"]
+	title = items["opus"]
+	identifier = getListFromDictRegExp(items, "identifier", 4)
+
+	bibl = cElementTree.SubElement(node, "bibl")
+
+	aNode = cElementTree.SubElement(bibl, "author")
+	aNode.text = author
+	lastNode = aNode
+
+	if title:
+		tNode = cElementTree.SubElement(bibl, "title")
+		tNode.text = title
+		lastNode = tNode
+
+	if identifier:
+		lastNode.tail = " ".join(identifier)
+
+	return bibl #Return the last node in usage
+
+
+
+def opusFinder(text, node):
+	splitter = "(?P<match>(?:[A-Z]{1}[a-z]+\.){1}(?:\s(?:(?:in\s){0,1}[A-Za-z]+\.)){0,1}(?:\s(?:[0-9]+\,)){0,1}(?:\s(?:[0-9]+\,)){0,1}(?:\s(?:[0-9]+\,)){0,1}(?:\s(?:[0-9]+[\.:])){1})"
+	splitter = re.compile(splitter)
+
+	caught = splitter.split(text)
+	initialText = None
+	lastNode = None
+
+	for element in caught:
+		if not initialText:
+			if splitter.match(element):
+				#We must create a node with opus informations
+				lastNode = opus(element, node)
+				initialText = True
+			else:
+				node.text = element
+				initialText = True
+		else:
+			if splitter.match(element):
+				lastNode = opus(element, node)
+			else:
+				lastNode.tail = element
+
+
 
 def polishSenses(text):
 	text = re.sub("<[\/]{0,1}[A-Za-z]+>", "", text)
@@ -124,9 +176,10 @@ with open("Georges_1913_no_header.xml") as f:
 			#We check for itype, etym, gen...
 			text = firstLine(senses_text, entryFree)
 
+
 			#When a sense has no number before it
 			senses.append(cElementTree.SubElement(entryFree, "sense"))
-			senses[len(senses) - 1 ].text = text
+			opusFinder(text, senses[len(senses) - 1 ])
 		else:
 			#We make a loop around our data
 			for index_sense in range(1, len(senses_text_split)):

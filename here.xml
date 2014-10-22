@@ -60,14 +60,36 @@
 		<gen>f</gen>
 		<etym>abigo</etym>
 		<etym>εξέλασις</etym>
-		<sense>, das Wegtreiben, Hier. in Ierem. 1, 5, 15. Gloss. II, 302, 50. </sense>
+		<sense>
+			, das Wegtreiben, 
+			<bibl>
+				<author>Hier.</author>
+				<title>in Ierem.</title>
+				1, 5, 15.
+			</bibl>
+			 Gloss. II, 302, 50. 
+		</sense>
 	</entryFree>
 	<entryFree n="5">
 		<orth key="abāctor">abāctor</orth>
 		<itype>ōris</itype>
 		<gen>m</gen>
 		<etym>abigo</etym>
-		<sense>, der Wegtreiber des Viehes, Viehdieb, boum, Firm. de err. 5, 2: pecorum, Firm. math. 6, 31: animalium, Cassiod. var. 4, 49: absol., Apul., Sulp. Sev. u.a. Spät. </sense>
+		<sense>
+			, der Wegtreiber des Viehes, Viehdieb, boum, Firm. de err. 5, 2: pecorum, 
+			<bibl>
+				<author>Firm.</author>
+				<title>math.</title>
+				6, 31:
+			</bibl>
+			 animalium, 
+			<bibl>
+				<author>Cassiod.</author>
+				<title>var.</title>
+				4, 49:
+			</bibl>
+			 absol., Apul., Sulp. Sev. u.a. Spät. 
+		</sense>
 	</entryFree>
 	<entryFree n="6">
 		<orth key="abāctus">abāctus</orth>
@@ -79,13 +101,28 @@
 		<itype>Us</itype>
 		<gen>m</gen>
 		<etym>abigo</etym>
-		<sense>, das (gewaltsame) Wegtreiben, Plur., cum abactus hospitum exerceret, da er den Gastfreunden ihr Vieh wegtrieb, Plin. pan. 20, 4. </sense>
+		<sense>
+			, das (gewaltsame) Wegtreiben, Plur., cum abactus hospitum exerceret, da er den Gastfreunden ihr Vieh wegtrieb, 
+			<bibl>
+				<author>Plin.</author>
+				<title>pan.</title>
+				20, 4.
+			</bibl>
+			 
+		</sense>
 	</entryFree>
 	<entryFree n="8">
 		<orth key="abaculus">abaculus</orth>
 		<itype>ī</itype>
 		<gen>m</gen>
-		<sense> (Demin. v. abacus), ein kleiner Würfel von gefärbtem Glas zu Mosaikarbeiten, Plin. 36, 199. </sense>
+		<sense>
+			 (Demin. v. abacus), ein kleiner Würfel von gefärbtem Glas zu Mosaikarbeiten, 
+			<bibl>
+				<author>Plin.</author>
+				36, 199.
+			</bibl>
+			 
+		</sense>
 	</entryFree>
 	<entryFree n="9">
 		<orth key="abacus">abacus</orth>
@@ -99,6 +136,20 @@
 	<entryFree n="10">
 		<orth key="abaddir">abaddir</orth>
 		<gen>n</gen>
-		<sense> indecl. od. Genet. iris, m. = βαίτυλος, ein Meteorstein, bes. aber der Stein, den Rhea dem Saturnus zu verschlingen gab, Prisc. 2, 6 (wo auch Nbf. abaddier) u. 5, 18 a.: Plur. abaddires, Augustin. ep. 17, 2. – Nbf. abidir, Mythogr. Lat. 1, 104. </sense>
+		<sense>
+			 indecl. od. Genet. iris, m. = βαίτυλος, ein Meteorstein, bes. aber der Stein, den Rhea dem Saturnus zu verschlingen gab, Prisc. 2, 6 (wo auch Nbf. abaddier) u. 5, 18 a.: Plur. abaddires, 
+			<bibl>
+				<author>Augustin.</author>
+				<title>ep.</title>
+				17, 2.
+			</bibl>
+			 – Nbf. abidir, 
+			<bibl>
+				<author>Mythogr.</author>
+				<title>Lat.</title>
+				1, 104.
+			</bibl>
+			 
+		</sense>
 	</entryFree>
 </div>
