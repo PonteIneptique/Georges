@@ -249,8 +249,12 @@ if not break_on_sample:
 		f.close()
 
 with open("output/authoren.csv", "w") as f:
-	f.write("\n".join(set(authoren)))
+	authoren = list(set(authoren))
+	authoren.sort()
+	f.write("\n".join(authoren))
 	f.close()
 with open("output/werken.csv", "w") as f:
-	f.write("\n".join(set(werken)))
+	werken = list(set(werken))
+	werken.sort()
+	f.write("\n".join(werken))
 	f.close()
