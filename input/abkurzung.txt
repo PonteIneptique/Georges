@@ -1,0 +1,163 @@
+A. – Anfang.
+a. – andere.
+a. a. O. – am angeführten Orte.
+abgek. – abgekürzt.
+absol. – absolute, -us.
+abs. od. absol. – absolut.
+abstr. – abstrakt.
+Acc. – Accusativus.
+act. – activum od. active.
+adi. – adiectivum.
+adj. od. adjekt. – adjektivisch.
+Adverb. – Adverbium.
+a. E. – am Ende.
+ahd. – althochdeutsch.
+Akk. – Akkusativ.
+al. – alii codices od. aliae editiones.
+alci – alicui.
+alcis – alicuius.
+allg. – allgemein.
+alqd – aliquid.
+alqm, alqam, alqos, alqas – aliquem etc.
+alqo, alqa – aliquo, aliqua.
+altd. – altdeutsch.
+altert. – altertümlich.
+Ang. – Angabe.
+angef. – angeführt.
+arch. od. archaist. – archaistisch.
+Archit. – Architektur.
+Ausg. – Ausgabe (der Schriftsteller).
+b. – bei.
+Bauk. – Baukunst.
+Bed. – Bedeutung.
+Beiw. – Beiwort.
+bes. – besonders.
+best. – bestimmt.
+Best. – Bestimmung.
+bl. – bloß.
+c. – generis communis od. cum.
+cf. – confer.
+cod. – codex.
+Comic. – Comicus poëta.
+Compar. – Comparativus.
+Coni. – Coniunction.
+dh. – daher.
+d.i. – das ist.
+dass. – dasselbe.
+dav. – davon.
+Dat. od. Dat. – Dativus od. Dativ.
+Decl. od. Dekl. – Declination.
+Def. od. Defect. – Defectivum.
+Demin. – Deminutivum.
+Desider. – Desiderativum.
+determ. – determinationis (accusativus).
+dig. – digamma .
+dgl. od. dergl. – dergleichen.
+eig. – eigentlich.
+entst. – entstanden.
+etymol. – etymologisch.
+Ew. od. Einw. – Einwohner.
+f. – generis feminini.
+fr. od. frgm. – fragmentum od. fragmenta.
+gebr. – gebräuchlich.
+gen. – genannt.
+geschr. – geschrieben.
+gew. – gewöhnlich.
+Ggst. – Gegenstand.
+Ggstz. – Gegensatz.
+gl. N. – gleiches Namens.
+got. – gotisch.
+Hdschr. – Handschrift.
+Histor. – Historiker.
+ibid. – ibidem.
+id. – idem.
+Inch. – Inchoativum.
+in ders. Bed. – in derselben Bedeutung.
+insbes. – insbesondere.
+Intens. – Intensivum.
+Interj. – Interjektion.
+intr. – intransitivum od. intransitive.
+irg. – irgend.
+j. – jetzt.
+ICt. – iurisconsulti (die römischen Rechtsgelehrten).
+jmd. – jemand.
+jmdm. – jemandem.
+jmds. – jemandes.
+jur. od. jurist. – juristisch.
+Kaiszt. – Kaiserzeit.
+Konj. – Konjunktiv.
+konkr. – konkret.
+L. – Lesart.
+latin. – latinisiert.
+leb. – lebender, e, es.
+lebl. – lebloser, e, es.
+Lebl. – Lebloses.
+locat. – casus locativus.
+m. – generis masculini.
+m. – mit.
+mhd. – mittelhochdeutsch.
+meton. – metonymisch.
+n. – nach.
+n. – generis neutrius.
+nachaug. – nachaugusteisch.
+nachkl. – nachklassisch.
+Nbbgr. – Nebenbegriff.
+Nbf. – Nebenform.
+nhd. – neuhochdeutsch.
+neutr. – neutrum.
+obj., Obj. – objektiv, Objekt.
+onomatop. – onomatopöisch (= nach dem Klange gebildet).
+Örtl. – Örtlichkeit.
+parenth. – parenthetisch (= als Parenthese).
+PAdi. – Partizipialadjektivum (d.i. zum Adjektivum gewordenes Partizipium).
+pers. – persönlich.
+Plur. od. Plur. – Pluralis.
+poet. – poetisch.
+prädik. – prädikativ.
+prägn. – prägnant.
+Praep. – Praeposition.
+refl. – reflexive.
+rhet. – rhetorisch.
+sc. – scilicet.
+Sing. od. Sing. – Singular.
+spez. – speziell.
+St., Stt. – Stelle, Stellen.
+st. – statt.
+subj., Subj. – subjektiv, Subjekt.
+subst. – substantivisch,
+Subst., Substst. – Substantivum, Substantiva.
+Superl. – Superlativus.
+s. v. a. – so viel als.
+synk. – synkopiert.
+tr. – transitivum od. transitive.
+t. t. – terminus technicus (Kunstausdruck).
+übertr. od. übtr. – übertragen.
+umschr., Umschr. – umschrieben, Umschreibung.
+ungebr. – ungebräuchlich.
+ungew. – ungewöhnlich.
+unkl. – unklassisch.
+unpers. – unpersönlich.
+urspr. – ursprünglich.
+v. – von od. vom.
+v. h. – vox hibrida.
+v. pr. – verbum proprium.
+Verb. – Verbum od. Verbindung.
+Verbb. – Verba od. Verbindungen.
+vollst. – vollständig.
+voraug. – voraugusteisch.
+vorh. – vorhanden.
+vorherg. – vorhergehender, e, es usw.
+vorkl. – vorklassisch.
+vorz. – vorzüglich.
+W. – Wort.
+WW. – Wörter.
+zB. – zum Beispiel.
+Zeitbest. – Zeitbestimmung.
+Zielp. – Zielpunkt.
+Zshg. – Zusammenhang.
+Zustz. – Zusatz.
+zsgz. od. zsgzg. – zusammengezogen.
+Zsstz. od. Zusstzg. – Zusammensetzung.
+zugl. – zugleich.
+zuw. – zuweilen.
+zw. – zweifelhaft.

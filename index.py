@@ -9,6 +9,14 @@ import re
 from xml.dom import minidom
 import copy
 
+#Registering werk and autoren abkurzungen
+authoren = []
+werken = []
+
+#Configuration
+i = 0
+limit = 20 #For the sample
+break_on_sample = True
 
 def prettify(elem):
 	"""Return a pretty-printed XML string for the Element.
@@ -35,10 +43,20 @@ def getListFromDictRegExp(items, groupName, max):
 		return None
 	return ret
 
+def GrammatikAbkurzung():
+	abkurzung = []
+	with open("output/grammatik-abkurzung.csv", "r") as f:
+
+		lines = f.readline()
+		abkurzung = lines.split(";")
+		f.close()
+	return abkurzung
+
 def firstLine(text, node):
 	#<itype>a, um</itype>, = <foreign lang="greek">u)bu(skantos</foreign> Maybe some sense here
-	regexp = "^(?:\s{0,1}(?P<itype1>[\w]+)[,\s]){0,1}(?:\s{0,1}(?P<itype2>[\w]+)[,\s]){0,1}(?:\s{0,1}(?P<itype3>[\w]+)[,\s]){0,1}(?:\s{0,1}(?P<itype4>[\w]+)[,\s]){0,1}(?:\s(?P<gen>f|m|n|v|indecl|Interj+)\.){0,1}(?:\s*\((?P<etym1>[\w\s]+)\)){0,1}(?:\s*=\s*(?P<etym2>[\w]+)){0,1}(?P<rest>.*)"
-	regexp = re.compile(regexp)
+	abkurzung = "|".join(GrammatikAbkurzung()).replace(".", "\\.")
+	regexp = "^(?:\s{0,1}(?P<itype1>[\w]+)[,\s]){0,1}(?:\s{0,1}(?P<itype2>[\w]+)[,\s]){0,1}(?:\s{0,1}(?P<itype3>[\w]+)[,\s]){0,1}(?:\s{0,1}(?P<itype4>[\w]+)[,\s]){0,1}(?:\s(?P<gen>" + abkurzung + "+)){0,1}(?:\s*\((?P<etym1>[\w\s]+)\)){0,1}(?:\s*=\s*(?P<etym2>[\w\s]+)){0,1}(?P<rest>.*)"
+	regexp = re.compile(regexp, flags = re.UNICODE)
 	matches = [m.groupdict() for m in regexp.finditer(text)][0]
 
 	#We join the itype
@@ -71,9 +89,18 @@ def firstLine(text, node):
 
 	return rest
 
+def opusRegExp(opusfinder = False):
+	paragraphCharacters = "(?:[p\§]{1}\.{0,1}\s){0,1}"
+	regexp = "(?P<author>(?:Ps.\s){0,1}[A-Z]{1}[a-z]+\.){1}(?:\s(?P<opus>(?:(?:in|ex|de|ad){1}[\s]{1}){0,1}(?:[^\W\d]{2,}\.(?:[\s]){0,1})+)+){0,1}(?:\s(?P<identifier1>" + paragraphCharacters + "[0-9]+\,)){0,1}(?:\s(?P<identifier2>" + paragraphCharacters +  "[0-9]+\,)){0,1}(?:\s(?P<identifier3>" + paragraphCharacters + "[0-9]+\,)){0,1}(?:\s(?P<identifier4>" + paragraphCharacters + "[0-9]+[\.:]{0,1})){1}"
+	if opusfinder:
+		#sub
+		return re.sub("P<[a-zA-Z0-9]+>", ":", regexp)
+	else:
+		return regexp
+
 def opus(text, node):
 	#<bibl><author>Sen.</author> <title>Q. N.</title> 4, 2, 7</bibl>
-	regexp = "(?P<author>[A-Z]{1}[a-z]+\.){1}(?:\s(?P<opus>(?:in\s){0,1}[A-Za-z]+\.)){0,1}(?:\s(?P<identifier1>[0-9]+\,)){0,1}(?:\s(?P<identifier2>[0-9]+\,)){0,1}(?:\s(?P<identifier3>[0-9]+\,)){0,1}(?:\s(?P<identifier4>[0-9]+[\.:])){1}"
+	regexp = opusRegExp()
 	regexp = re.compile(regexp)
 	items = [m.groupdict() for m in regexp.finditer(text)][0]
 
@@ -87,10 +114,14 @@ def opus(text, node):
 	aNode.text = author
 	lastNode = aNode
 
+	authoren.append(author)
+
 	if title:
 		tNode = cElementTree.SubElement(bibl, "title")
 		tNode.text = title
 		lastNode = tNode
+		werken.append("{0};{1}".format(author, title))
+
 
 	if identifier:
 		lastNode.tail = " ".join(identifier)
@@ -100,13 +131,12 @@ def opus(text, node):
 
 
 def opusFinder(text, node):
-	splitter = "(?P<match>(?:[A-Z]{1}[a-z]+\.){1}(?:\s(?:(?:in\s){0,1}[A-Za-z]+\.)){0,1}(?:\s(?:[0-9]+\,)){0,1}(?:\s(?:[0-9]+\,)){0,1}(?:\s(?:[0-9]+\,)){0,1}(?:\s(?:[0-9]+[\.:])){1})"
+	splitter = "(?P<match>{0})".format(opusRegExp(True))
 	splitter = re.compile(splitter)
 
 	caught = splitter.split(text)
 	initialText = None
 	lastNode = None
-
 	for element in caught:
 		if not initialText:
 			if splitter.match(element):
@@ -142,11 +172,8 @@ def divideText(text, index):
 
 ol_match = re.compile("^([1-9]{1,3}|[abcdefABCDEF]{1}|IX|IV|V?I{0,3})$")
 
-i = 0
-limit = 100 #For the sample
-break_on_sample = False
 #Corrected = 400
-with open("input/Georges_1913_no_header.xml") as f:
+with open("input/body.xml") as f:
 
 	root = cElementTree.Element("div")
 	#In this document, we have one line = one word definition, h1 represent orth
@@ -199,13 +226,12 @@ with open("input/Georges_1913_no_header.xml") as f:
 					#id was set on previous iteration, we set n attribute to it
 					if id:
 						senses.append(cElementTree.SubElement(entryFree, "sense"))
-						senses[len(senses) - 1 ].text = text
 						senses[len(senses) - 1 ].set("n", id)
-					#For some reason, we don't have a numerical identifier (sole definition for this lemma)
-					else:
-						#When a sense has no number before it
+						opusFinder(text, senses[len(senses) - 1 ])
+					else: #We dont have text
+						text = firstLine(text, entryFree)
 						senses.append(cElementTree.SubElement(entryFree, "sense"))
-						senses[len(senses) - 1 ].text = text
+						opusFinder(text, senses[len(senses) - 1 ])
 				else:
 					id = text
 
@@ -219,5 +245,12 @@ with open("input/Georges_1913_no_header.xml") as f:
 
 if not break_on_sample:
 	with open("output/output.xml", "w") as f:
-		f.write(prettify(root))
+		f.write(cElementTree.tostring(root, 'unicode'))
 		f.close()
+
+with open("output/authoren.csv", "w") as f:
+	f.write("\n".join(set(authoren)))
+	f.close()
+with open("output/werken.csv", "w") as f:
+	f.write("\n".join(set(werken)))
+	f.close()
