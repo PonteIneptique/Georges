@@ -16,7 +16,7 @@ werken = []
 #Configuration
 i = 0
 limit = 20 #For the sample
-break_on_sample = True
+break_on_sample = False
 
 def prettify(elem):
 	"""Return a pretty-printed XML string for the Element.

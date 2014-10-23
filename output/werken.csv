@@ -1,40 +1,4241 @@
-Plaut.;trin.
-Serv.;Verg. Aen.
-Sall.;Jug.
-Ter.;Andr.
-Ausgew.;Br. Cic.
-Tert.;ad nat.
-Pelag.;vet.
-Deder.;Dict.
-Cic.;Tusc.
+Frontin.;strat. praef. libr.
+Corp.;Inscr. Lat.
+Modestin.;dig.
+Hieron.;vit. Hil.
 Plaut.;asin.
-Cic.;Mil.
-Cic.;de rep.
-Ter.;heaut.
-Paul.;ex Fest.
-Hier.;in Ierem.
+Salv.;eccl.
+Tert.;de exh. cast.
+Auct.;de vir. ill.
+Claud.;Quadrig. ann. fr.
+Cypr.;testim.
+Symm.;epist.
+Cic.;de prov. cons.
+Ps. Ascon.;Cic. Verr.
+Anthol.;Lat. fasc.
+Vulg.;Tob.
+Auson.;sept. sap.
+Petr.;Chrysol. serm.
+Sen.;nat. quaest. prol.
+Tac.;Agric.
+Paulin.;in Augustin. ep.
+Vulg.;num.
+Caes.;Arelat. epist.
+Ps. Sen.;ad Paul.
+Hieron.;in Helvid.
+Volus.;Maecian.
+Sever.;in Augustin. epist.
+Varr.;de vit. pop. Rom.
+Commentt.;Plaut.
+Nep.;Timoth.
+Serg.;in Donat.
+Paul.;in Augustin. epist.
+Cl.;Mam. genethl.
+Lucif.;moriend.
+Turneb.;adv.
+Sen.;contr.
+Aur.;de morb. acut.
+Sen.;de tranqu. anim.
+Victorin.;de rat. metr.
+Prud.;Psych.
+Fittb.;Iustin.
+Sen.;Octav. 
+Verm.;Schr. Bd.
+Fr.;Boëth. inst. mus.
+Deder.;Dict.
+Tac.;dial.
+Greg.;de curs. stell.
+Tert.;de carn. Chr.
+Cassian.;de inc. Chr.
+Decr.;decur. Caerel.
+Paul.;ad Aus. carm.
+Vict.;art. rhet.
+Vopisc.;de idiom. gen.
+Oribas.;fragm. Bern.
+Eccl.;Vgl. Bünem. Lact.
+Fast.;Maff.
+Nep.;Hamilc.
+Cur.;Fortunat. art. rhet.
+Claud.;epigr.
+Lachm.;Lucr.
+Hieron.;de spir. sanct.
 Rhein.;Mus.
-Cic.;de or.
-Macr.;sat.
-Mythogr.;Lat.
-Plaut.;truc.
-Iul.;Victor. art. rhet.
-Apul.;apol.
-Augustin.;ep.
-Cic.;top.
-Varr.;LL.
-Plaut.;mil.
-Plaut.;aul.
-Ps. Tert.;carm. adv. Marc.
-Hyg.;fab.
-Suet.;Ner.
-Hyg.;de munit. castr.
-Plin.;pan.
-Cassiod.;var.
-Cic.;Verr.
-Cic.;de fin.
-Cic.;Arch.
+Hieron.;Isai.
+Fulg.;Virg. cont.
+Oribas.;fr. Bern.
 Ov.;her.
+Edict.;Diocl. prooem. extr.
+Vgl.;Not. Tir.
+Cic.;Cat.
+Prob.;gramm.
+Auct.;de pond.
+Rhet.;Lat. ed. Halm.
+Augustin.;spec.
+Symm.;orat.
+Isid.;de diff.
+Testam.;porcell.
+Ribb.;Tragic. Rom. fr.
+Eccl.;Macr. sat.
+Hieron.;ad Iovin.
+Gothofr.;Cod. Theod.
+Stat.;Theb. 
+Inscr.;in Gromat. vet.
+Nom.;Tibull.
+Nep.;Arist.
+Augustin.;haeres.
+Abl.;od.
+Greg.;de glor. mart.
+Tert.;de trin.
+Cic.;in Anthol. Lat.
+Salmas.;exercitt. Plin.
+Cic.;fr. inc.
+Prud.;apoth. praef.
+Atil.;de art. metr.
+Hieron.;in Os.
+Aristot.;anal. prior.
+Varr.;verb. form.
+Sch.;Ter. heaut.
+Cic.;Quint.
+Enn.;fr. inc.
+Cassiod.;div. litt.
+Auson.;de nom. sept. dier.
+Emendatt.;Plaut.
+Sen.;Octav.
+Auct.;de progen. Aug.
+Claud.;ad Iul.
+Marc.;fil. fr.
+Lampr.;Al. Sev.
+Hier.;adv. Iov.
+Auson.;epist.
+Claud.;Mam. pan.
+Ps. Ascon.;in Cic. II. Verr.
+Greg.;hist. Franc.
+Leo.;Vulg. Matth.
+Schenkl.;Vulg. deut.
+Augustin.;soliloqu.
+Fab.;Pict.
+Ps. Apul.;herb. praef.
+Manut.;Cic. ep.
+Vgl.;Liv.
+Mamert.;grat. act. Iul.
+Ennod.;diction.
+Sabin.;ep.
+Cic.;Tus.
+Prudent.;psych.
+Donat.;Ter. Andr. prol.
+Claud.;de laud. Ser.
+Cic.;nat. deor.
+Append.;serm.
+Sing.;de div.
+Ind.;lectt. Vrat.
+Augustin.;in Hieron. epist.
+Hieron.;ad Eustoch.
+Schol.;ad Cic. Arch.
+Prisc.;de praeex. rhet.
+Sedul.;carm.
+Exc.;ad Verg. Aen.
+Prosp.;in psalm.
+Cassian.;de coenob. instit.
+Ov.;trist. 
+Hieron.;homil.
+Liv.;fr.
+Vulg.;ad Ephes.
+Jord.;Rom.
+Cic.;clu.
+Hilar.;in Augustin. ep.
+Ps. Augustin.;medit.
+Serv.;dig.
+Ennod.;ep.
+Aristot.;elench. soph.
+Serv.;Verg. eccl.
+Muell.;not. cr. Plin.
+Tert.;de pud.
+Cic.;Tusc.
+Cassian.;inc. Chr.
+Cic.;ecl.
+Sisenn.;fr. inc.
+Leo.;Stat. silv.
+Epit.;nov.
+Plaut.;rud.
+Ascon.;in tog. cand.
+Suet.;fr. ed. Reiffersch.
+Gregor.;Tur. vit. patr.
+Cels.;praef.
+Tert.;Scorp.
+Ambros.;gest. concil. Aquil.
+Vgl.;Charis.
+Auson.;Mosell.
+Ruhnk.;Suet. Cal.
+Cic.;Acad. pr.
+Cic.;oratt. commentariis. Haun.
+Acc.;tr. 
+Ven.;Fort. miscell.
+Ps. Arnob.;in psalm.
+Mar.;Victor. art. gr.
+Ruric.;ep.
+Ambros.;de spir. scto.
+Schol.;ad German. Arat.
+Hieron.;hexaëm.
+Spart.;Did. Iulian.
+Augustin.;de cons. evang.
+Lucil.;fr.
+Augustin.;Acad.
+Haverk.;Tert. apol.
+Gernh.;Cic. Lael.
+Maecen.;carm. fr.
+Rom.;fr.
+Ven.;Fort. carm.
+Cassiod.;de music.
+Lex.;Cic. Tom.
+Plaut.;dig.
+Tert.;adv. psych.
+Coripp.;Ioann.
+Rut.;Lup.
+Sall.;Jug.
+Augustin.;ad litter.
+Ambros.;serm.
+Gregor.;Epist.
+Cypr.;de idol. van.
+Amm.;Sen.
+Socr.;prol. in.
+Claud.;ep.
+Eleg.;Rom.
+Nep.;Alcib.
+Cassiod.;div. inst.
+Ps. Augustin.;epist.
+Lexic.;Tac.
+Pelag.;ad Demetr.
+Ov.;nuc.
+Ambros.;hex.
+Iuvenc.;prooem.
+Sen.;qu. nat.
+Lat.;min. tom.
+Terent.;Maur.
+Ps. Tert.;Sodom.
+Ignat.;ad Magnes.
+Ps. Quint.;decl.
+Quint.;prooem.
+Oudend.;Frontin. strat.
+Aristot.;anal. pr.
+Suet.;vit. Terent. comment.
+Oros.;apol.
+Alcim.;ad Sor.
+Stud.;Afran. com.
+Cledon.;art. praef.
+Augustin.;trinit.
+Varr.;LL.
+Vgl.;Cassiod. orth.
+Ign.;ad Ephes.
+Plaud.;Pseud.
+Arator.;in act. apost.
+Mar.;Plot.
+Tert.;de spect.
+Spart.;Sever.
+Greg.;Tur. lib. vit. patr.
+Plaut.;Meg.
+Hist.;Apollon.
+Ps. Cypr.;de duod. abus. saec.
+Arnob.;apol.
+Vgl.;Taubm. Verg. georg.
+Treb.;Poll. trig. tyrann.
+Acc.;Aen.
+Claud.;Gigant.
+Aur.;de orig. gent. Rom.
+Cic.;Muren.
+Ambros.;ad Corinth.
+Licin.;in Augustin. epist.
+Macr.;exc. Bob.
+Gall.;eleg. fr.
+Hieron.;vit. Hil. no.
+Ov.;Iv.
+Valerian.;homil.
+Plin.;epp.
+Cic.;Protag. fr.
+Ter.;Clem. dig.
+Schol.;ad Cic. Mil.
+Auson.;grat. act. II.
+Chr.;nat.
+Mall.;Theod. cons.
+Eumen.;ad Const.
+Programm.;Lips.
+Teubn.;Suet. Tib.
+Cornif.;rhet. Vgl. Casaub. Suet. Tib.
+Comic.;Rom. fr.
+Gargil.;Mart. medic.
+Suet.;Dom.
+Sen.;nat. quaest.
+Pompei.;comment.
+Inscr.;Rhen.
+Sall.;orat. Licin.
+Tac.;Hist.
+Excerpt.;art. rhet.
+Lucif.;Athan.
+Aur.;de Caes.
+Prud.;dittoch.
+Augustin.;de merit. peccat.
+Cassiod.;de amic.
+Plot.;de metr.
+Corp.;insicr. Lat.
+Stat.;Silv.
+Ps. Ven.;Fort. carm. spur.
+Schenkl.;Cod. Iust.
+Hor.;serm.
+Cass.;de medic.
+Prisc.;de nom.
+Rufin.;in levit.
+Inc.;pan. Constant. Aug.
+Prob.;de litt. sing.
+Augustin.;de trin.
+Arrus.;Mess.
+Apul.;met. fr. vol.
+Nep.;Paus.
+Ital.;Ierem.
+Apul.;Plat.
+Hier.;Ruf.
+Marc.;Emp. carm.
+Virg.;gramm. epist.
+Aur.;Vict. vir. ill.
+Augustin.;Serm.
+Prud.;cath. praef.
+Vgl.;ex Fest.
+Schenkl.;Cl. Mam. pan. Iulian.
+Marc.;Emp. praef.
+Auson.;de hist.
+Sing.;Titin. com.
+Mar.;Plot. Sacerd.
+Paul.;Nol. nat. Fel.
+Isid.;in genes.
+Coripp.;Iustin.
+Vgl.;Quint.
+Mart.;Cap.
+August.;serm.
+Porphyr.;dial.
+Chaldic.;Tim.
+Tert.;in persec.
+Placid.;gloss.
+Hygin.;de mun. castr.
+Schoell.;Nov. com.
+Sen.;ad Marc.
+Plaut.;fr. Astrab.
+Bentl.;Hor. epod.
+Nep.;Ag.
+Suet.;gr.
+Cic.;Manil.
+Interpr.;in Matth.
+Comic.;fragm.
+Aristot.;perist.
+Gregor.;Tur. conf.
+Vahlen.;Plaut. Poen. prol.
+Augustin.;mor. eccl.
+Cassian.;de incarn.
+Mar.;Victorin. art. gramm.
+Plin.;de medic.
+Exc.;Vitr.
+Cic.;Hortens. fr.
+Rufin.;apol.
+Cassiod.;inst. div. litt. 
+Suct.;Aug.
+Spart.;Pesc. Nig.
+Cypr.;idol. van.
+Men.;argum.
+Not.;Vatic.
+Vet.;ad Verg. georg.
+Anton.;imper.
+Vindic.;Tull.
+Sex.;de med.
+Ps. Cypr.;poët. genes.
+Prisc.;vol.
+Plaut.;Casin.
+Cic.;ep. sel.
+Schol.;ad Cic. Flacc.
+Front.;strat.
+Plaut.;friv. fr.
+Pompon.;com.
+Tert.;test. anim.
+Ruf.;invect. Hieron.
+Sulp.;Sev.
+Lact.;de mort. persec.
+Ps. Ov.;her.
+Orat.;Claud. col.
+Sen.;Vgl. Bünem. Lact.
+Augustin.;de divers. quaest.
+Prob.;cons.
+Prob.;Verg. georg.
+Plaut.;Stich.
+Vulg.;apoc.
+Isid.;in exod.
+Vgl.;übh. Lachm. Lucr.
+Nipperd.;Nep. Eum.
+Isid.;ord. creat.
+Cod.;Theod. tit. sequ. libr.
+Halm.;Isid. orig.
+Prisc.;Perieg.
+Oudend.;Frontin.
+Wernsd.;Cic. Phil.
+Trag.;inc. fab. 
+Geogr.;Ravenn.
+Suet.;rhet.
+Ps. Theod.;Prisc.
+Plur.;Vulg. Ierem.
+Liv.;lib.
+Nazar.;pan.
+Sen.;apoc. 
+Cic.;de Liv.
+Prolegg.;ad Tac. Agr.
+Enn.;fr. scen.
+Pesc.;Nig.
+Ver.;imper.
+Prob.;cathol.
+Augustin.;in psalm. serm.
+Fr.;Chalcid. Tim.
+Iul.;Pelag.
+Edict.;Theoderic. 
+Ps. Sen.;de mor. no.
+Garet.;in Cic. top. lib.
+Tac.;ann. lib.
+Apul.;de dogm. Plaut.
+Plur.;ibid.
+Cic.;Flacc.
+Porph.;comm.
+Petron.;poët. fr.
+Donat.;art. gramm.
+Sen.;rem.
+Dolabell.;in Cic. ep.
+Nep.;Dat.
+Suet.;fr.
+Cypr.;ep.
+Tert.;de habit. mul.
+Pacian.;paraen.
+Cassiod.;in apocal.
+Cassiod.;hist. sacr.
+Hieron.;in Ephes.
+Ter.;Hec.
+Enn.;heduph.
+Min.;Fel. Oct.
+Hier.;in Matth.
+Spicil.;Rom.
+Publil.;Optat.
+Ulp.;fragm.
+Iustin.;epit. nov.
+Ps. Verg.;de oct. part. or. ep.
+Hieron.;adv. Ruf.
+Suet.;de poët.
+Aur.;de rhet.
+Vgl.;Cornif. rhet.
+Lucil.;sat. fr. inc. 
+Tab.;Peut.
+Hilar.;de synod.
+Greg.;Tur. glor. conf.
+Aur.;vict. epit.
+Auson.;ad nep. lemm.
+Poet.;in catal.
+Ps. Sen.;Octav.
+Ps. Ambros.;epist.
+Cyprian.;concil. Carthag.
+Tarunt.;Pat. dig.
+Hieron.;vit. Paulin.
+Tert.;de test. anim.
+Sulp.;Sev. dial.
+Tert.;de praescr. haer.
+Hilar.;in psalm.
+Porph.;Hor. ep.
+Iul.;Vict. art.
+Ambros.;de laps. virgin.
+Odyss.;prooem.
+Ascon.;Cic. Mil. argum.
+Macr.;de diff.
+Cassiod.;arithm.
+Hieron.;chron.
+Martian.;dig.
+Plin.;nat. hist. praef.
+Auct.;prol. Plaut. Amph.
+Optat.;schism. Donat.
+Naev.;rell.
+Vgl.;Diom.
+Hier.;de vir. illustr.
+Schol.;Hor. carm.
+Sam.;hom.
+Reiff.;Serv. Verg. georg.
+Cassian.;collat. patr.
+Theod.;ad Auson.
+Tert.;adv. Valent.
+Septim.;in Schol. Iuven.
+Vulg.;Sophon.
+Isid.;de vir. ill.
+Leg.;Rom. Burg.
+Isidor.;orig.
+Ct.;Iustin.
+Schol.;ad Verg. Aen.
+Eut.;praef.
+Plaut.;Vidul. fr.
+Schol.;ad Hor. sat.
+Vulg.;Levit.
+Capit.;Pertin.
+Veget.;mil.
+Augustin.;de haeres. no.
+Ps. Ascon.;in Caec.
+Interpr.;in Levit. hom.
+Cassiod.;ad regin.
+Obss.;in Petr.
+Gronov.;obss.
+Cic.;Caecin. 
+Tert.;res. carn.
+Heind.;Hor. sat.
+Caecil.;com. fr.
+Edict.;Diocl. praef.
+Hildebr.;Apul. met. 
+Fortunat.;art.
+Gronov.;Liv.
+Spart.;Car.
+Cal.;de Athanas.
+Iuvenc.;sel. frgm.
+Eucher.;intell. spirit.
+Ov.;med. fac.
+Sex.;Placit. parab. medic.
+Cass.;in Cic. ep.
+Rufin.;hist. eccl.
+Ascon.;in Cic. Pison.
+Ps. Cypr.;carm.
+Mussa.;Verg. Aen.
+Ps. Tert.;poët. adv. Marc.
+Gramm.;de gen.
+Prisc.;de fig. num.
+Gennad.;de script. eccl.
+Cledon.;praef.
+Afran.;com.
+Auct.;prol. Plaut. Men.
+Salvian.;ep.
+Augustin.;de anim.
+Cassian.;conl.
+Serv.;ad Verg. georg.
+Oros.;de libert. arbitr.
+Dat.;Papin. dig.
+Iul.;Vict. art. rhet.
+Ov.;trist.
+Cis.;Pis.
+Rom.;legg. coll.
+Paulin.;Nol. carm.
+Macrob.;de diff.
+Apollin.;in Alcim. Avit. epist.
+Vulc.;Cass. Avid.
+Avid.;Cass.
+Auct.;pervig. Ven.
+Calp.;Fl. decl.
+Censor.;fragm.
+Orthogr.;Verg.
+Anthol.;epigr. II. no.
+Hilar.;in gen.
+Claud.;epith. Honor.
+Vulg.;Habac.
+Ps. Cypr.;de sing. eccl.
+Miscell.;Lat.
+Sisenn.;hist. fr.
+Schenkl.;Vulg.
+Baehr.;Isid. orig.
+Alcim.;Avit. homil.
+Vel.;Long.
+Plin.;Sec.
+Rufinian.;de fig. sent.
+Anonym.;de solemn.
+Mart.;Capell.
+Hieron.;Ezech.
+Florent.;dig.
+Sen.;Phoen. fr.
+Cic.;Poët. Tusc.
+Gloss.;II.
+Hieron.;in Ion.
+Hyg.;astr.
+Enn.;fr. var.
+Instit.;Iust.
+Fulg.;act. mund.
+Vall.;Vulg. prov.
+Gratt.;cyn. 
+Hieron.;in Helvid. no.
+Ps. Cypr.;de Iudaic. incred.
+Jahrg.;no.
+Hilar.;ad Galat.
+Cael.;de morb. chron. praef.
+Cael.;Aur. tard.
+Sid.;carm.
+Verr.;imp.
+Oudend.;Suet. Tit.
+Auson.;de fer. Rom.
+Cassian.;de incarn. dom.
+Arist.;categ.
+Hilar.;trinit.
+Iuvenc.;in Levit.
+Sulp.;Sev. epist.
+Plaut.;Cas. 
+Schol.;ad Verg. georg. 
+Paul.;ex fest.
+Ven.;Fort. prol. libr.
+Inscr.;Vgl. Nipperd. Tac. ann.
+Ps. Sor.;qu. medic.
+Not.;dign. occid.
+Paul.;Petric.
+Treb.;Poll. Valer.
+Tert.;de resurr.
+Plot.;art. gr.
+Serv.;Verg. Asen.
+Cic.;epist.
+Vgl.;Fulg. serm. ant.
+Treb.;Poll. Cl.
+Cod.;Theod.
+Tert.;ad. nat.
+Cic.;in Clod. fr.
+Gran.;Licin.
+Vulg.;Coloss.
+Treb.;Poll. Gallien.
+Aldh.;epist.
+Gramm.;Vatic.
+Vulg.;ad Phil.
+Cypr.;de idol.
+Tac.;ann. 
+Burm.;Verg. georg.
+Fab.;Victorin. art. rhet.
+Capit.;Albin.
+Liv.;fr. lib.
+Westerh.;Ter. heaut.
+Hieron.;in eccl.
+Mai.;Cassiod. var.
+Vopisc.;Firm.
+Isid.;Orig.
+Hieron.;in psalm.
+Tert.;de coron. mil.
+Capitol.;Anton. phil.
+Cl.;Mamert. grat. act. Iulian.
+Augustin.;ad Roman.
+Vib.;de flum.
+Claud.;de magn.
+Verg.;moret.
+Grill.;de inv.
+Att.;tr.
+Lentul.;in Cic. ep.
+Ambros.;in psalm.
+Oudend.;Suet. Tib.
+Augustin.;de util. cred.
+Cic.;in tog. cand. fr.
+Ambros.;de off. min.
+Auct.;de fig.
+Vgl.;übh. Nipperd. Tac. ann.
+Sext.;Plac. medic.
+Ambros.;apol. David.
+Claud.;in Eutrop.
+Eck.;Lugd. Bat.
+Hieron.;in Ioël.
+Hieron.;in Galat.
+Gramm.;de idiom. gen.
+Paris.;Schol. Iuven.
+Cic.;Pis.
+Augustin.;de unit. eccl.
+Vgl.;übh. Hildebr. Apul. tom.
+Caes.;de metr.
+Plaut.;asin. 
+Liv.;ep.
+Serv.;Aen.
+Punic.;fr.
+Nep.;Con.
+Trai.;in Plin. ep.
+Cassiod.;de anim.
+Ambros.;de off. ministr.
+Lamprid.;Heliog.
+Carm.;epigr.
+Augustin.;de consol. phil. pros.
+Marcian.;dig.
+Isid.;orig.
+Ambros.;de laps. virg. consecr.
+Capit.;in Ver.
+Heinr.;Iuven.
+Ambros.;de Abrah.
+Flor.;praef.
+Hieron.;vir. ill.
+Vulg.;lev.
+Suet.;de vir. ill.
+Hieron.;in Iovin.
+Cic.;de consul. fr. inc.
+Frontin.;strat. praef.
+Hieron.;in genes.
+Plaut.;rud. prol.
+Dracont.;carm. minor.
+Edict.;Iustin.
+Rufin.;ad Rom. comm.
+Arist.;categ. syll. introd.
+Lat.;min. ed. Wernsdorf. tom.
+Anth.;Lat.
+Coripp.;de laud. Iustin. iun.
+Nep.;Cat.
+Pervig.;Ven.
+Terent.;Comoed. vol.
+Ps. Ov.;de nuc.
+Sil.;It.
+Passerat.;Prop.
+St.;Vo. IV.
+Cic.;de fin. exc. II.
+Scrib.;targ.
+Ripperd.;Tac. ann.
+Rufinian.;de schem. dian.
+Cassiod.;de mus.
+Nep.;Milt.
+Cic.;Rabir. Post.
+Cic.;poët. or.
+Angustin.;conf.
+Fulgent.;mitol.
+Scriptt.;vet. nov. coll. tom.
+Ov.;Vgl. Bünem. Lact.
+Schol.;Bern. Verg. buc.
+Tert.;de iudic. dom.
+Enn.;praet.
+Auct.;de genes.
+Acc.;tr. Aen.
+Var.;trag.
+Eust.;hexaëm.
+Auct.;argum.
+Vulg.;Lev.
+Schol.;Hor. sat.
+Verg.;eccl.
+Vopisc.;Tac.
+Hieron.;in Ioann. Hierosol. no.
+Auct.;vit. Cypr.
+Interpr.;ad Cod. Theod.
+Tragic.;inc. fab. inc.
+Mamil.;in Gromat. vet.
+Plaut.;fr.
+Serv.;in Endlich. Anal. gramm.
+Novat.;de trin.
+Lampr.;Pertin.
+Vgl.;übh. Hildebr. Apul. met.
+Caes.;German. phaen.
+Vulcat.;Gall. Avid. Cass.
+Auson.;perioch. Iliad.
+Alexandr.;Berol.
+Macr.;somn. Scip. 
+Schol.;ad Cic. Sull.
+Fulg.;de continent. Verg.
+Vulg.;sapient. 
+Apul.;apol. 
+Lampr.;Comm. Anton.
+Hyg.;de mun. castr.
+Mart.;epist. lib.
+Anton.;philos.
+Cic.;or. 
+Trai.;ad Rhen.
+Firm.;de err. relig.
+Schenkl.;Hieron. adv. Iovin.
+Capit.;Ver.
+Schol.;Lucan.
+Hieron.;de perp. virg. Mar.
+Perott.;corn. cop.
+Brut.;ad Brut.
+Sen.;fr.
+Venul.;dig.
+Plaut.;most. 
+Honor.;in Symm.epist.
+Arnob.;adv. nat.
+Ver.;imp.
+Comm.;instr.
+Auct.;serm.
+Oberl.;Ov. met.
+Garet.;Isid.
+Vulg.;Ion.
+Tert.;ad Hermog.
+Naev.;tr.
+Fulg.;exp. serm. antiq.
+Alcim.;homil. fr.
+Anthol.;epigr. spec.
+Cic.;petit. cons.
+Enn.;ans.
+Schenkl.;Vulg. iudic.
+Avien.;ad Flav.
+Ov.;Vgl. übh. Drak. Sil.
+Anthol.;Lat. 
+Lact.;de mort. pers.
+Nipperd.;Tac. ann.
+Hieron.;ad ann. Chr.
+Atil.;com.
+Orest.;trag.
+Plot.;Sacerd. art. gramm.
+Rosc.;Am.
+Verg.;de oct. orat. part.
+Auct.;de dub. nom.
+Capitol.;Macr.
+Mart.;epigr.
+Cic.;de amic.
+Ambros.;de off.
+Corp.;gloss.
+Augustin.;de cant. nov.
+Hygin.;astr.
+Pomp.;comment. art. Donat.
+Gramm.;de gener. nom.
+Cic.;Clu.
+Auct.;de mirac. mund.
+Hor.;epist.
+Iustin.;lib.
+Bentl.;Hor. sat.
+Acad.;Char. dig.
+Laber.;com. inc. fab.
+Regul.;in Plin. ep.
+Ov.;Vgl. Nipperd. Tac. ann.
+Macr.;sat. pr.
+Cassiod.;in psalt.
+Ulp.;dig.
+Phaedr.;fab.
+Hyg.;astr. praef.
+Flaviens.;nom. dict.
+Fulg.;Myth.
+Iulian.;epit.
+Schenkl.;Hyg. fab.
+Sen.;de const. sap.
+Mam.;de stat. anim.
+Vulg.;Rom.
+Cassiod.;in cant.
+Hieron.;in Ezech. homil.
+Pacat.;pan. Theod.
+Iul.;Obsequ. Vgl. Burm. Ov. fast.
+Apul.;poët. apol.
+Koch.;Suet. Aug.
+Itin.;Silv.
+Augustin.;de virginit.
+Gramm.;Vat.
+Observv.;eccl.
+Inscr.;Christ. Vol. II.
+Dr.;Charis.
+Ps. Cypr.;de dupl. mart.
+Pompon.;com. fr.
+Kr.;Not. Tir.
+Caes.;Germanic. prognost.
+Troi.;Pomp. prol.
+Vgl.;de oct. partt. or.
+Eutych.;art. gr.
+Ct.;in Iurispr. Anteiust.
+Iulian.;Antec. const.
+Grill.;rhet.
+Ter.;adelph. prol.
+Doctr.;num.
+Alcim.;Avit.
+Augustin.;de doctr. Christ.
+Fulgent.;contin. Virgil.
+Tabul.;auction. no.
+Ov.;medic. fac. fem.
+Flor.;Vergil. or. an. poët.
+Donat.;art. gr.
+Iustinian.;ep. praef. dig.
+Ter.;de pall.
+Gargil.;de arbor. pomif.
+Inscr.;Rhen. Bramb.
+Halm.;Serv. Verg. Aen.
+Vgl.;Anecd. Helv.
+Macr.;somm. Scip.
+Genet.;Atteos. Sen. Agam.
+Hyg.;fab. 
+Verg.;Vgl. Drak. Liv.
+Hieron.;in eccles. tom.
+Ps. Cypr.;comput. pasch.
+Lampr.;Commod.
+Orell.;inscr.
+Reiff.;Anthol. Lat.
+Schol.;Cruq. Hor. carm.
+Cresc.;Donat.
+Albin.;art. rhet.
+Isid.;de off. eccl.
+Liv.;Andr. Odyss. fr.
+Schol.;Bob. Cic. Planc.
+Ps. Tert.;de iudic. domin.
+Freinsh.;Flor.
+Plaut.;most. argum.
+Urson.;tab.
+Vgl.;ad Ter. Phorm.
+Kr.;Gromat. vet.
+Bed.;mund. constit. tom.
+Hier.;in eccl.
+Caef.;de morb. chron.
+Casiod.;inst. div. litt.
+Philol.;Anz.
+Callistr.;dig.
+Ov.;rem. am.
+Mythrogr.;Lat.
+Cl.;de stat. anim.
+Augustin.;de num.
+Ambros.;cant. cantic.
+Ps. Ascon.;II. Verr.
+Plaut.;Casin. prol.
+Schenkl.;Sidon. epist.
+Kr.;Hieron. epist.
+Spicil.;in Corn. Nep. III.
+Pompon.;de orig. iur. not.
+Vgl.;Isid.
+Ampel.;lib. mem.
+Mar.;Mercat. subnot.
+Claud.;fesc.
+Apul.;fr. no.
+Genet.;Mart. Cap.
+Aesch.;Sept. adv. Theb.
+Virg.;gramm.
+Ps. Ambr.;de paen.
+Acro.;de art. poët.
+Cic.;Font. fr.
+Ambros.;hexaëm.
+Sext.;de medic.
+Suet.;Vesp.
+Capitol.;Ver.
+Verg.;catal.
+Vgl.;Hyg. fab.
+Ps. Augustin.;man.
+Mai.;in psalm.
+Lexic.;techn. Lat. rhet.
+Mythogr.;lat.
+Val.;in Verg.
+Tert.;Prax.
+Coripp.;Iust.
+Vulg.;Matth.
+Vopisc.;Sat.
+Euseb.;eccl. hist.
+Plin.;ep.
+Marc.;Emp.
+Sulp.;Sev. vit. Mart. praef.
+Lampr.;Bonos.
+Optat.;app.
+Ulp.;fr. tit.
+Augustin.;in fer. pentec.
+Schol.;Cruqu. Hor. ep.
+Kr.;Vgl. Diom.
+Nom.;Gell.
+Plur.;Lucan.
+Ps. Ascon.;ad Cic. II. Verr.
+Max.;de metr.
+Nipp.;Nep. Ages.
+Mart.;praef.
+Augustin.;de ord.
+Nep.;Ep.
+Herc.;Oet.
+Mar.;fesc.
+Nep.;Milit.
+Ov.;met. 
+Plat.;Lach.
+Sisenn.;hist. fr. inc.
+Albinov.;in Maecen.
+Cassiod.;hist.
+Publil.;Optat. organ.
+Mamert.;genethl. Maxim.
+Burm.;Ov. her.
+Curt.;Vgl. Drak. Liv.
+Prud.;epilog.
+Suet.;Calig.
+Ter.;de pudic.
+Gargil.;Mart. medic. extr.
+Cassian.;instit.
+Kr.;Vulg. exod.
+Auct.;inc. pan. Constant. Caes.
+Tac.;Vgl. Nipperd. Tac. ann.
+Epit.;instit. Gai.
+Dosith.;fab. Aesop.
+Nep.;Chabr.
+Marc.;Empir.
+Augustin.;ad litt. op. imperf.
+Cic.;Ecl.
+Claud.;in Ruf.
+Hieron.;adv. Vigil.
+Ambros.;de Ioseph. patr.
+Burm.;Val. Flacc.
+Cael.;de morb. acut.
+Claud.;Saturnin. dig.
+Tert.;exhort. cast.
+Cic.;Caesin.
+Ungedr.;lat. Inschr. no.
+Edict.;Diocl.
+Capit.;Maximin. iun.
+Leo.;Corp. inscr. Lat.
+Aur.;de morb. chron.
+Cic.;Acad. fr. inc.
+Vulg.;Iacob.
+Spart.;Sever. 
+Serv.;auct. Aen.
+Serv.;gramm.
+Mutusci.;Plin.
+Ps. Verg.;Cul.
+Ven.;Fort. epist.
+Augustin.;in Ioann.
+Paneg.;in Mess.
+Iustinian.;praef. novell.
+Suet.;vit. Plin.
+Donat.;de comoed.
+Nep.;reg.
+Cass.;conl. praef.
+Vulg.;levit.
+Aur.;Vict. Caes.
+Rhemn.;Palaem.
+Cic.;de leg. agr.
+Spart.;Anton. Get.
+Cic.;top. lib.
+Paul.;Nol. carm.
+Liv.;fr. libr.
+Arist.;anal. post.
+Victorin.;in rhet. Cic.
+Rubr.;Cod. Iust.
+Tryph.;dig.
+Tert.;adv. gnost.
+Exc.;Vales. Amm.
+Hor.;Vgl. Nipperd. Nep. Cat.
+Vgl.;Boëth. inst. mus.
+Donat.;vit. Vergil.
+Longai.;Varr. LL.
+Capit.;Anton. Phil.
+Isid.;eccl. off.
+Cic.;ep.
+Marc.;de diff.
+Suet.;Claud.
+Lion.;Gromat. vet.
+Iul.;de schem. lex.
+Augustin.;de ver. relig.
+Anbros.;de off.
+Augustin.;regul.
+Com.;inc. fab. inc. 
+Sp.;Scrib. Larg.
+Ascon.;in Cic. Scaur.
+Agustin.;epist.
+Lact.;Phoen.
+Vulg.;Ezcch.
+Verg.;cat.
+Sen.;contr. exc.
+Claud.;edyll.
+Tert.;adv. Marc.
+Vgl.;Isid. orig.
+Vgl.;Serv. Verg. georg.
+Greg.;lib. sacr. no.
+Claud.;de anim.
+Tac.;bist.
+Hieron.;adv. Iov.
+Iul.;Callist.
+Hieron.;adv. Luciferian.
+Capit.;Claud. Albin.
+Tertull.;de cult. fem.
+Oud.;in Cic. ep.
+Auct.;ad Pison.
+Cic.;Acad.
+Gregor.;dial.
+Auct.;de gen. idiom.
+Iuven.;sat.
+Isid.;ong.
+Capit.;Macr.
+Suet.;tr.
+Verec.;in Cant. Habac.
+Caes.;in Cic. ep.
+Coripp.;in laud. Iustin. Aug. min.
+Fr.;Vat.
+Halm.;Cic. poët. Tusc.
+Comodian.;apol.
+Kr.;Arnob.
+Commodian.;instr.
+Ihm.;Ps. Apul. herb.
+Cic.;Rabir. perd.
+Class.;auct. vol.
+Augustin.;serm.
+Vulg.;Marc.
+Sulpic.;Sev. vit. Martin.
+Claud.;Saturn. dig.
+Naev.;fr. bell. Pun.
+Plutarch.;Sol.
+Augustin.;de categ.
+Auct.;incert. grat. act. Constant. Aug.
+Maecen.;in Sen. ep.
+Alcim.;Avit. fr.
+Kr.;Boëth. inst. arithm.
+Tert.;iudic. dom.
+Ps. Cassiod.;de amic.
+Macr.;sat.
+Hier.;lib.
+Vgl.;de expos. var. rer.
+Edict.;Diocl. prooem. sect.
+Chalcid.;Tim. 
+Lact.;de mort. pere.
+Vahlen.;Plin.
+Hieron.;de vir. ill.
+Augustin.;de doctr. Chr.
+Bed.;cant. cantic.
+Liv.;Andron. tr.
+Cic.;Marc.
+Glomat.;vet.
+Plaut.;trin. prol.
+Ps. Cypr.;sing. cler.
+Praen.;Mart.
+Prob.;ad. Iuven.
+Auson.;ephem. parecb.
+Supin.;in Not. Tir.
+Notit.;dignit. orient.
+Vgl.;ex Charis. art. gramm.
+Macr.;som. Scip.
+Ambr.;hex.
+Cic.;ad Att. 
+Ambros.;exhort. virgin.
+Ihm.;Cael. Aur. chron.
+Eustath.;hexaëm.
+Trag.;fab. inc.
+Fr.;Plin.
+Claud.;Ruf.
+Spart.;Hel. Ver.
+Plaut.;truc. 
+Ps. Sen.;rem. fort.
+Aldh.;de laud. virg.
+Mamert.;pan. Maxim.
+Apul.;mund.
+Anton.;fr.
+Marc.;dig.
+Apul.;orthogr.
+Euang.;Palat. ed. Tischend. Luc.
+Pamoch.;no.
+Vgl.;Nipperd. quaest. Caesar.
+Compend.;Vitruv.
+Val.;nov.
+Gennad.;de vir. illustr.
+Nemes.;cyn.
+Marc.;Emp. 
+Vulg.;Nah.
+Tragic.;inc. fab.
+Paulin.;Nol. epīst.
+Avian.;fab. apol.
+Prob.;ad Verg. bucol. in.
+Alex.;Trall.
+Enn.;ann. 
+Hilar.;de mund. durat.
+Augustin.;de consens. evang.
+Pallad.;de insit.
+Tert.;adv. Herm.
+Cassian.;de incarn. Chr.
+Verg.;Aen. lib.
+Vulg.;ad Tit.
+Arr.;Men. dig.
+Ter.;adelph. 
+Cic.;de nat.
+Hieron.;ad Rufin.
+Th.;Prisc. chr.
+Donat.;ad Ter. eun.
+Cic.;Rosc. com.
+Greg.;de glor. conf.
+Caes.;Germ. Arat.
+Crescon.;Donat.
+Ps. Tert.;carm. adv. Marc.
+Drak.;Liv. epit.
+Fronton.;de fer. Als.
+Augustin.;de doctr. chr.
+Augustin.;adv. Acad.
+Aldh.;de laud. virgin.
+Augustin.;de magistr.
+Iul.;Epit. nov.
+Schol.;Stat. Theb.
+Cass.;Hemin.
+Auson.;parent. praef.
+Pacuv.;tr. 
+Lact.;Placid. argum. Ovid. met. lib.
+Avien.;progn.
+Augustin.;in Ioann. tract.
+Pacat.;pan.
+Orib.;fr. Bern.
+Claud.;III. cons. Honor.
+Greg.;in glor. mart.
+Tertul.;de anim.
+Vgl.;Prisc.
+Not.;ad Cic. Tusc.
+Pacuv.;Paul.
+Apul.;de mag.
+Apul.;de mund. praef. in. Prisc.
+Tert.;monog.
+Paris.;Serv. Verg. Aen.
+Grat.;cyn.
+Garet.;Vgl. Isid. orig.
+Palaemon.;art.
+Sidon.;epist.
+Augustin.;op.
+Pelagon.;art. veterin.
+Constant.;Aug.
+Prisc.;praeex. rhet.
+Apul.;Vgl.
+Acc.;pragm.
+Schenkl.;Alcim. Avit. poëm.
+Augustin.;in euang. Ioann. tract.
+Claud.;de IV. cons. Hon.
+Hier.;ep.
+Burm.;Ov. fast.
+Gran.;Licin. lib.
+Augustin.;don. persev.
+Aurel.;de orig. gent. Rom.
+Ps. Augustin.;serm. app.
+Cael.;in Cic. ep.
+Cassiod.;de art. disc. lib.
+Iunior.;phil. orb. descr.
+Claud.;IV. cons. Hon.
+Pacuv.;tr.
+Auct.;bell. Afr.
+Claud.;de VI. cons. Hon.
+Greg.;epist.
+Cypr.;carm.
+Prud.;ham. 
+Ambros.;de paenit.
+Alc.;Avit. ep.
+Hieron.;de spir. scto.
+Schenkl.;de Plat.
+Naev.;bell. Pun. lib.
+Adv.;crit.
+Argument.;ad Plaut. asin.
+Schenkl.;Ven. Fort. carm.
+Plaut.;aul.
+Victorin.;de gen. metr.
+Secund.;Manich.
+Hist.;Synt. Bd.
+Ambros.;de laps. virg.
+Sen.;ad Polyb.
+Kr.;Ps. Apul. herb.
+Monum.;Ancyr.
+Ambros.;de sacram.
+Spic.;Solesm.
+Euseb.;chron. ol.
+Ov.;medic. fac.
+Prud.;de nat. dom.
+Corp.;inscr.
+Nov.;patr. biblioth. tom.
+Sen.;Thyest.
+Salv.;ad eccl.
+Cic.;Rosc. Amer.
+Publ.;Syr. mim. fr. inc.
+Cassiod.;in psalt. praef.
+Victor.;de reg. urb. Rom. epil. extr. Corp. inscr. Lat.
+Eutych.;gramm.
+Schol.;ad Caes. Germanic. Arat.
+Ioann.;Hieros. no.
+Auson.;edyll. 
+Vulg.;Ierem.
+Tac.;Agr.
+Nep.;Cim.
+Plin.;nat. hist.
+Pers.;pr.
+Porphyr.;Hor. sat.
+Fulg.;contin. Vergil.
+Caes.;ep.
+Antonin.;imp.
+Eccl.;Corp. inscr. Lat.
+Chr.;Plaut. asin.
+Tert.;adv. Prax.
+Olybr.;cons.
+Philarg.;Verg. georg.
+Liv.;Andr. Odyss.
+Plaut.;Epid.
+Lucil.;sat.
+Schol.;in Class. auct.
+Claud.;ad Iustin.
+Cels.;prooem.
+Donat.;Ter. eun.
+Capit.;Macrin.
+Ambros.;de incarn. dom. sacr.
+Hieron.;in Ierem.
+Cic.;Rab. Post.
+Rufin.;recogn.
+Pacuv.;fr.
+Ter.;comoed. vol.
+Hier.;in Ies.
+Iul.;Firm. math. praef.
+Vulg.;numer.
+Fulg.;contin. Virg.
+Avien.;phaen.
+Anthol.;Latin.
+Rufin.;in cant.
+Eugipp.;vit. Sever.
+Fragm.;iur. Rom. Vatic.
+Mar.;Vict. art. gr.
+Sang.;Corp. inscr. Lat.
+Caes.;in Anthol. Lat.
+Quaest.;Hor.
+Scaevol.;dig.
+Plaut.;capt. 
+Class.;Auct.
+Augustin.;ad Simplician.
+Sen.;de ben.
+Albin.;orthogr.
+Tert.;de pall.
+Augustin.;in deut.
+Anton.;Get.
+Avien.;fab.
+Serv.;in Cic. ep.
+Nipperd.;Quaest. Caes.
+Augustin.;serm. app.
+Claud.;nupt. Hon.
+Verg.;Aen.
+Seren.;Samm.
+Hildebr.;Arnob.
+Rom.;app.
+Edict.;Diocl. 
+Plaut.;Amphitr. prol.
+Ter.;Maur.
+Lucil.;sat. inc.
+Ambros.;in Luc. prol.
+Greg.;Tur. Mart.
+Claud.;Quadr. ann.
+Sch.;Fest.
+Exc.;Vales.
+Spicil.;Solesm. IV.
+Lor.;Plaut. Pseud.
+Ps. Ambros.;ep.
+Kr.;Augustin. serm.
+Angustin.;in gen.
+Claud.;de Phoen.
+Mamert.;II. paneg.
+Staatsrecht.;Bd.
+Nipperd.;Nep. praef.
+Goetz.;Lucr.
+Nepot.;epit. Val. Max.
+Buech.;Corp. inscr. Lat.
+Schol.;ad Germanic. Arat.
+Novell.;Iustin.
+Parid.;epit. Val. Max.
+Auct.;in Pison.
+Nov.;patr. collect. tom.
+Iustin.;Vgl.
+Liv.;Andr. tr. 
+Gran.;Lic. lib.
+Auct.;de idiot. gen.
+Vospisc.;Saturn.
+Augustin.;in pentat.
+Schol.;ad Macr. somn. Scip.
+Suet.;vit. Hor. extr.
+Vergil.;gramm. ep.
+Ven.;Fort. vit. Leob.
+Sen.;Agam.
+Eyss.;Boëth. Aristot. anal.
+Th.;Prisc. chron.
+Suet.;vit. Verg.
+Dracont.;carm.
+Cic.;Pis. 
+Suet.;Vgl. Westerh. Ter. Hec. II. prol.
+Gaudent.;serm.
+Cic.;Phil.
+Schenkl.;Amm.
+Hieron.;in Isai.
+Schol.;ad Stat. Theb.
+Hom.;II.
+Vgl.;Non.
+Onomast.;Tull.
+Cic.;ad Quir.
+Auct.;descr. orb.
+Vgl.;Bünem. Lact.
+Iust.;conf. dig.
+Ov.;hal.
+Hieron.;de trin.
+Tert.;cor. mil.
+Symm.;ep.
 Firm.;math.
-Firm.;de err.
+Cypr.;de laps.
+Solin.;rubr.
+Iul.;Obseq.
+Rose.;Vulg. Lev.
+Ps.;Boëth. grom.
+Auson.;epist. edyll.
+Ven.;Fort. carm. append.
+Augustin.;psalm.
+Auson.;ord. urb. nob.
+Geogr.;Rav.
+Augustin.;in Ioann. euang. tract.
+Ps. Albinov.;eleg.
+Iustinian.;instit.
+Tert.;de res. carn.
+Ruhnk.;Ter. Andr.
+Schol.;Cruq. Hor. sat.
+Auson.;epit. her.
+Suet.;Galb.
+Cassiod.;in Auct. class. tom.
+Victorin.;in Cic. rhet.
+Hieron.;in Sophon.
+Sall.;hist. fr. inc.
+Vulcat.;Avid. Cass.
+Gromat.;vet.
+Donat.;vit. Verg.
+Prob.;App.
+Iuvenc.;prol.
+Paul.;Nol. poëm.
+Claud.;rapt. Pros.
+Sisenn.;fr.
+Ps. Cypr.;de sing. cler.
+Tert.;praescr. haeret.
+Stat.;sitv.
+Oudend.;ad Cic. ep.
+Cic.;oratt. fr. inc.
+Eccl.;Vgl. Anecd. Helv.
+Iustin.;dig. praef.
+Colum.;poët.
+Verg.;ecl.
+Claud.;bell. Gild.
+Cic.;in Cic. ep.
+Liv.;Andr. tr.
+Plaut.;Most.
+Nazar.;pan. Constant.
+Cl.;Sacerd. art. gramm.
+Hessel.;Arnob.
+Procul.;dig.
+Gloss.;Nom.
+Liv.;Vgl. Weißenb. Liv.
+Claud.;Mamert. genethl. Maxim.
+Dionys.;perieg.
+Augustin.;de serm. dom.
+Vulc.;Gall. Avid. Cass.
+Schol.;ad Pers.
+Lampr.;Comm.
+Cic.;Arat.
+Plin.;Val.
+Iuvenc.;hist. sacr.
+Histor.;Synt. Bd.
+Salmas.;Exerc. Plin.
+Ecl.;Cic.
+Quaest.;Caes.
+Sing.;Not. Tir.
+Aldh.;de virginit.
+Sulp.;Sev. ep.
+Suet.;Oth.
+Col.;de arb.
+Serv.;ap. Cic. top.
+Septim.;Seren. fr.
+Mamert.;de stat. anim.
+Tert.;de idol.
+Past.;Herm.
+Arist.;anal. pr.
+Vulg.;Iac.
+Hieron.;adv. Vigil. no.
+Alc.;Avit. homil.
+Vulg.;paralip.
+Macr.;de diff. etc.
+Infin.;Ter. eun.
+Cassian.;coen. inst.
+Prob.;Verg. bucol.
+Iustin.;edict.
+Hertz.;Sulp. Sev. ep. dub.
+Cassiod.;compl. act. apost.
+Isid.;de eccl. off.
+Plur.;Lucil.
+Auct.;de virt. herb.
+Cornel.;orat.
+Ter.;āndr.
+Mar.;de gen. verb.
+Nebrid.;in Augustin. epist.
+Oehler.;Vgl. Fest.
+Lact.;div. inst.
+Prob.;de nom. exc.
+Vulg.;Zach.
+Sen.;nat. qu.
+Mar.;de metr.
+Paul.;in Auson. epist.
+Hieron.;in Ezech. hom.
+Tert.;de patient.
+Treb.;Poll. Maximin. duor.
+Albin.;de art. rhet.
+Tert.;de baptism.
+Schm.;Serv. Verg. Aen.
+Cypr.;ad Fortun.
+Cic.;Caecin.
+Alcim.;Avit. epist.
+Rufin.;in psalm.
+Tert.;ad Scap.
+Cypr.;de idol. vanit.
+Nipperd.;ad Caes.
+Iulian.;dig.
+Ter.;Phorm. 
+Cypr.;ad Fortunat.
+Oribas.;syn.
+Halm.;Suet. Aug.
+Claud.;Quadrig. fr.
+Ps.;Boëth. art. geom.
+Iul.;epit. nov.
+Plaut.;trin. 
+Eugraph.;ad Ter. heaut.
+Eccl.;Not. Tir.
+Schm.;Isid. orig.
+Tert.;de monog.
+Vulg.;Soph.
+Tert.;de monol.
+Eumen.;ad Constant.
+Prud.;psychom.
+Lact.;inst.
+Hieron.;in Isai. praef.
+Fl.;Varr. LL.
+Gregor.;hist. Franc.
+Ascon.;in tog. cand. fr.
+Vgl.;übh. Prisc.
+Cic.;or.
+Hieron.;vit. Hilar.
+Paul.;Nol. epist.
+Schenkl.;de morb. chron.
+Auct.;ad Pis.
+Matth.;quaest.
+Martyr.;Sulp. Sev. dial.
+Klotz.;Not. Tir.
+Fr.;in reg.
+Orthogr.;Vergil.
+Roth.;Mart.
+Cic.;Vgl. Bünem. Lact.
+Hieron.;in Rufin.
+Claud.;cons. Mall.
+Comment.;diur. Aug.
+Vulg.;euang. Ioann.
+Anecd.;ed. Rose. Vol.
+Konj.;Plin. pan.
+Ps. Ambr.;serm.
+Ambros.;de parad.
+Ov.;ex Pont. 
+Plaut.;fr. inc.
+Isid.;in levit.
+Christ.;Vol. II.
+Enn.;tr.
+Liv.;Vindob.
+Hieron.;in Matth. lib.
+Prisc.;de nom. etc.
+Eutych.;prooem.
+Pacuv.;praet.
+Plin.;nat. hist. lib.
+Auson.;prof. carm.
+Fab.;Pict. ap. Serv. Verg. georg.
+Augustin.;doctr. Chr.
+Claud.;VI. cons. Hon. praef.
+Plaut.;aulul.
+Verecund.;in cant. Azar.
+Fulg.;de contin. Verg.
+Gregor.;in Tob.
+Prud.;cath.
+Notit.;dign. vol.
+Cassiod.;orthogr.
+Vib.;de mont.
+Tract.;in Gramm. Lat.
+At.;Fortunat.
+Cic.;poët. Tusc.
+Vulg.;psalm.
+Porph.;Hor. carm.
+Gregor.;Tur. hist. Franc.
+Hieron.;in Iov.
+Kr.;Diom.
+Halm.;de not. aspir.
+Auson.;Mos.
+Claud.;de bell. Gild.
+Treb.;Poll. trig. tyr.
+Kr.;od.
+Apul.;inc. libr. fr.
+Serv.;Verg. Aen. 
+Gronov.;Observ.
+Capitol.;Albin.
+Sulp.;Sev. chr.
+Arr.;Menand. dig.
+Inc.;ad Donat.
+Eumen.;Constant.
+Cic.;oecon. fr.
+Acc.;trag.
+Cael.;Aurel. acut.
+Augustin.;in Faust.
+Hieron.;no.
+Cassiod.;var.
+Annot.;de ben.
+Fulg.;continent. Verg.
+Ps. Prob.;de ult. syll.
+Publil.;Syr. com.
+Nemes.;ecl.
+Philostr.;haeres.
+Sacerd.;art. gr.
+Nep.;Iphicr.
 Ter.;heaut. prol.
+Tac.;Vgl. Drak. Liv.
+Sen.;op. vol.
+Fort.;carm.
+Chalcid.;in Plat. Tim.
+Cic.;Tim.
+Sp.;Schol. Bern. Verg. georg.
+Ven.;Fort. app.
+Lact.;Plac. narr. fab. lib.
+Hildebr.;od. tom.
+Paul.;ad Sever.
+Fast.;ann. Iul. Praen. Mart.
+Ihm.;Auct. Testam. porc. lin.
+Hieron.;epitaph. Nepot. tom.
+Ter.;heaut. 
+Plur.;Apul. met.
+Ruric.;epist.
+Censorin.;fragm.
+Rom.;Rel.
+Iustin.;novell.
+Aethic.;cosmogr.
+Mamert.;grat. act. Iulian.
+Aldhelm.;de laud. virg.
+Suet.;vit. Lucan. extr.
+Cic.;partit. or.
+Albin.;ad Liv.
+Arist.;post. anal.
+Ter.;Hecyr.
+Sall.;Iug.
+Fulg.;contin. Verg.
+Excurs.;de fin.
+German.;Arat.
+Enn.;hed.
+Donat.;Ter. Phorm. prol.
+Ps. Caton.;dist.
+Itin.;Alex. praef.
+Aristot.;analyt. post.
+Stab.;Theb.
+Nep.;Ham.
+Cur.;fr.
+Apul.;herb.
+Dioscor.;in Augustin. epist.
+Philarg.;in Verg. ecl.
+Ven.;Fort. init. epist. praem. carm.
+Suet.;Caes.
+Tert.;adv. Iud.
+Auson.;eclog.
+Max.;Victorin.
+Blomf.;Aeschyl. Sept.
+Ps. Cypr.;Sodom.
+Fulg.;mitol.
+Licent.;in Augustin. epist.
+Augustin.;serm. 
+Auct.;de schem. dian.
+Cassian.;incarn.
+Cassiod.;in psalt. praef. vol.
+Plin.;Val. praef. fol.
+Verg.;cul.
+Hieron.;Euseb. chron. prooem.
+Enn.;fr. sen.
+Naev.;bell. Pun. fr. inc.
+Vgl.;übh. Drak. Liv.
+Tert.;adv. nat.
+Ignat.;ad Polycarp.
+Ant.;imp.
+Auct.;in Anthol. Lat.
+Apul.;doctr. Plat.
+Ennod.;dict.
+Ps. Cic.;ad Octav.
+Auson.;prof.
+Suet.;Ner.
+Vol.;II.
+Interpr.;Cod. Theod.
+Augustin.;in psalm. conc.
+Plaut.;trin.
+Mar.;Victor.
+Auson.;Drepan. fil.
+Sex.;Ruf.
+Lindem.;Plaut. capt.
+Serv.;centim.
+Cic.;Arch.
+Hor.;sat.
+Auson.;lud. sept. sap. praef.
+Cic.;topic.
+Avien.;or. mar.
+Ascon.;in Cic. Pis. enarr.
+Pompei.;gr.
+Cassiod.;hist. eccl. trip.
+Vulg.;Esth.
+Suet.;Cl.
+Gregor.;de vit. patr.
+Val.;Flacc.
+Ps. Verg.;cir.
+Stewech.;Veget. mil.
+Sen.;suas.
+Cic.;har. resp.
+Ps. Cypr.;de spect.
+Soran.;Latin.
+Emend.;Liv.
+Alc.;Avit. epist.
+Hor.;ep.
+Tert.;de resurrect. carn.
+Val.;in Augustin. epist.
+Augustin.;de pecc. merit.
+Vgl.;Pers.
+Augustin.;medit.
+Ov.;ex. Pont.
+Sen.;Phoen.
+Tert.;de cor. mil.
+Tert.;adv. Gnost.
+Auct.;in Liv.
+Charis.;exc.
+Donat.;Ter. Andr.
+Auson.;parent.
+Vulg.;thren.
+Tac.;Vgl.
+Suet.;fragm.
+Firm.;Mat.
+Gramm.;de adv.
+Auct.;ad Messal.
+Turpil.;fr.
+Soran.;lat.
+Augustin.;in evang. Ioann.
+Fulg.;myth.
+Notit.;dignit. vol.
+Ter.;Andr. 
+Schenkl.;Hyg. astr.
+Vopisc.;Aur.
+Salv.;de stat. anim.
+Ambros.;de vid.
+Val.;Max.
+Ven.;Fort.
+Auct.;de aucup.
+Aur.;de or. gent. Rom.
+Cael.;Aur. acut. praef.
+Lampr.;Anton. Diad.
+Augustin.;locut.
+Cresc.;Don.
+Suet.;Vitell.
+Compar.;Augustin. epist.
+Acc.;ann. fr. inc.
+Paul.;ad Cyther.
+Vitruv.;Bd.
+Iordan.;Get.
+Prud.;adv. Symm.
+Barth.;adv.
+Vulg.;cant.
+Paul.;Sent.
+Rufin.;de metr. comic.
+Rosc.;com.
+Claud.;in laud. Seren. reg.
+Liv.;Andr.
+Naev.;tr. 
+Cypr.;ad Fort. praef.
+Donat.;ad Ter. adelph.
+Gaud.;Don.
+Scaur.;VII.
+Casaub.;Suet. Aug.
+Kr.;Suet. Dom.
+Capitol.;Aur.
+Rufin.;in Levit. hom.
+Ov.;Ib.
+Vgl.;Ps. Ascon. Cic. II. Verr.
+Vgl.;Veget. mil.
+Cic.;top. 
+Cael.;Arel. reg. mon.
+Augustin.;in exod. qu.
+Vgl.;Corp. inscr. Lat.
+Prisc.;praeexerc. rhet.
+Cypr.;Gall. gen.
+Prisc.;gramm. III.
+Macrob.;sat.
+Coel.;Antip.
+Gennad.;de vir. ill.
+Hor.;carm.
+Stat.;Ach.
+Vulg.;sap.
+Augustin.;de rhet.
+Ambr.;de off.
+Verecund.;cant. Azar.
+Eutych.;art.
+Claud.;in Rufin.
+Exc.;Charis.
+Oud.;Suet. Vesp.
+Inscr.;in Nov. Collect. tom.
+Cic.;de divin.
+Evod.;in Augustin. epist.
+Sing.;Heges.
+Lact.;fab.
+Eumen.;pan. Const. Caes.
+Syr.;sent.
+Alfen.;dig.
+Ps. Censor.;fr.
+Hieron.;reg. Pachom.
+Ven.;Fort. misc.
+Diom.;praef. in.
+Angustin.;epist.
+Auson.;edyll.
+Salv.;de gub. dei.
+Wasser.;Vitr.
+Enn.;scen.
+Freinsh.;in Liv.
+Paul.;sent.
+Augustin.;mor. eccil. cath.
+Cic.;in Pis.
+Grom.;vet.
+Augustin.;de gen.
+Mar.;ad Iustin. Manich.
+Cassian.;coenob. inst. praef.
+Claud.;hystr.
+Sulpic.;in Anthol. Lat.
+Frontin.;strat.
+Ambros.;de instit. virg.
+Fulg.;aet. mund.
+Trazepos.;Plin.
+Juret.;Symm. epist.
+Cic.;ad Att.
+Sedul.;paschal. carm.
+Sen.;de benef.
+Schenkl.;Cod. Iustin.
+Augustin.;de sanct. virgin.
+Steph.;Byz.
+Lact.;Plac. narr. fab.
+Ven.;Fort. epist. praem. carm.
+Schenkl.;Corp. inscr.
+Augustin.;de utilit. ieiun.
+Fab.;Max. fr.
+Interpret.;deuter.
+Soran.;Lat.
+Hieron.;in Isai. lib.
+Cic.;de nat. deor.
+Hieron.;adv. Rufin.
+Tac.;ann.
+Porphyr.;Hor. ep.
+Epit.;Iliad.
+Miscell.;Latinit.
+Tert.;ad psych.
+Schol.;Bob. Cic. Flacc.
+Plin.;Sec. medic. praef. in.
+Augustin.;de catech. rud.
+Avien.;Phaen.
+Ps. Apul.;herb.
+Cassiod.;inst. div.
+Augustin.;de mus.
+Auson.;grat. act. VIII.
+Gramm.;de interiect.
+Lampc.;Alex. Sev.
+Cassiod.;de inst. div. litt.
+Ps. Fulg.;Rusp. serm.
+Frick.;Plin.
+Gronov.;Obss.
+Auct.;inc. exc. mathem.
+Cael.;de morb. acut. praef.
+Plur.;de rep.
+Frontin.;de aqu.
+Ps. Quint.;trib. Marian.
+Licin.;Rufin. dig.
+Kr.;Corp. inscr. Lat.
+Hieron.;Matth.
+Mat.;fr.
+Corp.;inscr. Lat. II.
+Spart.;Did. Iul.
+Hier.;comm.
+Symm.;praef.
+Petr.;poët.
+Oribas.;fr.
+Frontin.;strat. praef. extr. Eutr.
+Iuvent.;com. fr.
+Iul.;Val.
+Carm.;de fig.
+Plaut.;Cist.
+Lor.;Cic. Mil.
+Tiberian.;carm.
+Sen.;nat.
+Serv.;Verg. georg.
+Trai.;ibid.
+Levit.;no.
+Gargil.;de medic.
+Hier.;epist.
+Ov.;ex Fest.
+Germ.;Arat. 
+Amm.;Vgl. Prisc.
+Timarch.;in Cic. Verr.
+Cens.;fr.
+Augustin.;de mor. eccl. cath.
+Augustin.;specul.
+Treb.;Poll. Valer. iun.
+Serv.;in Donat.
+Quaest.;Plaut.
+Nep.;Phoc.
+Hor.;carm. saecul.
+Tert.;exh. castit.
+Madv.;de fin.
+Claud.;Eutr.
+Cic.;de glor.
+Suet.;Tit.
+Ambros.;de Tob.
+Vgl.;Porphyr. Hor. epod.
+Prob.;inst.
+Hieron.;adv. Ioann. Hieros.
+Gramm.;vet.
+Plaut.;Nervol. fr.
+Marc.;med.
+Ter.;Hec. prol.
+Ambr.;hexaëm.
+Caes.;ad virg.
+Not.;dign. occ.
+Nep.;Timol.
+Claud.;imp. orat. fr. col.
+Murat.;inscr. Christ.
+Cornel.;fr.
+Schenkl.;Prud. perist.
+Prisc.;de num. fig.
+Mai.;Corp. inscr. Lat.
+Schenkl.;in Isai.
+Itin.;Hierosolym.
+Ter.;Phorm.
+Aufl.;Bd.
+Ps. Quint.;tribun. Marian.
+Pelagon.;vet. 
+Helm.;de err. prof. rel.
+Plaut.;Astr. fr.
+Ven.;Fort. vit. Amiant.
+Tuberon.;hist.
+Vgl.;Drak. Sil.
+Itin.;Ant.
+Augustin.;de mor. eccl.
+Nom.;Sing. tonitrus. Plaut. Amph.
+Marcellin.;ad Augustin. epist.
+Oudend.;Lucan.
+Cael.;de signif. diaet. pass.
+Augustin.;in heptat.
+Anal.;Prop.
+Coripp.;Ioh.
+Firm.;de err. prof. rel.
+Claud.;laud. Stil.
+Plaut.;Pers. 
+Sen.;prov.
+Hygin.;de limit.
+Ambros.;de incarn. domin.
+Albinov.;ad Liv.
+Serg.;de litt.
+Schol.;Lat.
+Lact.;de Phoen.
+Argum.;Plaut. capt.
+Vitr.;tom. II.
+Longin.;in Augustin. epist.
+Augustin.;adv. Pelag.
+Osann.;Lact.
+Ambros.;gest. concil. Aquilei.
+Sen.;exc. contr.
+Cael.;Antip. hist.
+Ctesias.;Heidelb.
+Cod.;Iustin.
+Aur.;Vict. orig. gent. Rom.
+Nov.;com.
+Cassiod.;dial.
+Ambros.;de exc. fratr. Sat.
+Prudent.;psych. praef.
+Heins.;Val. Flacc.
+Cass.;Hemin. ann.
+Sen.;poët. apoc.
+Berl.;Philol. Wochenschr.
+Sedul.;de veter. test.
+Arnob.;in psalm. 
+Ter.;adv. Marc.
+Tert.;adv. uxor.
+Gennad.;vir. ill.
+Vgl.;Gell.
+Ps. Cypr.;de genes.
+Auct.;in Sall.
+Godofr.;Cod. Theod.
+Avian.;fab.
+Tert.;de orat.
+Hier.;in genes.
+Capit.;Maxim. iun.
+Petron.;fr.
+Schol.;ad Hor. art. poët.
+Gregor.;in glor. conf.
+Cassiod.;de arithm.
+Cypr.;de hab. virg.
+Sall.;hist.
+Legg.;XII. tabb. rell.
+Min.;Fel.
+Class.;auct. VI.
+Hieron.;in Ezech.
+Hildebr.;Apul. flor.
+Naev.;bell. Pun. fr. inc. II.
+Frontin.;Vgl. Oudend. Frontin. strat.
+Vet.;Schol. Hor. sat.
+Kr.;Porphyr. Hor. carm.
+Comm.;apol.
+Sex.;Placit.
+Cic.;Clod.
+Plin.;de med.
+Macr.;sat. praef.
+Traian.;in Plin. ep.
+Vulg.;exod.
+Licin.;com.
+Hieron.;in Helv.
+Aristot.;anal. poster.
+Solin.;praef.
+Fortun.;art. rhet.
+Prud.;cathem.
+Akk.;Enn. ann.
+Salv.;ad. eccl.
+Chr.;Cic. Brut.
+Paul.;Diac. homil.
+Iust.;nov.
+Claud.;nupt. Hon. et. Mar. fesc.
+Cic.;Sull.
+Verg.;georg. 
+Auct.;de praenom.
+Sut.;Cal.
+Vopisc.;Numer.
+Tert.;de coron.
+Pompei.;comm.
+Lepid.;in Cic. ep.
+Prud.;ham. praef.
+Cic.;Rosc. Am. 
+Florentin.;dig.
+Hildebr.;Apul. apol.
+Greg.;Tur. Iul.
+Compar.;in Augustin. epist.
+Hier.;de spir. sanct.
+Ven.;de vit. Mart.
+Philarg.;ad Verg. georg.
+Auson.;epigr.
+Plaut.;capt.
+Brisson.;de form.
+Pacuv.;trag.
+Plaut.;Curc.
+Rom.;leg. collat.
+Schol.;in Cic. Clod.
+Interpr.;ad Verg. georg.
+Isid.;lib. numer.
+Cic.;de fat.
+Carm.;conviv. Graec.
+Marc.;Caes.
+Pass.;Montan.
+Gloss.;nom.
+Avit.;ad Fascin. soror.
+Loewe.;Corp. inscr. Lat.
+Hilar.;de trin.
+Cod.;theod.
+Apul.;met.
+Respons.;Papinian. tit.
+Claud.;de Get. bell.
+Cl.;Sacerd.
+Plin.;praef.
+Pach.;no.
+Ps. Rufin.;in psalm.
+Naev.;bell. Punic.
+Crescon.;gramm.
+Plaut.;Cas. prol.
+Auct.;laud. Herc.
+Vopisc.;Proc.
+Hyg.;poët. astr. praef.
+Cassiod.;compl. apoc.
+Hertzb.;Prop.
+Apul.;Flor.
+Iul.;Antec. constit.
+Arcad.;dig.
+Auson.;ord. urb. nobil.
+Vgl.;Drak. Liv.
+Nov.;Act. Acad. Nat. Curios. VI.
+Rom.;Bd.
+Ambros.;de virg.
+Pers.;prol.
+Vopisc.;Procul.
+Cassiod.;de orat.
+Paul.;de nom. christ.
+Schol.;Cic. Gron.
+Isid.;Regul. Monach.
+Porphyr.;ad Constant.
+Rutil.;itin.
+Ihm.;ex Fest.
+Cic.;Phii.
+Suet.;vit. Hor.
+Corp.;inscr. Lat. 
+Auson.;de monos.
+Vulg.;Dan.
+Augustin.;in Galat.
+Cic.;fragm.
+Anthol.;epigr. Lat. spec.
+Ambros.;de Nab.
+Barnab.;ep. vers. Lat.
+Ps. Lucil.;fr.
+Cic.;in Caecil.
+Donat.;Ter. adelph.
+Fulg.;myth. prooem.
+Vulg.;prov.
+Hieron.;Euseb. chron.
+Ter.;Hec. 
+Aldh.;laud. virg.
+Sedul.;prol.
+Ter.;adelph.
+Vopisc.;Car.
+Augustin.;de utilit. cred.
+Isid.;de nat. rer.
+Vgl.;Dosith.
+Vopisc.;Bon.
+Cassiod.;in cant. cantic.
+Cic.;de leeg.
+Ambros.;inst. virg.
+Schol.;in Lucan.
+Plur.;Quint.
+Gregor.;in glor. mart.
+Cassian.;inst.
+Ephem.;epigr.
+Cael.;Aur. signif. diaet. pass.
+Ascon.;de tog. cand.
+Claud.;Mam. genethl.
+Nov.;com. 
+Ulp.;regul.
+Auct.;de idiom.
+Cypr.;de cath. eccl. unit.
+Suet.;Cal.
+Nipp.;Quaest. Caes.
+Corp.;inscr. Lat. III.
+Hieron.;adv. Iovinian. II.
+Iunior.;descr. orb.
+Hieron.;ad Tit.
+Sequ.;de font.
+Acc.;praet.
+Auson.;de prof.
+Trag.;inc. fr.
+Corp.;inscr. Lat. Vol.
+Interpr.;Iren.
+Marc.;de medic.
+Vulg.;excd.
+Fronto.;Vgl. übh.
+Paul.;Nol. nat.
+Possid.;vit. Augustin.
+Rufin.;in numer. homil.
+Orib.;eupor.
+Ven.;Fort. praef.
+Fulg.;myth. lib.
+Mar.;in rhet. Cic.
+Obss.;in Eccl.
+Hyg.;fab. praef.
+Ps. Ascon.;ad Cic. Verr.
+Mai.;Vgl. Not. Tir.
+Helm.;in exod.
+Cic.;de pet.
+Sen.;de dem.
+Not.;dign. orient.
+Hier.;in Phil.
+Anon.;Ravenn.
+Claud.;III. cons. Stil.
+Th.;Prisc.
+Ps. Augustin.;solil.
+Firm.;de error. prof. rel.
+Orest.;tr.
+Nov.;Theod.
+Augustin.;adv. Donat.
+Cassian.;coll.
+Taubm.;Plaut. Amph.
+Lampr.;Alex.
+Herkules.;Verg. Aen.
+Apul.;flor.
+Cic.;Arat. fr. II.
+Treb.;Poli. Claud.
+Claud.;de anim. praef.
+Vet.;ad German. Arat.
+Vopisc.;Carin.
+Hieron.;vir. ill. 
+Aur.;Augustin. rhet.
+Cic.;de sen.
+Acc.;Charis. dig.
+Gelas.;epist.
+Suet.;vit. Lucan.
+Iunior.;orb. descr.
+Cassiod.;Ios. antiqu.
+Germ.;Arat.
+Ov.;fast.
+Aurel.;Arcad. dig.
+Vgl.;Schol. Bern. Verg. ecl.
+Ulp.;reg.
+Symm.;in Valent.
+Ovid.;Ov. am.
+Cic.;Mur.
+Ol.;cons.
+Nipp.;Nep. Thras.
+Cic.;Balb.
+Plaut.;Curc. 
+Comp.;de div. fabr. archit.
+Ps. Augustin.;categ.
+Hyg.;poët. astr.
+Tert.;ad uxor.
+Fulg.;poët. Myth.
+Sen.;de rem. fort.
+Claud.;Mam. genethl. Maxim.
+Petron.;poët.
+Symm.;in patr.
+Mar.;de gen. div. verb.
+Isid.;reg. mon.
+Hieron.;adv. Ioh. Hieros.
+Plur.;Cels.
+Eccl.;Cledon. art. rhet.
+Reines.;var. lect.
+Leo.;Calp. ecl.
+Theocrit.;epigr.
+Auson.;ad edyll.
+Isid.;in Levit.
+Suet.;de vir. ill. fr.
+Vib.;Sequ.
+Donat.;Ter. Hec.
+Consent.;de barb.
+Bonn.;Aur. Vict. epit.
+Aristot.;anal. post.
+Caecil.;com. fr. inc.
+Iustin.;ad antec.
+Hisp.;latin.
+Ven.;Fort. carm. praef.
+Schenkl.;Sen. Herc. Oet.
+Serv.;vit. Verg. vol.
+Isid.;regul. monach.
+Ps. Ascon.;in Caecil.
+Rab.;post.
+Misc.;Lat.
+Vulg.;epist. Iac.
+Claud.;Mamert.
+Prud.;perist.
+Emendatt.;Liv.
+Class.;auct. tom.
+Capit.;Port.
+Haverc.;Tert. apol.
+Laber.;com. 
+Nepot.;epit.
+Orell.;Drak. Liv.
+Alcim.;epist.
+Inscr.;ap. Burm. Anthol. Lat.
+Brut.;in Cic. ep.
+Gramm.;de dub. nom.
+Tert.;de virg. vel.
+Spart.;Ver.
+Auct.;it. Alex.
+Capit.;Opil. Macrin.
+Exc.;ex Charis. gr.
+Ioann.;tract.
+Augustin.;de peccat. merit.
+Ps. Cypr.;de resurr. mort.
+Notit.;dign. orient.
+Cic.;fr. epist.
+Plaut.;aul. 
+Ampsacus.;Solin.
+Vulg.;Roman.
+Cic.;de amic. 
+Cic.;Verr.
+Vgl.;Hildebr. Apul. met.
+Sen.;Herc. Oet.
+Ps. Sall.;in Cic.
+Trag.;inc. fab. fr.
+Cornel.;or.
+Claud.;Quadrig. ann. fr. inc.
+Cic.;de or.
+Schol.;Bob.
+Auson.;de mens. monos.
+Ruhnk.;Ov. her.
+Augustin.;de serm. apost.
+Planc.;in Cic. ep.
+Ps. Ambros.;serm.
+Plaut.;vidul. fr.
+Ps. Sen.;ep. ad. Paul.
+Maurin.;col.
+Auct.;de libr. partt.
+Tert.;apol.
+Apul.;de dogm. Plat.
+Altertumsw.;Jahrg.
+Metrol.;scriptt.
+Sen.;opp. vol.
+Hor.;ep. 
+Cic.;Flacc. 
+Hygin.;de mund.
+Paulin.;vit. Ambros.
+Vatin.;in Cic. ep.
+Hier.;in Iesai.
+Prisc.;de metr. Ter.
+Augustin.;de genes.
+Plaut.;Bacch. 
+Verg.;ed.
+Coripp.;laud. Iust.
+Aristot.;elench.
+Vgl.;de spect.
+Corp.;inscr. Lat. vol.
+Cypr.;ad Donat.
+Augustin.;de trinit.
+Ps. Sen.;ad Paul. apost.
+Plaut.;Amph. prol.
+Vgl.;Broukh. Prop.
+Augustin.;art. gramm.
+Ps. Iuvenc.;triumph. Chr.
+Cael.;Antip. bell. Pun. sec. hist.
+Eumen.;grat. act.
+Donat.;ad Verg. Aen.
+Ps. Aug.;serm. app.
+Ossismi.;Plin.
+Claud.;idyll.
+Naev.;bell. Punic. lib.
+Calp.;decl.
+Lact.;Stat. Theb.
+Ambros.;de inst. virg.
+Vahlen.;Vgl. Fest.
+Claud.;de Mall. Theod. cons.
+Schol.;German. Arat.
+Script.;rer. Long.
+Titin.;com.
+Popul.;Iguv. lustr.
+Sen.;Oed.
+Burm.;Ov. met.
+Quint.;ad Tryph.
+Heus.;de off.
+Phaedr.;append.
+Anton.;de eloqu.
+Iavolen.;dig.
+Hier.;vir. ill.
+Ambros.;hymn.
+Schenkl.;Veget. mul.
+Augustin.;ad lit.
+Porphyr.;Hor. carm.
+Orb.;descr.
+Augustin.;de quantit. anim.
+Rom.;leg. coll.
+Tert.;de hab. mulier.
+Ambros.;de fug. saecul.
+Auct.;prol. Plaut. Cas.
+Auct.;prol. Plaut. Poen.
+Schol.;Gron. Cic. Marc.
+Flor.;prooem.
+Schenkl.;Itin. Alex.
+Cic.;prov. cons.
+Gargil.;Mart. med.
+Aristoph.;Nub.
+Rutil.;Numat.
+Testam.;porc.
+Pun.;fr.
+Auson.;grat. act. III.
+Herc.;Oct.
+Cl.;de anim.
+Vopisc.;Prop.
+Oberl.;Verg. Aen.
+Auson.;grat. act. XVII.
+Gell.;praef.
+Lyd.;de magistr.
+Plaut.;Men. 
+Ter.;eun. prol.
+Auson.;epitaph.
+Augustin.;quaest. hept.
+Iord.;Getic.
+Orig.;in Lev. hom.
+Sidon.;carm.
+Coel.;Antip. fr. inc.
+Nep.;Thras.
+Priscill.;tract.
+Inscr.;Helv.
+Ignat.;ad Smyrn.
+Cic.;pet. cons.
+Augustin.;de doctr. Chr. prol.
+Lact.;de opif.
+Pers.;sat.
+Chr.;Nep. Thras.
+Calp.;ecl.
+Cic.;Sex. Rosc.
+Liv.;praef.
+Pac.;tr.
+Ps. Sall.;ad Caes.
+Hieron.;epist.
+Plaut.;Men. prol.
+Vigil.;Trident. epist.
+Augustin.;de mor. Manich.
+Coll.;phil.
+Rufin.;Euseb. hist. eccl.
+Interpret.;Iren.
+Tert.;in genes.
+Anon.;de solemnit.
+Verg.;cop.
+Cic.;Rab. perd.
+Pacuv.;tr. Paul.
+Plin.;pr.
+Tertull.;adv. Valent.
+Porph.;dial.
+Not.;Bern.
+Spart.;Carac.
+Auson.;rhop.
+Quint.;ibid.
+Lat.;min. ed. Wernsd.
+Capit.;Gord.
+Sen.;apol.
+Plaut.;Pseud.
+Eugraph.;Ter. Andr.
+Ps. Sall.;de rep.
+Hieron.;paralip.
+Victorin.;de metr.
+Porphyr.;ad Hor. epod.
+Plaut.;Mem.
+Hilar.;op. hist. fr.
+Vgl.;de gen. nom.
+Prud.;hamart.
+Capitol.;Maximin.
+Sedul.;carm. pasch.
+Ps. Soran.;de puls.
+Cic.;Vatin.
+Th.;Prisc. praef. libr.
+Eustath.;hex.
+Arnob.;poët.
+Fr.;Isid. orig.
+Nipperd.;in Corn. Nep.
+Ov.;mot.
+Prisc.;ad Iul. ep.
+Apul.;de orth.
+Augustin.;Galat.
+Schenkl.;Mart. Cap.
+Iliad.;praef. Mart. Cap.
+Manut.;Cic. Rab. Post.
+Aristot.;praedic.
+Cassiod.;de dialect.
+Augustin.;de op. monach.
+Vgl.;Serv. Verg. Aen.
+Burm.;Ov. trist.
+Tert.;spect. 
+Sen.;Phaedr.
+Duhn.;in exod.
+Tert.;adv. haer.
+Hauptst.;Liv.
+Ps. Cypr.;de laud. mart.
+Ps. Soran.;qu. medic.
+Varr.;sat. Men.
+Schenkl.;Donat. Ter. eun.
+Lectt.;Tull.
+Cassiod.;inst. div. litt.
+Plur.;Plin.
+Th.;Prisc. medic. praes.
+Augustin.;de excid. urb.
+Sen.;Med.
+Tert.;adv. Mart.
+Gratt.;cyn.
+Kr.;Auson. edyll.
+Hyg.;de castr. munit.
+Porphyr.;Hor. carm. saec.
+Dict.;prol.
+Rom.;II. fr.
+Fragm.;Bob.
+Hauptst.;Plin.
+Col.;praef.
+Miscell.;Lat. part.
+Sen.;ad. Helv.
+Claud.;Mam. grat. act.
+Prob.;app.
+Cassian.;inst. coen.
+Ambros.;in psalm. praef.
+Valentin.;ap. Gromat. vet.
+Vot.;fr. arv.
+Apul.;de mund.
+Hor.;epod.
+Plaut.;mil.
+Hor.;art. poët.
+Interpr.;in Isai. homil.
+Ps. Syr.;sent.
+Iul.;Obs.
+Mar.;Vict.
+Infin.;Plaut. Bacch.
+Gaud.;Donat.
+Front.;aqu.
+Capit.;Alb.
+Drak.;Sil.
+Augustin.;epist.
+Rufin.;de schem. lex.
+Mart.;de spect.
+Boecking.;Corp. inscr. Lat.
+Sisenn.;hist.
+Menipp.;Reliq.
+Sext.;Ruf. brev.
+Anal.;Non.
+Metrol.;scriptt. Lat.
+Augustin.;enchir.
+Heges.;de bell. Iud.
+Moment.;leg.
+Auson.;Technop.
+Suet.;Caes. 
+Compar.;in Sidon. epist.
+Martianay.;Th. Prisc.
+Auct.;Priap.
+Calp.;ed.
+Comment.;Herod.
+Hesiod.;op.
+Suet.;gramm.
+Migne.;Gromat. vet.
+Tert.;idol.
+Cassiod.;de or.
+Schol.;ad Verg. buc.
+Dion.;Hal.
+Gell.;pr.
+Acc.;fr.
+Rufin.;in Rom.
+Suet.;Vit.
+Serv.;cent. metr.
+Coripp.;Iohann.
+Augustin.;de div. quaest. qu.
+Prud.;psych. praef.
+Hieron.;adv. Pelag.
+Marc.;de medic. fr.
+Iustin.;instit.
+Ps. Verg.;cul.
+Auct.;in obit. Maecen.
+Cassian.;collat.
+Isid.;diff.
+Claud.;Phoen.
+Rufin.;in num. homil.
+Wernsdorf.;Poet. Lat. min. tom.
+Stud.;Plaut.
+Suet.;Aug. 
+Hieron.;de mor. eccl. cath.
+Ps. Apul.;Asclep.
+Scriptt.;hist. Aug. vol.
+Pacuv.;inc. fab. fr. LXIII.
+Vgl.;Curt.
+Gloss.;Ital.
+Claud.;de cons. Stil.
+Cassiod.;inst. lib. litt.
+Vali.;Vulg.
+Ambros.;de bon. mort.
+Nep.;Eum.
+Prud.;psych. 
+Schenkl.;Anthol. Lat.
+Spart.;Pesc.
+Cassiod.;inst. div. lit.
+Tert.;adv. Marc. carm.
+Prob.;inst. art. no.
+Claud.;in Sidon. epist.
+Auson.;de litt. monos.
+Tertul.;adv. Marc.
+Trag.;inc. fab.
+Comic.;pall. fr. inc.
+Tert.;praescr.
+Augustin.;catech.
+Rufin.;de fig. sent.
+Abl.;Apul. flor.
+Auct.;prol. Plaut. capt. prol.
+Donat.;Ter. Phorm.
+Iust.;instit.
+Atil.;Fortun. art. metr.
+Claud.;epist.
+Cic.;Cael.
+Sch.;Caecil. com.
+Burm.;Phaedr.
+Augustin.;de doctr. christ.
+Aristot.;analyt. prior.
+Val.;Prob. vit. Verg. in.
+Aug.;epist.
+Schol.;Cruq. Hor. epod.
+Pompon.;tr.
+Castal.;Rutil. itin.
+Emendatt.;Fronton.
+Cic.;Scaur. fr.
+Scaevol.;Dig.
+Fast.;ann. Iul. Maff. fragm.
+Mar.;in II. rhet. Cic.
+Greg.;Tur. hist. Franc.
+Augustin.;de contin.
+Gramm.;de praepos.
+Fulg.;de expos. Verg. cont.
+Rufinian.;schem. lex.
+Fulgent.;continent. Virg.
+Probr.;cons.
+Turpil.;com.
+Augustin.;in Io.
+Iustinian.;de conc. dig.
+Ausgew.;Br. Cic.
+Suet.;Aug. Caes.
+Metrol.;scriptt. Lat. vol.
+Capitol.;Maximin. iun.
+Gardth.;vol.
+Inc.;art. gramm. fr.
+Ps. Quint.;decl. 
+Paulin.;Nolan. carm.
+Obbar.;Ven. Fort. carm.
+Sec.;Manich.
+Vgl.;Isidor.
+Iul.;Vict.
+Augustin.;de music.
+Tert.;ad martyr.
+Vindic.;Gell. alt.
+Apol.;de mund.
+Tert.;de bapt.
+Augustin.;in Hier. ep.
+Prisc.;part. XII. vers. Aen.
+Iustin.;inst.
+Laev.;erotop. fr.
+Itiner.;Alex.
+Ps. Albinov.;ad Liv.
+Tertull.;de anim.
+Volusian.;in Augustin. epist.
+Pachom.;no.
+Cic.;Tull.
+Chalcid.;Tim.
+Act.;fr. arv. tab.
+Virgil.;gramm. epit.
+Claud.;Mam. epist.
+Ps. Verg.;cat.
+Kr.;Cael. Aur. acut.
+Schol.;ad Cic. Planc.
+Capit.;in Maximin. duob.
+Ps. Verg.;mor.
+Auct.;epit. Iliad. Hom.
+Cassiod.;hist. eccl.
+Cic.;parad. prooem.
+Tarrunt.;Pat. dig.
+Aur.;Vict. orig.
+Mar.;Mercat.
+Const.;Aug.
+Tert.;de paenit. 
+Tert.;de praescr.
+Capit.;Clod. Albin.
+Ulp.;fr.
+Aristot.;top.
+Asin.;in Cic. ep.
+Hor.;de art. poet.
+Prisc.;praeëx.
+Iulian.;epit. nov.
+Hieron.;in Ier.
+Auct.;class. tom.
+Symm.;in Valentin.
+Ps. Ov.;nuc.
+Anton.;itin.
+Augustin.;retr.
+Auct.;ad Plaut. Men.
+Innoc.;in Augustin. epist.
+Ter.;Eun.
+Lindsay.;Ennod. vit. Epiphan.
+Cornel.;Gall.
+Augnstin.;de doctr. Chr.
+Ambros.;in cant. cantic.
+Ambros.;de dign. sacerd.
+Vulg.;Sirach.
+Cic.;de lege. agr.
+Genet.;Tigris. Plin.
+Licent.;carm.
+Hieron.;ad olymp.
+Nep.;regg.
+Claud.;de bell. Get.
+Isid.;de ord. nat.
+Iul.;Firm. math.
+Drak.;Liv.
+Spart.;Hadr.
+Schol.;Hor. ep.
+Paul.;Nol. ep.
+Hier.;in Ierem.
+Collect.;phil.
+Treb.;Poll.
+Nep.;Att.
+Cassian.;coll. patr.
+Cael.;de signif. diaet.
+Cael.;Aur. sign. diaet. pass.
+Ennod.;opusc. II.
+Nipp.;Tac. ann.
+Muret.;Opp. vol.
+Censor.;fr.
+Vulg.;Esdr.
+Aristot.;elench. sophist.
+Apic.;Vgl.
+Claud.;III. cons. Hon.
+Ps. Cypr.;ad Novat.
+Mai.;Ennod. epist.
+Cic.;Sest. 
+Schol.;Hor. epod.
+Donat.;ad Ter. Andr. prol.
+Sidon.;ep.
+Ascon.;ad Cic. Mil.
+Ter.;Andr. prol.
+Tert.;de pudic.
+Iul.;Vict. rhet.
+Vgl.;Prob. cath.
+Schn.;Ov. fast.
+Porphyr.;Hor. epod.
+Paulin.;in Augustin. epist.
+Cic.;fat.
+Engelbr.;Claud. Mam.
+Vulg.;Hebr.
+Novell.;Iust.
+Cass.;ibid.
+Cl.;Mam. grat. act.
+Augustin.;in euang. Ioann.
+Hieron.;ad Eust. ep.
+Metrol.;scr. ed. Hultsch.
+Paul.;Diac. vit. Greg.
+Rom.;legg. collat.
+Plaut.;asin. argum.
+Donat.;Ter. eun. prol.
+Charis.;gr.
+Eumen.;pan. Constant. Caes.
+Dracont.;sat.
+Tert.;scorp.
+Cassiod.;de art. gramm. in.
+Schenkl.;Isid. orig.
+Apul.;de med.
+Iustinian.;praef.
+Ind.;lect. Berol.
+Oehl.;Veget. mul.
+Interpr.;in psalm.
+Ven.;in epist. praem. carm.
+Paul.;ad Auson.
+Auson.;ecl.
+Bonn.;Apul. flor.
+Auson.;append.
+Plur.;Ov. art. am.
+Sen.;de prov.
+Gregor.;ep.
+Schol.;ad Lucan.
+Cic.;Sest.
+Cael.;de morb. chron.
+Solin.;in Anthol. Lat.
+Eugipp.;thesaur.
+Rufin.;ad Roman.
+Augustin.;in Ioann. euang.
+Hieron.;in Isai. prolog. in. tom.
+Schenkl.;de mund.
+Rutil.;Nam.
+Cic.;Brut. 
+Plin.;ind. libr.
+Auct.;de Philom.
+Arnob.;in psalm.
+Ct.;Symm. epist.
+Opil.;Macrin.
+Cornif.;rhet.
+Cic.;tusc.
+Ps.;de art. geom.
+Sen.;de provid.
+Rufin.;in cant. prol.
+Ps. Hieron.;epist.
+Augustin.;in genes. qu.
+Terent.;Maur. 
+Heerw.;Liv.
+Ven.;Fort. epist. praemiss. carm.
+Seyff.;Cic. Lael.
+Virg.;gramm. ep.
+Tac.;hist.
+Marc.;sat.
+Ihm.;Veget. mul.
+Iordan.;get.
+Commod.;apol.
+Consent.;in Augustin. epist.
+Claud.;de nupt. Hon.
+Plaut.;Comoed. vol.
+Hier.;in Habac.
+Lampr.;Commm.
+Vopisc.;Saturn.
+Burm.;Ov. am.
+Apul.;de orthogr.
+Tert.;de fug.
+Exc.;ex Charis.
+Plaut.;Amph. pr.
+Col.;poët.
+Anthim.;praef.
+Vindic.;Plin.
+Greg.;reg. past.
+Cael.;Antip.
+Delr.;Sen. Herc. Oet.
+Bacch.;lin.
+Paulin.;carm. euchar.
+Ps. Aug.;de sacril.
+Pompon.;de orig. iur.
+Cic.;de div.
+Notit.;imp. occid.
+Capit.;Gord. tr.
+Aug.;in Secundin.
+Claud.;Mam. epist. praemiss. libr.
+Eccl.;Vgl. Gronov. Obss. eccl.
+Ven.;Fort. vit. Albin. Andeg.
+Prisc.;praeex.
+Sen.;Troad.
+Isid.;epist.
+Vulg.;Iud.
+Iust.;novell.
+Lampr.;Diadum.
+Arist.;II.
+Ter.;eun. 
+Colum.;praef.
+Bithyn.;in Cic. ep.
+Ald.;Dynam.
+Sen.;tranqu.
+Gall.;fr.
+Stat.;silv.
+Burm.;Suet. Caes.
+Aur.;de vir. ill.
+Class.;auct.
+Tragic.;inc. fr.
+Iulian.;Pelag.
+Burm.;Prop.
+Or.;Gregor. epist.
+Frgm.;iur. Rom. Vatic.
+Cic.;Ac.
+Schol.;Bern. Verg. georg.
+Latin.;scriptt. hist. Aug. melet.
+Nep.;Vgl. Nipperd. Nep. Lys.
+Hieron.;in Matth.
+Vulg.;Zachar.
+Augustin.;peccat. merit.
+Lugd.;Carm. epigr.
+Ps. Cypr.;or.
+Cic.;Vat.
+Ps. Hier.;app. serm.
+Claud.;Sacerd.
+Claudian.;Mam.
+Colum.;arb.
+Maximian.;eleg.
+Lat.;Reliqu.
+Aristot.;rhet.
+Augustin.;catech. rud.
+Paul.;in vit. Ambros.
+Claud.;eidyll.
+Lucil.;sat. fr.
+Nicet.;symb. fr.
+Trab.;com.
+Spart.;Gord.
+Hier.;adv. Ioann. Hierosol.
+Cypr.;sent. episc.
+Cellar.;de mort. pers.
+Vgl.;Com. Lat. ed. min. Ribb.
+Hyg.;fab. praef. in.
+Plot.;de metr. comp.
+Vulg.;Ephes.
+Spart.;Sev.
+Plaut.;Pers.
+Mart.;Cap. poët.
+Cato.;inc. libr. fr.
+Prud.;Diptych.
+Cassiod.;in psalm. tom.
+Eumen.;pan. Constant. Aug.
+Hor.;carm. saec.
+Verg.;Aen. 
+Ambr.;epist.
+Nep.;praef.
+Iulian.;antec. const.
+Pin.;ep.
+Ps. Apul.;de herb.
+Vgl.;Schol. Bern. Verg. georg.
+Capit.;Maxim. duob.
+Cic.;Rab. post. 
+Ps. Cypr.;de pasch. comp.
+Comic.;pall. inc. fr.
+Paul.;in Natal.
+Plin.;nat. hist. pr.
+Vulg.;cant. cantic.
+Victor.;de reg. urb. Rom. reg.
+Tert.;poët. adv. Marc.
+Vulg.;epist. Iud.
+Uned.;Inschr. no.
+Claud.;IV. cons. Hor.
+Claud.;gigant.
+Mar.;de phys.
+Cael.;de salut. praec.
+Hieron.;in Mich.
+Mai.;Cassian. coll.
+Schm.;Stat. Theb.
+Caes.;Germ. phaen.
+Enn.;epich.
+Schol.;Bern. Verg. bucol.
+Ennod.;vit. Epiphan.
+Iul.;Genet. tab.
+Aur.;Vict.
+Cic.;agr.
+Gloss.;Paris. no.
+Caelestin.;pap. epist.
+Spart.;Iul.
+Iul.;Valer.
+Fr.;Grom. vet.
+Gargil.;de arb. pomif.
+Veget.;mul. praef.
+Tarrunt.;dig.
+Schenkl.;Charis.
+Ps. Cypr.;de dupl. martyr.
+Cassiod.;de syllog.
+Max.;de rat. metr.
+Naev.;bell. Pun.
+Serv.;ad Verg. bucol.
+Gloss.;nomin.
+Vindic.;ad Valentin. praem. Marc. Emp.
+Fulg.;exp. serm. antiqu.
+Colum.;de arb.
+Ps. Quint.;decl. Tribun. Mar.
+Vitr.;Bd.
+Greg.;dial.
+Fulgent.;serm. ant.
+Plin.;lib.
+Vgl.;Cic. or.
+Augustin.;tract.
+Cassiod.;de orthogr.
+Dracont.;hexaëm.
+Frontin.;fr.
+Hagen.;Isid. orig.
+Hier.;in Ruf.
+Alcim.;Av. ep.
+Pelag.;vet.
+Kypros.;Berl.
+Iul.;Strab. tr.
+Aristot.;de interpr.
+Vulg.;eccl.
+Aristot.;de interpr. ed. pr.
+Spic.;Sol.
+Bentl.;Hor. carm.
+Cassian.;instit. cen.
+Plaut.;cist. fr.
+Hier.;in Luc.
+Ov.;ex Pont.
+Augustin.;de coniug. adult.
+Pompei.;comm. art. Donat.
+Avien.;descr. orb. terr.
+Porphyr.;ad Hor. carm.
+Hier.;adv. Pelag.
+Cels.;dig.
+Lact.;epit.
+Col.;poet.
+Rustic.;epist.
+Tertull.;de fug.
+Avien.;orb. descr.
+Burm.;Anthol. Lat.
+Vgl.;Naev. com.
+Augustin.;mus.
+Auct.;perv. Ven.
+Hieron.;in Ruf.
+Donat.;ad Ter. Phorm.
+Oppian.;cyn.
+Augustin.;de ordin.
+Cic.;de fin.
+Hildebr.;Apul. met.
+Tert.;spect.
+Dracont.;carm. min.
+Cic.;Hortens. fr. no.
+Boeth.;in Porphyr.
+Iul.;de schem. dian.
+Paul.;ex. Fest.
+Iul.;Pelagon.
+Garg.;de persic.
+Cael.;Aurel. chron.
+Sen.;ad Helv.
+Cassiod.;complex. act. apost.
+Sulpic.;Victor. instit. orat.
+Schoell.;Commod. apol.
+Traian.;ibid.
+Iuvenc.;in levit. etc.
+Facund.;defens.
+Hieron.;Iesai.
+Cic.;Planc.
+Herm.;past.
+Sulp.;Sev. app. epist.
+Virg.;de sap.
+Not.;Tir. 
+Hieron.;vit. Hilarion.
+Pompon.;dig.
+Vgl.;de acc.
+Mar.;Merc. subn.
+Serv.;de metr. Hor.
+Vet.;ad Hor. sat.
+Diog.;Laert.
+Caes.;de metr. Hor.
+Ind.;lect. aestiv. Vratisl.
+Tert.;monogr.
+Porph.;Hor. sat.
+Enn.;com.
+Cic.;de Sen.
+Stat.;Achill.
+Schol.;Caes. Germ. Arat.
+Fulg.;serm. ant.
+Vgl.;Gloss. III.
+Var.;LL.
+Uned.;Inschrn. no.
+Fast.;Praenest.
+Isid.;reg. monach.
+Vgl.;Porphyr. Hor. carm.
+Augustin.;de consens. euang.
+Cassian.;coenob. inst.
+Cic.;de legg.
+Plaut.;Bacch.
+Ps. Ambros.;de dign. sacerd.
+Plin.;pan.
+Schol.;Germanic. Arat.
+Auct.;in Pis.
+Philarg.;Verg. ecl.
+Prisc.;partit. XII. vers. Aen.
+Schn.;Gratt. cyn.
+Hier.;in Augustin. ep.
+Plur.;Auson. Mosell.
+Gramm.;in Anal. gramm.
+Sen.;de vit. beat.
+Archiloch.;fr.
+Att.;fr.
+Metrol.;scrippt. Lat.
+Sen.;de const.
+Ascon.;in Cic. Pis.
+Sen.;apoc.
+Ps. Verg.;cop.
+Auson.;epig.
+Ps. Cic.;in Sall.
+Ruhnk.;Rut. Lup.
+Tert.;apol. 
+Sulp.;Sev. chronic.
+Cic.;Acad. II. fr.
+Kays.;od.
+Augustin.;de quant. anim.
+Schrift.;Berl.
+Vgl.;Burm. Anthol. Lat. tom.
+Auson.;Cent. nupt.
+Cassiod.;in psalm. praef.
+Hieron.;ad Philem.
+Nipperd.;Quaestt. Caesar.
+Ps. Ven.;in laud. Mar.
+Iustinian.;ad antec.
+Iulian.;in Donat.
+Auct.;itin. Alex.
+Plaut.;aul. prol.
+Plaut.;mil. 
+Cic.;Catil.
+Apul.;met. 
+Eumen.;pan.
+Tarrunt.;Patern. dig.
+Auct.;pan. Const. Aug.
+Hier.;in Isai.
+Cassian.;coll. 
+Auson.;ephem.
+Sicul.;Flacc.
+Hier.;adv. Rufin.
+Sulpic.;Vict. inst. or.
+Hermog.;dig.
+Iustin.;nov.
+Claud.;in Prob. et. Olyb.
+Ter.;eun.
+Chalc.;comm.
+Cassian.;incarn. Chr.
+Prisc.;de metr. Terent.
+Schol.;in Verg. ecl.
+Tert.;adv. Hermog. 
+Cic.;in Hier. ep.
+Sall.;fr.
+Fulg.;Verg. contin.
+Itiner.;Anton.
+Hieron.;ad Ephes.
+Lact.;Vgl. Bünem. Lact.
+Hier.;reg. Pachom.
+Monum.;Anc.
+Ser.;Samm.
+Rufin.;in metr. Ter.
+Ps. Quint.;trib. Marian. decl.
+Pelag.;veterin.
+Suet.;de poët. fr.
+Guil.;Henzen. Berol.
+Chrysol.;serm.
+Augustin.;ad Parth. tract.
+Afran.;com. 
+Cic.;de opt. gen.
+Auct.;frgm. iur. anteiust.
+Schm.;Stat. Ach.
+Claudian.;epigr.
+Tert.;de vel. virg.
+Auson.;grat. act. XVIII.
+Ven.;Fortun.
+Suet.;verb. diff.
+Kr.;Chalcid. Tim.
+Tertull.;de paenit.
+Tert.;de exhort. castit.
+Fulg.;cont. Verg.
+Jordan.;Plaut. Epid.
+Iul.;Obsequ.
+Auson.;ep.
+Ps. Quint.;decl. tribun. Marian.
+Augustin.;in genes.
+Ihm.;Iul. Val.
+Iuvenc.;in Matth.
+Schenkl.;Cassiod. hist. eccl.
+Tert.;de paenit.
+Chalcid.;Tim. Vgl. Borrich. cogitatt.
+Plur.;Iuven.
+Fulgent.;contin. Verg.
+Salv.;epist.
+Kr.;in genes.
+Tert.;de exhort. cast.
+Hieron.;ep.
+Col.;arb.
+Interpr.;in Matth. 
+Mythogr.;Vatic.
+Fulg.;Verg. cont.
+Apul.;de Plat.
+Ps. Fulg.;serm.
+Suet.;Aug.
+Observv.;in Rutil. Namat.
+Sulp.;Vict. inst. or.
+Cic.;Lig.
+Vulg.;Ezech.
+Tert.;de carn. Christ.
+Caecil.;com. inc. fab. XXXV. Turpil. com.
+Augustin.;in exod. no.
+Sen.;Oedip.
+Claud.;cons. Mall. Theod.
+Capitol.;Pert.
+Tert.;de or.
+Nep.;Iph.
+Ps. Apul.;doctr. Plat.
+Augustin.;retract.
+Varen.;fr.
+Publ.;Syr. sent.
+Apul.;apol.
+Syr.;com.
+Schm.;Auson. epigr.
+Kr.;Hor. sat.
+Engelbr.;ad litt.
+Rufin.;in num.
+Publ.;Syr. mim.
+Iavol.;dig.
+Greg.;ep.
+Apul.;de not. aspir.
+Not.;Tiron.
+Bonif.;in Augustin. epist.
+Epist.;pont. Felic.
+Cael.;Aur. salut. praec.
+Ov.;am.
+Serv.;in art. Donat.
+Sen.;epigr.
+Rufin.;rhet.
+Ps. Tert.;adv. Marc. carm.
+Hieron.;de interpr. nom. Hebr. tom.
+Cic.;Oecon. fr.
+Synes.;epist.
+Vulg.;paral.
+Auson.;perioch. Odyss.
+Nep.;Tim.
+Monum.;Ancyr. tab.
+Nep.;Pel.
+Technol.;usw.
+Ascon.;in Pison.
+Arnob.;in Luc.
+Incert.;pan. Const. Caes.
+Plur.;Col.
+Mamert.;Iulian.
+Ven.;Fort. vit. Mart.
+Halm.;Tac. ann.
+Apul.;dogm. Plat.
+Augustin.;de lib. arb.
+Mitscherl.;Hor. carm.
+Hieron.;ad Galat.
+Ter.;Hec. prol. alt.
+Iustin.;praef.
+Plaut.;rud. 
+Augustin.;ad litt.
+Vulg.;Ioann.
+Hier.;adv. Lucif.
+Apollon.;hist.
+Lampr.;Helig.
+Apollon.;Rhod.
+Punic.;alt.
+Commod.;instr.
+Ambros.;exh. virg.
+Eugipp.;vit. Severin. prol.
+Plaut.;truc.
+Claud.;ad Ser.
+Vgl.;übh. Macr. sat.
+Oudend.;Apul. met.
+Nemes.;de aucup.
+Claud.;in Eutr.
+Sulpic.;Sev. chron.
+Schol.;Caes. Germ.
+Hier.;in Ezech.
+Assumpt.;Mos.
+Augustin.;de anim. orig.
+Auson.;parent. praef. pros.
+Augustin.;enarr.
+Sall.;in Sen. ep.
+Publil.;Syr.
+Aristoph.;equ.
+Herm.;Past.
+Hdschrn.;Apul. met.
+Paul.;Dig.
+Censor.;frgm.
+Schenkl.;Sidon. carm.
+Plaut.;Pseud. argum.
+Schol.;in Caes. German. Arat.
+Tert.;adv.Valent.
+Capitol.;Pertin.
+Enn.;fr. scen. 
+Donat.;Ter. adelph. prol.
+Augustin.;de lib. arbitr.
+Marc.;Aurel. comment.
+Enn.;hedyphag.
+Liv.;epit.
+Broukh.;Tibull.
+Sex.;Ruf. brev.
+Spart.;Alex. Sev.
+Halm.;Corp. inscr. Lat.
+Interpr.;in Levit. homil.
+Cyprian.;epist.
+Ascon.;in Scaur.
+Favon.;ad somn. Scip.
+Vict.;de paenit.
+Fr.;Gromat. vet.
+Eumen.;grat. acr.
+Augustin.;de morib. Manich.
+Cic.;Quinct. 
+Cael.;de morb.
+Tert.;de martyr.
+Meteol.;script.
+Pers.;Plaut. Epid.
+Dict.;Cret.
+Oros.;lib. apol.
+Ps. Aethic.;cosmogr. praef.
+Vulg.;act.
+Vulg.;Nehem.
+Lact.;ad Stat. Theb.
+Coripp.;laud. Iustin. min.
+Plaut.;aulul. argum.
+Hier.;in gen.
+Cic.;parad.
+Peiper.;Lact.
+Cassiod.;instit. div. litt.
+Liv.;Vgl. Drak. Liv.
+Act.;fratr. Arv.
+Gargil.;de pom.
+Hieron.;ad Euseb. chron. lib.
+Gramm.;de nom.
+Interpr.;ad Paul. sent.
+Spicil.;Solesm. tom.
+Vulg.;deuteron.
+Cic.;off.
+Cic.;Brut.
+Vopisc.;Prob.
+Nerat.;dig.
+Cic.;de inv.
+Hygin.;fab.
+Ulit.;Grat. cyn.
+Fulg.;expos.
+Argum.;mostell. Plaut.
+Hor.;de art. poët.
+Plaut.;capt. prol.
+Augustin.;retract. prol.
+Vgl.;Gloss. Lat. Arab.
+Hieron.;ad Galat. lib.
+Tac.;ann. vol.
+Iul.;de err. prof. rel.
+Fulg.;myth. praef.
+Sidon.;praef. carm.
+Claud.;laud. Seren. reg.
+Onamast.;Tull.
+Instit.;Iustin.
+Salmas.;Spart. Hadr.
+Ambros.;ep.
+Hom.;Od.
+Acc.;didasc.
+Heins.;Ov. fast.
+Prisc.;perieg.
+Rufin.;in Levit.
+Ambros.;de obit. Valent.
+Pomp.;Trog. prolog. hist. Phil. lib.
+Hieron.;in cant.
+Gargil.;de virt. herb.
+Amm.;exc. Vales.
+Isid.;ord. nat.
+Germanic.;Arat.
+Plur.;de nat. deor.
+Varr.;sat. Men. 
+Plaut.;Cure.
+Notit.;dign. occid.
+Ps. Sulp.;Sev. app. epist.
+Augustin.;adv. Don.
+Ascon.;Cic. Milon.
+Anon.;Val.
+Acc.;tr. inc. fab.
+Hieron.;in Tit.
+Ambros.;Isai.
+Alc.;Avit.
+Sulp.;de vit. Mart.
+Lampr.;Hel.
+Vulg.;Galat.
+Plaut.;asin. prol.
+Rutil.;Lup.
+Claud.;cons. Stil.
+Marin.;fratr. arv.
+Fr.;de music.
+Eccl.;Vgl. Charis.
+Vict.;Vit. carm.
+Cass.;Hemin. hist.
+Diom.;praef. extr.
+Murat.;inscr.
+Suet.;Domit.
+Corn.;Nepot.
+Interpr.;in Ezech.
+Eucher.;instr.
+Vgl.;de idiom. gen.
+Schol.;Bob. Cic. Sest.
+Ruf.;in Hieron.
+Trebat.;ICt. fr.
+Paneg.;inc. Constant.
+Rut.;Nam.
+Tert.;de res. carn. 
+Hier.;in Philem.
+Max.;Victor.
+Macr.;somn. Scip.
+Cic.;top.
+Welt.;Augustin. conf.
+Plin.;epp. emend.
+Fulg.;exp. serm. ant.
+Ter.;Andr.
+Epit.;Illiad.
+Mythogr.;Lat.
+Plur.;Lucr.
+Vgl.;Mart. Cap.
+Coniect.;Plaut.
+Vulg.;Philipp.
+Cl.;Quadr. ann.
+Anecd.;II.
+Carm.;epig.
+Gregor.;reg. past.
+Antib.;Aufl.
+Augustin.;in exod.
+Scrib.;Larg.
+Paul.;ex Fest. 
+Gruter.;inscr.
+Cassiod.;inst. saec. litt.
+Vit.;no.
+Hyg.;de munit. castr. 
+Cic.;Pis. fr.
+Treb.;Poll. Claud.
+Iul.;Victor. art. rhet.
+Auct.;de ponder.
+Schol.;ad Caes. Germanic.
+Augustin.;de beat. vit.
+Cael.;de mort. chron.
+Avien.;perieg.
+Sall.;Cat.
+Calp.;Flacc. decl.
+Ps. Verg.;moret.
+Ov.;rem.
+Lex.;Technol. Lat. rhet.
+Sing.;Volus. Maecian. distr.
+Hieron.;adv. Io. Hierosol. no.
+Vulg.;Ios.
+Ps. Apul.;Ascl.
+Bern.;ad Verg. georg.
+Ambros.;de vocat. gent.
+Claudian.;de stat. anim.
+Prolegg.;ad Verg.
+Schneidew.;Mart. epigr. suppos.
+Fulg.;expos. serm. ant.
+Augustin.;mor. Manich.
+Cic.;Cornel.
+Sext.;Placit.
+Prisc.;inst.
+Symm.;init. Ambros. epist.
+Gargil.;de arb. pornif.
+Cic.;Acad. lib.
+Ov.;Fast.
+Auct.;Vict. epit.
+Ter.;heaut. tim. prol.
+Auct.;class.
+Cael.;Aur. chron.
+Itin.;Anton. 
+Augustin.;de quaest.
+Ter.;Phorm. prol.
+Buech.;no.
+Casaub.;Suet. Caes.
+Cic.;Planc. 
+Prud.;psych.
+Rufin.;in Hieron.
+Vgl.;übh. Gell.
+Rufin.;metr. Ter.
+Theod.;Prisc.
+Borm.;Uned. Inschr. no.
+Cic.;Deiot.
+Claud.;VI. cons. Hon.
+Capit.;Pert.
+Scrib.;Larg. 
+Vulcat.;Gall.
+Schol.;ad popul.
+Pompei.;gramm. comment. art. Donat.
+Tert.;de pat. 
+Papin.;dig.
+Lex.;technol. Latin. rhet.
+Sen.;de tranqu. an.
+Marcell.;dig.
+Itin.;Anton.
+Oros.;prol.
+Claud.;orat. col.
+Petr.;Chrys. serm.
+Auct.;pan. Constant. Aug.
+Cl.;Mamert. pan. Maximin. Aug.
+Interpr.;ad Smyrn.
+Commodian.;apol.
+Cassiod.;de amic. prol.
+Fulg.;serm. antiqu.
+Plaut.;Poen. prol.
+Ven.;Fort. vit. Radeg.
+Sacerd.;art. gramm.
+Auct.;in Catil.
+Auson.;Mos. 
+Schol.;ad Cic. Sest.
+Augustin.;dial.
+Westerh.;Ter. Andr.
+Eugraph.;Ter. heaut.
+Tert.;anim.
+Augustin.;de morib. eccles. cathol.
+Cael.;de morb. signif. diaet. pass.
+Riese.;Vgl. Fest.
+Constant.;imp.
+Apul.;Vgl. Hildebr. Apul. met.
+Ruhnk.;Ter. heaut.
+Hyg.;de munit. castr.
+Avien.;Arat. phaen.
+Tert.;de resurr. carn.
+Tab.;cod. Bob. no.
+As.;in Cic. ep.
+Ladew.;Verg. Aen.
+Corp.;inscr. Etrusc.
+Burs.;Prisc.
+Hieron.;in eccles.
+Plaut.;Poen. pr.
+Burm.;Ps. Ov. her.
+Schenkl.;Alcim. Avit. carm.
+Casin.;prol.
+Sen.;op. tom.
+Cypr.;de iudic.
+Cic.;de sen. 
+Ritschl.;opusc.
+Greg.;de curs. eccl.
+Tert.;adv. Hermog.
+Sulpic.;Sev. dial.
+Cellar.;Curt.
+Severus.;opus. Lamor. Alex. Sev.
+Tert.;de paen. 
+Cassiod.;de dial.
+Gloss.;in Sidon.
+Laev.;fr.
+Sulpic.;in Cic. ep.
+Schol.;ad Verg. georg.
+Schol.;de art. poët.
+Vgl.;dig.
+Auct.;Vict. Caes.
+Ov.;Ib. 
+Sulp.;Sev. vit. Mart.
+Fulgent.;myth.
+Schol.;ad Caes. Germ. Arat.
+Vulg.;Os.
+Hier.;in Rufin.
+Rufin.;in num. hom.
+Eumen.;paneg. Const.
+Plur.;de const. sap.
+Ennod.;epist.
+Hier.;Galat.
+Sulp.;Sev. append. ep.
+Lagergr.;Plin. ep.
+Isid.;de diff. verb. no.
+Augustin.;in hept.
+Isid.;de ord. creat.
+Compend.;Vitr.
+Klotz.;ad Ter. Andr.
+Avien.;Arat. 
+Interpr.;Iren. praef.
+Ov.;art. am.
+Luccei.;in Cic. ep.
+Sulpic.;sat.
+Ter.;heaut.
+Obbar.;Hor. ep.
+Apul.;de mund. 
+Sen.;de clem.
+Lachm.;Prop.
+Schol.;Bern. Lucan.
+Claud.;de Magnet.
+Ps. August.;serm. app.
+Auct.;prol. Plaut. truc.
+Mar.;Victorin.
+Cassian.;de coenob. inst.
+Sulp.;Sev. app. ep.
+Schol.;Bemb. Ter. adelph.
+Bibl.;crit.
+Commod.;inst.
+Aquil.;Roman.
+Cassiod.;hist. eccles.
+Parid.;exc. Val. Max.
+Lucil.;sat. fr. inc.
+Cic.;Arat. phaen.
+Garet.;Corp. inscr. Lat.
+Placit.;de medic.
+Cassian.;Nest.
+Schenkl.;Apul. met.
+Rom.;Berol.
+Cassiod.;de astron.
+Gargil.;ex pom.
+Schol.;ad Germanic. prognost. tom.
+Mon.;Liv. Aug.
+Aristot.;de interpr. ed. sec.
+Vulg.;Isai.
+Arat.;act. apost.
+Stat.;Theb.
+Aur.;de orig.
+Men.;prol.
+Serv.;Verg. ecl.
+Iuvenc.;de bapt. Chr.
+Dracont.;satisf.
+Tryphon.;dig.
+Avian.;apol.
+Ennod.;carm.
+Ps. Cypr.;adv. Iud.
+Putean.;Mart.
+Tert.;de car. Chr.
+Plaut.;cist.
+Vulg.;genes.
+Auct.;inc. pan. Constant.
+Cic.;de petit. cons.
+Cels.;Bd.
+Plaut.;Poen.
+Socr.;in.
+Ps. Ascon.;Cic. II. Verr.
+Cic.;part. or.
+Ambros.;off.
+Iul.;op. imperf.
+Vgl.;Oudend. Apul. met.
+Hier.;adv. Iovin.
+Schol.;Cruq. Hor. ep.
+Tert.;adv. Psych.
+Lucil.;rel.
+Ter.;de fin.
+Laber.;com.
+Fulg.;de aet. mund.
+Virg.;gramm. epit.
+Serv.;Verg.
+Ps. Augustin.;app. serm.
+Ps. Cypr.;de aleat.
+Comic.;inc. fr.
+Detl.;Philol.
+Auct.;de idiom. gen.
+Schol.;in Cic. II. Verr.
+Alcim.;Avit. ep.
+Claud.;gigantom.
+Vahlen.;Plaut. Pers.
+Nep.;Thimoth.
+Nep.;Lys.
+Macrin.;dig.
+It.;Anton.
+Ambros.;de inc. dom. sacr.
+Aegrit.;Perdic.
+Vulg.;Iudic.
+Cael.;Aur. acut.
+Corp.;inacr. Lat.
+Cornif.;met.
+Sedul.;in carm. pasch. praef.
+Fr.;Sidon. epist.
+Sen.;Tro.
+Atell.;inc.
+Anecd.;Helvet.
+Claud.;Mall. Theod. cons.
+Tert.;adv. Val.
+Analect.;gramm.
+Notit.;dign. or.
+Maxim.;in Augustin. ep.
+Trebon.;in Cic. ep.
+Fast.;Maff. Iul.
+Edict.;Diocl. prooem.
+Ps. Aur.;Vict. epit.
+Schenkl.;Vulg. genes.
+Verg.;ge.
+Phylarg.;Verg. georg.
+Donat.;ad Ter. Andr.
+Lugd.;Bat.
+Fulg.;expos. serm.
+Cod.;Iust.
+Schenkl.;Chalcid. Tim.
+Vgl.;Schol. Pers.
+Augustin.;trin.
+Aristot.;herm. sec.
+Vulg.;cant. cant.
+Cassiod.;compl.
+Fragm.;Vatic.
+Caes.;Germ. fr.
+Ambros.;de bened. patriarch.
+Schol.;ad Verg. ecl.
+Greg.;in evang.
+Augustin.;de vit. beat.
+Sedul.;hymn.
+Hygin.;de munit. castr.
+Tert.;ad ux.
+Iul.;in Plin. ep.
+Ps. Augustin.;serm.
+Westerh.;Ter. adelph.
+Kr.;Firm. math.
+Mar.;fescenn.
+Plaut.;Nol. nat. Fel.
+Tab.;Bantin. lin.
+Vulg.;Luc.
+Ps. Apul.;de Plat.
+Ambros.;de incarn. dom. sacram.
+Eumen.;pan. Constantin.
+Cypr.;act. proc.
+Auct.;ad Liv.
+Ascon.;Hor. carm.
+Coripp.;laud. Iustin.
+Myth.;Lat.
+Itin.;Aton.
+Auson.;lud. sept. sap.
+Plaut.;Poen. 
+Mall.;Theod.
+Petron.;poet.
+Avien.;Arat.
+Auson.;sept. sap. Cleob.
+Augustin.;de ver. rel.
+Alcim.;Avit. poëm.
+Rufin.;hist. monach.
+Vopisc.;Bonos.
+Aristot.;periherm.
+Hieron.;adv. Helvid.
+Cassiod.;de orthogr. praef. extr.
+Ascon.;Cic. Mil.
+Tert.;de fug. pers.
+Oribos.;fr. Bern.
+Tert.;de cor.
+Greg.;in Tob.
+Schol.;Pers.
+Cic.;Clu. 
+Symm.;oratt. ed. Mai. Rom.
+Augustin.;ad litt. lib. imperf.
+Fragm.;iur. civ. anteiust.
+Alc.;Avit. poëm.
+Fulg.;ad Thras.
+Ps. Cic.;in exs. ir.
+Tert.;de ieiun. adv. Psych.
+Cic.;ep. fragm.
+Augustin.;in levit. qu.
+Albinov.;eleg.
+Edict.;Diocl. II. no.
+Tert.;orat.
+Augustin.;de haeres.
+Suet.;de vir. illustr.
+Tert.;de anim. 
+Consol.;ad Liv.
+Mart.;de arb. pomif.
+Lucil.;fr. inc.
+Konj.;Cic. Tusc.
+Sen.;fragm. Oedip.
+Mamert.;grat. act.
+Sedul.;pasch. carm.
+Chalcid.;Tim. prooem.
+Als.;ep.
+Capit.;Maximin. duob.
+Eumen.;pan. Constant.
+Cic.;de imp. Cn. Pomp.
+Plaut.;Men.
+Augustin.;adv. Iulian.
+Avien.;phaenom.
+Enn.;sat.
+Ps. Quint.;decl. trib. Mar.
+Tert.;ad Scapul.
+Gregor.;epist.
+Cic.;de imper. Pomp.
+Vopisc.;Florian.
+Tac.;ann. Bd.
+Augustin.;in gen. qu.
+Vulc.;Gallic. Avid. Cass.
+Chalc.;Tim.
+Rest.;tr.
+Auct.;schem. dian.
+Mai.;Sidon. epist.
+Cl.;Mamert. pan. Maxim.
+Socr.;prol. extr.
+Goth.;Cic. Scaur.
+Ps. Cypr.;de bon. pudic.
+Vulg.;Sir.
+Plaud.;rud.
+Vgl.;Lachm. Lucr.
+Cael.;āur. acut.
+Hyg.;fab.
+Honor.;cosmogr.
+Auson.;egl.
+Cic.;orat.
+Augustin.;mendac.
+Ps. Cypr.;de singul. cleric.
+Tert.;praescr. haer.
+Apul.;de Plat. 
+Resp.;Papin. tit.
+Auson.;epith.
+Soran.;fr.
+Lampr.;Alex. Sev.
+Tertul.;de cult. fem.
+Caes.;German. phaen. 
+Apul.;Hildebr. Apul. met.
+Prob.;append.
+Arrunt.;in Sen. ep.
+Interpr.;in Matth. comm.
+Pomp.;com.
+Augustin.;in Iud. qu.
+Hilar.;in genes.
+Cic.;ad Brut.
+Dracont.;hexaëm. epil.
+Vgl.;Paul. ex. Fest.
+Cassiod.;hist. trip.
+Capit.;Maxim. duor.
+Ambros.;de virg. consecr.
+Claud.;de stat. an.
+Iustinian.;nov.
+Sen.;ep.
+Gronov.;observ.
+Apul.;in Anthol. Lat.
+Tert.;adv. martyr.
+Tertull.;de pudic.
+Auson.;epist. praem. edyll.
+Auson.;perioch. praef.
+Sidon.;in ep.
+Ps. Eucher.;in regg. comm.
+Hildebr.;Apul.
+Augustin.;music.
+Fulgent.;continent. Verg.
+Ps. Cypr.;de rebapt.
+Serv.;Verg. Aen.
+Hieron.;cant. cantic. homil.
+Th.;Prisc. lib.
+Caes.;Arel.
+Augugtin.;ep.
+Iuvenc.;in exod.
+Vopisc.;Pert.
+Eumen.;grat. act. Constant.
+Mar.;Victorin. art. gr.
+Cael.;de sign. diaet. pass.
+Minuc.;Fel. Oct.
+Cic.;consol. fr.
+Ps. Quint.;decl. Trib. Mar.
+Lindem.;Plaut. trin.
+Corp.;inscr. Lat.
+Schenkl.;Arnob.
+Ps. Verg.;Cir.
+Aristot.;categ.
+Ov.;amor.
+Euanth.;de com.
+Eleg.;ad Maecen.
+Cl.;Quadrig. ann.
+Anton.;imp.
+Tert.;de ieiun.
+Tom.;XIII. col.
+Ps. Ambros.;de temp.
+Greg.;in cant.
+Osenbr.;Cic. Rosc. Am.
+Ps. Cypr.;in genes.
+Fulg.;expos. serm. ant. 
+Anonym.;Orest. trag.
+Fulg.;serm. ant. no.
+Arist.;top.
+Schol.;Acron. Hor. serm.
+Kr.;Amm.
+Serv.;de cent. metr.
+Vulg.;deuter.
+Firm.;math. 
+Publ.;Syr. com.
+Claud.;VI. cons. Honor.
+Mar.;Merc. subnot.
+Fulg.;serm.
+Quint.;Vgl. Stürenb. Cic. Arch.
+Augustin.;solil.
+Ps. Soran.;quaest. medic.
+Cl.;Sacerd. art. gr.
+Schol.;ad Caes. German. Arat.
+Ps. Augustin.;app. epist.
+Sen.;de const. anim.
+Consent.;gramm.
+Macr.;dig.
+Phaedr.;fab. app.
+Acc.;tr.
+Hier.;ad Ol.
+Tert.;carn. Christ.
+Oudend.;Suet. Aug.
+Tert.;in pers.
+Claud.;rapt. Proserp.
+Ambros.;Tob.
+Cic.;oec. fr.
+Eulog.;in somn. Scip.
+Sex.;de medic.
+Aldh.;de laud. virginit.
+Schenkl.;Diom.
+Plur.;Anthol. Lat.
+Plaut.;truc. prol.
+Claud.;ad Iulian.
+Sen.;de tranqu.
+Eccl.;Schol. Iuven.
+Ps. Cic.;consol.
+Ambros.;de virgin.
+Auson.;perioch. Iliad. prooem.
+Capitol.;Max.
+Seren.;Sam.
+Gloss.;Paris.
+Plin.;hist. nat. praef.
+Auct.;Aetn.
+Ennod.;de synod.
+Apic.;lib.
+Schenkl.;Serv. Verg. georg.
+Cic.;de orat.
+Nep.;Alc.
+Macr.;Somn. Scip.
+Isid.;ep.
+Lact.;Placid.
+Observv.;crit.
+Var.;Ruf. tr.
+Mai.;Interpr. Iren.
+Tert.;de iudic.
+Antib.;Bd.
+Hyg.;fab. prooem.
+Gesch.;Roms. Bd.
+Ruf.;brev.
+Iul.;de art. rhet.
+Vulg.;Mich.
+Symm.;relat.
+Claud.;ad Seren.
+Nep.;de regg.
+Schol.;Pers. prol.
+Augustin.;conf.
+Schenkl.;Apul. flor.
+Auct.;Cosmogr.
+Spart.;Heliog.
+Tert.;de testim. anim.
+Torren.;Val. Max.
+Tert.;ad nat.
+Apol.;apol.
+Serv.;Cass. Verg. Aen.
+Eugipp.;vit. Severin.
+Schol.;ad Hor. carm.
+Lact.;Plac. Stat. Theb.
+Cypr.;de sing. cler.
+Itin.;Hieros.
+Verg.;georg.
+Bollett.;christ.
+Schenkl.;Hieron. epist.
+Arcad.;Charis. dig.
+Faust.;ad Imp.
+Vgl.;Fest.
+Lact.;Mythogr. Lat.
+Hyg.;fab. praef. in. Verg. Aen.
+Sen.;Herc. fur.
+Plur.;Corp. inscr. Lat.
+Ps. Apul.;Ascl. 
+Cypr.;idol.
+Plaut.;Vid. fr.
+Auct.;epit. Iliad.
+Moddaloni.;Liv.
+Sext.;Ruf.
+Augustin.;de duab. anim.
+Pelagon.;vet.
+Aristot.;topic.
+Consent.;art.
+Sing.;Siren. Solin.
+Vulg.;Iesai.
+Schenkl.;Paul. Nol.
+Gronov.;observv.
+Donat.;Verg. Aen.
+Pompei.;comment. art. Donat.
+Vulg.;deut.
+Argum.;Plaut. Epid.
+Vulg.;Tit.
+Plur.;Arnob.
+Plaut.;carbon. fr.
+Liv.;Andr. com.
+Hom.;Il.
+Marc.;Emp. fol.
+Schenkl.;Prud. ham.
+Tac.;Germ.
+Itin.;Alex.
+Cic.;Rab. post.
+Ambros.;Luc.
+Paul.;dig.
+Ruhnk.;Ter. Hec.
+Augustin.;lib. arbitr.
+Capitul.;reg. Franc. tom.
+Mai.;Ps. Augustin. serm. app.
+Marc.;Emp. epist. Hippocr. alt. fol.
+Faust.;Manich.
+Ambros.;off. min.
+Prob.;ad Verg. ecl.
+Kellerm.;vigil. Rom. laterc. no.
+Hier.;de vir. ill.
+Cypr.;test.
+Vict.;Vit.
+Herm.;tom.
+Hier.;in psalm.
+Enn.;frgm. var.
+Auct.;de Phoen.
+Fast.;Praen. Apr.
+Tragic.;Lat. fr.
+Cic.;Rosc. Am.
+Schenkl.;Auson. Mos.
+Klotz.;Mar. Victorin. art. gr.
+Augustin.;de exod.
+Capit.;Maximin.
+Caes.;German. Arat.
+Flusses.;Plin.
+Marc.;de agric. fr.
+Plaut.;merc. prol.
+Prob.;cath.
+Tort.;apol.
+Gregor.;de curs. stell.
+Schenkl.;Corp. inscr. Lat.
+Macr.;Emp.
+Spicil.;Soloesm.
+Naev.;com.
+Fragm.;Vat.
+Sulp.;Sev. chron.
+Nep.;Ages.
+Apul.;de diphth.
+Chronogr.;Momms.
+Fr.;Auson. edyll.
+Cic.;ep. fr.
+Tert.;ad mart.
+Prisc.;de acceat.
+Cypr.;adv. Iud.
+Alex.;Sev.
+Tel.;Andr.
+Sen.;nat. qu. prol.
+Ov.;met.
+Ps. Soran.;qu. med.
+Verecund.;in cant. deuter. no.
+Nomin.;Sing. Tac. hist.
+Ruf.;Fest. brev.
+Vgl.;de adv.
+Tert.;de pat.
+Spart.;Hel.
+Porc.;in Suet. vit. Ter.
+Schol.;ad Cic. Vat.
+Paul.;Nol.
+Porph.;Hor. epod.
+Aquil.;Rom.
+Prisc.;de acc.
+Tert.;de praescr. haeret.
+Capit.;Gord. iun.
+Optat.;de schism. Donat.
+Auson.;ephem. orat.
+Naev.;bell. Punic. inc. libr. fr.
+Cic.;Lael.
+Porphyr.;de art. poët.
+Capit.;Get.
+Hieron.;Galat.
+Vulg.;Phil.
+Treb.;Poll. Gall.
+Sulp.;Sev. ep. dub.
+Dolab.;in Cic. ep.
+Vulg.;iudic.
+Ofil.;de pul.
+Prob.;in Verg. georg.
+Att.;fr. Brut.
+Mall.;de metr.
+Anon.;de solemn.
+Hier.;chron. Euseb. Ol.
+Vulg.;Ies.
+Vulcat.;Gallic. Avid. Cass.
+Vulg.;sapient.
+Cic.;II. Verr.
+Hor.;de art. poët. 
+Oudend.;Apul.
+Augustin.;de oper. monach.
+Caecil.;com. 
+Clem.;ad Cor.
+Suet.;August.
+Iulian.;Antec. constit.
+Hieron.;vit. Malch.
+Cic.;Cluent.
+Vulg.;Mach.
+Aurel.;de Caes.
+Ambros.;in Luc.
+Cypr.;ad Demedr.
+Cic.;de tog. cand. fr.
+Avien.;or. marit.
+Tertull.;de test. anim.
+Enn.;Epich.
+Mat.;in Cic. ep.
+Cic.;de pet. cons.
+Ven.;Fortun. carm.
+Plaut.;merc.
+Caecin.;in Cic. ep.
+Gregor.;Turon. vit. patr.
+Naev.;Pac. inc. fab. LX. Enn. tr.
+Claud.;de stat. anim. praef.
+Plaut.;merc. 
+Spart.;Ael.
+Petr.;fr.
+Sen.;Thy.
+Augustin.;serm. fr.
+Augustin.;in Levit. qu.
+Ps. Quint.;decl. trib. Marian.
+Apul.;met. fr.
+Cic.;Mur. 
+Prud.;epil.
+Ser.;Sammon.
+Claud.;de stat. anim.
+Sen.;de brev. vit.
+Ambros.;de fug. saec.
+Cic.;de rep.
+Augustin.;ep.
+Plaut.;Cas.
+Vopisc.;Aurel.
+Hieron.;adv. lovin.
+Sen.;fr. no.
+Cassiod.;de orthogr. praef.
+Nep.;Hann.
+Augustin.;de gest. Pelag.
+Hieron.;in Augustin. epist.
+Volus.;Maecian. descr.
+Lampr.;Alex. Sex.
+Ps. Apul.;de dogm. Plat.
+Ps. Cypr.;de laud. martyr.
+Tabul.;Heracl.
+Eumen.;de rest. schol.
+Cic.;Mil.
+Anon.;de dub. nom.
+Cic.;Quinct.
+Rutil.;Namat.
+Vit.;Cypr.
+Gernh.;de off.
+Plaut.;Pseud. 
+Broukh.;Prop.
+Claud.;Quadrig. ann.
+Plaut.;Amph. 
+Cassiod.;geom.
+Fr.;Isid.
+Porphyr.;Hor. od.
+Acc.;tr. Brut.
+Claud.;II. cons. Stil.
+Inc.;pan. Const.
+Firm.;math. praef.
+Augustin.;de cons. euang.
+Avien.;orb. terr.
+Apriss.;com.
+Enn.;ann.
+Ambros.;epist.
+Kr.;Hyg. astr.
+Novell.;de curial.
+Prob.;inst. art.
+Vulg.;gen.
+Rufin.;de schem. dian.
+Suet.;Vit. Ner.
+Alcim.;ep.
+Mamert.;in Iul.
+Edict.;Theodoric. reg.
+Claud.;or. fr. col.
+Augustin.;in psalm.
+Schwabe.;Corp. inscr. Lat.
+Hier.;Ephes.
+Cic.;de harusp. resp.
+Vall.;Aug.
+Garg.;de arb. pom.
+Peiper.;Itin. Anton.
+Ps. Ascan.;Cic. II. Verr.
+Cic.;in Hieron. epist.
+Dar.;Phryg.
+Not.;Tir.
+Hieron.;adv. Iovin.
+Suet.;Tib.
+Prob.;de ult. syll.
+Nazar.;pan. Const.
+Exc.;Amm.
+Cassiod.;de rhet.
+Nep.;Pelop.
+Ps. Apul.;herb. 
+Interpr.;ad Verg. Aen.
+Euod.;in Augustin. ep.
+Hieron.;vit. Paul. erem.
+Claudian.;de anim.
+Cur.;urb. reg.
+Isid.;sent.
+Inscr.;ap. Marin. papir. dipl.
+Cass.;Fel.
+Grommat.;vet.
+Frgm.;Vat.
+Socr.;prol.
+Claud.;Mam.
+Tert.;de paen.
+Cic.;Font.
+Interpr.;Vergil. Aen.
+Ven.;Fort. prol.
+Burm.;Ps. Quint. decl.
+Elmenh.;Minuc. Fel.
+Cypr.;de habit. virg.
+Kultus.;Aufl.
+Ascon.;Hor. sat.
+Casaub.;Pers.
+Enn.;fr.
+Schenkl.;Sulpic. Sev. dial.
+Caecil.;com.
+Auct.;de idiom. cas.
+Lindenbr.;Amm.
+Prud.;apoth.
+Caesar.;ad virg.
+Augustin.;de doct. Chr.
+Fulg.;Virg. contin.
+Prud.;ham.
+Gernh.;de sen.
+Spicil.;Solesm.
+African.;dig.
+Ps. Cypr.;app. carm.
+Iustinian.;inst.
+Lact.;Placid. fab.
+Sen.;Vgl. Charis.
+Augustin.;de don. persev.
+Sermonen.;Bd.
+Papir.;Iust. dig.
+Auson.;ep. 
+Schol.;in Caes. Germ. Arat.
+Cassiod.;var. praef.
+Veget.;mul.
+Tert.;de cult. fem.
+Augustin.;in exod. 
+Schol.;Bern. Verg. ecl.
+Salv.;adv. avar.
+Lampr.;Diad.
+Rufin.;in gen. hom.
+Ambros.;instit. virg.
+Tert.;de anim.
+Tert.;praescr. adv. haer.
+Optat.;carm.
+Schw.;Liv.
+Comic.;Rom. fragm.
+Mart.;spect.
+Gothofr.;Cod. Theod. tom.
+Frontin.;aqu.
+Aur.;chron.
+Censorin.;fr.
+Muret.;op. vol.
+Liberat.;brev.
+Auson.;grat. act.
+Vulg.;act. apost.
+Cic.;Acad. fr.
+Schenkl.;ad litt.
+Prob.;instit. art.
+Anal.;gramm.
+Iul.;de fig. sent.
+Sen.;const.
+Hist.;Apollon. reg.
+Cic.;de imp. Pomp.
+Edict.;Claud. lin.
+Ov.;epist.
+Auct.;de libr.
+Oribas.;frgm. Bern.
+Donat.;ad Ter. argum. Andr. vol.
+Prob.;de nom.
+Spart.;Get.
+Cic.;ad. Att.
+Auct.;de div. fabr. archit.
+Lampr.;Heliogr.
+Avien.;descr. orb.
+Pelagon.;veterin.
+Vet.;de mens.
+Lact.;Plac. fab.
+Porphyr.;vit. Hor.
+Ulp.;regul. tit.
+Tert.;ad castit.
+Vgl.;Hildebr. Apul. apol.
+Cypr.;sent. episc. no.
+Arnob.;iun. confl.
+Halm.;Iul. Vict. art. rhet.
+Hor.;carm. 
+Nep.;Epam.
+Kellerm.;vig. Rom. lat.
+Ps. Iuvenc.;in exod.
+Aur.;Vict. epit.
+Frontin.;de fer. Als.
+Sabin.;epist.
+Anian.;ex Paul. sent.
+Gell.;prooem.
+Scaev.;dig.
+Serv.;Verg. georg. prooem.
+Mart.;Capt.
+Pompon.;com. fr. 
+Apul.;de apol.
+Mamert.;Grat. act.
+Nov.;de curial.
+Claud.;bell. Get.
+Schol.;de imp. Pomp.
+Tert.;ad senat.
+Cael.;Aur. chr.
+Varr.;sat. Mem.
+Apoll.;de synt.
+Augustin.;de dial.
+Alcim.;ad soror.
+Garg.;de virt. herb.
+Obbar.;Prud. psych.
+Liv.;Andr. tr. fr.
+Claud.;de laud. Stil.
+Augustin.;de agon. Chr.
+Suet.;vit. Ter.
+Ggstz.;edentulus. Mart. Cap.
+Schenkl.;Th. Prisc.
+Claud.;laud. Ser.
+Auct.;in Boëth.
+Schol.;Iuven.
+Suet.;Vgl.
+Marc.;ad Front.
+Cic.;de har. resp.
+Anthol.;Lat.
+Nov.;Val.
+Paul.;ex Fest.
+Capit.;Opil. Macr.
+Claud.;Gigantom.
+Eulog.;in Cic. somn. Scip.
+Augustin.;cons. euang.
+Bentl.;Ter. Hec.
+Prisc.;de accent.
+Lampr.;Heliog.
+Plur.;Cic. Tusc.
+Ps. Quint.;decl. Mar. trib.
+Vulg.;in psalm.
+Ps. Gargil.;de medic.
+Genn.;vir. ill.
+Etrusker.;Bd.
+Schenkl.;Eumen. grat. act. Constant.
+Mai.;Gennad. vir. ill.
+Cic.;de off.
+Syr.;sent. app.
+Auct.;inc. pan. Constant. Aug.
+Donat.;ad Ter. Phorm. prol.
+Plaut.;vidul.
+Fortunat.;art. rhet.
+Valent.;novell.
+Ambros.;de virgg.
+Paulin.;adv. pagan.
+Paul.;Petr.
+Plaut.;most.
+Poen.;prol.
+Cic.;in Caec.
+Cl.;Quadrig.
+Ambros.;de exc. fratr.
+Dr.;Colum.
+Firm.;de err.
+Ven.;Fort. epist. praef. libr.
+Ascon.;ad Cic. tog. cand.
+Not.;dign. or.
+Ascon.;in Caecil.
+Metrol.;Scriptt.
+Cic.;Dei.
+Cypr.;de mort.
+Plutarch.;Pericl.
+Aquil.;de fig. sent.
+Minuc.;Fel.
+Onomast.;Cic.
+Augustin.;quaest.
+Hier.;in Dan.
+Augustin.;op. imperf.
+Sall.;hist. fr.
+Kr.;Mart. Cap.
+Cassiod.;in psalm.
+Tert.;Vgl. Bünem. Lact.
+Pomp.;dig.
+Auson.;Caes.
+Anecd.;Helv.
+Vopisc.;Flor.
+Ambros.;de Tob. no.
+Cic.;de dom.
+Apul.;de mag. 
+Atil.;Fortunat.
+Ieep.;Plin.
+Cal.;de Athan.
+Claud.;Quadr. fr.
+Cassiod.;in cantic.
+Tert.;adv. haeret.
+Kr.;Macr. somn. Scip.
+Cypr.;epist.
+Capitol.;Gord.
+Ulp.;frgm. Vat.
+Nep.;fr.
+Corp.;inscr. Latin.
+Vulg.;ad Hebr.
+Laur.;de mens.
+Tert.;de iudic. Dom.
+Papir.;dig.
+Inscr.;in Anthol. Lat.
+Ambros.;de fid.
+Acc.;Brut.
+Salv.;ep.
+Capit.;Anton. phil.
+Choerob.;in Cramer. anecd. tom.
+Cypr.;ad Demetr.
+Capit.;Maxim.
+Vulg.;ad Galat.
+Orat.;Rom. fr.
+Schoell.;ex Fest.
+Mamert.;pan. Iulian.
+Comoed.;pall. inc.
+Tert.;de hab. mul.
+Sall.;Vgl. Drak. Liv.
+Ter.;Scaur.
+Privil.;veteran.
+Rom.;leg. collat. tit.
+Cic.;Scaur.
+Eumen.;pan. Const.
+Inscr.;christ. Murat.
+Vgl.;de orthogr.
+Ambros.;exhort. virg.
+Carm.;de quib. urb.
+Plot.;Sacerd.
+Lat.;min. Vol.
+Hebr.;ap. locum.
+Nep.;Them.
+Cinciis.;Berol.
+Nep.;Dion.
+Fr.;in psalm.
+Th.;de diaet.
+Plaut.;Amph.
+Rufin.;Orig. homil.
+Ruf.;Fest.
+Cornel.;no.
+Aur.;vict. vir. ill.
+Schoell.;Vgl. Charis.
+Modest.;dig.
+Prud.;aposch.
+Aur.;acut.
+Ioann.;ad Parth.
+Augustin.;de serm. domin.
+Prob.;ad Iuven.
+Fast.;ann. Iul. Arv. Oct.
+Hilar.;de evang.
+Claud.;laud. Seren.
+Vgl.;in Class. auct.
