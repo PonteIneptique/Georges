@@ -168,24 +168,64 @@ def divideText(text, index):
 		print (text)
 		raise ValueError("No H1 for line {0}".format(index))
 
+
+def defineLevelRegExp(text):
+	availableRegExp = ["[a-z]+", "[IVX]+", "[0-9]+", "[ABCDEFGH]+"]
+	for regexp in availableRegExp:
+		r = re.compile(regexp)
+		if r.match(text):
+			return regexp
+	return "FAULTY"
+
+
+def getLevel(text, dictionary):
+	regexp = defineLevelRegExp(text)
+	if regexp not in dictionary:
+		dictionary[regexp] = len(dictionary) + 1
+	return dictionary[regexp], dictionary
+
 #Match number
 
 ol_match = re.compile("^([1-9]{1,3}|[abcdefABCDEF]{1}|IX|IV|V?I{0,3})$")
 
-#Corrected = 400
+"""
+	TEI Structure
+	<text>
+		<body>
+			<pb n="1"/>
+			<cb n="A"/>
+			<div0 type="alphabetic letter" n="A">
+				<head lang="la">A</head>
+"""
+root = cElementTree.Element("text")
+body = cElementTree.SubElement(root, "body")
+
+div = {}
+head = {}
 with open("input/body.xml") as f:
 
-	root = cElementTree.Element("div")
+	char = None
 	#In this document, we have one line = one word definition, h1 represent orth
 	for line in f.readlines():
-		#We create a node for this element
-		entryFree = cElementTree.SubElement(root, "entryFree")
-		entryFree.set("n", str(i))
 
 		#We split the line around the <h1> tag
 		h1, senses_text = divideText(line, i)
 		h1 = polishH1(h1)
 		senses_text = polishSenses(senses_text)
+
+		if h1[0] != char:
+			char = h1
+			div[char] = cElementTree.SubElement(body, "div0")
+			div[char].set("type", "alphabetic letter")
+			div[char].set("n", char.upper())
+
+			head[char] = cElementTree.SubElement(div[char], "head")
+			head[char].set("lang", "la")
+
+
+		#We create a node for this element
+		entryFree = cElementTree.SubElement(div[char], "entryFree")
+		entryFree.set("n", str(i))
 
 		#We set a orth node according to the content in h1
 		orth = cElementTree.SubElement(entryFree, "orth")
@@ -199,8 +239,6 @@ with open("input/body.xml") as f:
 		# - we reset id to None. id is the key for the numeric identifier of the sense
 		senses = []
 		senses_text_split = re.split('[–]{0,1}\s([1-9]{1,3}|[abcdefABCDEF]{1}|IX|IV|V?I{0,3})\)\s', senses_text)
-		index_sense = 1
-		id = None
 
 		if len(senses_text_split) == 1:
 
@@ -212,8 +250,15 @@ with open("input/body.xml") as f:
 			senses.append(cElementTree.SubElement(entryFree, "sense"))
 			opusFinder(text, senses[len(senses) - 1 ])
 		else:
+			index_sense = 1
+			id = None
+			levelN = 1
+
+			levelDictionary = {}
+
 			#We make a loop around our data
 			for index_sense in range(1, len(senses_text_split)):
+
 
 				#The text correspond to our element in senses_text_split with index (index_sense - 1)
 				text = senses_text_split[index_sense - 1]
@@ -227,6 +272,7 @@ with open("input/body.xml") as f:
 					if id:
 						senses.append(cElementTree.SubElement(entryFree, "sense"))
 						senses[len(senses) - 1 ].set("n", id)
+						senses[len(senses) - 1 ].set("level", str(levelN))
 						opusFinder(text, senses[len(senses) - 1 ])
 					else: #We dont have text
 						text = firstLine(text, entryFree)
@@ -234,6 +280,7 @@ with open("input/body.xml") as f:
 						opusFinder(text, senses[len(senses) - 1 ])
 				else:
 					id = text
+					levelN, levelDictionary = getLevel(id, levelDictionary)
 
 		if i == limit:
 			with open("output/sample.xml", "w") as f:
