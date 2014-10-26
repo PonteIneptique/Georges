@@ -6,6 +6,15 @@ There is a small sample available in `output/sample.xml` to check the formatting
 
 Full document in output.xml
 
+##Automatic replacement
+The abbreviation system being chaotic and random in the Georges, I have use a book.csv dictionary issue through `fuzzywuzzy.processs` in `StringComparison/WerkStringComparison.py` to normalize names. From 4241 lines of Books/Author found (`/output/old-werken.csv`), I came to have 2647 such tuples.
+
+##Improve Author/Work Replacement
+- Add manuals abbreviations and synonyms in `author-synonyms`, `pauly-double-authors` and `automatic-normalizing-books`
+- Run `index.py` with `ignoreReplacer` set to `True`
+- Run `StringComparison/WerkStringComparison.py`
+- Run `StringComparison/generateNormalizingBook.py`
+- Run `index.py` with `ignoreReplacer` set to `False`
 
 ##Credits
 - [Abzkurzung.txt](http://www.zeno.org/Georges-1913/M/Verzeichnis+der+Abk%C3%BCrzungen)

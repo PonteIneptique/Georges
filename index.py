@@ -12,11 +12,116 @@ import copy
 #Registering werk and autoren abkurzungen
 authoren = []
 werken = []
+TextIdentifiers = []
+
 
 #Configuration
 i = 0
-limit = 20 #For the sample
+limit = 100 #For the sample
 break_on_sample = False
+ignoreReplacer = False #Ignore the merger for Werken
+
+#########################################################
+#
+#
+#	Normalizing functions
+#
+#########################################################
+
+def booksdictionary():
+	dic = {}
+	with open("dictionary/normalizing-book.csv") as f:
+		lines = [line.replace("\n", "") for line in f.readlines()]
+		f.close()
+
+	for line in lines:
+		l = line.split("\t")
+		author1 = l[0]
+		book1 = l[1]
+		author2 = l[2]
+		book2 = l[3]
+		if author1 not in dic:
+			dic[author1] = {}
+		dic[author1][book1] = (author2, book2)
+	return dic
+
+def authordictionary():
+	dic = {}
+	with open("dictionary/author-synonyms.csv") as f:
+		lines = [line.replace("\n", "") for line in f.readlines()]
+		f.close()
+
+	for line in lines:
+		l = line.split("\t")
+		author1 = l[0]
+		author2 = l[1]
+		if author1 not in dic:
+			dic[author1] = {}
+		dic[author1] = author2
+	return dic
+
+
+def getAuthorRegExp():
+	lines = []
+	with open("./dictionary/authors.csv") as f:
+		lines = ["(?:{0})".format(line.replace("\n", "").replace(" ", "\s").replace(".", "\.")) for line in f.readlines()]
+		f.close()
+
+	output = lines + ["(?:(?:Ps.\s){0,1}[A-Z]{1}[a-z]+\.)"]
+	return "|".join(output)
+#########################################################
+#
+#
+#	Normalizing Variables
+#
+#########################################################
+
+ReplacementBookDictionary = booksdictionary()
+ReplacementAuthorDictionary = authordictionary()
+AuthorRegExp = getAuthorRegExp()
+
+#########################################################
+#
+#
+#	Reg EXP Generator
+#
+#
+#########################################################
+
+def opusRegExp(opusfinder = False):
+	paragraphCharacters = "(?:[p\§]{1}\.{0,1}\s){0,1}"
+	authorRegExp = AuthorRegExp
+	regexp = "(?P<author>" + authorRegExp + "){1}(?:\s(?P<opus>(?:(?:in|ex|de|ad){1}[\s]{1}){0,1}(?:[^\W\d]{2,}\.(?:[\s]){0,1})+)+){0,1}(?:\s(?P<identifier1>" + paragraphCharacters + "[0-9]+\,)){0,1}(?:\s(?P<identifier2>" + paragraphCharacters +  "[0-9]+\,)){0,1}(?:\s(?P<identifier3>" + paragraphCharacters + "[0-9]+\,)){0,1}(?:\s(?P<identifier4>" + paragraphCharacters + "[0-9]+[\.:]{0,1})){1}"
+	if opusfinder:
+		#sub
+		return re.sub("P<[a-zA-Z0-9]+>", ":", regexp)
+	else:
+		return regexp
+
+##########################################################
+#
+#
+#	RegExp Compiled
+#
+#
+##########################################################
+OpusRegExp = {
+		"Finder" : re.compile("(?P<match>{0})".format(opusRegExp(True))),
+		"Groups" : re.compile(opusRegExp())
+	}
+
+ol_match = re.compile("^([1-9]{1,3}|[abcdefABCDEF]{1}|IX|IV|V?I{0,3})$")
+
+def replaceAuthor(author):
+	if author in ReplacementAuthorDictionary:
+		return ReplacementAuthorDictionary[author]
+	return author
+
+def replaceAuthorBook(author, book):
+	if author in ReplacementBookDictionary and book in ReplacementBookDictionary[author]:
+		t = ReplacementBookDictionary[author][book]
+		return t[0], t[1]
+	return author, book
 
 def prettify(elem):
 	"""Return a pretty-printed XML string for the Element.
@@ -89,68 +194,71 @@ def firstLine(text, node):
 
 	return rest
 
-def opusRegExp(opusfinder = False):
-	paragraphCharacters = "(?:[p\§]{1}\.{0,1}\s){0,1}"
-	regexp = "(?P<author>(?:Ps.\s){0,1}[A-Z]{1}[a-z]+\.){1}(?:\s(?P<opus>(?:(?:in|ex|de|ad){1}[\s]{1}){0,1}(?:[^\W\d]{2,}\.(?:[\s]){0,1})+)+){0,1}(?:\s(?P<identifier1>" + paragraphCharacters + "[0-9]+\,)){0,1}(?:\s(?P<identifier2>" + paragraphCharacters +  "[0-9]+\,)){0,1}(?:\s(?P<identifier3>" + paragraphCharacters + "[0-9]+\,)){0,1}(?:\s(?P<identifier4>" + paragraphCharacters + "[0-9]+[\.:]{0,1})){1}"
-	if opusfinder:
-		#sub
-		return re.sub("P<[a-zA-Z0-9]+>", ":", regexp)
-	else:
-		return regexp
+
 
 def opus(text, node):
 	#<bibl><author>Sen.</author> <title>Q. N.</title> 4, 2, 7</bibl>
-	regexp = opusRegExp()
-	regexp = re.compile(regexp)
+	regexp = OpusRegExp["Groups"]
 	items = [m.groupdict() for m in regexp.finditer(text)][0]
 
 	author = items["author"]
+	author = replaceAuthor(author)
+
 	title = items["opus"]
 	identifier = getListFromDictRegExp(items, "identifier", 4)
 
 	bibl = cElementTree.SubElement(node, "bibl")
 
 	aNode = cElementTree.SubElement(bibl, "author")
-	aNode.text = author
 	lastNode = aNode
 
 	authoren.append(author)
 
 	if title:
 		tNode = cElementTree.SubElement(bibl, "title")
-		tNode.text = title
 		lastNode = tNode
-		werken.append("{0};{1}".format(author, title))
 
+	if author and title:
+		if not ignoreReplacer:
+			author, title = replaceAuthorBook(author, title)
+		werken.append("{0}\t{1}".format(author, title))
+
+	aNode.text = author
+	if title :
+		tNode.text = title
+	else:
+		title = ""
 
 	if identifier:
 		lastNode.tail = " ".join(identifier)
+		TextIdentifiers.append("{0}\t{1}\t{2}".format(author, title, identifier))
 
 	return bibl #Return the last node in usage
 
 
 
 def opusFinder(text, node):
-	splitter = "(?P<match>{0})".format(opusRegExp(True))
-	splitter = re.compile(splitter)
+	splitter = OpusRegExp["Finder"]
 
 	caught = splitter.split(text)
+
 	initialText = None
 	lastNode = None
 	for element in caught:
-		if not initialText:
-			if splitter.match(element):
-				#We must create a node with opus informations
-				lastNode = opus(element, node)
-				initialText = True
+		if element:
+			if not initialText:
+				if splitter.match(element):
+					#We must create a node with opus informations
+					lastNode = opus(element, node)
+					initialText = True
+				else:
+					node.text = element
+					initialText = True
 			else:
-				node.text = element
-				initialText = True
-		else:
-			if splitter.match(element):
-				lastNode = opus(element, node)
-			else:
-				lastNode.tail = element
+				if splitter.match(element):
+					lastNode = opus(element, node)
+				else:
+					lastNode.tail = element
 
 
 
@@ -184,9 +292,6 @@ def getLevel(text, dictionary):
 		dictionary[regexp] = len(dictionary) + 1
 	return dictionary[regexp], dictionary
 
-#Match number
-
-ol_match = re.compile("^([1-9]{1,3}|[abcdefABCDEF]{1}|IX|IV|V?I{0,3})$")
 
 """
 	TEI Structure
@@ -300,8 +405,15 @@ with open("output/authoren.csv", "w") as f:
 	authoren.sort()
 	f.write("\n".join(authoren))
 	f.close()
+
 with open("output/werken.csv", "w") as f:
 	werken = list(set(werken))
 	werken.sort()
 	f.write("\n".join(werken))
+	f.close()
+
+with open("output/texts.csv", "w") as f:
+	TextIdentifiers = list(set(TextIdentifiers))
+	TextIdentifiers.sort()
+	f.write("\n".join(TextIdentifiers))
 	f.close()

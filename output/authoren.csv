@@ -63,6 +63,7 @@ Anon.
 Anonym.
 Ant.
 Anth.
+Anth. Lat.
 Anthim.
 Anthol.
 Antib.
@@ -111,6 +112,7 @@ August.
 Augustin.
 Aulul.
 Aur.
+Aur. Vict.
 Aurel.
 Ausg.
 Ausgew.
@@ -177,6 +179,7 @@ Casiod.
 Cass.
 Cassian.
 Cassiod.
+Cassiod. inst.
 Castal.
 Cat.
 Catall.
@@ -217,6 +220,7 @@ Clem.
 Clu.
 Cluent.
 Cod.
+Cod. Iust.
 Coel.
 Cogitatt.
 Col.
@@ -272,9 +276,9 @@ Dictionn.
 Dig.
 Diocl.
 Diod.
-Diog.
+Diog. Laert.
 Diom.
-Dion.
+Dion. Hal.
 Dionys.
 Dioscor.
 Doctr.
@@ -422,6 +426,8 @@ Gran.
 Grat.
 Gratt.
 Greg.
+Greg. M.
+Greg. Tur.
 Gregor.
 Grill.
 Grom.
@@ -613,6 +619,7 @@ Manil.
 Manu.
 Manut.
 Mar.
+Mar. Victorin.
 Marc.
 Marcel.
 Marcell.
@@ -621,6 +628,7 @@ Marcian.
 Marian.
 Marin.
 Mart.
+Mart. Cap.
 Martian.
 Martianay.
 Martin.
@@ -647,7 +655,7 @@ Mich.
 Migne.
 Mil.
 Milon.
-Min.
+Min. Fel.
 Minuc.
 Misc.
 Miscell.
@@ -797,6 +805,7 @@ Plat.
 Plaud.
 Plaut.
 Plin.
+Plin. nat.
 Plot.
 Plur.
 Plutarch.
@@ -921,6 +930,7 @@ Ruhnk.
 Ruric.
 Rustic.
 Rut.
+Rut. Nam.
 Rutil.
 Sabin.
 Sacerd.
@@ -1011,12 +1021,12 @@ Subrel.
 Suct.
 Suet.
 Sull.
-Sulp.
-Sulpic.
+Sulp. Sev.
 Supin.
 Sut.
 Symm.
 Synes.
+Synes. epist.
 Synt.
 Syr.
 Tab.
@@ -1028,6 +1038,7 @@ Taubm.
 Technol.
 Tel.
 Ter.
+Ter. Maur.
 Terent.
 Tert.
 Tertul.
@@ -1081,12 +1092,14 @@ Tursell.
 Tusc.
 Ulit.
 Ulp.
+Ulp. reg.
 Umbr.
 Uned.
 Ungedr.
 Urson.
 Vahlen.
 Val.
+Val. Max.
 Valent.
 Valentin.
 Valerian.
@@ -1104,12 +1117,12 @@ Vel.
 Veli.
 Vell.
 Ven.
+Ven. Fort.
 Venul.
 Ver.
 Verec.
 Verecund.
 Verg.
-Vergil.
 Verm.
 Verr.
 Vesp.
@@ -1122,8 +1135,6 @@ Victorin.
 Vigil.
 Vincent.
 Vindic.
-Virg.
-Virgil.
 Vit.
 Vitr.
 Vitruv.
