@@ -5,7 +5,7 @@
 import codecs
 import xml.etree.cElementTree as cElementTree
 import xml.etree.ElementTree as ElementTree
-import re
+import regex as re
 from xml.dom import minidom
 import copy
 
@@ -18,7 +18,7 @@ TextIdentifiers = []
 #Configuration
 i = 0
 limit = 100 #For the sample
-break_on_sample = False
+break_on_sample = True
 ignoreReplacer = False #Ignore the merger for Werken
 
 #########################################################
@@ -111,6 +111,7 @@ OpusRegExp = {
 	}
 
 ol_match = re.compile("^([1-9]{1,3}|[abcdefABCDEF]{1}|IX|IV|V?I{0,3})$")
+GreekChar = re.compile("((?:(?:[\p{Greek}]+)+[\s]*)+)")
 
 def replaceAuthor(author):
 	if author in ReplacementAuthorDictionary:
@@ -194,7 +195,34 @@ def firstLine(text, node):
 
 	return rest
 
+def greek(text, node):
+	lang = cElementTree.SubElement(node, "lang")
+	lang.set("lang", "greek")
+	lang.text = text
+	return lang
 
+def greekFinder(text, node):
+	splitter = GreekChar
+	caught = splitter.split(text)
+
+	initialText = None
+	lastNode = None
+	for element in caught:
+		if element:
+			if not initialText:
+				if splitter.match(element):
+					#We must create a node with opus informations
+					lastNode = greek(element, node)
+					initialText = True
+				else:
+					node.text = element
+					initialText = True
+			else:
+				if splitter.match(element):
+					lastNode = greek(element, node)
+				else:
+					lastNode.tail = element
+	return lastNode
 
 def opus(text, node):
 	#<bibl><author>Sen.</author> <title>Q. N.</title> 4, 2, 7</bibl>
@@ -235,15 +263,13 @@ def opus(text, node):
 
 	return bibl #Return the last node in usage
 
-
-
 def opusFinder(text, node):
 	splitter = OpusRegExp["Finder"]
 
 	caught = splitter.split(text)
 
 	initialText = None
-	lastNode = None
+	lastNode = node
 	for element in caught:
 		if element:
 			if not initialText:
@@ -252,15 +278,13 @@ def opusFinder(text, node):
 					lastNode = opus(element, node)
 					initialText = True
 				else:
-					node.text = element
+					lastNode = greekFinder(element, node)
 					initialText = True
 			else:
 				if splitter.match(element):
 					lastNode = opus(element, node)
 				else:
-					lastNode.tail = element
-
-
+					lastNode = greekFinder(element, node)
 
 def polishSenses(text):
 	text = re.sub("<[\/]{0,1}[A-Za-z0-9]+>", "", text)
