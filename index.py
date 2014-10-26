@@ -61,13 +61,15 @@ def authordictionary():
 	return dic
 
 
-def getAuthorRegExp():
-	lines = []
+def getAuthorRegExp(simple = False):
+	output = []
 	with open("./dictionary/authors.csv") as f:
-		lines = ["(?:{0})".format(line.replace("\n", "").replace(" ", "\s").replace(".", "\.")) for line in f.readlines()]
+		output = ["(?:{0})".format(line.replace("\n", "").replace(" ", "\s").replace(".", "\.")) for line in f.readlines()]
 		f.close()
 
-	output = lines + ["(?:(?:Ps.\s){0,1}[A-Z]{1}[a-z]+\.)"]
+	if not simple:
+		output = output + ["(?:(?:Ps.\s){0,1}[A-Z]{1}[a-z]+\.)"]
+
 	return "|".join(output)
 
 def getBooksRegexp():
@@ -78,6 +80,7 @@ def getBooksRegexp():
 
 	output = lines + ["(?:(?:in|ex|de|ad){1}[\s]{1}){0,1}(?:[^\W\d]{2,}\.(?:[\s])*)+)"]
 	return "|".join(output)
+
 
 #########################################################
 #
@@ -90,6 +93,8 @@ ReplacementBookDictionary = booksdictionary()
 ReplacementAuthorDictionary = authordictionary()
 AuthorRegExp = getAuthorRegExp()
 BooksRegExp = getBooksRegexp()
+AuthorSimpleRegexp = getAuthorRegExp(True)
+
 #########################################################
 #
 #
@@ -108,6 +113,13 @@ def opusRegExp(opusfinder = False):
 	else:
 		return regexp
 
+def QuotationRegExp(finder = False):
+	# "(?:[:;\s\)\,]+)" + 
+	regexp = "(?P<text>[a-zA-Z ]+)\,[\s]*(?P<author>"+ AuthorSimpleRegexp + "){1}"
+	if finder:
+		return re.sub("P<[a-zA-Z0-9]+>", ":", regexp)
+	return regexp
+
 ##########################################################
 #
 #
@@ -122,6 +134,12 @@ OpusRegExp = {
 
 ol_match = re.compile("^([1-9]{1,3}|[abcdefABCDEF]{1}|IX|IV|V?I{0,3})$")
 GreekChar = re.compile("((?:(?:[\p{Greek}]+)+[\s\.\,]*)+)")
+
+Quotation = {
+	"Finder" : re.compile("(?P<match>{0})".format(QuotationRegExp(True))),
+	"Groups" : re.compile(QuotationRegExp())
+}
+
 
 def replaceAuthor(author):
 	if author in ReplacementAuthorDictionary:
@@ -273,6 +291,46 @@ def opus(text, node):
 
 	return bibl #Return the last node in usage
 
+def quotationMarker(text, node):
+	regexp = Quotation["Groups"]
+	items = [m.groupdict() for m in regexp.finditer(text)][0]
+
+	author = items["author"]
+	author = replaceAuthor(author)
+
+	text = items["text"]
+
+	bibl = cElementTree.SubElement(node, "quote")
+	bibl.text = text
+
+	aNode = cElementTree.SubElement(bibl, "author")
+	aNode.text = author
+
+
+	return bibl
+
+def quotationFinder(text, node):
+	splitter = Quotation["Finder"]
+	caught = splitter.split(text)
+	initialText = None
+	lastNode = node
+
+	for element in caught:
+		if element:
+			if not initialText:
+				if splitter.match(element):
+					#We must create a node with opus informations
+					lastNode = quotationMarker(element, node)
+					initialText = True
+				else:
+					lastNode = opusFinder(element, node)
+					initialText = True
+			else:
+				if splitter.match(element):
+					lastNode = quotationMarker(element, node)
+				else:
+					lastNode = opusFinder(element, node)
+
 def opusFinder(text, node):
 	splitter = OpusRegExp["Finder"]
 
@@ -298,6 +356,7 @@ def opusFinder(text, node):
 
 def polishSenses(text):
 	text = re.sub("<[\/]{0,1}[A-Za-z0-9]+>", "", text)
+	text = re.sub("[\s]{2,}", " ", text)
 	return text
 
 def divideText(text, index):
@@ -387,7 +446,7 @@ with open("input/body.xml") as f:
 
 			#When a sense has no number before it
 			senses.append(cElementTree.SubElement(entryFree, "sense"))
-			opusFinder(text, senses[len(senses) - 1 ])
+			quotationFinder(text, senses[len(senses) - 1 ])
 		else:
 			index_sense = 1
 			id = None

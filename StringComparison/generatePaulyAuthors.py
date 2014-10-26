@@ -34,12 +34,18 @@ with open("pauly.pickle", "wb") as f:
   f.close()
 
 double = []
+authors = []
 for author in pauly:
   elements = author.split(" ")
   elements = [e for e in elements if len(e) > 1]
+  authors.append(" ".join(elements))
   if len(elements) > 1:
     double.append(" ".join(elements))
 
 with open("../dictionary/pauly-double-authors.csv", "w") as f:
   f.write("\n".join(double))
+  f.close()
+
+with open("../dictionary/authors-automatic-pauly.csv", "w") as f:
+  f.write("\n".join(authors))
   f.close()

@@ -6,7 +6,7 @@
 			<entryFree n="0">
 				<orth key="A">A</orth>
 				<sense> 1. A, a, der erste Buchstabe des lateinischen Alphabets. – Als Abkürzung:</sense>
-				<sense level="1" n="1">= der Vorname Aulus. </sense>
+				<sense level="1" n="1">= der Vorname Aulus.</sense>
 				<sense level="1" n="2">= Antiquo (ich verwerfe den neuen Vorschlag), auf den Stimmtafeln in röm. Volksversammlungen. </sense>
 				<sense level="1" n="3">
 					 
@@ -24,6 +24,10 @@
 				<etym>Ah</etym>
 				<sense>
 					), aber auch der Verwünschung, Komik., Verg., Poët. eleg., Ov. u.a. Dichter. 
+					<quote>
+						berraschung
+						<author>Ve</author>
+					</quote>
 					<bibl>
 						<author>Ter.</author>
 						<title>Andr.</title>
@@ -38,7 +42,7 @@
 				<sense>
 					 liest Thilo ab alio), mit dem Grundbegriff des Ausgehens von irgend einem Punkte (im Ggstz. zu ad u. in) = von, von... her, von.... weg, von... aus, von... herab u. dgl.,
 					<lang lang="greek">ἀπό</lang>
-					), sanskr. apa, – Î a steht bloß vor Konsonanten (u. zwar gew. vor b, f, p, v) außer dem Spiranten h, ab vor Vokalen, h u. Konsonanten, bes. vor l, n, r, s, sc, sp, st  u. vor j, abs nur vor c, q, t, und antik vor dem Namen des Zahlers, zB. bei Cic. ab te und in der ersten Periode abs te, abs Attico; vgl. Zumpt zu 
+					), sanskr. apa, – Î a steht bloß vor Konsonanten (u. zwar gew. vor b, f, p, v) außer dem Spiranten h, ab vor Vokalen, h u. Konsonanten, bes. vor l, n, r, s, sc, sp, st u. vor j, abs nur vor c, q, t, und antik vor dem Namen des Zahlers, zB. bei Cic. ab te und in der ersten Periode abs te, abs Attico; vgl. Zumpt zu 
 					<bibl>
 						<author>Cic.</author>
 						<title>II. Verr.</title>
@@ -75,7 +79,7 @@
 				</sense>
 				<sense level="1" n="I">im Raume,</sense>
 				<sense level="2" n="A">zur Angabe der Bewegung:</sense>
-				<sense level="3" n="1">von... weg, fuga ab urbe, Cic.: ab solo patrio in hostium urbem agere, Liv.: proficisci a domo, ab Athenis, Cic., ab Orico, Caes.: a Gergovia (aus der Umgegend von G.) discedere (vgl. Kraner zu Caes. b.G. 7, 43, 5). – So bei den Begriffen »des Entfernens, Trennens, Abhaltens (sich Enthaltens, Abstehens), Abschreckens, Entfremdens u. dgl.«  (s. Zumpt § 468): dah. a se (von einander) discedentes, Macr.: u. elliptisch, paululum a sole (verst. recede), (geh) nur ein wenig aus der Sonne, Cic.: dictator ab aratro (verst. arcessitus), Flor. </sense>
+				<sense level="3" n="1">von... weg, fuga ab urbe, Cic.: ab solo patrio in hostium urbem agere, Liv.: proficisci a domo, ab Athenis, Cic., ab Orico, Caes.: a Gergovia (aus der Umgegend von G.) discedere (vgl. Kraner zu Caes. b.G. 7, 43, 5). – So bei den Begriffen »des Entfernens, Trennens, Abhaltens (sich Enthaltens, Abstehens), Abschreckens, Entfremdens u. dgl.« (s. Zumpt § 468): dah. a se (von einander) discedentes, Macr.: u. elliptisch, paululum a sole (verst. recede), (geh) nur ein wenig aus der Sonne, Cic.: dictator ab aratro (verst. arcessitus), Flor. </sense>
 				<sense level="3" n="2">
 					). Zeno et qui ab eo sunt, seine Schüler, Cic.: qui sunt ab ea disciplina, Cic.: nostri illi a Platone, 
 					<bibl>
@@ -122,15 +126,15 @@
 						4, 2, 31
 					</bibl>
 					<lang lang="greek">οἱἀπο Πλάτωνος, </lang>
-					Jünger Plaros, Cic., vollst. profecti a  Platone, Cic.: homo de schola et a magistro (= 
+					Jünger Plaros, Cic., vollst. profecti a Platone, Cic.: homo de schola et a magistro (= 
 					<lang lang="greek">ὁ διδαχθείς</lang>
 					), Cic. 
 				</sense>
 				<sense level="4" n="b">von... herab, suspendere columbam a mālo, Verg.: mālo pendēre ab alto, Verg.: dependēre a cervicibus, Suet.: pugna ab alta puppe, Lucan.: ab orno pendulus, Hor. </sense>
-				<sense level="4" n="c">usque ab = in einem fort-, stets-, durch und durch von... an oder aus usw., plausus usque a Capitolio excitatus, Cic.: enumerasti usque a Thale Milesio philosophorum sententias, von Th. an der Reihe nach, Cic.: u. mit Angabe des Endpunktes der Bewegung, usque ab... ad = von an... bis zu, usque ab unguiculo ad capillum, Plaut.. ab imis unguibus usque ad verticem summum, Cic. </sense>
+				<sense level="4" n="c">usque ab = in einem fort-, stets-, durch und durch von... an oder aus usw., plausus usque a Capitolio excitatus, Cic.: enumerasti usque a Thale Milesio philosophorum sententias, von Th. an der Reihe nach, Cic.: u. mit Angabe des Endpunktes der Bewegung, usque ab... ad = von an... bis zu, usque ab unguiculo ad capillum, Plaut.. ab imis unguibus usque ad verticem summum, Cic.</sense>
 				<sense level="2" n="B">zur Angabe der bloßen Richtung:</sense>
 				<sense level="3" n="1">von... aus, von... her, a supero mari Flaminia (via), ab infero Aurelia, media Cassia, Cic. – und so in vielen Beziehungen, wo der Lateiner die Richtung woher?, der Deutsche den Punkt wo? berücksichtigt, deutsch an od. in, leviter a summo inflexum, Cic.: a contraria aure (instillavit), Plin.: so auch funiculus a puppi religatus, Cic.: ab labris argento circumcludunt (cornua), Caes. </sense>
-				<sense level="4" n="b">von... herab, a summo iugo, Caes.: ab alto caelo, Verg.: securus ab alto spectator, Lucan.: residens flevit ab arce, Prop. </sense>
+				<sense level="4" n="b">von... herab, a summo iugo, Caes.: ab alto caelo, Verg.: securus ab alto spectator, Lucan.: residens flevit ab arce, Prop.</sense>
 				<sense level="3" n="2">
 					 S. 203), zB. ut ea deditā operā a nobis contra vosmet ipsos facere videamini, Cic.: u. so ab innocentia clementissimus, Cic.: dah. bei esse, stare, facere (intr.), sentire, w.s.
 					<bibl>
@@ -161,7 +165,7 @@
 						238:
 					</bibl>
 				</sense>
-				<sense level="3" n="2">der Zahl, dem Range, der Macht nach = nach, hinter, quartus ab Arcesila, Cic.: alter ab illo, Verg.: a magnis hunc colit ille deis, Ov.: potentiā secundus a rege, Auct. b. Alex. </sense>
+				<sense level="3" n="2">der Zahl, dem Range, der Macht nach = nach, hinter, quartus ab Arcesila, Cic.: alter ab illo, Verg.: a magnis hunc colit ille deis, Ov.: potentiā secundus a rege, Auct. b. Alex.</sense>
 				<sense level="1" n="II">übtr.:</sense>
 				<sense level="2" n="A">in der Zeit, ganz entsprechend den räumlichen Beziehungen:</sense>
 				<sense level="3" n="1">
@@ -172,7 +176,7 @@
 					</bibl>
 				</sense>
 				<sense level="3" n="2">
-					), u. so bes. mit initium, principium, pueritia, adulescentia, puer, parvus, primus u. ähnl. (w.s.). – u. mit usque ad, von... an bis zu, a mane ad noctem usque, Plaut.: a consulatu eius usque ad extremum tempus, Nep.: ab ovo usque ad mala, Hor. – ebenso bl. mit ad, z.B. regnatum est ab condita urbe ad liberatam annos CCXLIV, Liv.: u. mit in, zB. Romani ab sole orto in multum diei stetere in acie, Liv. 
+					), u. so bes. mit initium, principium, pueritia, adulescentia, puer, parvus, primus u. ähnl. (w.s.). – u. mit usque ad, von... an bis zu, a mane ad noctem usque, Plaut.: a consulatu eius usque ad extremum tempus, Nep.: ab ovo usque ad mala, Hor. – ebenso bl. mit ad, z.B. regnatum est ab condita urbe ad liberatam annos CCXLIV, Liv.: u. mit in, zB. Romani ab sole orto in multum diei stetere in acie, Liv.
 					<bibl>
 						<author>Ter.</author>
 						<title>Andr.</title>
@@ -184,10 +188,10 @@
 						214
 					</bibl>
 				</sense>
-				<sense level="3" n="3">zur Bezeichnung des Abstandes von einem Zeitpunkte (wo meist der Ort od. die Person, wo eine Tätigkeit begann, für die Zeit steht) = von, nach, seit, cuius a morte hic tertius et tricesimus est annus, Cic.: ab incenso Capitolio illum esse vigesimum annum, Sall.: so ab urbe condita, seit Erbauung der Stadt, Cic. u.a.: in Italiam pervenit quinto mense a Carthagine nova, fünf Monate nach dem Abzuge von N., Liv.: u. so tuae litterae binae redditae sunt tertio abs te die, nachdem du sie abgeschickt hattest, Cic. </sense>
+				<sense level="3" n="3">zur Bezeichnung des Abstandes von einem Zeitpunkte (wo meist der Ort od. die Person, wo eine Tätigkeit begann, für die Zeit steht) = von, nach, seit, cuius a morte hic tertius et tricesimus est annus, Cic.: ab incenso Capitolio illum esse vigesimum annum, Sall.: so ab urbe condita, seit Erbauung der Stadt, Cic. u.a.: in Italiam pervenit quinto mense a Carthagine nova, fünf Monate nach dem Abzuge von N., Liv.: u. so tuae litterae binae redditae sunt tertio abs te die, nachdem du sie abgeschickt hattest, Cic.</sense>
 				<sense level="2" n="B">in andern mit Raum und Zeit verwandten Verhältnissen, in denen ein Ausgehen von einem Punkte denkbar ist:</sense>
 				<sense level="3" n="1">
-					). 
+					).
 					<bibl>
 						<author>Liv.</author>
 						21, 36, 7
@@ -261,7 +265,7 @@
 					</bibl>
 				</sense>
 				<sense level="4" n="c">
-					): ab singulari amore, Balb. bei Cic.: neglegentius a re gesta ire, Liv. 
+					): ab singulari amore, Balb. bei Cic.: neglegentius a re gesta ire, Liv.
 					<bibl>
 						<author>Liv.</author>
 						24, 30, 1
@@ -271,10 +275,10 @@
 						2, 14, 3
 					</bibl>
 				</sense>
-				<sense level="3" n="3">nach den Begriffen des Anfangens u. ähnl. = von... an, von, bei, mit, nach ordiri, incipere, auspicari, w.s. – da ab Delphio cantharum circum, Plaut.: u. so a summo = vom Ersten od. ab infimo = vom Letzten (auf dem Triklinium) an in der Runde (zB. da, puer, ab summo, Plaut.: age, tu interibi ab infimo da savium, Plaut.): cornicem a cauda de ovo exire, mit dem Schw. voran, Plin.: a capite repetis, quod quaerimus, Cic. </sense>
+				<sense level="3" n="3">nach den Begriffen des Anfangens u. ähnl. = von... an, von, bei, mit, nach ordiri, incipere, auspicari, w.s. – da ab Delphio cantharum circum, Plaut.: u. so a summo = vom Ersten od. ab infimo = vom Letzten (auf dem Triklinium) an in der Runde (zB. da, puer, ab summo, Plaut.: age, tu interibi ab infimo da savium, Plaut.): cornicem a cauda de ovo exire, mit dem Schw. voran, Plin.: a capite repetis, quod quaerimus, Cic.</sense>
 				<sense level="3" n="4">bei den Begriffen »des Frei- od. Losmachens von usw.«; dah. auch »des Verteidigens oder Schützens vor od. gegen etwas« u. »des Leer- u. Verlassenseins von etwas« (s. Zumpt § 468 f.).</sense>
 				<sense level="3" n="5">
-					), a me pudica est, Plaut.: a vi praestare nihil possum, Cic.: nihil adulescenti neque a natura neque a doctrina deesse sentio, Cic.: mediocriter a doctrina instructus, Cic.: imparati cum a militibus tum a pecunia, Cic.: firmus ab equitatu, stark an R., Planc. b. Cic. – Nicht anders ist ab zu nehmen in Verbindungen wie: dolere ab oculis, ab animo, Plaut.: a morbo valere, ab animo aegrum esse, Plaut.: laborare ab alqa re, Caes. 
+					), a me pudica est, Plaut.: a vi praestare nihil possum, Cic.: nihil adulescenti neque a natura neque a doctrina deesse sentio, Cic.: mediocriter a doctrina instructus, Cic.: imparati cum a militibus tum a pecunia, Cic.: firmus ab equitatu, stark an R., Planc. b. Cic. – Nicht anders ist ab zu nehmen in Verbindungen wie: dolere ab oculis, ab animo, Plaut.: a morbo valere, ab animo aegrum esse, Plaut.: laborare ab alqa re, Caes.
 					<bibl>
 						<author>Plaut.</author>
 						<title>aul.</title>
@@ -296,7 +300,7 @@
 						48, 3
 					</bibl>
 				</sense>
-				<sense level="3" n="6">bei Angabe des Ganzen neben dem Teile = von, aus, unus u. nonnulli ab novissimis, Caes.: in id consilium deligerentur ab universo populo, Cic. </sense>
+				<sense level="3" n="6">bei Angabe des Ganzen neben dem Teile = von, aus, unus u. nonnulli ab novissimis, Caes.: in id consilium deligerentur ab universo populo, Cic.</sense>
 				<sense level="3" n="7">zur Bezeichnung der Seite, von der aus uns jmd. Dienste leistet, servus a pedibus, Lakai, Läufer, Cic.: a manu servus od. bloß a manu, Schreiber, Suet.; – od. der Gegenstände, die einer leistet, besorgt, treibt, ab epistulis, Sekretär, Suet. u. Lampr.: a rationibus, Rechnungsführer, Suet.: a libellis, Bittschriftenannehmer, Suet. u. Lampr.: a memoria, Lampr.</sense>
 				<sense level="3" n="8">
 					,
@@ -353,11 +357,11 @@
 				<itype>a, um</itype>
 				<etym>abacus</etym>
 				<sense>
-					 ed. Detl. 
-					<bibl>
+					 35, 3 ed. Detl. 
+					<quote>
+						 spatia
 						<author>Plin.</author>
-						35, 3
-					</bibl>
+					</quote>
 				</sense>
 			</entryFree>
 		</div0>
@@ -371,9 +375,12 @@
 				<etym>εξέλασις</etym>
 				<sense>
 					 Gloss. II, 302, 50. 
-					<bibl>
+					<quote>
+						 das Wegtreiben
 						<author>Hier.</author>
-						<title>in Ierem.</title>
+					</quote>
+					<bibl>
+						<author>Ierem.</author>
 						1, 5, 15.
 					</bibl>
 				</sense>
@@ -419,12 +426,11 @@
 			<entryFree n="7">
 				<orth key="abāctus">abāctus</orth>
 				<sense>
-					 
-					<bibl>
+					 pan. 20, 4. 
+					<quote>
+						 da er den Gastfreunden ihr Vieh wegtrieb
 						<author>Plin.</author>
-						<title>pan.</title>
-						20, 4.
-					</bibl>
+					</quote>
 				</sense>
 			</entryFree>
 		</div0>
@@ -435,11 +441,11 @@
 				<itype>ī</itype>
 				<gen>m.</gen>
 				<sense>
-					 
-					<bibl>
+					 36, 199. 
+					<quote>
+						rbtem Glas zu Mosaikarbeiten
 						<author>Plin.</author>
-						36, 199.
-					</bibl>
+					</quote>
 				</sense>
 			</entryFree>
 		</div0>
@@ -482,7 +488,14 @@
 						1, 5, 11.
 					</bibl>
 				</sense>
-				<sense level="1" n="III">ein in durchlöcherte Felder abgeteilter Schenk-od. Kredenztisch, der zur Aufnahme der mit einem spitzen Fuße versehenen Weinkrüge diente, Cato r.r. 10, 4. – später ein musivisch verzierter Prunktisch in den Zimmern, zur Aufstellung kostbarer Gefäße (Vasen usw.), Varr. LL., Cic. u.a. </sense>
+				<sense level="1" n="III">
+					 – später ein musivisch verzierter Prunktisch in den Zimmern, zur Aufstellung kostbarer Gefäße (Vasen usw.), Varr. LL., Cic. u.a. 
+					<bibl>
+						<author>Cato</author>
+						<title>r.r.</title>
+						10, 4.
+					</bibl>
+				</sense>
 				<sense level="1" n="IV">architekt. t.t.:</sense>
 				<sense level="2" n="a">
 					 
@@ -501,11 +514,11 @@
 				<sense>
 					 
 					<lang lang="greek">βαίτυλος, </lang>
-					ein Meteorstein, bes. aber der Stein, den Rhea dem Saturnus zu verschlingen gab, 
-					<bibl>
+					ein Meteorstein, bes. aber der Stein,
+					<quote>
+						 den Rhea dem Saturnus zu verschlingen gab
 						<author>Prisc.</author>
-						2, 6
-					</bibl>
+					</quote>
 					<bibl>
 						<author>Augustin.</author>
 						<title>ep.</title>
@@ -525,12 +538,11 @@
 				<orth key="Abaeto">Abaeto</orth>
 				<itype>ere</itype>
 				<sense>
-					 Vgl. abito. 
-					<bibl>
+					 truc. 96. Vgl. abito. 
+					<quote>
+						 weggehen
 						<author>Plaut.</author>
-						<title>truc.</title>
-						96.
-					</bibl>
+					</quote>
 				</sense>
 			</entryFree>
 		</div0>
@@ -542,7 +554,7 @@
 				<sense>
 					 
 					<bibl>
-						<author>Varr.</author>
+						<author>Varro</author>
 						<title>LL.</title>
 						7, 31.
 					</bibl>
@@ -648,12 +660,11 @@
 				<orth key="abalterutrum">abalterutrum</orth>
 				<gen>Adv.</gen>
 				<sense>
-					 
-					<bibl>
+					 de munit. castr. § 43. 
+					<quote>
+						 von einander
 						<author>Hyg.</author>
-						<title>astr.</title>
-						§ 43.
-					</bibl>
+					</quote>
 				</sense>
 			</entryFree>
 		</div0>
@@ -732,7 +743,7 @@
 			<entryFree n="24">
 				<orth key="abarguo">abarguo</orth>
 				<etym>ἀπελέγχω</etym>
-				<sense>,  überführen, Gloss. II, 234, 22. </sense>
+				<sense>, überführen, Gloss. II, 234, 22. </sense>
 			</entryFree>
 		</div0>
 		<div0 n="ABARIS" type="alphabetic letter">
@@ -742,9 +753,12 @@
 				<gen>Akk.</gen>
 				<sense>
 					 
-					<bibl>
+					<quote>
+						 ein Rutuler im Heere des Turnus
 						<author>Verg.</author>
-						<title>Aen.</title>
+					</quote>
+					<bibl>
+						<author>Aen.</author>
 						9, 344.
 					</bibl>
 					<bibl>
@@ -763,10 +777,10 @@
 				<etym>Abaris</etym>
 				<sense>
 					 
-					<bibl>
+					<quote>
+						he von Abaris in Afrika
 						<author>Plin.</author>
-						16, 172.
-					</bibl>
+					</quote>
 					<bibl>
 						<author>Corp.</author>
 						<title>Inscr. Lat.</title>
@@ -860,10 +874,10 @@
 				<etym>ἄβατος</etym>
 				<sense>
 					). 
-					<bibl>
+					<quote>
+						 die nur von den Priestern betreten werden durfte
 						<author>Lucan.</author>
-						10, 323
-					</bibl>
+					</quote>
 					<bibl>
 						<author>Sen.</author>
 						<title>nat.</title>
@@ -897,12 +911,20 @@
 			<entryFree n="32">
 				<orth key="abavus">abavus</orth>
 				<sense>
-					), I, m. = avi avus, der Ururgroßvater, Plaut., Cic. u.a. – Zuw. in allgem. Bed. Ahne, Ahnherr, Cic. u.a. – Vgl. Hauler in Wölfflins Archiv 2, 290. 
+					 u.a. – Vgl. Hauler in Wölfflins Archiv 2, 290. 
 					<bibl>
 						<author>Corp.</author>
 						<title>Inscr. Lat.</title>
 						1, 1198
 					</bibl>
+					<quote>
+						vater
+						<author>Plaut.</author>
+					</quote>
+					<quote>
+						 Ahnherr
+						<author>Cic.</author>
+					</quote>
 				</sense>
 			</entryFree>
 		</div0>
@@ -918,9 +940,13 @@
 			<entryFree n="34">
 				<orth key="abba">abba</orth>
 				<sense>
-					 Nbf. Eccl. – Abt,Vater), der (chald.tis, m.A,sāabb  abbatia, ae, f. (abbas), die Abtei, u. abbatissa, ae, f., die Äbtissin, Eccl. 
+					 Nbf. Eccl. – Abt,Vater), der (chald.tis, m.A,sāabb abbatia, ae, f. (abbas), die Abtei, u. abbatissa, ae, f., die Äbtissin, Eccl. 
+					<quote>
+						 abba
+						<author>Ve</author>
+					</quote>
 					<bibl>
-						<author>Ven. Fort.</author>
+						<author>Fort.</author>
 						<title>carm.</title>
 						4, 4, 16.
 					</bibl>
@@ -986,10 +1012,10 @@
 				<etym>Ἀβδαλώνυµος</etym>
 				<sense>
 					 
-					<bibl>
+					<quote>
+						nig
 						<author>Curt.</author>
-						4, 1
-					</bibl>
+					</quote>
 					<bibl>
 						<author>Iustin.</author>
 						11, 10, 8.
@@ -1041,7 +1067,13 @@
 						10, 10.
 					</bibl>
 				</sense>
-				<sense level="1" n="II">Stadt in Spanien, j. Adra, Mela 2, 6, 7 (2. § 94). – Dav.</sense>
+				<sense level="1" n="II">
+					 (2. § 94). – Dav.
+					<bibl>
+						<author>Mela</author>
+						2, 6, 7
+					</bibl>
+				</sense>
 				<sense level="2" n="a">
 					Abdērītēs, ae, Abl. a, m. (
 					<lang lang="greek">Ἀβδηρίτης</lang>
@@ -1057,7 +1089,7 @@
 				<gen>f.</gen>
 				<etym>abdico</etym>
 				<sense>, das Sich-Lossagen von jmd. od. etwas; dah. (als gerichtl. u. publiz. t.t.)</sense>
-				<sense level="1" n="I">das Verstoßen u. Enterben des Sohnes, alcis, Plin. u. Solin.: mea, Sen. rhet.: absol., Sen. rhet.  u.a. </sense>
+				<sense level="1" n="I">das Verstoßen u. Enterben des Sohnes, alcis, Plin. u. Solin.: mea, Sen. rhet.: absol., Sen. rhet. u.a. </sense>
 			</entryFree>
 		</div0>
 		<div0 n="ABDICĀTĪVĒ" type="alphabetic letter">
@@ -1069,7 +1101,8 @@
 				<sense>
 					 §. 409. 
 					<bibl>
-						<author>Mart. Cap.</author>
+						<author>Mart.</author>
+						<title>Cap.</title>
 						4.
 					</bibl>
 				</sense>
@@ -1287,11 +1320,30 @@
 				<gen>n.</gen>
 				<sense>
 					; vgl. Gloss. ›abdomen, abdumen, 
-					<bibl>
+					<quote>
+						 abdomina thunni
+						<author>Lucil.</author>
+					</quote>
+					<quote>
+						 abdomen avide devorare
+						<author>Val. Max.</author>
+					</quote>
+					<quote>
+						 manebat insaturabile abdomen
+						<author>Cic.</author>
+					</quote>
+					<quote>
+						 der nur seinen Bauch pflegt
+						<author>Cic.</author>
+					</quote>
+					<quote>
+						 niedere Sinnenlust
+						<author>Cic.</author>
+					</quote>
+					<quote>
+						 abdomini servire
 						<author>Sen.</author>
-						<title>de ben.</title>
-						7, 26, 4:
-					</bibl>
+					</quote>
 					<bibl>
 						<author>Charis.</author>
 						38, 9
@@ -1447,10 +1499,13 @@
 				<itype>ae</itype>
 				<gen>f.</gen>
 				<sense>
-					 – Dav. Abellānus, (in Hdschr. u. Ausgg. auch Avellanus), abellanisch, oppidum, Serv. u. Isid.: bes. Abellana nux u. subst. bl. Abellana, ae, f., die Haselnuß als Frucht, u. die Haselnuß = der Haselnußstrauch, der Haselnußbaum, Scriptt. r.r., Plin. u.a.: nucleus, Plin. u. Isid. – Plur. subst., Abellanī, Orum, m., die Einw. von Abella, die Abellaner, Iustin. u.a. 
-					<bibl>
+					 u. Isid. – Plur. subst., Abellanī, Orum, m., die Einw. von Abella, die Abellaner, Iustin. u.a. 
+					<quote>
+						 Avella vecchia
 						<author>Verg.</author>
-						<title>Aen.</title>
+					</quote>
+					<bibl>
+						<author>Aen.</author>
 						7, 740.
 					</bibl>
 					<bibl>
@@ -1466,6 +1521,14 @@
 						<author>Charis.</author>
 						35, 8.
 					</bibl>
+					<quote>
+						 oppidum
+						<author>Serv.</author>
+					</quote>
+					<quote>
+						 nucleus
+						<author>Plin.</author>
+					</quote>
 				</sense>
 			</entryFree>
 		</div0>
@@ -1514,7 +1577,7 @@
 			<entryFree n="62">
 				<orth key="abēna">abēna</orth>
 				<etym>habena</etym>
-				<sense>,  w.s. </sense>
+				<sense>, w.s. </sense>
 			</entryFree>
 		</div0>
 		<div0 n="ABENTĪNUS" type="alphabetic letter">
@@ -1633,7 +1696,7 @@
 					</bibl>
 				</sense>
 				<sense level="4" n="e">
-					), si res abiret a mancipe, Cic.: ne res ab Apronio abiret, Cic. 
+					), si res abiret a mancipe, Cic.: ne res ab Apronio abiret, Cic.
 					<bibl>
 						<author>Ausgew.</author>
 						<title>Br. Cic.</title>
@@ -1642,7 +1705,7 @@
 				</sense>
 				<sense level="2" n="B">übtr.:</sense>
 				<sense level="3" n="1">im allg.: non longe abieris, du brauchst nicht weit (nach Beispielen) zu suchen, Cic.: quid ad istas ineptias abis? Cic.: longius inde nefas abiit, griff weiter um sich, Ov.: vide, quo iudicium meum abeat, wohin zielt, Sen.: ne nunc incepto longius abierim, Tac.: quorsum abeant? auf welche Seite sollen sie sich stellen? Hor. </sense>
-				<sense level="3" n="2">insbes., von einem Thema, einem Beginnen, einem Verhältnis abgehen, abschweifen, abweichen, es aufgeben, verlassen, illuc, unde abii, redeo, Hor.: nec nunc incepto longius abierim, Tac.: abeo a sensibus, Cic.: quid ad istas ineptias abis? wozu solch ungehörige Dinge? Cic. – ab ignavia, Naev. com. fr.: ab emptione, zurücktreten, ICt.: a iure, vom R. abgehen, es verletzen, Cic.: etiam tu hinc abis? auch du verlässest meine Sache? Cic. </sense>
+				<sense level="3" n="2">insbes., von einem Thema, einem Beginnen, einem Verhältnis abgehen, abschweifen, abweichen, es aufgeben, verlassen, illuc, unde abii, redeo, Hor.: nec nunc incepto longius abierim, Tac.: abeo a sensibus, Cic.: quid ad istas ineptias abis? wozu solch ungehörige Dinge? Cic. – ab ignavia, Naev. com. fr.: ab emptione, zurücktreten, ICt.: a iure, vom R. abgehen, es verletzen, Cic.: etiam tu hinc abis? auch du verlässest meine Sache? Cic.</sense>
 				<sense level="1" n="II">mit dem Nbbegr. des Vergehens, Verschwindens u. dgl., nur übtr.,</sense>
 				<sense level="3" n="1">vom Vergehen der Zeit u. der Zustände mit der Zeit:</sense>
 				<sense level="4" n="a">von der Zeit = verfließen, vergehen, verstreichen, im Perf. = vorbeisein, dum haec dicit, abiit hora, Ter.: abiit illud tempus, Cic.: abiit ille annus, Cic.: annus abit, dum (bis) etc., Ov.: hic dies hoc modo abiit, Cic. </sense>
@@ -1650,7 +1713,7 @@
 				<sense level="4" n="c">von andern Zuständen usw. = sich verlieren, sich heben, verschwinden, schwinden, sensus abit, Cic.: voluptas cito abibit, Cato fr.: malum in diem abiit, Ter.: timor, fides abiit, Liv.: ubi vanus terror abiit, Liv.: e medio abiit scrupulus, Ter. – dah. illa mea, quae solebas ante laudare: o hominem facilem! o hospitem non gravem! abierunt, damit ist es aus, Cic. </sense>
 				<sense level="3" n="2">vom Erfolg einer Handlung (= ohne Folgen) abgehen, ablaufen, hingehen, mirabar hoc si sic abiret, Ter.: non posse istaec sic abire, ohne Folgen bleiben, Cic.: non sic abibunt odia, Sen. poët.: sic abierit, das mag so abgehen, Sen. </sense>
 				<sense level="3" n="3">
-					 
+					als t.t. der Geschäftsspr. = der Menge, dem Werte nach zurückgehen, fallen, ut reditus agrorum, sic etiam pretium retro abiit, 
 					<bibl>
 						<author>Plin.</author>
 						<title>ep.</title>
@@ -1687,11 +1750,11 @@
 				<orth key="abequito">abequito</orth>
 				<itype>Avī, Are</itype>
 				<sense>
-					 
-					<bibl>
+					 24, 31, 10. 
+					<quote>
+						 Syracusas
 						<author>Liv.</author>
-						24, 31, 10.
-					</bibl>
+					</quote>
 				</sense>
 			</entryFree>
 		</div0>
@@ -1711,9 +1774,12 @@
 				<etym>aberro</etym>
 				<sense>
 					; ep. 15, 18, 1. 
-					<bibl>
+					<quote>
+						 a molestiis
 						<author>Cic.</author>
-						<title>ad Att.</title>
+					</quote>
+					<bibl>
+						<author>Att.</author>
 						12, 38, 3
 					</bibl>
 				</sense>
@@ -1785,12 +1851,11 @@
 				<orth key="abhibeo">abhibeo</orth>
 				<itype>ēre</itype>
 				<sense>
-					 ed. Brix. (Ritschl abdendus). 
-					<bibl>
+					 trin. 264 ed. Brix. (Ritschl abdendus). 
+					<quote>
+						 vom Leibe halten
 						<author>Plaut.</author>
-						<title>Astr. fr.</title>
-						264
-					</bibl>
+					</quote>
 				</sense>
 			</entryFree>
 		</div0>
@@ -2033,7 +2098,7 @@
 				<etym>abicio</etym>
 				<sense>,</sense>
 				<sense level="1" n="I">
-					 
+					 abiectiones S litterae, die Abstoßung, 
 					<bibl>
 						<author>Cael.</author>
 						<title>Aur. acut.</title>
@@ -2097,10 +2162,10 @@
 				<etym>abies</etym>
 				<sense>
 					 col. 2. lin. 3 u. 4. 
-					<bibl>
+					<quote>
+						 tannen
 						<author>Vitr.</author>
-						7, 3, 1.
-					</bibl>
+					</quote>
 					<bibl>
 						<author>Corp.</author>
 						<title>Inscr. Lat.</title>
@@ -2138,6 +2203,18 @@
 				<etym>abies</etym>
 				<sense>
 					; 19; 12. 
+					<quote>
+						 Pferd
+						<author>Prop.</author>
+					</quote>
+					<quote>
+						 hastile
+						<author>Liv.</author>
+					</quote>
+					<quote>
+						 tabulae
+						<author>Vulg.</author>
+					</quote>
 					<bibl>
 						<author>Prop.</author>
 						3
@@ -2194,8 +2271,12 @@
 				<etym>abiegnus</etym>
 				<sense>
 					 
-					<bibl>
+					<quote>
+						 hasta
 						<author>Serv.</author>
+					</quote>
+					<bibl>
+						<author>Verg.</author>
 						<title>Aen.</title>
 						11, 667.
 					</bibl>
@@ -2209,17 +2290,16 @@
 				<itype>a, um</itype>
 				<etym>abies</etym>
 				<sense>
-					 
+					 exod. 35, 35. 
 					<bibl>
 						<author>Paul.</author>
 						<title>ex Fest.</title>
 						27, 11.
 					</bibl>
-					<bibl>
+					<quote>
+						 der Tischler
 						<author>Vulg.</author>
-						<title>excd.</title>
-						35, 35.
-					</bibl>
+					</quote>
 				</sense>
 			</entryFree>
 		</div0>
@@ -2277,12 +2357,11 @@
 				<orth key="abigeo">abigeo</orth>
 				<itype>ātum, Are</itype>
 				<sense>
-					 
-					<bibl>
+					 ep. 71, 2. 
+					<quote>
+						 wegtreiben
 						<author>Cypr.</author>
-						<title>ep.</title>
-						71, 2.
-					</bibl>
+					</quote>
 				</sense>
 			</entryFree>
 		</div0>
@@ -2317,20 +2396,25 @@
 				<itype>ēgi, Actum, ere</itype>
 				<sense>(ab u. ago), wegtreiben, - jagen, vertreiben,</sense>
 				<sense level="1" n="a">
-					 in stabula solent equas abigere, Varr.  r.r. 2, 10, 1. – 
+					 – 
 					<lang lang="greek">α</lang>
 					) übh.: greges ovium ex Apulia in Samnium aestivatum, 
 					<bibl>
-						<author>Varr.</author>
+						<author>Varro</author>
 						<title>r.r.</title>
 						2, 1, 16:
+					</bibl>
+					<bibl>
+						<author>Varro</author>
+						<title>r.r.</title>
+						2, 10, 1.
 					</bibl>
 					<lang lang="greek">β</lang>
 					) gewaltsam vertreiben, forttreiben, verjagen, fortjagen, volucres et feras, Cic.: muscas, Cic.: uxorem, verstoßen, Suet.: alqm rus, Ter.: anseres de frumento, Plaut.: alqm ab ianua, Plaut.: abigi ab ludis, ab sede piorum, Liv. – 
 					<lang lang="greek">γ</lang>
 					) diebischerweise, raubend wegtreiben, pecus, Cic.: praedas hominum pecorumque, Liv.: eorum pecora in suos fines, Hyg. – 
 					<lang lang="greek">δ</lang>
-					) abtreiben, partum, Tac.:  partum sibi medicamentis, Cic.: fetum, Col. u. Suet. 
+					) abtreiben, partum, Tac.: partum sibi medicamentis, Cic.: fetum, Col. u. Suet. 
 				</sense>
 			</entryFree>
 		</div0>
@@ -2384,19 +2468,20 @@
 				<etym>abeo</etym>
 				<sense>
 					 (17). 
-					<bibl>
+					<quote>
+						 hinc abitio
 						<author>Plaut.</author>
-						<title>rud.</title>
-						503:
-					</bibl>
-					<bibl>
+					</quote>
+					<quote>
+						 haec abitio evenit
 						<author>Ter.</author>
-						<title>heaut.</title>
-						190.
-					</bibl>
-					<bibl>
+					</quote>
+					<quote>
+						 solis occasus et abitio
 						<author>Iul.</author>
-						<title>Val.</title>
+					</quote>
+					<bibl>
+						<author>Val.</author>
 						3, 26
 					</bibl>
 				</sense>
