@@ -121,8 +121,8 @@
 						<author>Quint.</author>
 						4, 2, 31
 					</bibl>
-					<lang lang="greek">οἱἀπο Πλάτωνος</lang>
-					, Jünger Plaros, Cic., vollst. profecti a  Platone, Cic.: homo de schola et a magistro (= 
+					<lang lang="greek">οἱἀπο Πλάτωνος, </lang>
+					Jünger Plaros, Cic., vollst. profecti a  Platone, Cic.: homo de schola et a magistro (= 
 					<lang lang="greek">ὁ διδαχθείς</lang>
 					), Cic. 
 				</sense>
@@ -500,8 +500,8 @@
 				<gen>n.</gen>
 				<sense>
 					 
-					<lang lang="greek">βαίτυλος</lang>
-					, ein Meteorstein, bes. aber der Stein, den Rhea dem Saturnus zu verschlingen gab, 
+					<lang lang="greek">βαίτυλος, </lang>
+					ein Meteorstein, bes. aber der Stein, den Rhea dem Saturnus zu verschlingen gab, 
 					<bibl>
 						<author>Prisc.</author>
 						2, 6
@@ -671,9 +671,7 @@
 					</bibl>
 					<lang lang="greek">κατ</lang>
 					' 
-					<lang lang="greek">ἰδίαν περιπατῶ</lang>
-					. 
-					<lang lang="greek">διακινῶ</lang>
+					<lang lang="greek">ἰδίαν περιπατῶ. διακινῶ</lang>
 					‹. 
 				</sense>
 			</entryFree>
@@ -1007,9 +1005,7 @@
 				<gen>n.</gen>
 				<sense>
 					 (
-					<lang lang="greek">Ἄβδηρα</lang>
-					, 
-					<lang lang="greek">τὰ</lang>
+					<lang lang="greek">Ἄβδηρα, τὰ</lang>
 					),
 				</sense>
 				<sense level="1" n="I">
@@ -1778,9 +1774,7 @@
 						<title>ex Fest.</title>
 						23, 7.
 					</bibl>
-					<lang lang="greek">ἀπαγελάζω</lang>
-					, 
-					<lang lang="greek">διαχωρίζω</lang>
+					<lang lang="greek">ἀπαγελάζω, διαχωρίζω</lang>
 					‹. 
 				</sense>
 			</entryFree>
@@ -2323,9 +2317,14 @@
 				<itype>ēgi, Actum, ere</itype>
 				<sense>(ab u. ago), wegtreiben, - jagen, vertreiben,</sense>
 				<sense level="1" n="a">
-					leb. Wesen: 
+					 in stabula solent equas abigere, Varr.  r.r. 2, 10, 1. – 
 					<lang lang="greek">α</lang>
-					) übh.: greges ovium ex Apulia in Samnium aestivatum, Varr. r.r. 2, 1, 16: in stabula solent equas abigere, Varr.  r.r. 2, 10, 1. – 
+					) übh.: greges ovium ex Apulia in Samnium aestivatum, 
+					<bibl>
+						<author>Varr.</author>
+						<title>r.r.</title>
+						2, 1, 16:
+					</bibl>
 					<lang lang="greek">β</lang>
 					) gewaltsam vertreiben, forttreiben, verjagen, fortjagen, volucres et feras, Cic.: muscas, Cic.: uxorem, verstoßen, Suet.: alqm rus, Ter.: anseres de frumento, Plaut.: alqm ab ianua, Plaut.: abigi ab ludis, ab sede piorum, Liv. – 
 					<lang lang="greek">γ</lang>

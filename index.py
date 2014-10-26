@@ -69,6 +69,16 @@ def getAuthorRegExp():
 
 	output = lines + ["(?:(?:Ps.\s){0,1}[A-Z]{1}[a-z]+\.)"]
 	return "|".join(output)
+
+def getBooksRegexp():
+	lines = []
+	with open("./dictionary/books.csv") as f:
+		lines = ["(?:{0})".format(line.replace("\n", "").replace(" ", "\s").replace(".", "\.").split("\t")[1]) for line in f.readlines()]
+		f.close()
+
+	output = lines + ["(?:(?:in|ex|de|ad){1}[\s]{1}){0,1}(?:[^\W\d]{2,}\.(?:[\s])*)+)"]
+	return "|".join(output)
+
 #########################################################
 #
 #
@@ -79,7 +89,7 @@ def getAuthorRegExp():
 ReplacementBookDictionary = booksdictionary()
 ReplacementAuthorDictionary = authordictionary()
 AuthorRegExp = getAuthorRegExp()
-
+BooksRegExp = getBooksRegexp()
 #########################################################
 #
 #
@@ -91,7 +101,7 @@ AuthorRegExp = getAuthorRegExp()
 def opusRegExp(opusfinder = False):
 	paragraphCharacters = "(?:[p\§]{1}\.{0,1}\s){0,1}"
 	authorRegExp = AuthorRegExp
-	regexp = "(?P<author>" + authorRegExp + "){1}(?:\s(?P<opus>(?:(?:in|ex|de|ad){1}[\s]{1}){0,1}(?:[^\W\d]{2,}\.(?:[\s]){0,1})+)+){0,1}(?:\s(?P<identifier1>" + paragraphCharacters + "[0-9]+\,)){0,1}(?:\s(?P<identifier2>" + paragraphCharacters +  "[0-9]+\,)){0,1}(?:\s(?P<identifier3>" + paragraphCharacters + "[0-9]+\,)){0,1}(?:\s(?P<identifier4>" + paragraphCharacters + "[0-9]+[\.:]{0,1})){1}"
+	regexp = "(?P<author>" + authorRegExp + "){1}(?:\s(?P<opus>" + BooksRegExp + "+){0,1}(?:\s(?P<identifier1>" + paragraphCharacters + "[0-9]+\,)){0,1}(?:\s(?P<identifier2>" + paragraphCharacters +  "[0-9]+\,)){0,1}(?:\s(?P<identifier3>" + paragraphCharacters + "[0-9]+\,)){0,1}(?:\s(?P<identifier4>" + paragraphCharacters + "[0-9]+[\.:]{0,1})){1}"
 	if opusfinder:
 		#sub
 		return re.sub("P<[a-zA-Z0-9]+>", ":", regexp)
@@ -111,7 +121,7 @@ OpusRegExp = {
 	}
 
 ol_match = re.compile("^([1-9]{1,3}|[abcdefABCDEF]{1}|IX|IV|V?I{0,3})$")
-GreekChar = re.compile("((?:(?:[\p{Greek}]+)+[\s]*)+)")
+GreekChar = re.compile("((?:(?:[\p{Greek}]+)+[\s\.\,]*)+)")
 
 def replaceAuthor(author):
 	if author in ReplacementAuthorDictionary:
