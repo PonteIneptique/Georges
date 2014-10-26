@@ -1,6 +1,6 @@
 Georges
 =======
-This is an automated conversion made by Thibault Clerice for the [Georges Latin dictionary](http://outils.biblissima.fr/collatinus/ressources/Georges_1913.xml) found on [Biblissima](http://outils.biblissima.fr)
+This is an automated conversion made by Thibault Clérice for the [Georges Latin dictionary](http://outils.biblissima.fr/collatinus/ressources/Georges_1913.xml) found on [Biblissima](http://outils.biblissima.fr)
 
 There is a small sample available in `output/sample.xml` to check the formatting and potential error of the transformation
 
@@ -15,6 +15,10 @@ The abbreviation system being chaotic and random in the Georges, I have use a bo
 - Run `StringComparison/WerkStringComparison.py`
 - Run `StringComparison/generateNormalizingBook.py`
 - Run `index.py` with `ignoreReplacer` set to `False`
+
+##Generating TEI FILE
+- Add or update revision in `input/header.xml`
+- Run merge.py
 
 ##Credits
 - [Abzkurzung.txt](http://www.zeno.org/Georges-1913/M/Verzeichnis+der+Abk%C3%BCrzungen)

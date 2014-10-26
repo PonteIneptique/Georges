@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TEI.2>
+<!DOCTYPE TEI.2 PUBLIC "-//TEI P4//DTD Main DTD Driver File//EN" "http://www.tei-c.org/Guidelines/DTD/tei2.dtd" [
+<!ENTITY % TEI.XML "INCLUDE">
+<!ENTITY % PersDict PUBLIC "-//Perseus P4//DTD Perseus Dictionaries//EN" "http://www.perseus.tufts.edu/DTD/1.0/PersDict.dtd" >
+%PersDict;]>
+<teiHeader status="new" type="text" TEIform="teiHeader">
+	<fileDesc TEIform="fileDesc">
+	<titleStmt TEIform="titleStmt">
+		<title TEIform="title">Ausführliches lateinisch-deutsches Handwörterbuch</title>
+		<title type="sub" TEIform="title">Machine readable text</title>
+		<author TEIform="author">Karl Ernst Georges</author>
+		<sponsor TEIform="sponsor">Perseus Project, Tufts University</sponsor>
+		<principal TEIform="principal">Gregory Crane</principal>
+		<respStmt TEIform="respStmt">
+			<resp TEIform="resp">Prepared under the supervision of</resp>
+			<name TEIform="name">Thibault Clérice</name>
+		</respStmt>
+		<funder n="org:NEH" TEIform="funder">The National Endowment for the Humanities</funder>
+	</titleStmt>
+	<publicationStmt TEIform="publicationStmt">
+		<publisher TEIform="publisher">Trustees of Tufts University</publisher>
+		<pubPlace TEIform="pubPlace">Medford, MA</pubPlace>
+		<authority TEIform="authority">Perseus Project</authority>
+	</publicationStmt>
+	<sourceDesc default="NO" TEIform="sourceDesc">
+		<biblStruct default="NO" TEIform="biblStruct">
+			<monogr TEIform="monogr">
+			<author TEIform="author">Karl Ernst Georges</author>
+			<title TEIform="title">Ausführliches lateinisch-deutsches Handwörterbuch</title>
+			<imprint TEIform="imprint">
+				<pubPlace TEIform="pubPlace">Hannover und Leipzig</pubPlace>
+				<publisher TEIform="publisher">Hansche Buchandlung</publisher>
+				<date TEIform="date">1940</date>
+			</imprint>
+			</monogr>
+			<idno type="ISBN" TEIform="idno">0198642261</idno>
+		</biblStruct>
+	</sourceDesc>
+	</fileDesc>
+
+	<encodingDesc TEIform="encodingDesc">
+		<refsDecl doctype="TEI.2" TEIform="refsDecl">
+			<state n="chunk" unit="entry" TEIform="state"/>
+		</refsDecl>
+		<refsDecl doctype="TEI.2" TEIform="refsDecl">
+			<state unit="alphabetic letter" TEIform="state"/>
+			<state unit="entry" TEIform="state"/>
+		</refsDecl>
+		<!--
+		<refsDecl doctype="TEI.2" TEIform="refsDecl">
+			<state n="chunk" unit="frontmatter" TEIform="state"/>
+			<state n="chunk" unit="subsection" TEIform="state"/>
+		</refsDecl>
+		-->
+	</encodingDesc>
+
+	<profileDesc TEIform="profileDesc">
+		<langUsage default="NO" TEIform="langUsage">
+			<language id="en" TEIform="language">German</language>
+			<language id="greek" TEIform="language">Greek</language>
+			<language id="la" TEIform="language">Latin</language>
+		</langUsage>
+	</profileDesc>
+
+	<revisionDesc TEIform="revisionDesc">
+		<change TEIform="change">
+			<date TEIform="date">26 October 2014</date>
+			<respStmt TEIform="respStmt">
+				<name TEIform="name">DAS</name>
+				<resp TEIform="resp">ed.</resp>
+			</respStmt>
+			<item TEIform="item">
+				$Log: lsj.xml,v $
+				Revision 0.0.1  2014-10-26 16:30	thibaultclerice
+				First registered automatic generation through http://github.com/ponteineptique/Georges using Biblissima Source (http://outils.biblissima.fr)
+			</item>
+		</change>
+	</revisionDesc>
+</teiHeader>
