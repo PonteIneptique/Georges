@@ -68,7 +68,7 @@ def getAuthorRegExp(simple = False):
 		f.close()
 
 	if not simple:
-		output = output + ["(?:(?:Ps.\s){0,1}[A-Z]{1}[a-z]+\.)"]
+		output = output# + ["(?:(?:[A-Z]{1}[a-z]+)(?:\szu\s)(?:Ps.\s){0,1}[A-Z]{1}[a-z]+\.)"]
 
 	return "|".join(output)
 
@@ -132,8 +132,13 @@ OpusRegExp = {
 		"Groups" : re.compile(opusRegExp())
 	}
 
+SecondarySource = {
+	"Finder" : re.compile("(?P<match>(?:[A-Z]{1}[a-z]+)(?:\szu\s)(?:Ps.\s){0,1}[A-Z]{1}[a-z]+\.)"),
+	"Groups" : re.compile("(?P<SecondaryAuthor>[A-Z]{1}[a-z]+)(?:\szu\s)(?P<PrimaryAuthor>(?:Ps.\s){0,1}[A-Z]{1}[a-z]+\.)")
+}
+
 ol_match = re.compile("^([1-9]{1,3}|[abcdefABCDEF]{1}|IX|IV|V?I{0,3})$")
-GreekChar = re.compile("((?:(?:[\p{Greek}]+)+[\s\.\,]*)+)")
+GreekChar = re.compile("((?:(?:[\p{Greek}µ']+)+[\s\.\,]*)+)")
 
 Quotation = {
 	"Finder" : re.compile("(?P<match>{0})".format(QuotationRegExp(True))),
@@ -354,6 +359,55 @@ def opusFinder(text, node):
 				else:
 					lastNode = greekFinder(element, node)
 
+
+def secondarySource(text, node):
+	regexp = SecondarySource["Groups"]
+
+	items = [m.groupdict() for m in regexp.finditer(text)][0]
+
+	PrimaryAuthor = items["PrimaryAuthor"]
+	PrimaryAuthor = replaceAuthor(PrimaryAuthor)
+
+	SecondaryAuthor = items["SecondaryAuthor"]
+
+	SecBiblNode = cElementTree.SubElement(node, "bibl")
+
+	SecAuthorNode = cElementTree.SubElement(SecBiblNode, "author")
+	SecAuthorNode.text = SecondaryAuthor
+
+	#The should be a loop there at some point
+	PrimBiblNode = cElementTree.SubElement(SecBiblNode, "bibl")
+	PrimaryAuthorNode = cElementTree.SubElement(PrimBiblNode, "author")
+	PrimaryAuthorNode.text = PrimaryAuthor
+
+	return SecBiblNode #Return the last node in usage
+
+
+def SecondarySourceFinder(text, node):
+	splitter = SecondarySource["Finder"]
+
+	caught = splitter.split(text)
+
+	initialText = None
+	lastNode = node
+	for element in caught:
+		if element:
+			if not initialText:
+				if splitter.match(element):
+					#We must create a node with opus informations
+					lastNode = secondarySource(element, node)
+					initialText = True
+				else:
+					lastNode = opusFinder(element, node)
+					initialText = True
+			else:
+				if splitter.match(element):
+					lastNode = secondarySource(element, node)
+				else:
+					lastNode = opusFinder(element, node)
+
+	return lastNode
+
 def polishSenses(text):
 	text = re.sub("<[\/]{0,1}[A-Za-z0-9]+>", "", text)
 	text = re.sub("[\s]{2,}", " ", text)
@@ -366,12 +420,11 @@ def divideText(text, index):
 	try:
 		return match.group(1), match.group(2)
 	except:
-		print (text)
 		raise ValueError("No H1 for line {0}".format(index))
 
 
 def defineLevelRegExp(text):
-	availableRegExp = ["[a-z]+", "[IVX]+", "[0-9]+", "[ABCDEFGH]+"]
+	availableRegExp = ["[a-z]+", "[IVX]+", "[0-9]+", "[ABCDEFGH]+", "[αβ]+"]
 	for regexp in availableRegExp:
 		r = re.compile(regexp)
 		if r.match(text):
@@ -436,7 +489,7 @@ with open("input/body.xml") as f:
 		# - we set up an index counter
 		# - we reset id to None. id is the key for the numeric identifier of the sense
 		senses = []
-		senses_text_split = re.split('[–]{0,1}\s([1-9]{1,3}|[abcdefABCDEF]{1}|IX|IV|V?I{0,3})\)\s', senses_text)
+		senses_text_split = re.split('[–\,]{0,1}\s([1-9]{1,3}|[abcdefABCDEFαβ]{1}|IX|IV|V?I{0,3})\)\s', senses_text)
 
 		if len(senses_text_split) == 1:
 
@@ -446,7 +499,7 @@ with open("input/body.xml") as f:
 
 			#When a sense has no number before it
 			senses.append(cElementTree.SubElement(entryFree, "sense"))
-			quotationFinder(text, senses[len(senses) - 1 ])
+			SecondarySourceFinder(text, senses[len(senses) - 1 ])
 		else:
 			index_sense = 1
 			id = None
