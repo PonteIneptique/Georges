@@ -133,8 +133,9 @@ OpusRegExp = {
 	}
 
 SecondarySource = {
-	"Finder" : re.compile("(?P<match>(?:[A-Z]{1}[a-z]+)(?:\szu\s)(?:Ps.\s){0,1}[A-Z]{1}[a-z]+\.)"),
-	"Groups" : re.compile("(?P<SecondaryAuthor>[A-Z]{1}[a-z]+)(?:\szu\s)(?P<PrimaryAuthor>(?:Ps.\s){0,1}[A-Z]{1}[a-z]+\.)")
+	"Finder" : re.compile("(?P<match>(?:[A-Z]{1}[a-z]+)(?:\szu\s){1}(?:" + opusRegExp(True) + ")+)"),
+	#I need to find a way to handle this kind of situation
+	"Groups" : re.compile("(?P<SecondaryAuthor>[A-Z]{1}[a-z]+)(?:\szu\s){1}(?(" + re.sub("\?P<[a-zA-Z0-9]+>", "", opusRegExp()) + ")+(?:\s)*){1}")
 }
 
 ol_match = re.compile("^([1-9]{1,3}|[abcdefABCDEF]{1}|IX|IV|V?I{0,3})$")
@@ -364,7 +365,7 @@ def secondarySource(text, node):
 	regexp = SecondarySource["Groups"]
 
 	items = [m.groupdict() for m in regexp.finditer(text)][0]
-
+	print(items)
 	PrimaryAuthor = items["PrimaryAuthor"]
 	PrimaryAuthor = replaceAuthor(PrimaryAuthor)
 
