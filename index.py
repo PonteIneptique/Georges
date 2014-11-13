@@ -120,30 +120,6 @@ def QuotationRegExp(finder = False):
 		return re.sub("P<[a-zA-Z0-9]+>", ":", regexp)
 	return regexp
 
-##########################################################
-#
-#
-#	RegExp Compiled
-#
-#
-##########################################################
-OpusRegExp = {
-		"Finder" : re.compile("(?P<match>{0})".format(opusRegExp(True))),
-		"Groups" : re.compile(opusRegExp())
-	}
-
-SecondarySource = {
-	"Finder" : re.compile("(?P<match>(?:[A-Z]{1}[a-z]+)(?:\szu\s){1}(?:" + opusRegExp(True) + ")+)", flags= re.UNICODE),
-	"Groups" : re.compile("(?P<SecondaryAuthor>[A-Z]{1}[a-z]+)(?:\szu\s){1}(?P<Quoted>(?:" + re.sub("\?P<[a-zA-Z0-9]+>", "", opusRegExp()) + ")+(?:\s)*){1}", flags= re.UNICODE)
-}
-
-ol_match = re.compile("^([1-9]{1,3}|[abcdefABCDEF]{1}|IX|IV|V?I{0,3})$")
-GreekChar = re.compile("((?:(?:[\p{Greek}µ']+)+[\s\.\,]*)+)")
-
-Quotation = {
-	"Finder" : re.compile("(?P<match>{0})".format(QuotationRegExp(True))),
-	"Groups" : re.compile(QuotationRegExp())
-}
 
 
 def replaceAuthor(author):
