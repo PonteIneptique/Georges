@@ -26,7 +26,6 @@ class Step(Steps):
 	def tail(self, node, text):
 		""" Add some text at the end of the container """
 		subelements = list(node)
-		print (subelements)
 		if subelements and len(subelements) > 0:
 			subnode = subelements[-1]
 			if subnode.tail:

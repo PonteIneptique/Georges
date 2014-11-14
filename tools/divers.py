@@ -90,7 +90,7 @@ def divideText(text, index):
 
 
 def defineLevelRegExp(text):
-	availableRegExp = ["[a-z]+", "[IVX]+", "[0-9]+", "[ABCDEFGH]+", "[αβ]+"]
+	availableRegExp = ["[a-z]+", "[IVX]+", "[0-9]+", "[ABCDEFGH]+", "[αβγδ]+"]
 	for regexp in availableRegExp:
 		r = re.compile(regexp)
 		if r.match(text):

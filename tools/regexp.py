@@ -26,11 +26,11 @@ class RegExp(object):
 				"grouper" : self.generate("quote")
 			},
 			"senses" : {
-				"grouper" : re.compile("^([1-9]{1,3}|[abcdefABCDEFαβ]{1}|IX|IV|V?I{0,3})$"),
-				"splitter" : re.compile("[–\,]{0,1}\s([1-9]{1,3}|[abcdefABCDEFαβ]{1}|IX|IV|V?I{0,3})\)\s")
+				"grouper" : re.compile("^([1-9]{1,3}|[abcdefABCDEFαβγδ]{1}|IX|IV|V?I{0,3})$"),
+				"splitter" : re.compile("[–\,]{0,1}\s([1-9]{1,3}|[abcdefABCDEFαβγδ]{1}|IX|IV|V?I{0,3})\)\s")
 			},
 			"greek" : {
-				"matcher" : re.compile("((?:(?:[\p{Greek}µ']+)+[\s\.\,]*)+)"),
+				"matcher" :  self.generate("greek"),
 				"grouper" : re.compile("(?P<match>(?:(?:[\p{Greek}µ']+)+[\s\.\,]*)+)")
 			}
 		}
@@ -40,7 +40,8 @@ class RegExp(object):
 		mappings = {					# We set up a dictionary to do some kind of switch-alike function where it is easy to read what shoud do what
 			"primarySource" 	: self.primarySource,
 			"secondarySource"	: self.secondarySource,
-			"quote"			: self.quotes
+			"quote"			: self.quotes,
+			"greek" : self.greek
 		}
 
 		regexp = mappings[category]()	# We call the function through the dictionary
@@ -121,4 +122,8 @@ class RegExp(object):
 		regexp += "\,[\s]*"
 		regexp += "(?P<author>"+ AuthRegExp + "){1}"
 
+		return regexp
+
+	def greek(self):
+		regexp = "((?:(?:[\p{Greek}µ']+)+[\s\.\,]*)+)"
 		return regexp

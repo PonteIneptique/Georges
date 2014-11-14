@@ -99,7 +99,6 @@ with open("input/body.xml") as f:
 		senses = []
 		senses_text_split = regexp.matrices["senses"]["splitter"].split(senses_text)
 		senses_text_split = [s for s in senses_text_split if s != None]
-		print (senses_text_split)
 
 		if len(senses_text_split) == 1:
 
