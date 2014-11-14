@@ -7,7 +7,7 @@ There is a small sample available in `output/sample.xml` to check the formatting
 Full document in output.xml
 
 #Documentation links :
-- [Structure](./documentation/Structure.md) : The overall structure of the project
+- [Structure](./documentation/Structure.md) : The overall TEI structure of the project
 - [Step](./documentation/Step.md) : What is a step in our project ? How to add one ?
 - [Normalization](./documentation/Normalization.md) : How our normalization is made.
 
