@@ -6,6 +6,7 @@ import xml.etree.cElementTree as cElementTree
 from tools.divers import getListFromDictRegExp
 
 def Greek(text, node, regexp = None, normalizer = None):	# For this particular function, there is no use of regexp at this point
+	""" Put text in a subnode <lang> with attributes lang="greek" """
 	lang = cElementTree.SubElement(node, "lang")
 	lang.set("lang", "greek")
 	lang.text = text
@@ -45,6 +46,7 @@ def PrimarySource(text, node, regexp, normalizer):
 
 
 def Quote(text, node, regexp, normalizer):
+	""" Take some text and a parent node, add a <quote> subnode """
 	items = getGroups(text, regexp["quote"])
 
 	author = normalizer.replace(items["author"], "author")
@@ -61,6 +63,7 @@ def Quote(text, node, regexp, normalizer):
 
 
 def SecondarySource(text, node, regexp, normalizer):
+	""" Take some text and a parent node, add a bibl subnode for a secondary source """
 	items = getGroups(text, regexp["secondarySource"])
 
 	SecondaryAuthor = items["SecondaryAuthor"]
