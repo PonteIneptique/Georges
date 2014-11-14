@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
 
-
-import codecs
 import xml.etree.cElementTree as cElementTree
 import regex as re
 from xml.dom import minidom
@@ -12,19 +10,32 @@ from tools.normalization import Normalizer
 from tools.regexp import RegExp
 from tools.steps import Step
 
+from tools.nodes import Greek as GreekNodification
+from tools.nodes import PrimarySource as PrimarySourceNodification
+from tools.nodes import SecondarySource as SecondarySourceNodification
+from tools.nodes import Quote as QuoteNodification
+
+from tools.divers import polishSenses
+from tools.divers import divideText
+from tools.divers import polishH1
+from tools.divers import firstLine
+
 normalizer = Normalizer()
 regexp = RegExp(normalizer)
 
 
 Greek = Step (
-		regexp.matrices["greek"]
+		regexp.matrices["greek"],
+		GreekNodification
 	)
 PrimarySource = Step(
 		regexp.matrices["primarySource"],
+		PrimarySourceNodification,
 		Greek
 	)
 SecondarySource = Step(
 		regexp.matrices["secondarySource"],
+		SecondarySourceNodification,
 		PrimarySource
 	)
 
@@ -38,260 +49,6 @@ entryFreeId = 1
 limit = 10 #For the sample
 break_on_sample = True
 ignoreReplacer = False #Ignore the merger for Werken
-
-
-def prettify(elem):
-	""" Return a pretty-printed XML string for the Element. """
-	rough_string = cElementTree.tostring(elem, 'unicode')
-	reparsed = minidom.parseString(rough_string)
-	return reparsed.toprettyxml(indent="\t")
-
-def polishH1(text):
-	if text[-1:] == ",":
-		text = text[0:-1]
-	return text
-
-def getListFromDictRegExp(items, groupName, max):
-	i = 1
-	ret = []
-	while i <= max:
-		key = "{0}{1}".format(groupName, i)
-		if items[key]:
-			ret.append(items[key])
-		i += 1
-
-	if len(ret) == 0:
-		return None
-	return ret
-
-def GrammatikAbkurzung():
-	abkurzung = []
-	with open("output/grammatik-abkurzung.csv", "r") as f:
-
-		lines = f.readline()
-		abkurzung = lines.split(";")
-		f.close()
-	return abkurzung
-
-def firstLine(text, node):
-	#<itype>a, um</itype>, = <foreign lang="greek">u)bu(skantos</foreign> Maybe some sense here
-	abkurzung = "|".join(GrammatikAbkurzung()).replace(".", "\\.")
-	regexp = "^(?:\s{0,1}(?P<itype1>[\w]+)[,\s]){0,1}(?:\s{0,1}(?P<itype2>[\w]+)[,\s]){0,1}(?:\s{0,1}(?P<itype3>[\w]+)[,\s]){0,1}(?:\s{0,1}(?P<itype4>[\w]+)[,\s]){0,1}(?:\s(?P<gen>" + abkurzung + "+)){0,1}(?:\s*\((?P<etym1>[\w\s]+)\)){0,1}(?:\s*=\s*(?P<etym2>[\w\s]+)){0,1}(?P<rest>.*)"
-	regexp = re.compile(regexp, flags = re.UNICODE)
-	matches = [m.groupdict() for m in regexp.finditer(text)][0]
-
-	#We join the itype
-	itype = getListFromDictRegExp(matches, "itype", 4)
-
-	#We then set the gen
-	gen = matches["gen"]
-
-	#We set the etym
-	etym = getListFromDictRegExp(matches, "etym", 2)
-
-	#We set the rest
-	rest = matches["rest"]
-
-	#Now we create the nodes
-
-	if itype:
-		iTypeNode = cElementTree.SubElement(node, "itype")
-		iTypeNode.text = ", ".join(itype)
-
-	if gen:
-		iTypeNode = cElementTree.SubElement(node, "gen")
-		iTypeNode.text = gen
-
-	if etym:
-		for e in etym:
-			eNode = cElementTree.SubElement(node, "etym")
-			eNode.text = e
-
-
-	return rest
-
-def greek(text, node):
-	lang = cElementTree.SubElement(node, "lang")
-	lang.set("lang", "greek")
-	lang.text = text
-	return lang
-
-def greekFinder(text, node):
-	splitter = GreekChar
-	caught = splitter.split(text)
-	caught = [c for c in caught if c]
-
-	initialText = None
-	lastNode = node
-	for element in caught:
-		if not initialText:
-			if splitter.match(element):
-				#We must create a node with opus informations
-				lastNode = greek(element, node)
-				initialText = True
-			else:
-				initialText = True
-				if node.tail:
-					node.tail = node.tail + element
-					print (node.tail + element)
-				else:
-					node.tail = element
-				lastNode = node
-		else:
-			if splitter.match(element):
-				lastNode = greek(element, node)
-			else:
-				lastNode.tail = element
-	return node
-
-def opus(text, node):
-	#<bibl><author>Sen.</author> <title>Q. N.</title> 4, 2, 7</bibl>
-	regexp = OpusRegExp["Groups"]
-	items = [m.groupdict() for m in regexp.finditer(text)][0]
-
-	author = items["author"]
-	author = replaceAuthor(author)
-
-	title = items["opus"]
-	identifier = getListFromDictRegExp(items, "identifier", 4)
-
-	bibl = cElementTree.SubElement(node, "bibl")
-
-	aNode = cElementTree.SubElement(bibl, "author")
-	lastNode = aNode
-
-	authoren.append(author)
-
-	if title:
-		tNode = cElementTree.SubElement(bibl, "title")
-		lastNode = tNode
-
-	if author and title:
-		if not ignoreReplacer:
-			author, title = replaceAuthorBook(author, title)
-		werken.append("{0}\t{1}".format(author, title))
-
-	aNode.text = author
-	if title :
-		tNode.text = title
-	else:
-		title = ""
-
-	if identifier:
-		lastNode.tail = " ".join(identifier)
-		TextIdentifiers.append("{0}\t{1}\t{2}".format(author, title, identifier))
-
-	return node #Return the last node in usage
-
-def opusFinder(text, node):
-	splitter = OpusRegExp["Finder"]
-
-	caught = splitter.split(text)
-	caught = [c for c in caught if c]
-
-	lastNode = node
-
-	for element in caught:
-		if splitter.match(element):
-			lastNode = opus(element, node)
-		else:
-			lastNode = greekFinder(element, node)
-
-def quotationMarker(text, node):
-	regexp = Quotation["Groups"]
-	items = [m.groupdict() for m in regexp.finditer(text)][0]
-
-	author = items["author"]
-	author = replaceAuthor(author)
-
-	text = items["text"]
-
-	bibl = cElementTree.SubElement(node, "quote")
-	bibl.text = text
-
-	aNode = cElementTree.SubElement(bibl, "author")
-	aNode.text = author
-
-	return node
-
-def quotationFinder(text, node):
-	splitter = Quotation["Finder"]
-
-	caught = splitter.split(text)
-	caught = [c for c in caught if c]
-
-	lastNode = node
-
-	for element in caught:
-		if splitter.match(element):
-			lastNode = quotationMarker(element, node)
-		else:
-			lastNode = opusFinder(element, node)
-
-	return node
-
-
-def secondarySource(text, node):
-	regexp = SecondarySource["Groups"]
-
-	items = [m.groupdict() for m in regexp.finditer(text)][0]
-	SecondaryAuthor = items["SecondaryAuthor"]
-
-	SecBiblNode = cElementTree.SubElement(node, "bibl")
-
-	SecAuthorNode = cElementTree.SubElement(SecBiblNode, "author")
-	SecAuthorNode.text = SecondaryAuthor
-
-	node = opusFinder(items["Quoted"], SecBiblNode)
-
-	return node #Return the last node in usage
-
-def SecondarySourceFinder(text, node):
-	splitter = SecondarySource["Finder"]
-
-	caught = splitter.split(text)
-	caught = [c for c in caught if c]
-
-	initialText = None
-	lastNode = node
-	for element in caught:
-		if splitter.match(element):
-			lastNode = secondarySource(element, node)
-		else:
-			lastNode = opusFinder(element, node)
-
-	return node
-
-def polishSenses(text):
-	text = re.sub("<[\/]{0,1}[A-Za-z0-9]+>", "", text)
-	text = re.sub("[\s]{2,}", " ", text)
-	return text
-
-def divideText(text, index):
-	text = polishSenses(text)
-	regexp = re.compile("^([\w]+)(?:[,\.]{0,1})(.*)$", flags= re.UNICODE)
-	match = regexp.match(text)
-	try:
-		return match.group(1), match.group(2)
-	except:
-		raise ValueError("No H1 for line {0}".format(index))
-
-
-def defineLevelRegExp(text):
-	availableRegExp = ["[a-z]+", "[IVX]+", "[0-9]+", "[ABCDEFGH]+", "[αβ]+"]
-	for regexp in availableRegExp:
-		r = re.compile(regexp)
-		if r.match(text):
-			return regexp
-	return "FAULTY"
-
-
-def getLevel(text, dictionary):
-	regexp = defineLevelRegExp(text)
-	if regexp not in dictionary:
-		dictionary[regexp] = len(dictionary) + 1
-	return dictionary[regexp], dictionary
-
 
 """
 	TEI Structure
