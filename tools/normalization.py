@@ -1,11 +1,14 @@
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
 
+import os 
 
 class Normalizer(object):
 
 	def __init__(self):
 		super(Normalizer, self).__init__()
+
+		self.path = os.path.dirname((os.path.abspath(__file__))) + "/"
 		self.dictionaries = {}
 		self.dictionaries["author"] = self.getDictionary("author")
 		self.dictionaries["primarySource"] =  self.getDictionary("primarySource")
@@ -38,7 +41,7 @@ class Normalizer(object):
 
 	def getPrimarySourceList(self):
 		dic = []
-		with open("dictionary/normalizing-book.csv") as f:
+		with open(self.path + "../dictionary/normalizing-book.csv") as f:
 			lines = [line.replace("\n", "") for line in f.readlines()]
 			f.close()
 
@@ -50,7 +53,7 @@ class Normalizer(object):
 
 	def getPrimarySourceDictionary(self):
 		dic = {}
-		with open("dictionary/normalizing-book.csv") as f:
+		with open(self.path + "../dictionary/normalizing-book.csv") as f:
 			lines = [line.replace("\n", "") for line in f.readlines()]
 			f.close()
 
@@ -67,7 +70,7 @@ class Normalizer(object):
 
 	def getAuthorDictionary(self):
 		dic = {}
-		with open("dictionary/author-synonyms.csv") as f:
+		with open(self.path + "../dictionary/author-synonyms.csv") as f:
 			lines = [line.replace("\n", "") for line in f.readlines()]
 			f.close()
 
