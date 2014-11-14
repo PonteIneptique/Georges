@@ -7,12 +7,17 @@ The Steps come in the process when `senses` have been drawn. **Steps will be per
 ##Structure of Step()
 The Step object takes up to five parameters which are :
 - `name` : The whole project is using dictionary. A good practice is to keep everything with the same name. So for example, if I wanted to get a new Step to identify Greek, you would name your step `greek` and remind of this string.
-- `matrix` : The matrix is a dictionary where you can find sub-dictionary with your `name` as index. In this sub-dictionary, you'll often find a `matcher` and a `grouper`. See [below](#A-little-more) for more information.
-- `fn` : This is a function that your Step will call when there is a match. *Remind not to put the parenthesis at the end of your function name !* It will create the nodes for you and return the parent node. See the documentation about [Node Generator Function](#Node maker)
+- `matrix` : The matrix is a dictionary where you can find sub-dictionary with your `name` as index. In this sub-dictionary, you'll often find a `matcher` and a `grouper`. See [below](#a-little-more-about-the-regexp-) for more information.
+- `fn` : This is a function that your Step will call when there is a match. *Remind not to put the parenthesis at the end of your function name !* It will create the nodes for you and return the parent node. See the documentation about [Node Generator Function](#node-generator-function)
 - `normalizer` : a `tools.normalization.Normalizer` instance, potentatially used in your `fn`
 - `child` : The next step you want to perform. If None, the step will take care of the rest of unmatched strings as texts
 
 ##Node generator function
+This function should be, if possible, in the `tools.nodes` folder, use your `name` with a capital and be imported in main as `name`Nodification. **eg** : 
+
+```python
+from tools.nodes import Quote as QuoteNodification
+```
 
 ##A little more about the regexp ?
 In the situation where what your are trying to match can contain subnodes, such as a bibliography, you will want to avoid having subgroups when you do a `re.match()`. To avoid this kind of situation, we use two 
