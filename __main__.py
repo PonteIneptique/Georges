@@ -2,9 +2,10 @@
 # -*- coding: UTF-8 -*-
 
 import xml.etree.cElementTree as cElementTree
+import copy
 import regex as re
 from xml.dom import minidom
-import copy
+
 
 from tools.normalization import Normalizer
 from tools.regexp import RegExp
@@ -19,6 +20,7 @@ from tools.divers import polishSenses
 from tools.divers import divideText
 from tools.divers import polishH1
 from tools.divers import firstLine
+from tools.divers import getLevel
 
 normalizer = Normalizer()
 regexp = RegExp(normalizer)
@@ -26,23 +28,24 @@ regexp = RegExp(normalizer)
 
 Greek = Step (
 		regexp.matrices["greek"],
-		GreekNodification
+		GreekNodification,
+		normalizer
 	)
 PrimarySource = Step(
 		regexp.matrices["primarySource"],
 		PrimarySourceNodification,
+		normalizer,
 		Greek
 	)
 SecondarySource = Step(
 		regexp.matrices["secondarySource"],
 		SecondarySourceNodification,
+		normalizer,
 		PrimarySource
 	)
 
-#Registering werk and autoren abkurzungen
-authoren = []
-werken = []
-TextIdentifiers = []
+#We set up a link to what we think should be first step, to avoid changing it directly in the code later
+FirstStep = SecondarySource
 
 #Configuration
 entryFreeId = 1
@@ -50,15 +53,6 @@ limit = 10 #For the sample
 break_on_sample = True
 ignoreReplacer = False #Ignore the merger for Werken
 
-"""
-	TEI Structure
-	<text>
-		<body>
-			<pb n="1"/>
-			<cb n="A"/>
-			<div0 type="alphabetic letter" n="A">
-				<head lang="la">A</head>
-"""
 root = cElementTree.Element("text")
 body = cElementTree.SubElement(root, "body")
 
@@ -69,12 +63,11 @@ with open("input/body.xml") as f:
 	char = None
 	#In this document, we have one line = one word definition, h1 represent orth
 	for line in f.readlines():
-
+		print (line)
 		#We split the line around the <h1> tag
 		h1, senses_text = divideText(line, entryFreeId)
 		h1 = polishH1(h1)
 		senses_text = polishSenses(senses_text)
-
 		if h1[0] != char:
 			char = h1
 			div[char] = cElementTree.SubElement(body, "div0")
@@ -111,7 +104,8 @@ with open("input/body.xml") as f:
 
 			#When a sense has no number before it
 			senses.append(cElementTree.SubElement(entryFree, "sense"))
-			SecondarySourceFinder(text, senses[len(senses) - 1 ])
+			node = senses[len(senses) - 1 ]
+			node = FirstStep.process(text, node)
 		else:
 			index_sense = 1
 			id = None
@@ -134,13 +128,15 @@ with open("input/body.xml") as f:
 					#id was set on previous iteration, we set n attribute to it
 					if id:
 						senses.append(cElementTree.SubElement(entryFree, "sense"))
-						senses[len(senses) - 1 ].set("n", id)
-						senses[len(senses) - 1 ].set("level", str(levelN))
-						SecondarySourceFinder(text, senses[len(senses) - 1 ])
+						node = senses[len(senses) - 1 ]
+						node.set("n", id)
+						node.set("level", str(levelN))
+						node = FirstStep.process(text, node)
 					else: #We dont have text
 						text = firstLine(text, entryFree)
 						senses.append(cElementTree.SubElement(entryFree, "sense"))
-						SecondarySourceFinder(text, senses[len(senses) - 1 ])
+						node = senses[len(senses) - 1 ]
+						node = FirstStep.process(text, node)
 				else:
 					id = text
 					levelN, levelDictionary = getLevel(id, levelDictionary)
@@ -157,21 +153,3 @@ if not break_on_sample:
 	with open("output/output.xml", "w") as f:
 		f.write(cElementTree.tostring(root, 'unicode'))
 		f.close()
-
-with open("output/authoren.csv", "w") as f:
-	authoren = list(set(authoren))
-	authoren.sort()
-	f.write("\n".join(authoren))
-	f.close()
-
-with open("output/werken.csv", "w") as f:
-	werken = list(set(werken))
-	werken.sort()
-	f.write("\n".join(werken))
-	f.close()
-
-with open("output/texts.csv", "w") as f:
-	TextIdentifiers = list(set(TextIdentifiers))
-	TextIdentifiers.sort()
-	f.write("\n".join(TextIdentifiers))
-	f.close()

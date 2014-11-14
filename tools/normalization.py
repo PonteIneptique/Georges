@@ -31,7 +31,7 @@ class Normalizer(object):
 			return item
 		else: #We assume it's a tuple
 			if item[0] in self.dictionaries[category] and item[1] in self.dictionaries[category][item[0]]:
-				data = self.dictionaries[category][item[0]]
+				data = self.dictionaries[category][item[0]][item[1]]
 				return data[0], data[1]
 			else:
 				return item[0], item[1]

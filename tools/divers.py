@@ -12,6 +12,16 @@ def polishH1(text):
 		text = text[0:-1]
 	return text
 
+def GrammatikAbkurzung():
+	abkurzung = []
+	with open("output/grammatik-abkurzung.csv", "r") as f:
+
+		lines = f.readline()
+		abkurzung = lines.split(";")
+		f.close()
+	return abkurzung
+
+
 def getListFromDictRegExp(items, groupName, max):
 	i = 1
 	ret = []
@@ -24,15 +34,6 @@ def getListFromDictRegExp(items, groupName, max):
 	if len(ret) == 0:
 		return None
 	return ret
-
-def GrammatikAbkurzung():
-	abkurzung = []
-	with open("output/grammatik-abkurzung.csv", "r") as f:
-
-		lines = f.readline()
-		abkurzung = lines.split(";")
-		f.close()
-	return abkurzung
 
 def firstLine(text, node):
 	#<itype>a, um</itype>, = <foreign lang="greek">u)bu(skantos</foreign> Maybe some sense here

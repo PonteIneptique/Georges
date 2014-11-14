@@ -1,17 +1,21 @@
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
 
-def Greek(text, node, regexp = None):	# For this particular function, there is no use of regexp at this point
+import xml.etree.cElementTree as cElementTree
+
+from tools.divers import getListFromDictRegExp
+
+def Greek(text, node, regexp = None, normalizer = None):	# For this particular function, there is no use of regexp at this point
 	lang = cElementTree.SubElement(node, "lang")
 	lang.set("lang", "greek")
 	lang.text = text
 	return node
 
-def PrimarySource(text, node, regexp):
-	items = [m.groupdict() for m in regexp.finditer(text)][0]
-
-	author = items["author"]
-	author = replaceAuthor(author)
+def PrimarySource(text, node, regexp, normalizer):
+	""" Takes a match and create a subnode of node with the appropriate structure, using potentially a normalizer or a regexp"""
+	items = getGroups(text, regexp)
+	print (items)
+	author = normalizer.replace(items["author"], "author")
 
 	title = items["opus"]
 	identifier = getListFromDictRegExp(items, "identifier", 4)
@@ -21,16 +25,12 @@ def PrimarySource(text, node, regexp):
 	aNode = cElementTree.SubElement(bibl, "author")
 	lastNode = aNode
 
-	authoren.append(author)
-
 	if title:
 		tNode = cElementTree.SubElement(bibl, "title")
 		lastNode = tNode
 
 	if author and title:
-		if not ignoreReplacer:
-			author, title = replaceAuthorBook(author, title)
-		werken.append("{0}\t{1}".format(author, title))
+		author, title = normalizer.replace((author, title), "primarySource")
 
 	aNode.text = author
 	if title :
@@ -40,16 +40,14 @@ def PrimarySource(text, node, regexp):
 
 	if identifier:
 		lastNode.tail = " ".join(identifier)
-		TextIdentifiers.append("{0}\t{1}\t{2}".format(author, title, identifier))
 
 	return node #Return the last node in usage
 
 
-def Quote(text, node, regexp):
-	items = [m.groupdict() for m in regexp.finditer(text)][0]
+def Quote(text, node, regexp, normalizer):
+	items = getGroups(text, regexp)
 
-	author = items["author"]
-	author = replaceAuthor(author)
+	author = normalizer.replace(items["author"], "author")
 
 	text = items["text"]
 
@@ -63,7 +61,8 @@ def Quote(text, node, regexp):
 
 
 def SecondarySource(text, node, regexp):
-	items = [m.groupdict() for m in regexp.finditer(text)][0]
+	items = getGroups(text, regexp)
+
 	SecondaryAuthor = items["SecondaryAuthor"]
 
 	SecBiblNode = cElementTree.SubElement(node, "bibl")
@@ -71,6 +70,16 @@ def SecondarySource(text, node, regexp):
 	SecAuthorNode = cElementTree.SubElement(SecBiblNode, "author")
 	SecAuthorNode.text = SecondaryAuthor
 
-	node = opusFinder(items["Quoted"], SecBiblNode)
+	SecBiblNode = PrimarySource(items["Quoted"], SecBiblNode)
 
-	return node #Return the last node in usage
+	return node #Return the original
+
+
+################################################################
+# General tools for NodeMaker function
+################################################################
+
+def getGroups(text, regexp):
+	""" From a text and a regexp returns a dictionary """
+	items = [m.groupdict() for m in regexp.finditer(text)][0]
+	return items

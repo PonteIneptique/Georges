@@ -9,12 +9,15 @@ class Steps(object):
 
 
 class Step(Steps):
-	def __init__(self, matrix, fn, child = None):
+	def __init__(self, matrix, fn, normalizer, child = None):
 		"""
 		fn -> function to create node
 		"""
 		self.matcher = matrix["matcher"]
 		self.grouper = matrix["grouper"]
+
+		self.nodeMaker = fn
+		self.normalizer = normalizer
 
 		self.child = None
 		if child:
@@ -43,9 +46,11 @@ class Step(Steps):
 
 		for element in caught:
 			if self.matcher.match(element):
-				node = secondarySource(element, node)
+				print( "Node Maker")
+				node = self.nodeMaker(element, node, self.grouper, self.normalizer)
 			else:
-				node = opusFinder(element, node)
+				print( "Next Step")
+				node = self.next(node, element)
 
 		return node
 
