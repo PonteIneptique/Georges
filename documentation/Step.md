@@ -13,11 +13,17 @@ The Step object takes up to five parameters which are :
 - `child` : The next step you want to perform. If None, the step will take care of the rest of unmatched strings as texts
 
 ##Node generator function
-This function should be, if possible, in the `tools.nodes` folder, use your `name` with a capital and be imported in main as `name`Nodification. **eg** : 
+This function should be, if possible, in the `tools.nodes` [file](../tools/nodes.py), use your `name` with a capital and be imported in main as `name`Nodification. **eg** : 
 
 ```python
-from tools.nodes import Quote as QuoteNodification
+from tools.nodes import Greek as GreekNodification
 ```
+
+The function should return the parent node. The function is built with the following given parameters. *All parameters have to be in the function declaration, it doesn't mean you have to use them.*
+- `text` : The text which is matching your requirement
+- `node` : The parent node that you will return when your additions are done
+- `regexp` : The regular expression dictionary we talked about earlier as the `Step(matrix = _)`. It can be used to access the grouper but also for example to reuse a given regexp for a potential subnode of your node
+- `normalizer` : The same normalizer that can be used
 
 ##A little more about the regexp ?
 In the situation where what your are trying to match can contain subnodes, such as a bibliography, you will want to avoid having subgroups when you do a `re.match()`. To avoid this kind of situation, we use two 
