@@ -26,10 +26,10 @@ The function should return the parent node. The function is built with the follo
 - `normalizer` : The same normalizer that can be used
 
 ##A little more about the regexp ?
-In the situation where what your are trying to match can contain subnodes, such as a bibliography, you will want to avoid having subgroups when you do a `re.match()`. To avoid this kind of situation, we use two 
+In the situation where what your are trying to match can contain subnodes, such as a bibliography, you will want to avoid having subgroups when you do a `re.match()`. To avoid this kind of situation, we use two different regular expression.
 
 Those two types of regular expression are used for different things: 
 - the `matcher` will be used to return or split a global element matching your regular expression; 
 - the `grouper` will be used to find - if needed - subgroups. 
 
-The good thing with this ? In the RegExp class inside `tools/regexp.py`, you will find the function `self.getMatcher` to remove from your grouper regular expression strings the group names, transforming `(?P<myname>[a-z])` into `(?:[a-z])`. Easy isn't it ?
+The good thing with this ? In the RegExp class inside [tools/regexp.py](../tools/regexp.py), you will find the function `self.getMatcher` to remove from your grouper regular expression strings the group names, transforming `(?P<myname>[a-z])` into `(?:[a-z])`. Easy isn't it ?
