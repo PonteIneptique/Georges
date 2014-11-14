@@ -1,8 +1,11 @@
 #Step
 
-To simplify the addition of new node discovery service (which from a regular expression creates a new node), a Step object is available. You can find it in the folder `tools/steps.py`.
+To simplify the addition of new node discovery service (which from a regular expression creates a new node), a Step object is available. You can find it in the file [tools/steps.py](../tools/steps.py). It is declared at the beginning of `__main__.py`
 
 The Steps come in the process when `senses` have been drawn. **Steps will be performed on the content matched as a sense definition.** Let's have a look at is structure... 
+
+##Example
+If you want to see how to code your own step, go [there](Step-Example.md). But may be read the documentation before
 
 ##Structure of Step()
 The Step object takes up to five parameters which are :
