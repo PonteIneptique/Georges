@@ -2,24 +2,27 @@
 # -*- coding: UTF-8 -*-
 
 
-class normalizer(object):
+class Normalizer(object):
 
 	def __init__(self):
-		self.dictionaries = {
-			"author" : self.getDictionary("author"),
-			"primarySource" : self.getDictionary("primarySource")
-		}
-		self.lists = {
-			"author" : [indexKey for indexKey in self.dictionaries["author"]],
-			"book" : self.getPrimarySourceList()
-			#Get a simple list of work names or book names and so on
-		}
+		super(Normalizer, self).__init__()
+		self.dictionaries = {}
+		self.dictionaries["author"] = self.getDictionary("author")
+		self.dictionaries["primarySource"] =  self.getDictionary("primarySource")
+
+		self.lists = {}
+		self.lists["author"] = self.getAuthorList()
+		self.lists["book"] = self.getPrimarySourceList()
+
+	def getAuthorList(self):
+		data = self.getDictionary("author")
+		return [indexKey for indexKey in data]
 
 	def getDictionary(self, category):
 		if category == "primarySource":
 			return self.getPrimarySourceDictionary()
 		elif category == "author":
-			return self.getAuthorDictionary
+			return self.getAuthorDictionary()
 
 	def replace(self, item, category):
 		if type(item) != tuple:
@@ -31,6 +34,7 @@ class normalizer(object):
 				data = self.dictionaries[category][item[0]]
 				return data[0], data[1]
 			else:
+				return item[0], item[1]
 
 	def getPrimarySourceList(self):
 		dic = []
@@ -74,6 +78,7 @@ class normalizer(object):
 			if author1 not in dic:
 				dic[author1] = {}
 			dic[author1] = author2
+
 		return dic
 
 	def replaceAuthor(author):
