@@ -5,12 +5,12 @@ import regex as re
 
 class RegExp(object):
 	"""docstring for RegExp"""
-	def __init__(self, dictionary, normalization = False):
+	def __init__(self, Normalizer, normalization = False):
 		super(RegExp, self).__init__()
 
 		self.normalization = normalization
 
-		self.dictionary = dictionary
+		self.Normalizer = Normalizer
 		
 		self.matrices = {
  			"primarySource" : {
@@ -25,11 +25,12 @@ class RegExp(object):
 				"matcher" : self.generate("quote", False),
 				"grouper" : self.generate("quote")
 			},
-			"list" : {
+			"senses" : {
 				"grouper" : re.compile("^([1-9]{1,3}|[abcdefABCDEF]{1}|IX|IV|V?I{0,3})$")
 			},
 			"greek" : {
-				"grouper" : re.compile("((?:(?:[\p{Greek}µ']+)+[\s\.\,]*)+)")
+				"finder" : re.compile("((?:(?:[\p{Greek}µ']+)+[\s\.\,]*)+)"),
+				"grouper" : re.compile("(?P<match>(?:(?:[\p{Greek}µ']+)+[\s\.\,]*)+)")
 			}
 		}
 
@@ -58,12 +59,13 @@ class RegExp(object):
 		return re.sub("P<[a-zA-Z0-9]+>", ":", regexp)
 
 	def lists(self, category, depth = 0):
+		data = []
 		""" Returns a formated regular expression list for a given category (books, authors)"""
 		if depth == 0:
-			data = [self.regularize(entry) for entry in self.dictionary.lists[category]]
+			data = data + [self.regularize(entry) for entry in self.Normalizer.lists[category]]
 		else:
-			data = [self.regularize(entry[depth]) for entry in self.dictionary.lists[category]]
-		return 
+			data = data + [self.regularize(entry[depth]) for entry in self.Normalizer.lists[category]]
+		return data
 
 	def regularize(self, text):
 		""" Make sure than some string are regular expression compliant """ 
@@ -105,6 +107,8 @@ class RegExp(object):
 		regexp  = "(?P<SecondaryAuthor>[A-Z]{1}[a-z]+)"
 		regexp += "(?:\szu\s){1}"
 		regexp += "(?P<Quoted>(?:" + self.primarySource() + ")+(?:\s)*){1}"
+
+		return regexp
 
 	def quotes(self):
 		""" Returns a regular expression string for matching quotes"""
