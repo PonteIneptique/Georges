@@ -1,7 +1,12 @@
 #Introduction
 This document is defining the structure, in XML TEI, we want to achieve
 
+It wont take care of the header, because the header is not generated with this tool. If you think we should add something about it, please feel free.
+
 ##Document general structure
+
+###Structure
+
 ```xml
 <text>
 	<body>
@@ -17,13 +22,15 @@ This document is defining the structure, in XML TEI, we want to achieve
 </text>
 ```
 
-##Entry structure
+##Dictionary Entries
+
+###Structure
 ```xml
 <entryFree n="X">
 	<sense level="1" n="1">
-		<orth key="abaculus">abaculus</orth>
-		<itype>ī</itype>
-		<gen>m.</gen>
+		<orth key="string">string</orth>
+		<itype>The extension</itype>
+		<gen>The grammatical nature or gender</gen>
 		<bibl>
 			<author>Not Optional</author>
 			<book>Optional</book>
@@ -56,7 +63,25 @@ This document is defining the structure, in XML TEI, we want to achieve
 ```
 
 ###Potential nodes
-- `<lang type="greek"></lang>` represents a part of the text which is in a specific language (mostly )greek here)
+- `entryFree` > `<lang type="greek"></lang>` represents a part of the text which is in a specific language (mostly )greek here)
 
 
 ##Secondary Source
+
+###Introduction
+
+In the Georges, you can find secondary sources in the dictionary entries. To encode them, we decided to create a main `<bibl>` with its author name and then the primary sources used by the author of the secondary source.
+
+###Structure
+```xml
+<bibl>
+	<author>Name of the modern author.</author>
+	<bibl>
+		<author>Author of the Primary Source</author>
+		<title>[Optional] Title of the Secondary Source</title>
+		[Optional] Identifiers of the text's part
+	</bibl>
+</bibl>
+```
+
+###Example
