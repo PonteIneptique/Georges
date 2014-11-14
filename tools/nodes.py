@@ -13,8 +13,8 @@ def Greek(text, node, regexp = None, normalizer = None):	# For this particular f
 
 def PrimarySource(text, node, regexp, normalizer):
 	""" Takes a match and create a subnode of node with the appropriate structure, using potentially a normalizer or a regexp"""
-	items = getGroups(text, regexp)
-	print (items)
+	items = getGroups(text, regexp["primarySource"])
+
 	author = normalizer.replace(items["author"], "author")
 
 	title = items["opus"]
@@ -45,7 +45,7 @@ def PrimarySource(text, node, regexp, normalizer):
 
 
 def Quote(text, node, regexp, normalizer):
-	items = getGroups(text, regexp)
+	items = getGroups(text, regexp["quote"])
 
 	author = normalizer.replace(items["author"], "author")
 
@@ -60,8 +60,8 @@ def Quote(text, node, regexp, normalizer):
 	return node
 
 
-def SecondarySource(text, node, regexp):
-	items = getGroups(text, regexp)
+def SecondarySource(text, node, regexp, normalizer):
+	items = getGroups(text, regexp["secondarySource"])
 
 	SecondaryAuthor = items["SecondaryAuthor"]
 
@@ -70,7 +70,7 @@ def SecondarySource(text, node, regexp):
 	SecAuthorNode = cElementTree.SubElement(SecBiblNode, "author")
 	SecAuthorNode.text = SecondaryAuthor
 
-	SecBiblNode = PrimarySource(items["Quoted"], SecBiblNode)
+	SecBiblNode = PrimarySource(items["Quoted"], SecBiblNode, regexp, normalizer)
 
 	return node #Return the original
 
@@ -81,5 +81,5 @@ def SecondarySource(text, node, regexp):
 
 def getGroups(text, regexp):
 	""" From a text and a regexp returns a dictionary """
-	items = [m.groupdict() for m in regexp.finditer(text)][0]
+	items = [m.groupdict() for m in regexp["grouper"].finditer(text)][0]
 	return items

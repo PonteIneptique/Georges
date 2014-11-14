@@ -1,5 +1,8 @@
 import xml.etree.cElementTree as cElementTree
+from xml.dom import minidom
+
 import regex as re
+
 
 def prettify(elem):
 	""" Return a pretty-printed XML string for the Element. """

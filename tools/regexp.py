@@ -61,10 +61,7 @@ class RegExp(object):
 	def lists(self, category, depth = 0):
 		data = []
 		""" Returns a formated regular expression list for a given category (books, authors)"""
-		if depth == 0:
-			data = data + [self.regularize(entry) for entry in self.Normalizer.lists[category]]
-		else:
-			data = data + [self.regularize(entry[depth]) for entry in self.Normalizer.lists[category]]
+		data = data + [self.regularize(entry) for entry in self.Normalizer.lists[category]]
 		return data
 
 	def regularize(self, text):
@@ -94,7 +91,12 @@ class RegExp(object):
 		AuthRegExp = self.author()
 
 		regexp  = "(?P<author>" + AuthRegExp + "){1}"
-		regexp += "(?:\s(?P<opus>" + BookRegExp + "+){0,1}(?:\s(?P<identifier1>" + NumeRegExp + "[0-9]+\,)){0,1}"
+
+		regexp += "(?:\s"
+		regexp += 	"(?P<opus>" + BookRegExp + "+){0,1}"
+		regexp += 	"(?:\s(?P<identifier1>" + NumeRegExp + "[0-9]+\,)"
+		regexp += "){0,1}"
+
 		regexp += "(?:\s(?P<identifier2>" + NumeRegExp + "[0-9]+\,)){0,1}"
 		regexp += "(?:\s(?P<identifier3>" + NumeRegExp + "[0-9]+\,)){0,1}"
 		regexp += "(?:\s(?P<identifier4>" + NumeRegExp + "[0-9]+[\.:]{0,1})){1}"

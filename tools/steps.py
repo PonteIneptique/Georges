@@ -9,12 +9,12 @@ class Steps(object):
 
 
 class Step(Steps):
-	def __init__(self, matrix, fn, normalizer, child = None):
+	def __init__(self, name, matrix, fn, normalizer, child = None):
 		"""
 		fn -> function to create node
 		"""
-		self.matcher = matrix["matcher"]
-		self.grouper = matrix["grouper"]
+		self.matcher = matrix[name]["matcher"]
+		self.matrix = matrix
 
 		self.nodeMaker = fn
 		self.normalizer = normalizer
@@ -46,10 +46,8 @@ class Step(Steps):
 
 		for element in caught:
 			if self.matcher.match(element):
-				print( "Node Maker")
-				node = self.nodeMaker(element, node, self.grouper, self.normalizer)
+				node = self.nodeMaker(element, node, self.matrix, self.normalizer)
 			else:
-				print( "Next Step")
 				node = self.next(node, element)
 
 		return node

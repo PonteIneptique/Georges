@@ -4,7 +4,6 @@
 import xml.etree.cElementTree as cElementTree
 import copy
 import regex as re
-from xml.dom import minidom
 
 
 from tools.normalization import Normalizer
@@ -21,27 +20,31 @@ from tools.divers import divideText
 from tools.divers import polishH1
 from tools.divers import firstLine
 from tools.divers import getLevel
+from tools.divers import prettify
 
 normalizer = Normalizer()
 regexp = RegExp(normalizer)
 
 
 Greek = Step (
-		regexp.matrices["greek"],
+		"greek",
+		regexp.matrices,
 		GreekNodification,
 		normalizer
 	)
 PrimarySource = Step(
-		regexp.matrices["primarySource"],
+		"primarySource",
+		regexp.matrices,
 		PrimarySourceNodification,
 		normalizer,
 		Greek
 	)
 SecondarySource = Step(
-		regexp.matrices["secondarySource"],
-		SecondarySourceNodification,
-		normalizer,
-		PrimarySource
+		name = "secondarySource",
+		matrix = regexp.matrices,
+		fn = SecondarySourceNodification,
+		normalizer = normalizer,
+		child = PrimarySource
 	)
 
 #We set up a link to what we think should be first step, to avoid changing it directly in the code later
