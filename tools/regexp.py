@@ -26,7 +26,8 @@ class RegExp(object):
 				"grouper" : self.generate("quote")
 			},
 			"senses" : {
-				"grouper" : re.compile("^([1-9]{1,3}|[abcdefABCDEF]{1}|IX|IV|V?I{0,3})$")
+				"grouper" : re.compile("^([1-9]{1,3}|[abcdefABCDEFαβ]{1}|IX|IV|V?I{0,3})$"),
+				"splitter" : re.compile("[–\,]{0,1}\s([1-9]{1,3}|[abcdefABCDEFαβ]{1}|IX|IV|V?I{0,3})\)\s")
 			},
 			"greek" : {
 				"matcher" : re.compile("((?:(?:[\p{Greek}µ']+)+[\s\.\,]*)+)"),

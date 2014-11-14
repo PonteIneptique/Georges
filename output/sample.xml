@@ -5,29 +5,26 @@
 			<head lang="la"/>
 			<entryFree n="1">
 				<orth key="A">A</orth>
-				<sense/>
-				 1. A, a, der erste Buchstabe des lateinischen Alphabets. – Als Abkürzung:
-				<sense level="1" n="1"/>
-				= der Vorname Aulus.
-				<sense level="1" n="2"/>
-				= Antiquo (ich verwerfe den neuen Vorschlag), auf den Stimmtafeln in röm. Volksversammlungen. 
+				<sense> 1. A, a, der erste Buchstabe des lateinischen Alphabets. – Als Abkürzung:</sense>
+				<sense level="1" n="1">= der Vorname Aulus.</sense>
+				<sense level="1" n="2">= Antiquo (ich verwerfe den neuen Vorschlag), auf den Stimmtafeln in röm. Volksversammlungen. </sense>
 				<sense level="1" n="3">
+					= Absolvo (ich spreche frei), auf den Stimmtafeln der Richter; dah. A gen. littera salutaris bei 
 					<bibl>
 						<author>Cic.</author>
 						<title>Manil.</title>
 						15.
 					</bibl>
+					 
 				</sense>
-				= Absolvo (ich spreche frei), auf den Stimmtafeln der Richter; dah. A gen. littera salutaris bei  
-				<sense level="1" n="4"/>
-				vor Zahlen, Jahresbezeichnung (= Annus) auf Grabschriften usw.: u. so A. U. C. = anno urbis conditae – aber a. u. c. = ab urbe condita. – u. a. d. = ante diem als Datum. 
-				<sense level="1" n="5"/>
-				= Augustus, häufig in Inschriften; A. A. = Augusti duo; A. A. A. = Augusti tres. – aber A. A. A. F. F. nach III viri = auro, argento, aeri flando, feriundo. 
+				<sense level="1" n="4">vor Zahlen, Jahresbezeichnung (= Annus) auf Grabschriften usw.: u. so A. U. C. = anno urbis conditae – aber a. u. c. = ab urbe condita. – u. a. d. = ante diem als Datum. </sense>
+				<sense level="1" n="5">= Augustus, häufig in Inschriften; A. A. = Augusti duo; A. A. A. = Augusti tres. – aber A. A. A. F. F. nach III viri = auro, argento, aeri flando, feriundo. </sense>
 			</entryFree>
 			<entryFree n="2">
 				<orth key="A">A</orth>
 				<etym>Ah</etym>
 				<sense>
+					, Interj. unser ah! ach! od. ha! hm! zum Ausdruck der Wehmut, Überraschung, Verwunderung, auch der Zurückweisung (dah. auch der Begütigung, s. 
 					<bibl>
 						<author>Spengel</author>
 						<bibl>
@@ -36,15 +33,17 @@
 							868
 						</bibl>
 					</bibl>
+					), aber auch der Verwünschung, Komik., Verg., Poët. eleg., Ov. u.a. Dichter. 
 				</sense>
-				, Interj. unser ah! ach! od. ha! hm! zum Ausdruck der Wehmut, Überraschung, Verwunderung, auch der Zurückweisung (dah. auch der Begütigung, s. ), aber auch der Verwünschung, Komik., Verg., Poët. eleg., Ov. u.a. Dichter. 
 			</entryFree>
 			<entryFree n="3">
 				<orth key="A">A</orth>
 				<itype>ab, abs</itype>
 				<gen>Praep.</gen>
 				<sense>
+					 m. Abl. (
 					<lang lang="greek">ἀπό</lang>
+					), sanskr. apa, – Î a steht bloß vor Konsonanten (u. zwar gew. vor b, f, p, v) außer dem Spiranten h, ab vor Vokalen, h u. Konsonanten, bes. vor l, n, r, s, sc, sp, st u. vor j, abs nur vor c, q, t, und antik vor dem Namen des Zahlers, zB. bei Cic. ab te und in der ersten Periode abs te, abs Attico; vgl. 
 					<bibl>
 						<author>Zumpt</author>
 						<bibl>
@@ -53,6 +52,7 @@
 							3, 138.
 						</bibl>
 					</bibl>
+					p. 560 u. im Index p. 1087. 
 					<bibl>
 						<author>Osann</author>
 						<bibl>
@@ -69,47 +69,52 @@
 							5, 75.
 						</bibl>
 					</bibl>
+					Wölfflin im 
 					<bibl>
 						<author>Philol.</author>
 						34, 114.
 					</bibl>
+					 Helmuth in Acta phil. sem. 
 					<bibl>
 						<author>Erlang.</author>
 						1, 121.
 					</bibl>
+					 Langen, Beiträge usw. S. 311 ff. Edm. Hauler, Terentiana (Wien 1882) p. 39 sqq. Paul Meier, Untersuchungen über die Echtheit des Briefw. Cic. ad Brut. S. 139 Anm. Vor Vokalen steht abs erst bei Späteren, wie abs ovibus, 
 					<bibl>
 						<author>Ps. Tert.</author>
 						<title>adv. Marc.</title>
 						403:
 					</bibl>
+					 abs alio, ibid. 5, 121; aber 
 					<bibl>
 						<author>Serv.</author>
 						<title>Aen.</title>
 						2, 33
 					</bibl>
+					 liest Thilo ab alio), mit dem Grundbegriff des Ausgehens von irgend einem Punkte (im Ggstz. zu ad u. in) = von, von... her, von.... weg, von... aus, von... herab u. dgl.
 				</sense>
-				 m. Abl. (), sanskr. apa, – Î a steht bloß vor Konsonanten (u. zwar gew. vor b, f, p, v) außer dem Spiranten h, ab vor Vokalen, h u. Konsonanten, bes. vor l, n, r, s, sc, sp, st u. vor j, abs nur vor c, q, t, und antik vor dem Namen des Zahlers, zB. bei Cic. ab te und in der ersten Periode abs te, abs Attico; vgl. p. 560 u. im Index p. 1087. Wölfflin im  Helmuth in Acta phil. sem.  Langen, Beiträge usw. S. 311 ff. Edm. Hauler, Terentiana (Wien 1882) p. 39 sqq. Paul Meier, Untersuchungen über die Echtheit des Briefw. Cic. ad Brut. S. 139 Anm. Vor Vokalen steht abs erst bei Späteren, wie abs ovibus,  abs alio, ibid. 5, 121; aber  liest Thilo ab alio), mit dem Grundbegriff des Ausgehens von irgend einem Punkte (im Ggstz. zu ad u. in) = von, von... her, von.... weg, von... aus, von... herab u. dgl.
-				<sense level="1" n="I"/>
-				im Raume
-				<sense level="2" n="A"/>
-				zur Angabe der Bewegung:
-				<sense level="3" n="1"/>
-				von... weg, fuga ab urbe, Cic.: ab solo patrio in hostium urbem agere, Liv.: proficisci a domo, ab Athenis, Cic., ab Orico, Caes.: a Gergovia (aus der Umgegend von G.) discedere (vgl. Kraner zu Caes. b.G. 7, 43, 5). – So bei den Begriffen »des Entfernens, Trennens, Abhaltens (sich Enthaltens, Abstehens), Abschreckens, Entfremdens u. dgl.« (s. Zumpt § 468): dah. a se (von einander) discedentes, Macr.: u. elliptisch, paululum a sole (verst. recede), (geh) nur ein wenig aus der Sonne, Cic.: dictator ab aratro (verst. arcessitus), Flor. 
+				<sense level="1" n="I">im Raume</sense>
+				<sense level="2" n="A">zur Angabe der Bewegung:</sense>
+				<sense level="3" n="1">von... weg, fuga ab urbe, Cic.: ab solo patrio in hostium urbem agere, Liv.: proficisci a domo, ab Athenis, Cic., ab Orico, Caes.: a Gergovia (aus der Umgegend von G.) discedere (vgl. Kraner zu Caes. b.G. 7, 43, 5). – So bei den Begriffen »des Entfernens, Trennens, Abhaltens (sich Enthaltens, Abstehens), Abschreckens, Entfremdens u. dgl.« (s. Zumpt § 468): dah. a se (von einander) discedentes, Macr.: u. elliptisch, paululum a sole (verst. recede), (geh) nur ein wenig aus der Sonne, Cic.: dictator ab aratro (verst. arcessitus), Flor. </sense>
 				<sense level="3" n="2">
+					von... her od. aus, venio a matre, Plaut.: dona tibi adsunt a Phaedria, Ter.: ad carceres a calce revocari, Cic.: ab alta radice, aus der Tiefe der W., Verg.; aber ab radice, samt der W., Verg.: litterae a M. Favonio (vgl. Kraner zu Caes. b.c. 3, 33, 1): unda ab alto, vom hohen Meere her, Verg.: a pectore, tief aus der Br., Verg. – bei Städtenamen, zur Ang. woher? (s. Müller zu 
 					<bibl>
 						<author>Liv.</author>
 						1, 27, 4
 					</bibl>
+					), ab Alba accitus, Liv. – Dah. ab alqo (bes. a me, a te, a se, a nobis, a vobis), von jmd. = von od. aus jmds. Hause, v. jmds. Landgute (s. Brix 
 					<bibl>
 						<author>Plaut.</author>
 						<title>mil.</title>
 						154.
 					</bibl>
+					 Spengel 
 					<bibl>
 						<author>Ter.</author>
 						<title>Andr.</title>
 						226
 					</bibl>
+					 u. 461), foris concrepuit hinc a vicino sene, Plaut.: qui amant a lenone, Plaut.: venit (Pompeius) etiam ad me in Cumanum a se, Cic.: verb. domo abs te afferto, Plaut. – bei Städtenamen (s. Schmalz, Pollio p. 86), legati ab Ardea Romam venerunt, Liv. (vgl. unten no. II, B, 2). – Ebenso bei den Begriffen »des Nehmens, Empfangenes, Gebens«, u. des »Hörens, Erfahrens usw.«, s. accipio, emo, audio, cognosco, comperio u. dgl.: dah. ab alqo, von jmd. (gegeben, entlehnt, ausgegangen usw.), Cic. u.a. (s. 
 					<bibl>
 						<author>Ellendt</author>
 						<bibl>
@@ -118,16 +123,19 @@
 							1, 55.
 						</bibl>
 					</bibl>
+					Kühner zu 
 					<bibl>
 						<author>Cic.</author>
 						<title>Poët. Tusc.</title>
 						1, 74
 					</bibl>
+					): u. bes. a me, abs te, a se, aus meinem, deinem, seinem Beutel, dare, Plaut, u. Cic., solvere, Cic. – Endlich zur Bezeichnung der »Anhänger und Schüler« (s. Kühner zu 
 					<bibl>
 						<author>Cic.</author>
 						<title>Poët. Tusc.</title>
 						2, 7.
 					</bibl>
+					 
 					<bibl>
 						<author>Ellendt</author>
 						<bibl>
@@ -136,6 +144,7 @@
 							1, 55
 						</bibl>
 					</bibl>
+					u. zu 2, 27. 
 					<bibl>
 						<author>Sorof</author>
 						<bibl>
@@ -151,21 +160,19 @@
 							4, 2, 31
 						</bibl>
 					</bibl>
+					). Zeno et qui ab eo sunt, seine Schüler, Cic.: qui sunt ab ea disciplina, Cic.: nostri illi a Platone, 
 					<lang lang="greek">οἱἀπο Πλάτωνος, </lang>
+					Jünger Plaros, Cic., vollst. profecti a Platone, Cic.: homo de schola et a magistro (= 
 					<lang lang="greek">ὁ διδαχθείς</lang>
+					), Cic. 
 				</sense>
-				von... her od. aus, venio a matre, Plaut.: dona tibi adsunt a Phaedria, Ter.: ad carceres a calce revocari, Cic.: ab alta radice, aus der Tiefe der W., Verg.; aber ab radice, samt der W., Verg.: litterae a M. Favonio (vgl. Kraner zu Caes. b.c. 3, 33, 1): unda ab alto, vom hohen Meere her, Verg.: a pectore, tief aus der Br., Verg. – bei Städtenamen, zur Ang. woher? (s. Müller zu ), ab Alba accitus, Liv. – Dah. ab alqo (bes. a me, a te, a se, a nobis, a vobis), von jmd. = von od. aus jmds. Hause, v. jmds. Landgute (s. Brix  Spengel  u. 461), foris concrepuit hinc a vicino sene, Plaut.: qui amant a lenone, Plaut.: venit (Pompeius) etiam ad me in Cumanum a se, Cic.: verb. domo abs te afferto, Plaut. – bei Städtenamen (s. Schmalz, Pollio p. 86), legati ab Ardea Romam venerunt, Liv. (vgl. unten no. II, B, 2). – Ebenso bei den Begriffen »des Nehmens, Empfangenes, Gebens«, u. des »Hörens, Erfahrens usw.«, s. accipio, emo, audio, cognosco, comperio u. dgl.: dah. ab alqo, von jmd. (gegeben, entlehnt, ausgegangen usw.), Cic. u.a. (s. Kühner zu ): u. bes. a me, abs te, a se, aus meinem, deinem, seinem Beutel, dare, Plaut, u. Cic., solvere, Cic. – Endlich zur Bezeichnung der »Anhänger und Schüler« (s. Kühner zu  u. zu 2, 27. ). Zeno et qui ab eo sunt, seine Schüler, Cic.: qui sunt ab ea disciplina, Cic.: nostri illi a Platone, Jünger Plaros, Cic., vollst. profecti a Platone, Cic.: homo de schola et a magistro (= ), Cic. 
-				<sense level="4" n="b"/>
-				von... herab, suspendere columbam a mālo, Verg.: mālo pendēre ab alto, Verg.: dependēre a cervicibus, Suet.: pugna ab alta puppe, Lucan.: ab orno pendulus, Hor. 
-				<sense level="4" n="c"/>
-				usque ab = in einem fort-, stets-, durch und durch von... an oder aus usw., plausus usque a Capitolio excitatus, Cic.: enumerasti usque a Thale Milesio philosophorum sententias, von Th. an der Reihe nach, Cic.: u. mit Angabe des Endpunktes der Bewegung, usque ab... ad = von an... bis zu, usque ab unguiculo ad capillum, Plaut.. ab imis unguibus usque ad verticem summum, Cic.
-				<sense level="2" n="B"/>
-				zur Angabe der bloßen Richtung:
-				<sense level="3" n="1"/>
-				von... aus, von... her, a supero mari Flaminia (via), ab infero Aurelia, media Cassia, Cic. – und so in vielen Beziehungen, wo der Lateiner die Richtung woher?, der Deutsche den Punkt wo? berücksichtigt, deutsch an od. in, leviter a summo inflexum, Cic.: a contraria aure (instillavit), Plin.: so auch funiculus a puppi religatus, Cic.: ab labris argento circumcludunt (cornua), Caes. 
-				<sense level="4" n="b"/>
-				von... herab, a summo iugo, Caes.: ab alto caelo, Verg.: securus ab alto spectator, Lucan.: residens flevit ab arce, Prop.
+				<sense level="4" n="b">von... herab, suspendere columbam a mālo, Verg.: mālo pendēre ab alto, Verg.: dependēre a cervicibus, Suet.: pugna ab alta puppe, Lucan.: ab orno pendulus, Hor. </sense>
+				<sense level="4" n="c">usque ab = in einem fort-, stets-, durch und durch von... an oder aus usw., plausus usque a Capitolio excitatus, Cic.: enumerasti usque a Thale Milesio philosophorum sententias, von Th. an der Reihe nach, Cic.: u. mit Angabe des Endpunktes der Bewegung, usque ab... ad = von an... bis zu, usque ab unguiculo ad capillum, Plaut.. ab imis unguibus usque ad verticem summum, Cic.</sense>
+				<sense level="2" n="B">zur Angabe der bloßen Richtung:</sense>
+				<sense level="3" n="1">von... aus, von... her, a supero mari Flaminia (via), ab infero Aurelia, media Cassia, Cic. – und so in vielen Beziehungen, wo der Lateiner die Richtung woher?, der Deutsche den Punkt wo? berücksichtigt, deutsch an od. in, leviter a summo inflexum, Cic.: a contraria aure (instillavit), Plin.: so auch funiculus a puppi religatus, Cic.: ab labris argento circumcludunt (cornua), Caes. </sense>
+				<sense level="4" n="b">von... herab, a summo iugo, Caes.: ab alto caelo, Verg.: securus ab alto spectator, Lucan.: residens flevit ab arce, Prop.</sense>
 				<sense level="3" n="2">
+					zur Angabe der Seite, von wo aus etwas räumlich betrachtet wird = von der Seite, auf der Seite, von... aus (her), an, auf, bei (s. 
 					<bibl>
 						<author>Fabri</author>
 						<bibl>
@@ -173,39 +180,40 @@
 							21, 21, 10
 						</bibl>
 					</bibl>
+					), a Delta transire, auf der Seite, wo das Delta liegt, beim Delta, Auct. b. Al.: exercitus hostium duo, unus ab urbe, alter a Gallia obstant, Sall.: haud parvum munimentum a planioribus aditu locis, Liv.: ab utroque viae latere, Sen.: a theatro, Caes.: a septentrionibus, auf der Nordseite, Caes.: u. so die (bes. milit.) t.t. a fronte, a tergo, a latere, a dextro cornu, Cic., Caes. u.a.: ab novissimis, im Hintertreffen, Caes. – ebenso bei den geograph. Ausdrücken ab occasu et ortu solis, Liv.: Cappadocia, quae patet a Syria, Cic. – Dah. auch bei Tätigkeiten, die von einer Seite od. von einer Person auf derselben herkommen = von od. auf seiten (s. Fabri 
 					<bibl>
 						<author>Liv.</author>
 						21, 5, 9.
 					</bibl>
+					 
 					<bibl>
 						<author>Deder.</author>
 						<title>Dict.</title>
 						2, 38
 					</bibl>
+					), tubae cornuaque ab Romanis cecinerant, Liv.: si quid ipsi a Caesare opus esset, Caes.: u. so timere ab alqo, Cic.: timor ab alqo, Liv.: periculum ab alqo, Cic. – übtr., ab alqo = auf jmds. Seite od. Partei, zu jmds. Vorteil od. Bestem (Gunsten), für jmd. (Ggstz. contra od. adversus alqm, s. Hofmann 
 					<bibl>
 						<author>Ausgew.</author>
 						<title>Br. Cic.</title>
 						3, 18, 2.
 					</bibl>
+					 S. 203), zB. ut ea deditā operā a nobis contra vosmet ipsos facere videamini, Cic.: u. so ab innocentia clementissimus, Cic.: dah. bei esse, stare, facere (intr.), sentire, w.s.
 				</sense>
-				zur Angabe der Seite, von wo aus etwas räumlich betrachtet wird = von der Seite, auf der Seite, von... aus (her), an, auf, bei (s. ), a Delta transire, auf der Seite, wo das Delta liegt, beim Delta, Auct. b. Al.: exercitus hostium duo, unus ab urbe, alter a Gallia obstant, Sall.: haud parvum munimentum a planioribus aditu locis, Liv.: ab utroque viae latere, Sen.: a theatro, Caes.: a septentrionibus, auf der Nordseite, Caes.: u. so die (bes. milit.) t.t. a fronte, a tergo, a latere, a dextro cornu, Cic., Caes. u.a.: ab novissimis, im Hintertreffen, Caes. – ebenso bei den geograph. Ausdrücken ab occasu et ortu solis, Liv.: Cappadocia, quae patet a Syria, Cic. – Dah. auch bei Tätigkeiten, die von einer Seite od. von einer Person auf derselben herkommen = von od. auf seiten (s. Fabri  ), tubae cornuaque ab Romanis cecinerant, Liv.: si quid ipsi a Caesare opus esset, Caes.: u. so timere ab alqo, Cic.: timor ab alqo, Liv.: periculum ab alqo, Cic. – übtr., ab alqo = auf jmds. Seite od. Partei, zu jmds. Vorteil od. Bestem (Gunsten), für jmd. (Ggstz. contra od. adversus alqm, s. Hofmann  S. 203), zB. ut ea deditā operā a nobis contra vosmet ipsos facere videamini, Cic.: u. so ab innocentia clementissimus, Cic.: dah. bei esse, stare, facere (intr.), sentire, w.s.
-				<sense level="2" n="C"/>
-				zur Angabe des Entfernungspunktes in der Ruhe, des Abstandes
+				<sense level="2" n="C">zur Angabe des Entfernungspunktes in der Ruhe, des Abstandes</sense>
 				<sense level="3" n="1">
+					von einem Punkte usw., bei den Verben abesse, distare u.a. (w.s.), u. bei procul, longe, prope u.a. (w.s.): u. so omnia auscultavi ab ostio, an der Tür, Plaut. – mit einem Zahlworte verbunden = in einer Entfernung von usw., ab milibus passuum minus duobus castra posuerunt, Caes. – übtr., nach den Begriffen »der Verschiedenheit, Änderung usw.«, wie differre, discrepare, diversum esse, alienum od. alieno animo esse ab alqo (w.s.): dah. quantum mutatus ab illo Hectore, gegen jenen H., Verg.: multo aliter a ceteris agunt, als die ü., Mela. – Hierher gehört auch ab re = der Sache fern, d.i. zum Nachteil, consulere (raten), 
 					<bibl>
 						<author>Plaut.</author>
 						<title>Astr. fr.</title>
 						238:
 					</bibl>
+					 öfter non od. haud ab re = der Sache nicht fern, d.i. nicht unzweckmäßig, nicht unnütz, vorteilhaft, mit esse, ducere u. dgl., Plaut., Liv. u.a.
 				</sense>
-				von einem Punkte usw., bei den Verben abesse, distare u.a. (w.s.), u. bei procul, longe, prope u.a. (w.s.): u. so omnia auscultavi ab ostio, an der Tür, Plaut. – mit einem Zahlworte verbunden = in einer Entfernung von usw., ab milibus passuum minus duobus castra posuerunt, Caes. – übtr., nach den Begriffen »der Verschiedenheit, Änderung usw.«, wie differre, discrepare, diversum esse, alienum od. alieno animo esse ab alqo (w.s.): dah. quantum mutatus ab illo Hectore, gegen jenen H., Verg.: multo aliter a ceteris agunt, als die ü., Mela. – Hierher gehört auch ab re = der Sache fern, d.i. zum Nachteil, consulere (raten),  öfter non od. haud ab re = der Sache nicht fern, d.i. nicht unzweckmäßig, nicht unnütz, vorteilhaft, mit esse, ducere u. dgl., Plaut., Liv. u.a.
-				<sense level="3" n="2"/>
-				der Zahl, dem Range, der Macht nach = nach, hinter, quartus ab Arcesila, Cic.: alter ab illo, Verg.: a magnis hunc colit ille deis, Ov.: potentiā secundus a rege, Auct. b. Alex.
-				<sense level="1" n="II"/>
-				übtr.:
-				<sense level="2" n="A"/>
-				in der Zeit, ganz entsprechend den räumlichen Beziehungen:
+				<sense level="3" n="2">der Zahl, dem Range, der Macht nach = nach, hinter, quartus ab Arcesila, Cic.: alter ab illo, Verg.: a magnis hunc colit ille deis, Ov.: potentiā secundus a rege, Auct. b. Alex.</sense>
+				<sense level="1" n="II">übtr.:</sense>
+				<sense level="2" n="A">in der Zeit, ganz entsprechend den räumlichen Beziehungen:</sense>
 				<sense level="3" n="1">
+					zur Angabe des Ausganges von einem Zeitpunkt, ohne Rücksicht auf die Dauer dessen, was unmittelbar auf ihn folgt = sogleich nach, unmittelbar nach (s. 
 					<bibl>
 						<author>Fabri</author>
 						<bibl>
@@ -213,14 +221,16 @@
 							22, 40, 9
 						</bibl>
 					</bibl>
+					), ab re divina mulieres apparebunt, Plaut.: ab hac contione legati missi sunt, Liv.: pulli a matre, gleich von der M. weg, Col.: namentl. nach statim, confestim, protenus, nuper, recens etc., w.s.
 				</sense>
-				zur Angabe des Ausganges von einem Zeitpunkt, ohne Rücksicht auf die Dauer dessen, was unmittelbar auf ihn folgt = sogleich nach, unmittelbar nach (s. ), ab re divina mulieres apparebunt, Plaut.: ab hac contione legati missi sunt, Liv.: pulli a matre, gleich von der M. weg, Col.: namentl. nach statim, confestim, protenus, nuper, recens etc., w.s.
 				<sense level="3" n="2">
+					zur Angabe des Ausganges von einem Zeitpunkte mit Rücksicht auf die Dauer der Handlung = von... an, seit, rem omnem a principio audies, Ter.: ab hora tertia bibebatur, Cic.: a condiscipulatu, Nep.: a parvulo, Ter., od. a pueris, Ter. u. Cic. (s. Ruhnk. zu 
 					<bibl>
 						<author>Ter.</author>
 						<title>Andr.</title>
 						1, 1, 8.
 					</bibl>
+					 
 					<bibl>
 						<author>Wagner</author>
 						<bibl>
@@ -229,13 +239,12 @@
 							214
 						</bibl>
 					</bibl>
+					), u. so bes. mit initium, principium, pueritia, adulescentia, puer, parvus, primus u. ähnl. (w.s.). – u. mit usque ad, von... an bis zu, a mane ad noctem usque, Plaut.: a consulatu eius usque ad extremum tempus, Nep.: ab ovo usque ad mala, Hor. – ebenso bl. mit ad, z.B. regnatum est ab condita urbe ad liberatam annos CCXLIV, Liv.: u. mit in, zB. Romani ab sole orto in multum diei stetere in acie, Liv.
 				</sense>
-				zur Angabe des Ausganges von einem Zeitpunkte mit Rücksicht auf die Dauer der Handlung = von... an, seit, rem omnem a principio audies, Ter.: ab hora tertia bibebatur, Cic.: a condiscipulatu, Nep.: a parvulo, Ter., od. a pueris, Ter. u. Cic. (s. Ruhnk. zu  ), u. so bes. mit initium, principium, pueritia, adulescentia, puer, parvus, primus u. ähnl. (w.s.). – u. mit usque ad, von... an bis zu, a mane ad noctem usque, Plaut.: a consulatu eius usque ad extremum tempus, Nep.: ab ovo usque ad mala, Hor. – ebenso bl. mit ad, z.B. regnatum est ab condita urbe ad liberatam annos CCXLIV, Liv.: u. mit in, zB. Romani ab sole orto in multum diei stetere in acie, Liv.
-				<sense level="3" n="3"/>
-				zur Bezeichnung des Abstandes von einem Zeitpunkte (wo meist der Ort od. die Person, wo eine Tätigkeit begann, für die Zeit steht) = von, nach, seit, cuius a morte hic tertius et tricesimus est annus, Cic.: ab incenso Capitolio illum esse vigesimum annum, Sall.: so ab urbe condita, seit Erbauung der Stadt, Cic. u.a.: in Italiam pervenit quinto mense a Carthagine nova, fünf Monate nach dem Abzuge von N., Liv.: u. so tuae litterae binae redditae sunt tertio abs te die, nachdem du sie abgeschickt hattest, Cic.
-				<sense level="2" n="B"/>
-				in andern mit Raum und Zeit verwandten Verhältnissen, in denen ein Ausgehen von einem Punkte denkbar ist:
+				<sense level="3" n="3">zur Bezeichnung des Abstandes von einem Zeitpunkte (wo meist der Ort od. die Person, wo eine Tätigkeit begann, für die Zeit steht) = von, nach, seit, cuius a morte hic tertius et tricesimus est annus, Cic.: ab incenso Capitolio illum esse vigesimum annum, Sall.: so ab urbe condita, seit Erbauung der Stadt, Cic. u.a.: in Italiam pervenit quinto mense a Carthagine nova, fünf Monate nach dem Abzuge von N., Liv.: u. so tuae litterae binae redditae sunt tertio abs te die, nachdem du sie abgeschickt hattest, Cic.</sense>
+				<sense level="2" n="B">in andern mit Raum und Zeit verwandten Verhältnissen, in denen ein Ausgehen von einem Punkte denkbar ist:</sense>
 				<sense level="3" n="1">
+					zur Angabe des Urhebers od. der Ursache einer Wirkung, wenn die Wirkung von lebenden od. lebendig gedachten Wesen ausgeht = von, durch, nach, infolge, wegen (s. 
 					<bibl>
 						<author>Fabri</author>
 						<bibl>
@@ -243,30 +252,28 @@
 							21, 36, 7
 						</bibl>
 					</bibl>
+					u. 22, 34, 2. Weißenb. zu 
 					<bibl>
 						<author>Liv.</author>
 						37, 32, 12
 					</bibl>
+					)
 				</sense>
-				zur Angabe des Urhebers od. der Ursache einer Wirkung, wenn die Wirkung von lebenden od. lebendig gedachten Wesen ausgeht = von, durch, nach, infolge, wegen (s. u. 22, 34, 2. Weißenb. zu )
-				<sense level="3" n="1">
-					<lang lang="greek">α</lang>
-				</sense>
-				<sense level="3" n="1">
+				<sense level="5" n="α">
+					(selten) nach verbis activis: a se instituere, selbst unterrichten, 
 					<bibl>
 						<author>Col.</author>
 						11, 1, 5:
 					</bibl>
+					 amittere alqm ab alqo, 
 					<bibl>
 						<author>Dict.</author>
 						6, 5.
 					</bibl>
+					 Heges 5, 2, 39. 
 				</sense>
-				(selten) nach verbis activis: a se instituere, selbst unterrichten,  amittere alqm ab alqo,  Heges 5, 2, 39. 
-				<sense level="3" n="1">
-					<lang lang="greek">β</lang>
-				</sense>
-				<sense level="3" n="1">
+				<sense level="5" n="β">
+					(am gewöhnlichsten) nach verbis pass. (s. 
 					<bibl>
 						<author>Benecke</author>
 						<bibl>
@@ -274,18 +281,23 @@
 							38, 1, 10
 						</bibl>
 					</bibl>
+					) u. nach verbis intrans. (act. od. depon.) mit passiver Bedeutung: reprehendi ab alqo, Cic.: honor ei habitus est a Graecia, Cic.: credas non de puero scriptum, sed a puero, Plin. ep. – salvere ab alqo, Cic.: ab alqo interire, Cic., od. cadere, Tac., od. occidere, Ov.: nasci od. oriri ab alqo, Cic.: oriri a se (durch sich, durch eigene Kraft), Cic., u. verb. a se oriri et suā sponte nasci, Cic. (s. Kühner zu 
 					<bibl>
 						<author>Cic.</author>
 						<title>Poët. Tusc.</title>
 						3, 27
 					</bibl>
+					): natum od. ortum (oriundum) esse ab alqo, Cic.: calescit ab ipso spiritu, Cic.: traiectus ab ense, Ov.: res effectae ab efficientibus causis, Cic.: animus ab ignavia corruptus, durch, infolge, Sall. – zuw. bei Gerundiven statt des Dativs, bes. wenn schon ein Dativ vorhergeht (s. Hofmann 
 					<bibl>
 						<author>Ausgew.</author>
 						<title>Br. Cic.</title>
 						2, 15, 11
 					</bibl>
+					), fortis et a vobis conservandus vir, Cic.: quibus (viris) est a vobis consulendum, Cic. – 
 					<lang lang="greek">γ</lang>
+					) nach subst.: levior est plaga ab amico, quam a debitore, der Verlust, der herrührt von usw., Cic.: maius (praeceptum), quam ut ab homine videretur, Cic.: a bestiis ictus, Cic.: ab illo iniuria, die von ihm angetane, Ter.: fulgor ab auro, der vom Gold ausgehende Glanz (während fulgor auri = der am Gold haftende Glanz), Lucr. – 
 					<lang lang="greek">δ</lang>
+					) nach adjj.: ab simili clade profugus, Liv.: murus ab ingenio notior ille tuo, Prop. (vgl. 
 					<bibl>
 						<author>Lachmann</author>
 						<bibl>
@@ -293,6 +305,7 @@
 							4, 1, 9
 						</bibl>
 					</bibl>
+					über notus ab etc.): a radiis sideris esse niger, Ov.: tempus a nostris triste malis, die von unserm Unglück getrübte Zeit, Ov.: gemina et mammosa Ceres est ipsa ab Iaccho, vom Säugen des Bacchus, Lucr. – Hierher gehört auch die poet. Verbindung ab arte = »durch die Kunst, mit Hilfe der Kunst, künstlich« (indem die Dichter die ars als selbsttätig darstellen), falcatus ab arte ensis, Sil.: turben, quem celer assueta versat ab arte puer, Tibull. (s. 
 					<bibl>
 						<author>Dissen</author>
 						<bibl>
@@ -300,29 +313,23 @@
 							1, 5, 3
 						</bibl>
 					</bibl>
+					).
 				</sense>
-				(am gewöhnlichsten) nach verbis pass. (s. ) u. nach verbis intrans. (act. od. depon.) mit passiver Bedeutung: reprehendi ab alqo, Cic.: honor ei habitus est a Graecia, Cic.: credas non de puero scriptum, sed a puero, Plin. ep. – salvere ab alqo, Cic.: ab alqo interire, Cic., od. cadere, Tac., od. occidere, Ov.: nasci od. oriri ab alqo, Cic.: oriri a se (durch sich, durch eigene Kraft), Cic., u. verb. a se oriri et suā sponte nasci, Cic. (s. Kühner zu ): natum od. ortum (oriundum) esse ab alqo, Cic.: calescit ab ipso spiritu, Cic.: traiectus ab ense, Ov.: res effectae ab efficientibus causis, Cic.: animus ab ignavia corruptus, durch, infolge, Sall. – zuw. bei Gerundiven statt des Dativs, bes. wenn schon ein Dativ vorhergeht (s. Hofmann ), fortis et a vobis conservandus vir, Cic.: quibus (viris) est a vobis consulendum, Cic. – ) nach subst.: levior est plaga ab amico, quam a debitore, der Verlust, der herrührt von usw., Cic.: maius (praeceptum), quam ut ab homine videretur, Cic.: a bestiis ictus, Cic.: ab illo iniuria, die von ihm angetane, Ter.: fulgor ab auro, der vom Gold ausgehende Glanz (während fulgor auri = der am Gold haftende Glanz), Lucr. – ) nach adjj.: ab simili clade profugus, Liv.: murus ab ingenio notior ille tuo, Prop. (vgl. über notus ab etc.): a radiis sideris esse niger, Ov.: tempus a nostris triste malis, die von unserm Unglück getrübte Zeit, Ov.: gemina et mammosa Ceres est ipsa ab Iaccho, vom Säugen des Bacchus, Lucr. – Hierher gehört auch die poet. Verbindung ab arte = »durch die Kunst, mit Hilfe der Kunst, künstlich« (indem die Dichter die ars als selbsttätig darstellen), falcatus ab arte ensis, Sil.: turben, quem celer assueta versat ab arte puer, Tibull. (s. ).
-				<sense level="3" n="2"/>
-				zur Bezeichnung des Ursprungs und der Herkunft = von, aus
-				<sense level="4" n="a"/>
-				übh.:
-				<sense level="4" n="a">
-					<lang lang="greek">α</lang>
-				</sense>
-				<sense level="4" n="a"/>
-				nach verbis: ut sol a liquida saepe refulget aqua, Ov.: a docto fama refulget avo, Prop.: ab ipso Rheno iactabat genus, Prop.: bes. bei orior u. nascor, zB. id facinus natum a cupiditate, Cic.: u. bei esse (abstammen), zB. a Tullio, Cic. 
-				<sense level="4" n="a">
-					<lang lang="greek">β</lang>
-				</sense>
-				<sense level="4" n="a">
+				<sense level="3" n="2">zur Bezeichnung des Ursprungs und der Herkunft = von, aus</sense>
+				<sense level="4" n="a">übh.:</sense>
+				<sense level="5" n="α">nach verbis: ut sol a liquida saepe refulget aqua, Ov.: a docto fama refulget avo, Prop.: ab ipso Rheno iactabat genus, Prop.: bes. bei orior u. nascor, zB. id facinus natum a cupiditate, Cic.: u. bei esse (abstammen), zB. a Tullio, Cic. </sense>
+				<sense level="5" n="β">
+					bei subst.: amicitiae ortus a natura quam ab imbecillitate gravior (erit), Cic.: dulces a fontibus undae, aus den Quellen geschöpft (während fontium undae = das Wasser in den Quellen), Verg. (wie im Griech. 
 					<lang lang="greek">οινος ἀπ' ἀµπέλου</lang>
+					). – So bes. bei Städtenamen usw. zur Umschreibung der Adjj. (s. Müller zu 
 					<bibl>
 						<author>Liv.</author>
 						1, 50, 3
 					</bibl>
+					), coloni a Velitris, Liv.: Turnus Herdonius ab Aricia, Liv.: pastor ab Amphryso, Verg.: legati ab Ardea, Liv. – a Pyrrho perfuga, Cic.: legati ab Alexandro, Cic.: ab Attalo Cretenses sagittarii, Liv. 
 				</sense>
-				bei subst.: amicitiae ortus a natura quam ab imbecillitate gravior (erit), Cic.: dulces a fontibus undae, aus den Quellen geschöpft (während fontium undae = das Wasser in den Quellen), Verg. (wie im Griech. ). – So bes. bei Städtenamen usw. zur Umschreibung der Adjj. (s. Müller zu ), coloni a Velitris, Liv.: Turnus Herdonius ab Aricia, Liv.: pastor ab Amphryso, Verg.: legati ab Ardea, Liv. – a Pyrrho perfuga, Cic.: legati ab Alexandro, Cic.: ab Attalo Cretenses sagittarii, Liv. 
 				<sense level="4" n="b">
+					zur Angabe dessen, nach dem etw. benannt od. von dem etw. etymologisch abgeleitet ist, nach, von (s. 
 					<bibl>
 						<author>Benecke</author>
 						<bibl>
@@ -330,9 +337,10 @@
 							44, 1, 2
 						</bibl>
 					</bibl>
+					), appellatum esse od. nomen invenisse ab etc., Cic.: puero ab inopia Egerio inditum nomen, Liv.: ab Hispano Hispaniam cognominaverunt, Iustin.: Chaoniamque omnem Troiano a Chaone dixit, Verg.: cucumeres dicuntur a curvore, Varr. LL.: caelum a cavatione, vallum a volatu, Varr. LL.: sirpiculae vocatae ab sirpando, Varr. LL.: acquirere est ab ad et quaerere, Varr. LL. – u.
 				</sense>
-				zur Angabe dessen, nach dem etw. benannt od. von dem etw. etymologisch abgeleitet ist, nach, von (s. ), appellatum esse od. nomen invenisse ab etc., Cic.: puero ab inopia Egerio inditum nomen, Liv.: ab Hispano Hispaniam cognominaverunt, Iustin.: Chaoniamque omnem Troiano a Chaone dixit, Verg.: cucumeres dicuntur a curvore, Varr. LL.: caelum a cavatione, vallum a volatu, Varr. LL.: sirpiculae vocatae ab sirpando, Varr. LL.: acquirere est ab ad et quaerere, Varr. LL. – u.
 				<sense level="4" n="c">
+					des Beweggrundes = wegen, aus, ab odio, ab ira, a spe, aus usw., Liv. (s. Drak. u. 
 					<bibl>
 						<author>Fabri</author>
 						<bibl>
@@ -340,17 +348,17 @@
 							24, 30, 1
 						</bibl>
 					</bibl>
+					; 26, 1, 3): ab obsidione, wegen usw., Liv. (s. Drak. zu 
 					<bibl>
 						<author>Liv.</author>
 						2, 14, 3
 					</bibl>
+					): ab singulari amore, Balb. bei Cic.: neglegentius a re gesta ire, Liv.
 				</sense>
-				des Beweggrundes = wegen, aus, ab odio, ab ira, a spe, aus usw., Liv. (s. Drak. u. ; 26, 1, 3): ab obsidione, wegen usw., Liv. (s. Drak. zu ): ab singulari amore, Balb. bei Cic.: neglegentius a re gesta ire, Liv.
-				<sense level="3" n="3"/>
-				nach den Begriffen des Anfangens u. ähnl. = von... an, von, bei, mit, nach ordiri, incipere, auspicari, w.s. – da ab Delphio cantharum circum, Plaut.: u. so a summo = vom Ersten od. ab infimo = vom Letzten (auf dem Triklinium) an in der Runde (zB. da, puer, ab summo, Plaut.: age, tu interibi ab infimo da savium, Plaut.): cornicem a cauda de ovo exire, mit dem Schw. voran, Plin.: a capite repetis, quod quaerimus, Cic.
-				<sense level="3" n="4"/>
-				bei den Begriffen »des Frei- od. Losmachens von usw.«; dah. auch »des Verteidigens oder Schützens vor od. gegen etwas« u. »des Leer- u. Verlassenseins von etwas« (s. Zumpt § 468 f.).
+				<sense level="3" n="3">nach den Begriffen des Anfangens u. ähnl. = von... an, von, bei, mit, nach ordiri, incipere, auspicari, w.s. – da ab Delphio cantharum circum, Plaut.: u. so a summo = vom Ersten od. ab infimo = vom Letzten (auf dem Triklinium) an in der Runde (zB. da, puer, ab summo, Plaut.: age, tu interibi ab infimo da savium, Plaut.): cornicem a cauda de ovo exire, mit dem Schw. voran, Plin.: a capite repetis, quod quaerimus, Cic.</sense>
+				<sense level="3" n="4">bei den Begriffen »des Frei- od. Losmachens von usw.«; dah. auch »des Verteidigens oder Schützens vor od. gegen etwas« u. »des Leer- u. Verlassenseins von etwas« (s. Zumpt § 468 f.).</sense>
 				<sense level="3" n="5">
+					bei Begriffen aller Art, die von einer Seite aus näher bestimmt od. beschränkt werden = von seiten, in bezug auf, in betreff, gemäß, wegen, an (s. 
 					<bibl>
 						<author>Wagner</author>
 						<bibl>
@@ -367,11 +375,13 @@
 							631.
 						</bibl>
 					</bibl>
+					Ruhnk. zu 
 					<bibl>
 						<author>Ter.</author>
 						<title>prol.</title>
 						13.
 					</bibl>
+					 
 					<bibl>
 						<author>Korte</author>
 						<bibl>
@@ -380,22 +390,23 @@
 							48, 3
 						</bibl>
 					</bibl>
+					), a me pudica est, Plaut.: a vi praestare nihil possum, Cic.: nihil adulescenti neque a natura neque a doctrina deesse sentio, Cic.: mediocriter a doctrina instructus, Cic.: imparati cum a militibus tum a pecunia, Cic.: firmus ab equitatu, stark an R., Planc. b. Cic. – Nicht anders ist ab zu nehmen in Verbindungen wie: dolere ab oculis, ab animo, Plaut.: a morbo valere, ab animo aegrum esse, Plaut.: laborare ab alqa re, Caes.
 				</sense>
-				bei Begriffen aller Art, die von einer Seite aus näher bestimmt od. beschränkt werden = von seiten, in bezug auf, in betreff, gemäß, wegen, an (s. Ruhnk. zu  ), a me pudica est, Plaut.: a vi praestare nihil possum, Cic.: nihil adulescenti neque a natura neque a doctrina deesse sentio, Cic.: mediocriter a doctrina instructus, Cic.: imparati cum a militibus tum a pecunia, Cic.: firmus ab equitatu, stark an R., Planc. b. Cic. – Nicht anders ist ab zu nehmen in Verbindungen wie: dolere ab oculis, ab animo, Plaut.: a morbo valere, ab animo aegrum esse, Plaut.: laborare ab alqa re, Caes.
-				<sense level="3" n="6"/>
-				bei Angabe des Ganzen neben dem Teile = von, aus, unus u. nonnulli ab novissimis, Caes.: in id consilium deligerentur ab universo populo, Cic.
-				<sense level="3" n="7"/>
-				zur Bezeichnung der Seite, von der aus uns jmd. Dienste leistet, servus a pedibus, Lakai, Läufer, Cic.: a manu servus od. bloß a manu, Schreiber, Suet.; – od. der Gegenstände, die einer leistet, besorgt, treibt, ab epistulis, Sekretär, Suet. u. Lampr.: a rationibus, Rechnungsführer, Suet.: a libellis, Bittschriftenannehmer, Suet. u. Lampr.: a memoria, Lampr.
+				<sense level="3" n="6">bei Angabe des Ganzen neben dem Teile = von, aus, unus u. nonnulli ab novissimis, Caes.: in id consilium deligerentur ab universo populo, Cic.</sense>
+				<sense level="3" n="7">zur Bezeichnung der Seite, von der aus uns jmd. Dienste leistet, servus a pedibus, Lakai, Läufer, Cic.: a manu servus od. bloß a manu, Schreiber, Suet.; – od. der Gegenstände, die einer leistet, besorgt, treibt, ab epistulis, Sekretär, Suet. u. Lampr.: a rationibus, Rechnungsführer, Suet.: a libellis, Bittschriftenannehmer, Suet. u. Lampr.: a memoria, Lampr.</sense>
 				<sense level="3" n="8">
+					(spätlat.) beim Komparat. st. quam, als, und beim Positiv, mehr als, s. Rönsch Itala p. 452 sq. Rönsch im 
 					<bibl>
 						<author>Rhein.</author>
 						<title>Mus.</title>
 						31, 477
 					</bibl>
+					 sq. Ott in Fleckeisens 
 					<bibl>
 						<author>Jahrbb.</author>
 						1875.
 					</bibl>
+					 S. 794 f. u. S. 797. a, ab steht (namentlich bei Spätern) auch vor (substantivisch gebrauchten) Adverbien, zB. a peregre (vgl. unser »von über Land«), Vitr.: ab invicem, Apul: a longe, von weitem, Spät. (s. 
 					<bibl>
 						<author>Muncker</author>
 						<bibl>
@@ -404,37 +415,42 @@
 							257.
 						</bibl>
 					</bibl>
+					Rönsch Itala p. 231): ab intus, von innen, a foris, von außen, Spät.: a pridie, 
 					<bibl>
 						<author>Pelag.</author>
 						<title>vet.</title>
 						28.
 					</bibl>
+					 – wird seinem regierten Worte nachgesetzt, quo ab, 
 					<bibl>
 						<author>Plaut.</author>
 						<title>Astr. fr.</title>
 						119.
 					</bibl>
+					 – öfter (bes. bei Dichtern) von demselben getrennt, damnis dives ab ipsa suis, 
 					<bibl>
 						<author>Ov.</author>
 						<title>her.</title>
 						9, 96:
 					</bibl>
+					 u. so 
 					<bibl>
 						<author>Cic.</author>
 						<title>Arch.</title>
 						12.
 					</bibl>
+					 
 					<bibl>
 						<author>Ov.</author>
 						<title>her.</title>
 						12, 18.
 					</bibl>
+					 – In der Zusammensetzung bezeichnet ab unser ab od. weg, zB. abire, abgehen, weggehen, abdere, wegtun; und im Sinne des Abweichens, absonus, abtönend; u. selbst in abuti, abnutzen. Arch. Nbf. af (s. 
 					<bibl>
 						<author>Prisc.</author>
 						1
 					</bibl>
 				</sense>
-				(spätlat.) beim Komparat. st. quam, als, und beim Positiv, mehr als, s. Rönsch Itala p. 452 sq. Rönsch im  sq. Ott in Fleckeisens  S. 794 f. u. S. 797. a, ab steht (namentlich bei Spätern) auch vor (substantivisch gebrauchten) Adverbien, zB. a peregre (vgl. unser »von über Land«), Vitr.: ab invicem, Apul: a longe, von weitem, Spät. (s. Rönsch Itala p. 231): ab intus, von innen, a foris, von außen, Spät.: a pridie,  – wird seinem regierten Worte nachgesetzt, quo ab,  – öfter (bes. bei Dichtern) von demselben getrennt, damnis dives ab ipsa suis,  u. so   – In der Zusammensetzung bezeichnet ab unser ab od. weg, zB. abire, abgehen, weggehen, abdere, wegtun; und im Sinne des Abweichens, absonus, abtönend; u. selbst in abuti, abnutzen. Arch. Nbf. af (s. 
 			</entryFree>
 		</div0>
 		<div0 n="ABACINUS" type="alphabetic letter">
@@ -444,12 +460,13 @@
 				<itype>a, um</itype>
 				<etym>abacus</etym>
 				<sense>
+					, der Prunktische, spatia, 
 					<bibl>
 						<author>Plin.</author>
 						35, 3
 					</bibl>
+					 ed. Detl. 
 				</sense>
-				, der Prunktische, spatia,  ed. Detl. 
 			</entryFree>
 		</div0>
 		<div0 n="ABĀCTIO" type="alphabetic letter">
@@ -461,13 +478,14 @@
 				<etym>abigo</etym>
 				<etym>εξέλασις</etym>
 				<sense>
+					, das Wegtreiben, 
 					<bibl>
 						<author>Hier.</author>
 						<title>in Ierem.</title>
 						1, 5, 15.
 					</bibl>
+					 Gloss. II, 302, 50. 
 				</sense>
-				, das Wegtreiben,  Gloss. II, 302, 50. 
 			</entryFree>
 		</div0>
 		<div0 n="ABĀCTOR" type="alphabetic letter">
@@ -478,23 +496,26 @@
 				<gen>m.</gen>
 				<etym>abigo</etym>
 				<sense>
+					, der Wegtreiber des Viehes, Viehdieb, boum, 
 					<bibl>
 						<author>Firm.</author>
 						<title>de err.</title>
 						5, 2:
 					</bibl>
+					 pecorum, 
 					<bibl>
 						<author>Firm.</author>
 						<title>Mat.</title>
 						6, 31:
 					</bibl>
+					 animalium, 
 					<bibl>
 						<author>Cassiod.</author>
 						<title>var.</title>
 						4, 49:
 					</bibl>
+					 absol., Apul., Sulp. Sev. u.a. Spät. 
 				</sense>
-				, der Wegtreiber des Viehes, Viehdieb, boum,  pecorum,  animalium,  absol., Apul., Sulp. Sev. u.a. Spät. 
 			</entryFree>
 		</div0>
 		<div0 n="ABĀCTUS" type="alphabetic letter">
@@ -502,8 +523,7 @@
 			<entryFree n="7">
 				<orth key="abāctus">abāctus</orth>
 				<itype>a, um</itype>
-				<sense/>
-				 s. abigo. 
+				<sense> s. abigo. </sense>
 			</entryFree>
 		</div0>
 		<div0 n="ABĀCTUS" type="alphabetic letter">
@@ -511,13 +531,14 @@
 			<entryFree n="8">
 				<orth key="abāctus">abāctus</orth>
 				<sense>
+					² Us, m. (abigo), das (gewaltsame) Wegtreiben, Plur., cum abactus hospitum exerceret, da er den Gastfreunden ihr Vieh wegtrieb, 
 					<bibl>
 						<author>Plin.</author>
 						<title>pan.</title>
 						20, 4.
 					</bibl>
+					 
 				</sense>
-				² Us, m. (abigo), das (gewaltsame) Wegtreiben, Plur., cum abactus hospitum exerceret, da er den Gastfreunden ihr Vieh wegtrieb,  
 			</entryFree>
 		</div0>
 		<div0 n="ABACULUS" type="alphabetic letter">
@@ -527,12 +548,13 @@
 				<itype>ī</itype>
 				<gen>m.</gen>
 				<sense>
+					 (Demin. v. abacus), ein kleiner Würfel von gefärbtem Glas zu Mosaikarbeiten, 
 					<bibl>
 						<author>Plin.</author>
 						36, 199.
 					</bibl>
+					 
 				</sense>
-				 (Demin. v. abacus), ein kleiner Würfel von gefärbtem Glas zu Mosaikarbeiten,  
 			</entryFree>
 		</div0>
 		<div0 n="ABACUS" type="alphabetic letter">
@@ -543,48 +565,52 @@
 				<gen>m.</gen>
 				<etym>ἄβαξ</etym>
 				<sense>
+					 dah. latein. abax, bacis, m., 
 					<bibl>
 						<author>Prisc.</author>
 						7, 42
 					</bibl>
+					), die Tafel od. Tischplatte
 				</sense>
-				 dah. latein. abax, bacis, m., ), die Tafel od. Tischplatte
 				<sense level="1" n="I">
+					der Abecetisch, d.h. das nach dem dekadischen Ziffersystem in viereckige Felder abgeteilte Rechenbrett, 
 					<bibl>
 						<author>Pers.</author>
 						1, 132.
 					</bibl>
+					 – übh. der Rechentisch, abaco et pulvisculo se dedere, sich mit Geometrie beschäftigen, 
 					<bibl>
 						<author>Apul.</author>
 						<title>apol.</title>
 						16.
 					</bibl>
+					 p. 24, 7 Kr. 
 				</sense>
-				der Abecetisch, d.h. das nach dem dekadischen Ziffersystem in viereckige Felder abgeteilte Rechenbrett,  – übh. der Rechentisch, abaco et pulvisculo se dedere, sich mit Geometrie beschäftigen,  p. 24, 7 Kr. 
 				<sense level="1" n="II">
+					jedes in Felder abgeteilte Spielbrett, eburneis quadrigis cotidie in abaco ludere, 
 					<bibl>
 						<author>Suet.</author>
 						<title>Ner.</title>
 						22, 1:
 					</bibl>
+					 diem abaco et latrunculis conterere, 
 					<bibl>
 						<author>Macr.</author>
 						<title>sat.</title>
 						1, 5, 11.
 					</bibl>
+					 
 				</sense>
-				jedes in Felder abgeteilte Spielbrett, eburneis quadrigis cotidie in abaco ludere,  diem abaco et latrunculis conterere,  
-				<sense level="1" n="III"/>
-				ein in durchlöcherte Felder abgeteilter Schenk-od. Kredenztisch, der zur Aufnahme der mit einem spitzen Fuße versehenen Weinkrüge diente, Cato r.r. 10, 4. – später ein musivisch verzierter Prunktisch in den Zimmern, zur Aufstellung kostbarer Gefäße (Vasen usw.), Varr. LL., Cic. u.a. 
-				<sense level="1" n="IV"/>
-				architekt. t.t.:
+				<sense level="1" n="III">ein in durchlöcherte Felder abgeteilter Schenk-od. Kredenztisch, der zur Aufnahme der mit einem spitzen Fuße versehenen Weinkrüge diente, Cato r.r. 10, 4. – später ein musivisch verzierter Prunktisch in den Zimmern, zur Aufstellung kostbarer Gefäße (Vasen usw.), Varr. LL., Cic. u.a. </sense>
+				<sense level="1" n="IV">architekt. t.t.:</sense>
 				<sense level="2" n="a">
+					die obere Platte auf dem Kapitäle der Säulen, 
 					<bibl>
 						<author>Vitr.</author>
 						3, 5, 5.
 					</bibl>
+					 
 				</sense>
-				die obere Platte auf dem Kapitäle der Säulen,  
 			</entryFree>
 		</div0>
 	</body>

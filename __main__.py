@@ -66,7 +66,6 @@ with open("input/body.xml") as f:
 	char = None
 	#In this document, we have one line = one word definition, h1 represent orth
 	for line in f.readlines():
-		print (line)
 		#We split the line around the <h1> tag
 		h1, senses_text = divideText(line, entryFreeId)
 		h1 = polishH1(h1)
@@ -96,8 +95,9 @@ with open("input/body.xml") as f:
 		# - we set up an index counter
 		# - we reset id to None. id is the key for the numeric identifier of the sense
 		senses = []
-		senses_text_split = re.split('[–\,]{0,1}\s([1-9]{1,3}|[abcdefABCDEFαβ]{1}|IX|IV|V?I{0,3})\)\s', senses_text)
+		senses_text_split = regexp.matrices["senses"]["splitter"].split(senses_text)
 		senses_text_split = [s for s in senses_text_split if s != None]
+		print (senses_text_split)
 
 		if len(senses_text_split) == 1:
 
