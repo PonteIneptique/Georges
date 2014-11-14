@@ -4,16 +4,34 @@
 
 import codecs
 import xml.etree.cElementTree as cElementTree
-import xml.etree.ElementTree as ElementTree
 import regex as re
 from xml.dom import minidom
 import copy
+
+from tools.normalization import Normalizer
+from tools.regexp import RegExp
+from tools.steps import Step
+
+normalizer = Normalizer()
+regexp = RegExp(normalizer)
+
+
+Greek = Step (
+		regexp.matrices["greek"]
+	)
+PrimarySource = Step(
+		regexp.matrices["primarySource"],
+		Greek
+	)
+SecondarySource = Step(
+		regexp.matrices["secondarySource"],
+		PrimarySource
+	)
 
 #Registering werk and autoren abkurzungen
 authoren = []
 werken = []
 TextIdentifiers = []
-
 
 #Configuration
 entryFreeId = 1
@@ -23,8 +41,7 @@ ignoreReplacer = False #Ignore the merger for Werken
 
 
 def prettify(elem):
-	"""Return a pretty-printed XML string for the Element.
-	"""
+	""" Return a pretty-printed XML string for the Element. """
 	rough_string = cElementTree.tostring(elem, 'unicode')
 	reparsed = minidom.parseString(rough_string)
 	return reparsed.toprettyxml(indent="\t")
@@ -352,7 +369,7 @@ with open("input/body.xml") as f:
 				#The text correspond to our element in senses_text_split with index (index_sense - 1)
 				text = senses_text_split[index_sense - 1]
 				#We match it against our simple numeric matcher
-				matching = ol_match.match(text)
+				matching = regexp.matrices["senses"]["grouper"].match(text)
 
 				#If this doesn't match, we have a sense's text
 				#If this match, we have a numeric identifier : we set id to it
