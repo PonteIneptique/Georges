@@ -32,6 +32,7 @@ Greek = Step (
 		GreekNodification,
 		normalizer
 	)
+
 PrimarySource = Step(
 		"primarySource",
 		regexp.matrices,
@@ -39,6 +40,7 @@ PrimarySource = Step(
 		normalizer,
 		Greek
 	)
+
 SecondarySource = Step(
 		name = "secondarySource",
 		matrix = regexp.matrices,
