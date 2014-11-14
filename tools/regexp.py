@@ -29,7 +29,7 @@ class RegExp(object):
 				"grouper" : re.compile("^([1-9]{1,3}|[abcdefABCDEF]{1}|IX|IV|V?I{0,3})$")
 			},
 			"greek" : {
-				"finder" : re.compile("((?:(?:[\p{Greek}µ']+)+[\s\.\,]*)+)"),
+				"matcher" : re.compile("((?:(?:[\p{Greek}µ']+)+[\s\.\,]*)+)"),
 				"grouper" : re.compile("(?P<match>(?:(?:[\p{Greek}µ']+)+[\s\.\,]*)+)")
 			}
 		}
