@@ -31,6 +31,7 @@ It wont take care of the header, because the header is not generated with this t
 		<orth key="string">string</orth>
 		<itype>The extension</itype>
 		<gen>The grammatical nature or gender</gen>
+		<etym>Etymology information</etym>
 		<bibl>
 			<author>Not Optional</author>
 			<book>Optional</book>
@@ -85,3 +86,13 @@ In the Georges, you can find secondary sources in the dictionary entries. To enc
 ```
 
 ###Example
+```xml
+<bibl>
+	<author>Muncker</author>
+	<bibl>
+		<author>Hyg.</author>
+		<title>fab.</title>
+		257.
+	</bibl>
+</bibl>
+```
