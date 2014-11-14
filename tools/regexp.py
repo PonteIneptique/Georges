@@ -1,28 +1,30 @@
-n#!/usr/bin/python3
+#!/usr/bin/python3
 # -*- coding: UTF-8 -*-
 
 import regex as re
 
 class RegExp(object):
- 	"""docstring for RegExp"""
- 	def __init__(self, dictionary):
- 		super(RegExp, self).__init__()
+	"""docstring for RegExp"""
+	def __init__(self, dictionary, normalization = False):
+		super(RegExp, self).__init__()
 
- 		self.dictionary = dictionary
- 		
- 		self.matrices = {
- 			"primarysource" : {
-				"matcher" : re.compile("(?P<match>{0})".format(self.generate("opus", True))),
-				"grouper" : re.compile(self.generate("opus"))
+		self.normalization = normalization
+
+		self.dictionary = dictionary
+		
+		self.matrices = {
+ 			"primarySource" : {
+				"matcher" : self.generate("primarySource", False),
+				"grouper" : self.generate("primarySource")
 			},
-			"secondarysource" : {
-				"matcher" : re.compile("(?P<match>(?:[A-Z]{1}[a-z]+)(?:\szu\s){1}(?:" + opusRegExp(True) + ")+)", flags= re.UNICODE),
-				"grouper" : re.compile("(?P<SecondaryAuthor>[A-Z]{1}[a-z]+)(?:\szu\s){1}(?P<Quoted>(?:" + re.sub("\?P<[a-zA-Z0-9]+>", "", opusRegExp()) + ")+(?:\s)*){1}", flags= re.UNICODE)
+			"secondarySource" : {
+				"matcher" : self.generate("secondarySource", False),
+				"grouper" : self.generate("secondarySource")
 			},
 			"quotes" : {
-				"matcher" : re.compile("(?P<match>{0})".format(QuotationRegExp(True))),
-				"grouper" : re.compile(QuotationRegExp())
-			}
+				"matcher" : self.generate("quote", False),
+				"grouper" : self.generate("quote")
+			},
 			"list" : {
 				"grouper" : re.compile("^([1-9]{1,3}|[abcdefABCDEF]{1}|IX|IV|V?I{0,3})$")
 			},
@@ -31,15 +33,32 @@ class RegExp(object):
 			}
 		}
 
-	def generate(self, category, ignoreGroups):
+	def generate(self, category, grouper = True):
+		""" Generate a regular expression object for the given category """
+		mappings = {					# We set up a dictionary to do some kind of switch-alike function where it is easy to read what shoud do what
+			"primarySource" 	: self.primarySource,
+			"secondarySource"	: self.secondarySource,
+			"quote"			: self.quotes
+		}
 
-	def getAuthor(self, formatting):
-		if formatting == "regexp":
-			return self.authorList()
-		else:
-			return self.authorDictionary()
+		regexp = mappings[category]()	# We call the function through the dictionary
 
-	def list(self, category, depth = 0):
+		if not grouper:					# If this we want a regexp which match, we want to remove any subgroups
+			regexp = self.getMatcher(regexp)
+
+		return re.compile(regexp, flags = re.UNICODE)
+
+	def getMatcher(self, regexp):
+		""" Transform a string with Regular expression matching groups to a simple global matcher string"""
+		regexp = self.removeGroups(regexp)		# First we transform group names to non-capturing groups
+		return "(?P<match>{0})".format(regexp)				# Then we include it in a global matcher
+
+	def removeGroups(self, regexp):
+		""" Remove groups with name in regular expression string by non-capturing group """
+		return re.sub("P<[a-zA-Z0-9]+>", ":", regexp)
+
+	def lists(self, category, depth = 0):
+		""" Returns a formated regular expression list for a given category (books, authors)"""
 		if depth == 0:
 			data = [self.regularize(entry) for entry in self.dictionary.lists[category]]
 		else:
@@ -47,41 +66,52 @@ class RegExp(object):
 		return 
 
 	def regularize(self, text):
+		""" Make sure than some string are regular expression compliant """ 
 		text = text.replace("\n", "").replace(" ", "\s").replace(".", "\.")
 		return "(?:{0})".format(text)
 
-	def authorList(self):
-		output = []
-		with open("./dictionary/authors.csv") as f:
-			output = ["(?:{0})".format(line.replace("\n", "").replace(" ", "\s").replace(".", "\.")) for line in f.readlines()]
-			f.close()
 
-		return "|".join(output)
-		
-"""
-	def getBooksRegexp():
-		lines = []
-		with open("./dictionary/books.csv") as f:
-			lines = ["(?:{0})".format(line.replace("\n", "").replace(" ", "\s").replace(".", "\.").split("\t")[1]) for line in f.readlines()]
-			f.close()
-
-		output = lines + ["(?:(?:in|ex|de|ad){1}[\s]{1}){0,1}(?:[^\W\d]{2,}\.(?:[\s])*)+)"]
-		return "|".join(output)
-"""
-
-	def primarySource(opusfinder = False):
-		paragraphCharacters = "(?:[p\§]{1}\.{0,1}\s){0,1}"
-		authorRegExp = self.getAuthors("regexp")
-		regexp = "(?P<author>" + authorRegExp + "){1}(?:\s(?P<opus>" + BooksRegExp + "+){0,1}(?:\s(?P<identifier1>" + paragraphCharacters + "[0-9]+\,)){0,1}(?:\s(?P<identifier2>" + paragraphCharacters +  "[0-9]+\,)){0,1}(?:\s(?P<identifier3>" + paragraphCharacters + "[0-9]+\,)){0,1}(?:\s(?P<identifier4>" + paragraphCharacters + "[0-9]+[\.:]{0,1})){1}"
-		if opusfinder:
-			#sub
-			return re.sub("P<[a-zA-Z0-9]+>", ":", regexp)
-		else:
+	def book(self):
+		""" Returns a regular expression for matching Primary Sources Book's title including, if self.normalization is set to False (default), a list of expected titles"""
+		regexp = "(?:(?:in|ex|de|ad){1}[\s]{1}){0,1}(?:[^\W\d]{2,}\.(?:[\s])*)+)"
+		if self.normalization:
 			return regexp
+		return "|".join(self.lists("book", 1) + [regexp])
 
-	def quotes(finder = False):
-		# "(?:[:;\s\)\,]+)" + 
-		regexp = "(?P<text>[a-zA-Z ]+)\,[\s]*(?P<author>"+ AuthorSimpleRegexp + "){1}"
-		if finder:
-			return re.sub("P<[a-zA-Z0-9]+>", ":", regexp)
+	def author(self):
+		""" Returns a regular expression string for matching author name, including, if self.normalization is set to False (default), a list of expected names"""
+		regexp = "(?:(?:Ps.\s){0,1}[A-Z]{1}[a-z]+\.)"
+		if self.normalization:
+			return regexp
+		return "|".join(self.lists("author") + [regexp])
+
+	def primarySource(self):
+		""" Returns a regular expression string for matching primary sources (Author, Book, Text Part Identifiers) """
+		NumeRegExp = "(?:[p\§]{1}\.{0,1}\s){0,1}"
+		BookRegExp = self.book()
+		AuthRegExp = self.author()
+
+		regexp  = "(?P<author>" + AuthRegExp + "){1}"
+		regexp += "(?:\s(?P<opus>" + BookRegExp + "+){0,1}(?:\s(?P<identifier1>" + NumeRegExp + "[0-9]+\,)){0,1}"
+		regexp += "(?:\s(?P<identifier2>" + NumeRegExp + "[0-9]+\,)){0,1}"
+		regexp += "(?:\s(?P<identifier3>" + NumeRegExp + "[0-9]+\,)){0,1}"
+		regexp += "(?:\s(?P<identifier4>" + NumeRegExp + "[0-9]+[\.:]{0,1})){1}"
+
+		return regexp
+
+	def secondarySource(self):
+		""" Returns a regular expression string for matching Secondary Source comments """
+		
+		regexp  = "(?P<SecondaryAuthor>[A-Z]{1}[a-z]+)"
+		regexp += "(?:\szu\s){1}"
+		regexp += "(?P<Quoted>(?:" + self.primarySource() + ")+(?:\s)*){1}"
+
+	def quotes(self):
+		""" Returns a regular expression string for matching quotes"""
+		AuthRegExp = self.author()
+
+		regexp  = "(?P<text>[a-zA-Z ]+)"
+		regexp += "\,[\s]*"
+		regexp += "(?P<author>"+ AuthRegExp + "){1}"
+
 		return regexp

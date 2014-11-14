@@ -7,9 +7,11 @@ class normalizer(object):
 	def __init__(self):
 		self.dictionaries = {
 			"author" : self.getDictionary("author"),
-			"primarysource" : self.getDictionary("primarySource")
+			"primarySource" : self.getDictionary("primarySource")
 		}
 		self.lists = {
+			"author" : [indexKey for indexKey in self.dictionaries["author"]],
+			"book" : self.getPrimarySourceList()
 			#Get a simple list of work names or book names and so on
 		}
 
@@ -29,6 +31,17 @@ class normalizer(object):
 				data = self.dictionaries[category][item[0]]
 				return data[0], data[1]
 			else:
+
+	def getPrimarySourceList(self):
+		dic = []
+		with open("dictionary/normalizing-book.csv") as f:
+			lines = [line.replace("\n", "") for line in f.readlines()]
+			f.close()
+
+		for line in lines:
+			l = line.split("\t")
+			dic.append(l[1])
+		return dic
 
 
 	def getPrimarySourceDictionary(self):
