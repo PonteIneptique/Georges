@@ -112,11 +112,11 @@ class RegExp(object):
 
 		regexp  = "(?:"
 		regexp += 	"(?:"
-		regexp += 		"(?P<SecondaryAuthor1>" + author + ")"
+		regexp += 		"(?P<SecondaryAuthor1>" + author + ")+"
 		regexp += 		"(?:\s(?:zu|in|im)\s){1}"
 		regexp += 	")|(?:"
 		regexp += 		"(?:s\.[\s]+)+"
-		regexp += 		"(?P<SecondaryAuthor2>" + author + ")[\s]+"
+		regexp += 		"(?P<SecondaryAuthor2>" + author + ")+[\s]+"
 		regexp += 	")"
 		regexp += ")"
 		regexp += "(?P<Quoted>(?:" + self.primarySource() + ")+(?:\s)*){1}"

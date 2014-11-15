@@ -66,7 +66,10 @@ def SecondarySource(text, node, regexp, normalizer):
 	""" Take some text and a parent node, add a bibl subnode for a secondary source """
 	items = getGroups(text, regexp["secondarySource"])
 
-	SecondaryAuthor = items["SecondaryAuthor"]
+	if items["SecondaryAuthor1"]:
+		SecondaryAuthor = items["SecondaryAuthor1"]
+	else:
+		SecondaryAuthor = items["SecondaryAuthor2"]
 
 	SecBiblNode = cElementTree.SubElement(node, "bibl")
 
