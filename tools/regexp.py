@@ -108,8 +108,17 @@ class RegExp(object):
 	def secondarySource(self):
 		""" Returns a regular expression string for matching Secondary Source comments """
 		
-		regexp  = "(?P<SecondaryAuthor>[A-Z]{1}[a-z]+)"
-		regexp += "(?:\szu\s){1}"
+		author = "[A-Z]{1}[\w]+(?:\.){0,1}"
+
+		regexp  = "(?:"
+		regexp += 	"(?:"
+		regexp += 		"(?P<SecondaryAuthor1>" + author + ")"
+		regexp += 		"(?:\s(?:zu|in|im)\s){1}"
+		regexp += 	")|(?:"
+		regexp += 		"(?:s\.[\s]+)+"
+		regexp += 		"(?P<SecondaryAuthor2>" + author + ")[\s]+"
+		regexp += 	")"
+		regexp += ")"
 		regexp += "(?P<Quoted>(?:" + self.primarySource() + ")+(?:\s)*){1}"
 
 		return regexp
