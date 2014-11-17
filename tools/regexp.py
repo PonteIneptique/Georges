@@ -11,7 +11,7 @@ class RegExp(object):
 		self.normalization = normalization
 
 		self.Normalizer = Normalizer
-		
+
 		self.matrices = {
  			"primarySource" : {
 				"matcher" : self.generate("primarySource", False),
@@ -66,9 +66,11 @@ class RegExp(object):
 		data = data + [self.regularize(entry) for entry in self.Normalizer.lists[category]]
 		return data
 
-	def regularize(self, text):
+	def regularize(self, text, nonCapturing = True):
 		""" Make sure than some string are regular expression compliant """ 
 		text = text.replace("\n", "").replace(" ", "\s").replace(".", "\.")
+		if not nonCapturing:
+			return text
 		return "(?:{0})".format(text)
 
 
@@ -110,7 +112,10 @@ class RegExp(object):
 		
 		author = "[A-Z]{1}[\w]+(?:\.){0,1}"
 
-		regexp  = "(?:"
+		regexp  = "(?!"
+		regexp +=	"|".join([self.regularize(string, nonCapturing = False) for string in self.Normalizer.getExclude("SecondarySource.Authors")])
+		regexp += ")"
+		regexp += "(?:"
 		regexp += 	"(?:"
 		regexp += 		"(?P<SecondaryAuthor1>" + author + ")+"
 		regexp += 		"(?:\s(?:zu|in|im)\s){1}"
@@ -119,6 +124,9 @@ class RegExp(object):
 		regexp += 		"(?P<SecondaryAuthor2>" + author + ")+[\s]+"
 		regexp += 	")"
 		regexp += ")"
+
+		print(regexp)
+		
 		regexp += "(?P<Quoted>(?:" + self.primarySource() + ")+(?:\s)*){1}"
 
 		return regexp

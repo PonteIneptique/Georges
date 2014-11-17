@@ -8,7 +8,28 @@ class Normalizer(object):
 	def __init__(self):
 		super(Normalizer, self).__init__()
 
-		self.path = os.path.dirname((os.path.abspath(__file__))) + "/"
+		self.root = os.path.dirname((os.path.abspath(__file__))) + "/../thesaurus/"
+
+		self.files = {
+			"SecondarySource" : {
+				"Authors" : {
+					"exclude" : self.root + "SecondarySource/Authors/exclude.csv",
+					"normalizing" : self.root + "SecondarySource/Authors/normalizing.csv"
+				}
+			},
+			"PrimarySource" : {
+				"Authors" : {
+					"exclude" : self.root + "PrimarySource/Authors/exclude.csv",
+					"normalizing" : self.root + "PrimarySource/Authors/normalizing.csv"
+				},
+				"Books" : {
+					#"exclude" : self.path + "./PrimarySource/Books/exclude.csv",
+					"normalizing" : self.root + "PrimarySource/Books/normalizing.csv"
+				}
+			}
+		}
+
+
 		self.dictionaries = {}
 		self.dictionaries["author"] = self.getDictionary("author")
 		self.dictionaries["primarySource"] =  self.getDictionary("primarySource")
@@ -16,6 +37,7 @@ class Normalizer(object):
 		self.lists = {}
 		self.lists["author"] = self.getAuthorList()
 		self.lists["book"] = self.getPrimarySourceList()
+
 
 	def getAuthorList(self):
 		data = self.getDictionary("author")
@@ -41,7 +63,7 @@ class Normalizer(object):
 
 	def getPrimarySourceList(self):
 		dic = []
-		with open(self.path + "../dictionary/normalizing-book.csv") as f:
+		with open(self.files["PrimarySource"]["Books"]["normalizing"]) as f:
 			lines = [line.replace("\n", "") for line in f.readlines()]
 			f.close()
 
@@ -53,7 +75,7 @@ class Normalizer(object):
 
 	def getPrimarySourceDictionary(self):
 		dic = {}
-		with open(self.path + "../dictionary/normalizing-book.csv") as f:
+		with open(self.files["PrimarySource"]["Books"]["normalizing"]) as f:
 			lines = [line.replace("\n", "") for line in f.readlines()]
 			f.close()
 
@@ -70,7 +92,7 @@ class Normalizer(object):
 
 	def getAuthorDictionary(self):
 		dic = {}
-		with open(self.path + "../dictionary/author-synonyms.csv") as f:
+		with open(self.files["PrimarySource"]["Authors"]["normalizing"]) as f:
 			lines = [line.replace("\n", "") for line in f.readlines()]
 			f.close()
 
@@ -94,3 +116,10 @@ class Normalizer(object):
 			t = ReplacementBookDictionary[author][book]
 			return t[0], t[1]
 		return author, book
+
+	def getExclude(self, element):
+		source, element = element.split(".")
+		with open(self.files[source][element]["exclude"]) as f:
+			lines = [line.replace("\n", "") for line in f.readlines()]
+			f.close()
+		return lines
