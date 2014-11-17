@@ -3,7 +3,6 @@
 
 import xml.etree.cElementTree as cElementTree
 
-from tools.divers import getListFromDictRegExp
 
 def Greek(text, node, regexp = None, normalizer = None):	# For this particular function, there is no use of regexp at this point
 	""" Put text in a subnode <lang> with attributes lang="greek" """
@@ -82,6 +81,39 @@ def SecondarySource(text, node, regexp, normalizer):
 
 	return node #Return the original
 
+def FirstLine(text, node, regexp, normalizer):
+	#<itype>a, um</itype>, = <foreign lang="greek">u)bu(skantos</foreign> Maybe some sense here
+	matches = getGroups(text, regexp["firstLine"])
+
+	#We join the itype
+	itype = getListFromDictRegExp(matches, "itype", 4)
+
+	#We then set the gen
+	gen = matches["gen"]
+
+	#We set the etym
+	etym = getListFromDictRegExp(matches, "etym", 2)
+
+	#We set the rest
+	text = matches["rest"]
+
+	#Now we create the nodes
+
+	if itype:
+		iTypeNode = cElementTree.SubElement(node, "itype")
+		iTypeNode.text = ", ".join(itype)
+
+	if gen:
+		iTypeNode = cElementTree.SubElement(node, "gen")
+		iTypeNode.text = gen
+
+	if etym:
+		for e in etym:
+			eNode = cElementTree.SubElement(node, "etym")
+			eNode.text = e
+
+	node = cElementTree.SubElement(node, "sense")
+	return (node, text)
 
 ################################################################
 # General tools for NodeMaker function
@@ -91,3 +123,17 @@ def getGroups(text, regexp):
 	""" From a text and a regexp returns a dictionary """
 	items = [m.groupdict() for m in regexp["grouper"].finditer(text)][0]
 	return items
+
+def getListFromDictRegExp(items, groupName, max):
+	""" Return a list of match for a given ?p<matchName_X_> """
+	i = 1
+	ret = []
+	while i <= max:
+		key = "{0}{1}".format(groupName, i)
+		if items[key]:
+			ret.append(items[key])
+		i += 1
+
+	if len(ret) == 0:
+		return None
+	return ret

@@ -22,19 +22,7 @@
 			</entryFree>
 			<entryFree n="2">
 				<orth key="A">A</orth>
-				<etym>Ah</etym>
-				<sense>
-					, Interj. unser ah! ach! od. ha! hm! zum Ausdruck der Wehmut, Überraschung, Verwunderung, auch der Zurückweisung (dah. auch der Begütigung, s. 
-					<bibl type="secondary">
-						<author>Spengel</author>
-						<bibl type="primary">
-							<author>Ter.</author>
-							<title>Andr.</title>
-							868
-						</bibl>
-					</bibl>
-					), aber auch der Verwünschung, Komik., Verg., Poët. eleg., Ov. u.a. Dichter. 
-				</sense>
+				<sense>6</sense>
 			</entryFree>
 			<entryFree n="3">
 				<orth key="A">A</orth>
@@ -495,104 +483,42 @@
 			<head lang="la"/>
 			<entryFree n="4">
 				<orth key="abacinus">abacinus</orth>
-				<itype>a, um</itype>
-				<etym>abacus</etym>
-				<sense>
-					, der Prunktische, spatia, 
-					<bibl type="primary">
-						<author>Plin.</author>
-						35, 3
-					</bibl>
-					 ed. Detl. 
-				</sense>
+				<sense>46</sense>
 			</entryFree>
 		</div0>
 		<div0 n="ABĀCTIO" type="alphabetic letter">
 			<head lang="la"/>
 			<entryFree n="5">
 				<orth key="abāctio">abāctio</orth>
-				<itype>ōnis</itype>
-				<gen>f.</gen>
-				<etym>abigo</etym>
-				<etym>εξέλασις</etym>
-				<sense>
-					, das Wegtreiben, 
-					<bibl type="primary">
-						<author>Hier.</author>
-						<title>in Ierem.</title>
-						1, 5, 15.
-					</bibl>
-					 Gloss. II, 302, 50. 
-				</sense>
+				<sense>46</sense>
 			</entryFree>
 		</div0>
 		<div0 n="ABĀCTOR" type="alphabetic letter">
 			<head lang="la"/>
 			<entryFree n="6">
 				<orth key="abāctor">abāctor</orth>
-				<itype>ōris</itype>
-				<gen>m.</gen>
-				<etym>abigo</etym>
-				<sense>
-					, der Wegtreiber des Viehes, Viehdieb, boum, 
-					<bibl type="primary">
-						<author>Firm.</author>
-						<title>de err.</title>
-						5, 2:
-					</bibl>
-					 pecorum, 
-					<bibl type="primary">
-						<author>Firm.</author>
-						<title>Mat.</title>
-						6, 31:
-					</bibl>
-					 animalium, 
-					<bibl type="primary">
-						<author>Cassiod.</author>
-						<title>var.</title>
-						4, 49:
-					</bibl>
-					 absol., Apul., Sulp. Sev. u.a. Spät. 
-				</sense>
+				<sense>46</sense>
 			</entryFree>
 		</div0>
 		<div0 n="ABĀCTUS" type="alphabetic letter">
 			<head lang="la"/>
 			<entryFree n="7">
 				<orth key="abāctus">abāctus</orth>
-				<itype>a, um</itype>
-				<sense> s. abigo. </sense>
+				<sense>46</sense>
 			</entryFree>
 		</div0>
 		<div0 n="ABĀCTUS" type="alphabetic letter">
 			<head lang="la"/>
 			<entryFree n="8">
 				<orth key="abāctus">abāctus</orth>
-				<sense>
-					² Us, m. (abigo), das (gewaltsame) Wegtreiben, Plur., cum abactus hospitum exerceret, da er den Gastfreunden ihr Vieh wegtrieb, 
-					<bibl type="primary">
-						<author>Plin.</author>
-						<title>pan.</title>
-						20, 4.
-					</bibl>
-					 
-				</sense>
+				<sense>46</sense>
 			</entryFree>
 		</div0>
 		<div0 n="ABACULUS" type="alphabetic letter">
 			<head lang="la"/>
 			<entryFree n="9">
 				<orth key="abaculus">abaculus</orth>
-				<itype>ī</itype>
-				<gen>m.</gen>
-				<sense>
-					 (Demin. v. abacus), ein kleiner Würfel von gefärbtem Glas zu Mosaikarbeiten, 
-					<bibl type="primary">
-						<author>Plin.</author>
-						36, 199.
-					</bibl>
-					 
-				</sense>
+				<sense>46</sense>
 			</entryFree>
 		</div0>
 		<div0 n="ABACUS" type="alphabetic letter">

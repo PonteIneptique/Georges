@@ -131,7 +131,6 @@ class Normalizer(object):
 			filename = self.files[source][element][csv]
 		else:
 			filename = self.files[element][csv]
-			
 		return filename
 
 	def getExclude(self, element):

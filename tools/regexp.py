@@ -32,6 +32,9 @@ class RegExp(object):
 			"greek" : {
 				"matcher" :  self.generate("greek"),
 				"grouper" : re.compile("(?P<match>(?:(?:[\p{Greek}µ']+)+[\s\.\,]*)+)")
+			},
+			"firstLine" : {
+				"grouper" : self.generate("firstLine")
 			}
 		}
 
@@ -41,7 +44,8 @@ class RegExp(object):
 			"primarySource" 	: self.primarySource,
 			"secondarySource"	: self.secondarySource,
 			"quote"			: self.quotes,
-			"greek" : self.greek
+			"greek" : self.greek,
+			"firstLine" : self.firstLine
 		}
 
 		regexp = mappings[category]()	# We call the function through the dictionary
@@ -123,10 +127,7 @@ class RegExp(object):
 		regexp += 		"(?:s\.[\s]+)+"
 		regexp += 		"(?P<SecondaryAuthor2>" + author + ")+[\s]+"
 		regexp += 	")"
-		regexp += ")"
-
-		print(regexp)
-		
+		regexp += ")"		
 		regexp += "(?P<Quoted>(?:" + self.primarySource() + ")+(?:\s)*){1}"
 
 		return regexp
@@ -144,3 +145,23 @@ class RegExp(object):
 	def greek(self):
 		regexp = "((?:(?:[\p{Greek}µ']+)+[\s\.\,]*)+)"
 		return regexp
+
+	def firstLine(self):
+		#We need to get the normalizer working
+		abkurzung ="|".join([self.regularize(string, nonCapturing = False) for string in self.Normalizer.getKnown("Grammar")])
+		#
+		regexp  = "^"
+		regexp += "(?:\s{0,1}(?P<itype1>[\w]+)[,\s]){0,1}"
+		regexp += "(?:\s{0,1}(?P<itype2>[\w]+)[,\s]){0,1}"
+		regexp += "(?:\s{0,1}(?P<itype3>[\w]+)[,\s]){0,1}"
+		regexp += "(?:\s{0,1}(?P<itype4>[\w]+)[,\s]){0,1}"
+		regexp += "(?:\s(?P<gen>" + abkurzung + "+)){0,1}"
+		regexp += "(?:\s*\("
+		regexp +=	"(?P<etym1>[\w\s]+)"
+		regexp += "\)){0,1}"
+		regexp += "(?:\s*=\s*(?P<etym2>[\w\s]+)){0,1}"
+		regexp += "(?P<rest>.*)"
+
+		return regexp
+		
+	
