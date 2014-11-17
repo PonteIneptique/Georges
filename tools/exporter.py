@@ -14,20 +14,24 @@ class Exporter(object):
 		"""
 		nodes = xml.findall(self.xmlpath)
 		if children:
-			#The whild road
-			print(True)
+			mother = ["\t".join([node.text for node in list(element)]) for element in nodes]
+			lines = list(set(mother))
+			lines.sort()
 		else:
 			author = [node.text for node in nodes]
 			author = list(set(author))
 			author.sort()
+
 			lines = [[name] for name in author]
 
+			lines = ["\t".join(line) for line in lines]
+			
 		self.lines = lines
 		return lines
 
 	def write(self):
 		with open(self.filename, "w") as f:
-			f.write("\n".join(["\t".join(line) for line in self.lines]))
+			f.write("\n".join(self.lines))
 			f.close()
 			return True
 		return False

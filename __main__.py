@@ -6,6 +6,7 @@ import copy
 import regex as re
 
 
+from tools.exporter import Exporter
 from tools.normalization import Normalizer
 from tools.regexp import RegExp
 from tools.steps import Step
@@ -55,7 +56,7 @@ FirstStep = SecondarySource
 #Configuration
 entryFreeId = 1
 limit = 10 #For the sample
-break_on_sample = True
+break_on_sample = False
 ignoreReplacer = False #Ignore the merger for Werken
 
 root = cElementTree.Element("text")
@@ -158,12 +159,21 @@ if not break_on_sample:
 		f.write(cElementTree.tostring(root, 'unicode'))
 		f.close()
 
-from tools.exporter import Exporter
 
-PrimarySourceResults = Exporter(".//bibl[@type='primary']/author", "./output/author-primary-source.csv")
-PrimarySourceResults.search(body)
-PrimarySourceResults.write()
+	#Exporter Part
+	AuthorBookPrimarySource = Exporter(".//bibl[@type='primary']", "./output/author-with-title-primary-source.csv")
+	AuthorPrimarySourceResults = Exporter(".//bibl[@type='primary']/author", "./output/author-primary-source.csv")
+	AuthorSecondarySourceResults = Exporter(".//bibl[@type='secondary']/author", "./output/author-secondary-source.csv")
+else:
+	AuthorBookPrimarySource = Exporter(".//bibl[@type='primary']", "./output/author-with-title-primary-source-sample.csv")
+	AuthorPrimarySourceResults = Exporter(".//bibl[@type='primary']/author", "./output/author-primary-source-sample.csv")
+	AuthorSecondarySourceResults = Exporter(".//bibl[@type='secondary']/author", "./output/author-secondary-sample-source.csv")
 
-PrimarySourceResults = Exporter(".//bibl[@type='secondary']/author", "./output/author-secondary-source.csv")
-PrimarySourceResults.search(body)
-PrimarySourceResults.write()
+AuthorBookPrimarySource.search(body, True)
+AuthorBookPrimarySource.write()
+
+AuthorPrimarySourceResults.search(body)
+AuthorPrimarySourceResults.write()
+
+AuthorSecondarySourceResults.search(body)
+AuthorSecondarySourceResults.write()
