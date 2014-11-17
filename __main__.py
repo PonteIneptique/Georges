@@ -157,3 +157,13 @@ if not break_on_sample:
 	with open("output/output.xml", "w") as f:
 		f.write(cElementTree.tostring(root, 'unicode'))
 		f.close()
+
+from tools.exporter import Exporter
+
+PrimarySourceResults = Exporter(".//bibl[@type='primary']/author", "./output/author-primary-source.csv")
+PrimarySourceResults.search(body)
+PrimarySourceResults.write()
+
+PrimarySourceResults = Exporter(".//bibl[@type='secondary']/author", "./output/author-secondary-source.csv")
+PrimarySourceResults.search(body)
+PrimarySourceResults.write()
