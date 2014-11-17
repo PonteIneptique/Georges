@@ -161,13 +161,13 @@ if not break_on_sample:
 
 
 	#Exporter Part
-	AuthorBookPrimarySource = Exporter(".//bibl[@type='primary']", "./output/author-with-title-primary-source.csv")
-	AuthorPrimarySourceResults = Exporter(".//bibl[@type='primary']/author", "./output/author-primary-source.csv")
-	AuthorSecondarySourceResults = Exporter(".//bibl[@type='secondary']/author", "./output/author-secondary-source.csv")
+	AuthorBookPrimarySource = Exporter(".//bibl[@type='primary']", "./output/CSVs/author-with-title-primary-source.csv")
+	AuthorPrimarySourceResults = Exporter(".//bibl[@type='primary']/author", "./output/CSVs/author-primary-source.csv")
+	AuthorSecondarySourceResults = Exporter(".//bibl[@type='secondary']/author", "./output/CSVs/author-secondary-source.csv")
 else:
-	AuthorBookPrimarySource = Exporter(".//bibl[@type='primary']", "./output/author-with-title-primary-source-sample.csv")
-	AuthorPrimarySourceResults = Exporter(".//bibl[@type='primary']/author", "./output/author-primary-source-sample.csv")
-	AuthorSecondarySourceResults = Exporter(".//bibl[@type='secondary']/author", "./output/author-secondary-sample-source.csv")
+	AuthorBookPrimarySource = Exporter(".//bibl[@type='primary']", "./output/CSVs/author-with-title-primary-source-sample.csv")
+	AuthorPrimarySourceResults = Exporter(".//bibl[@type='primary']/author", "./output/CSVs/author-primary-source-sample.csv")
+	AuthorSecondarySourceResults = Exporter(".//bibl[@type='secondary']/author", "./output/CSVs/author-secondary-sample-source.csv")
 
 AuthorBookPrimarySource.search(body, True)
 AuthorBookPrimarySource.write()
