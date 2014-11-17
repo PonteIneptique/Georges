@@ -126,14 +126,15 @@ class Normalizer(object):
 		return author, book
 
 	def getFilename(self, element, csv):
-		if "." in element:
+		if len(element.split(".")) > 1:
 			source, element = element.split(".")
-			filename = self.files[source][element]["exclude"]
+			filename = self.files[source][element][csv]
 		else:
-			filename = self.files[element]["exclude"]
+			filename = self.files[element][csv]
+			
+		return filename
 
 	def getExclude(self, element):
-		source, element = element.split(".")
 		with open(self.getFilename(element, "exclude")) as f:
 			lines = [line.replace("\n", "") for line in f.readlines()]
 			f.close()
