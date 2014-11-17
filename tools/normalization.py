@@ -14,18 +14,26 @@ class Normalizer(object):
 			"SecondarySource" : {
 				"Authors" : {
 					"exclude" : self.root + "SecondarySource/Authors/exclude.csv",
-					"normalizing" : self.root + "SecondarySource/Authors/normalizing.csv"
+					"normalizing" : self.root + "SecondarySource/Authors/normalizing.csv",
+					"known" : self.root + "./SecondarySource/Authors/known.csv"
 				}
 			},
 			"PrimarySource" : {
 				"Authors" : {
 					"exclude" : self.root + "PrimarySource/Authors/exclude.csv",
-					"normalizing" : self.root + "PrimarySource/Authors/normalizing.csv"
+					"normalizing" : self.root + "PrimarySource/Authors/normalizing.csv",
+					"known" : self.root + "./PrimarySource/Authors/known.csv"
 				},
 				"Books" : {
-					#"exclude" : self.path + "./PrimarySource/Books/exclude.csv",
-					"normalizing" : self.root + "PrimarySource/Books/normalizing.csv"
+					"exclude" : self.root + "./PrimarySource/Books/exclude.csv",
+					"normalizing" : self.root + "PrimarySource/Books/normalizing.csv",
+					"known" : self.root + "./PrimarySource/Books/known.csv"
 				}
+			},
+			"Grammar" : {
+				"exclude" : self.root + "./Grammar/exclude.csv",
+				"normalizing" : self.root + "Grammar/normalizing.csv",
+				"known" : self.root + "./Grammar/known.csv"
 			}
 		}
 
@@ -117,9 +125,22 @@ class Normalizer(object):
 			return t[0], t[1]
 		return author, book
 
+	def getFilename(self, element, csv):
+		if "." in element:
+			source, element = element.split(".")
+			filename = self.files[source][element]["exclude"]
+		else:
+			filename = self.files[element]["exclude"]
+
 	def getExclude(self, element):
 		source, element = element.split(".")
-		with open(self.files[source][element]["exclude"]) as f:
+		with open(self.getFilename(element, "exclude")) as f:
+			lines = [line.replace("\n", "") for line in f.readlines()]
+			f.close()
+		return lines
+
+	def getKnown(self, element):
+		with open(self.getFilename(element, "known")) as f:
 			lines = [line.replace("\n", "") for line in f.readlines()]
 			f.close()
 		return lines
