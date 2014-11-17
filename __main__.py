@@ -56,7 +56,7 @@ FirstStep = SecondarySource
 #Configuration
 entryFreeId = 1
 limit = 10 #For the sample
-break_on_sample = False
+break_on_sample = True
 ignoreReplacer = False #Ignore the merger for Werken
 
 root = cElementTree.Element("text")
