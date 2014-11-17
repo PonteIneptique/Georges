@@ -1,3 +1,4 @@
 TEI.xml
 __pycache__
 *.pyc
+output/output.xml
