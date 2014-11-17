@@ -10,7 +10,7 @@
 				<sense level="1" n="2">= Antiquo (ich verwerfe den neuen Vorschlag), auf den Stimmtafeln in röm. Volksversammlungen. </sense>
 				<sense level="1" n="3">
 					= Absolvo (ich spreche frei), auf den Stimmtafeln der Richter; dah. A gen. littera salutaris bei 
-					<bibl>
+					<bibl type="primary">
 						<author>Cic.</author>
 						<title>Manil.</title>
 						15.
@@ -25,9 +25,9 @@
 				<etym>Ah</etym>
 				<sense>
 					, Interj. unser ah! ach! od. ha! hm! zum Ausdruck der Wehmut, Überraschung, Verwunderung, auch der Zurückweisung (dah. auch der Begütigung, s. 
-					<bibl>
+					<bibl type="secondary">
 						<author>Spengel</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Ter.</author>
 							<title>Andr.</title>
 							868
@@ -44,51 +44,51 @@
 					 m. Abl. (
 					<lang lang="greek">ἀπό</lang>
 					), sanskr. apa, – Î a steht bloß vor Konsonanten (u. zwar gew. vor b, f, p, v) außer dem Spiranten h, ab vor Vokalen, h u. Konsonanten, bes. vor l, n, r, s, sc, sp, st u. vor j, abs nur vor c, q, t, und antik vor dem Namen des Zahlers, zB. bei Cic. ab te und in der ersten Periode abs te, abs Attico; vgl. 
-					<bibl>
+					<bibl type="secondary">
 						<author>Zumpt</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Cic.</author>
 							<title>II. Verr.</title>
 							3, 138.
 						</bibl>
 					</bibl>
 					p. 560 u. im Index p. 1087. 
-					<bibl>
+					<bibl type="secondary">
 						<author>Osann</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Cic.</author>
 							<title>de rep.</title>
 							1, 35.
 						</bibl>
 					</bibl>
-					<bibl>
+					<bibl type="secondary">
 						<author>Madvig</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Cic.</author>
 							<title>De Finibus</title>
 							5, 75.
 						</bibl>
 					</bibl>
-					<bibl>
+					<bibl type="secondary">
 						<author>Wölfflin</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Philol.</author>
 							34, 114.
 						</bibl>
 					</bibl>
 					Helmuth in Acta phil. sem. 
-					<bibl>
+					<bibl type="primary">
 						<author>Erlang.</author>
 						1, 121.
 					</bibl>
 					 Langen, Beiträge usw. S. 311 ff. Edm. Hauler, Terentiana (Wien 1882) p. 39 sqq. Paul Meier, Untersuchungen über die Echtheit des Briefw. Cic. ad Brut. S. 139 Anm. Vor Vokalen steht abs erst bei Späteren, wie abs ovibus, 
-					<bibl>
+					<bibl type="primary">
 						<author>Ps. Tert.</author>
 						<title>adv. Marc.</title>
 						403:
 					</bibl>
 					 abs alio, ibid. 5, 121; aber 
-					<bibl>
+					<bibl type="primary">
 						<author>Serv.</author>
 						<title>Aen.</title>
 						2, 33
@@ -100,74 +100,74 @@
 				<sense level="3" n="1">von... weg, fuga ab urbe, Cic.: ab solo patrio in hostium urbem agere, Liv.: proficisci a domo, ab Athenis, Cic., ab Orico, Caes.: a Gergovia (aus der Umgegend von G.) discedere (vgl. Kraner zu Caes. b.G. 7, 43, 5). – So bei den Begriffen »des Entfernens, Trennens, Abhaltens (sich Enthaltens, Abstehens), Abschreckens, Entfremdens u. dgl.« (s. Zumpt § 468): dah. a se (von einander) discedentes, Macr.: u. elliptisch, paululum a sole (verst. recede), (geh) nur ein wenig aus der Sonne, Cic.: dictator ab aratro (verst. arcessitus), Flor. </sense>
 				<sense level="3" n="2">
 					von... her od. aus, venio a matre, Plaut.: dona tibi adsunt a Phaedria, Ter.: ad carceres a calce revocari, Cic.: ab alta radice, aus der Tiefe der W., Verg.; aber ab radice, samt der W., Verg.: litterae a M. Favonio (vgl. Kraner zu Caes. b.c. 3, 33, 1): unda ab alto, vom hohen Meere her, Verg.: a pectore, tief aus der Br., Verg. – bei Städtenamen, zur Ang. woher? (s. 
-					<bibl>
+					<bibl type="secondary">
 						<author>Müller</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Liv.</author>
 							1, 27, 4
 						</bibl>
 					</bibl>
 					), ab Alba accitus, Liv. – Dah. ab alqo (bes. a me, a te, a se, a nobis, a vobis), von jmd. = von od. aus jmds. Hause, v. jmds. Landgute (
-					<bibl>
+					<bibl type="secondary">
 						<author>Brix</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Plaut.</author>
 							<title>mil.</title>
 							154.
 						</bibl>
 					</bibl>
 					Spengel 
-					<bibl>
+					<bibl type="primary">
 						<author>Ter.</author>
 						<title>Andr.</title>
 						226
 					</bibl>
 					 u. 461), foris concrepuit hinc a vicino sene, Plaut.: qui amant a lenone, Plaut.: venit (Pompeius) etiam ad me in Cumanum a se, Cic.: verb. domo abs te afferto, Plaut. – bei Städtenamen (s. Schmalz, Pollio p. 86), legati ab Ardea Romam venerunt, Liv. (vgl. unten no. II, B, 2). – Ebenso bei den Begriffen »des Nehmens, Empfangenes, Gebens«, u. des »Hörens, Erfahrens usw.«, s. accipio, emo, audio, cognosco, comperio u. dgl.: dah. ab alqo, von jmd. (gegeben, entlehnt, ausgegangen usw.), Cic. u.a. (s. 
-					<bibl>
+					<bibl type="secondary">
 						<author>Ellendt</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Cic.</author>
 							<title>Cornel.</title>
 							1, 55.
 						</bibl>
 					</bibl>
-					<bibl>
+					<bibl type="secondary">
 						<author>Kühner</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Cic.</author>
 							<title>Poët. Tusc.</title>
 							1, 74
 						</bibl>
 					</bibl>
 					): u. bes. a me, abs te, a se, aus meinem, deinem, seinem Beutel, dare, Plaut, u. Cic., solvere, Cic. – Endlich zur Bezeichnung der »Anhänger und Schüler« (s. 
-					<bibl>
+					<bibl type="secondary">
 						<author>Kühner</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Cic.</author>
 							<title>Poët. Tusc.</title>
 							2, 7.
 						</bibl>
 					</bibl>
-					<bibl>
+					<bibl type="secondary">
 						<author>Ellendt</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Cic.</author>
 							<title>Cornel.</title>
 							1, 55
 						</bibl>
 					</bibl>
 					u. zu 2, 27. 
-					<bibl>
+					<bibl type="secondary">
 						<author>Sorof</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Cic.</author>
 							<title>Cornel.</title>
 							2, 58.
 						</bibl>
 					</bibl>
-					<bibl>
+					<bibl type="secondary">
 						<author>Spalding</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Quint.</author>
 							4, 2, 31
 						</bibl>
@@ -185,30 +185,30 @@
 				<sense level="4" n="b">von... herab, a summo iugo, Caes.: ab alto caelo, Verg.: securus ab alto spectator, Lucan.: residens flevit ab arce, Prop.</sense>
 				<sense level="3" n="2">
 					zur Angabe der Seite, von wo aus etwas räumlich betrachtet wird = von der Seite, auf der Seite, von... aus (her), an, auf, bei (s. 
-					<bibl>
+					<bibl type="secondary">
 						<author>Fabri</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Liv.</author>
 							21, 21, 10
 						</bibl>
 					</bibl>
 					), a Delta transire, auf der Seite, wo das Delta liegt, beim Delta, Auct. b. Al.: exercitus hostium duo, unus ab urbe, alter a Gallia obstant, Sall.: haud parvum munimentum a planioribus aditu locis, Liv.: ab utroque viae latere, Sen.: a theatro, Caes.: a septentrionibus, auf der Nordseite, Caes.: u. so die (bes. milit.) t.t. a fronte, a tergo, a latere, a dextro cornu, Cic., Caes. u.a.: ab novissimis, im Hintertreffen, Caes. – ebenso bei den geograph. Ausdrücken ab occasu et ortu solis, Liv.: Cappadocia, quae patet a Syria, Cic. – Dah. auch bei Tätigkeiten, die von einer Seite od. von einer Person auf derselben herkommen = von od. auf seiten (
-					<bibl>
+					<bibl type="secondary">
 						<author>Fabri</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Liv.</author>
 							21, 5, 9.
 						</bibl>
 					</bibl>
-					<bibl>
+					<bibl type="primary">
 						<author>Deder.</author>
 						<title>Dict.</title>
 						2, 38
 					</bibl>
 					), tubae cornuaque ab Romanis cecinerant, Liv.: si quid ipsi a Caesare opus esset, Caes.: u. so timere ab alqo, Cic.: timor ab alqo, Liv.: periculum ab alqo, Cic. – übtr., ab alqo = auf jmds. Seite od. Partei, zu jmds. Vorteil od. Bestem (Gunsten), für jmd. (Ggstz. contra od. adversus alqm, 
-					<bibl>
+					<bibl type="secondary">
 						<author>Hofmann</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Ausgew.</author>
 							<title>Br. Cic.</title>
 							3, 18, 2.
@@ -219,7 +219,7 @@
 				<sense level="2" n="C">zur Angabe des Entfernungspunktes in der Ruhe, des Abstandes</sense>
 				<sense level="3" n="1">
 					von einem Punkte usw., bei den Verben abesse, distare u.a. (w.s.), u. bei procul, longe, prope u.a. (w.s.): u. so omnia auscultavi ab ostio, an der Tür, Plaut. – mit einem Zahlworte verbunden = in einer Entfernung von usw., ab milibus passuum minus duobus castra posuerunt, Caes. – übtr., nach den Begriffen »der Verschiedenheit, Änderung usw.«, wie differre, discrepare, diversum esse, alienum od. alieno animo esse ab alqo (w.s.): dah. quantum mutatus ab illo Hectore, gegen jenen H., Verg.: multo aliter a ceteris agunt, als die ü., Mela. – Hierher gehört auch ab re = der Sache fern, d.i. zum Nachteil, consulere (raten), 
-					<bibl>
+					<bibl type="primary">
 						<author>Plaut.</author>
 						<title>Astr. fr.</title>
 						238:
@@ -231,9 +231,9 @@
 				<sense level="2" n="A">in der Zeit, ganz entsprechend den räumlichen Beziehungen:</sense>
 				<sense level="3" n="1">
 					zur Angabe des Ausganges von einem Zeitpunkt, ohne Rücksicht auf die Dauer dessen, was unmittelbar auf ihn folgt = sogleich nach, unmittelbar nach (s. 
-					<bibl>
+					<bibl type="secondary">
 						<author>Fabri</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Liv.</author>
 							22, 40, 9
 						</bibl>
@@ -242,17 +242,17 @@
 				</sense>
 				<sense level="3" n="2">
 					zur Angabe des Ausganges von einem Zeitpunkte mit Rücksicht auf die Dauer der Handlung = von... an, seit, rem omnem a principio audies, Ter.: ab hora tertia bibebatur, Cic.: a condiscipulatu, Nep.: a parvulo, Ter., od. a pueris, Ter. u. Cic. (s. 
-					<bibl>
+					<bibl type="secondary">
 						<author>Ruhnk.</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Ter.</author>
 							<title>Andr.</title>
 							1, 1, 8.
 						</bibl>
 					</bibl>
-					<bibl>
+					<bibl type="secondary">
 						<author>Wagner</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Ter.</author>
 							<title>heaut.</title>
 							214
@@ -264,17 +264,17 @@
 				<sense level="2" n="B">in andern mit Raum und Zeit verwandten Verhältnissen, in denen ein Ausgehen von einem Punkte denkbar ist:</sense>
 				<sense level="3" n="1">
 					zur Angabe des Urhebers od. der Ursache einer Wirkung, wenn die Wirkung von lebenden od. lebendig gedachten Wesen ausgeht = von, durch, nach, infolge, wegen (s. 
-					<bibl>
+					<bibl type="secondary">
 						<author>Fabri</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Liv.</author>
 							21, 36, 7
 						</bibl>
 					</bibl>
 					u. 22, 34, 2. 
-					<bibl>
+					<bibl type="secondary">
 						<author>Weißenb.</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Liv.</author>
 							37, 32, 12
 						</bibl>
@@ -283,12 +283,12 @@
 				</sense>
 				<sense level="5" n="α">
 					(selten) nach verbis activis: a se instituere, selbst unterrichten, 
-					<bibl>
+					<bibl type="primary">
 						<author>Col.</author>
 						11, 1, 5:
 					</bibl>
 					 amittere alqm ab alqo, 
-					<bibl>
+					<bibl type="primary">
 						<author>Dict.</author>
 						6, 5.
 					</bibl>
@@ -296,26 +296,26 @@
 				</sense>
 				<sense level="5" n="β">
 					(am gewöhnlichsten) nach verbis pass. (s. 
-					<bibl>
+					<bibl type="secondary">
 						<author>Benecke</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Iustin.</author>
 							38, 1, 10
 						</bibl>
 					</bibl>
 					) u. nach verbis intrans. (act. od. depon.) mit passiver Bedeutung: reprehendi ab alqo, Cic.: honor ei habitus est a Graecia, Cic.: credas non de puero scriptum, sed a puero, Plin. ep. – salvere ab alqo, Cic.: ab alqo interire, Cic., od. cadere, Tac., od. occidere, Ov.: nasci od. oriri ab alqo, Cic.: oriri a se (durch sich, durch eigene Kraft), Cic., u. verb. a se oriri et suā sponte nasci, Cic. (s. 
-					<bibl>
+					<bibl type="secondary">
 						<author>Kühner</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Cic.</author>
 							<title>Poët. Tusc.</title>
 							3, 27
 						</bibl>
 					</bibl>
 					): natum od. ortum (oriundum) esse ab alqo, Cic.: calescit ab ipso spiritu, Cic.: traiectus ab ense, Ov.: res effectae ab efficientibus causis, Cic.: animus ab ignavia corruptus, durch, infolge, Sall. – zuw. bei Gerundiven statt des Dativs, bes. wenn schon ein Dativ vorhergeht (
-					<bibl>
+					<bibl type="secondary">
 						<author>Hofmann</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Ausgew.</author>
 							<title>Br. Cic.</title>
 							2, 15, 11
@@ -326,17 +326,17 @@
 				<sense level="5" n="γ">nach subst.: levior est plaga ab amico, quam a debitore, der Verlust, der herrührt von usw., Cic.: maius (praeceptum), quam ut ab homine videretur, Cic.: a bestiis ictus, Cic.: ab illo iniuria, die von ihm angetane, Ter.: fulgor ab auro, der vom Gold ausgehende Glanz (während fulgor auri = der am Gold haftende Glanz), Lucr. </sense>
 				<sense level="5" n="δ">
 					nach adjj.: ab simili clade profugus, Liv.: murus ab ingenio notior ille tuo, Prop. (vgl. 
-					<bibl>
+					<bibl type="secondary">
 						<author>Lachmann</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Prop.</author>
 							4, 1, 9
 						</bibl>
 					</bibl>
 					über notus ab etc.): a radiis sideris esse niger, Ov.: tempus a nostris triste malis, die von unserm Unglück getrübte Zeit, Ov.: gemina et mammosa Ceres est ipsa ab Iaccho, vom Säugen des Bacchus, Lucr. – Hierher gehört auch die poet. Verbindung ab arte = »durch die Kunst, mit Hilfe der Kunst, künstlich« (indem die Dichter die ars als selbsttätig darstellen), falcatus ab arte ensis, Sil.: turben, quem celer assueta versat ab arte puer, Tibull. (s. 
-					<bibl>
+					<bibl type="secondary">
 						<author>Dissen</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Tibull.</author>
 							1, 5, 3
 						</bibl>
@@ -350,9 +350,9 @@
 					bei subst.: amicitiae ortus a natura quam ab imbecillitate gravior (erit), Cic.: dulces a fontibus undae, aus den Quellen geschöpft (während fontium undae = das Wasser in den Quellen), Verg. (wie im Griech. 
 					<lang lang="greek">οινος ἀπ' ἀµπέλου</lang>
 					). – So bes. bei Städtenamen usw. zur Umschreibung der Adjj. (s. 
-					<bibl>
+					<bibl type="secondary">
 						<author>Müller</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Liv.</author>
 							1, 50, 3
 						</bibl>
@@ -361,9 +361,9 @@
 				</sense>
 				<sense level="4" n="b">
 					zur Angabe dessen, nach dem etw. benannt od. von dem etw. etymologisch abgeleitet ist, nach, von (s. 
-					<bibl>
+					<bibl type="secondary">
 						<author>Benecke</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Iustin.</author>
 							44, 1, 2
 						</bibl>
@@ -372,17 +372,17 @@
 				</sense>
 				<sense level="4" n="c">
 					des Beweggrundes = wegen, aus, ab odio, ab ira, a spe, aus usw., Liv. (s. Drak. u. 
-					<bibl>
+					<bibl type="secondary">
 						<author>Fabri</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Liv.</author>
 							24, 30, 1
 						</bibl>
 					</bibl>
 					; 26, 1, 3): ab obsidione, wegen usw., Liv. (s. 
-					<bibl>
+					<bibl type="secondary">
 						<author>Drak.</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Liv.</author>
 							2, 14, 3
 						</bibl>
@@ -393,33 +393,33 @@
 				<sense level="3" n="4">bei den Begriffen »des Frei- od. Losmachens von usw.«; dah. auch »des Verteidigens oder Schützens vor od. gegen etwas« u. »des Leer- u. Verlassenseins von etwas« (s. Zumpt § 468 f.).</sense>
 				<sense level="3" n="5">
 					bei Begriffen aller Art, die von einer Seite aus näher bestimmt od. beschränkt werden = von seiten, in bezug auf, in betreff, gemäß, wegen, an (s. 
-					<bibl>
+					<bibl type="secondary">
 						<author>Wagner</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Plaut.</author>
 							<title>aul.</title>
 							184.
 						</bibl>
 					</bibl>
-					<bibl>
+					<bibl type="secondary">
 						<author>Brix</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Plaut.</author>
 							<title>mil.</title>
 							631.
 						</bibl>
 					</bibl>
-					<bibl>
+					<bibl type="secondary">
 						<author>Ruhnk.</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Ter.</author>
 							<title>prol.</title>
 							13.
 						</bibl>
 					</bibl>
-					<bibl>
+					<bibl type="secondary">
 						<author>Korte</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Sall.</author>
 							<title>Jug.</title>
 							48, 3
@@ -431,60 +431,60 @@
 				<sense level="3" n="7">zur Bezeichnung der Seite, von der aus uns jmd. Dienste leistet, servus a pedibus, Lakai, Läufer, Cic.: a manu servus od. bloß a manu, Schreiber, Suet.; – od. der Gegenstände, die einer leistet, besorgt, treibt, ab epistulis, Sekretär, Suet. u. Lampr.: a rationibus, Rechnungsführer, Suet.: a libellis, Bittschriftenannehmer, Suet. u. Lampr.: a memoria, Lampr.</sense>
 				<sense level="3" n="8">
 					(spätlat.) beim Komparat. st. quam, als, und beim Positiv, mehr als, s. Rönsch Itala p. 452 sq. 
-					<bibl>
+					<bibl type="secondary">
 						<author>Rönsch</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Rhein.</author>
 							<title>Mus.</title>
 							31, 477
 						</bibl>
 					</bibl>
 					sq. Ott in Fleckeisens 
-					<bibl>
+					<bibl type="primary">
 						<author>Jahrbb.</author>
 						1875.
 					</bibl>
 					 S. 794 f. u. S. 797. a, ab steht (namentlich bei Spätern) auch vor (substantivisch gebrauchten) Adverbien, zB. a peregre (vgl. unser »von über Land«), Vitr.: ab invicem, Apul: a longe, von weitem, Spät. (s. 
-					<bibl>
+					<bibl type="secondary">
 						<author>Muncker</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Hyg.</author>
 							<title>fab.</title>
 							257.
 						</bibl>
 					</bibl>
 					Rönsch Itala p. 231): ab intus, von innen, a foris, von außen, Spät.: a pridie, 
-					<bibl>
+					<bibl type="primary">
 						<author>Pelag.</author>
 						<title>vet.</title>
 						28.
 					</bibl>
 					 – wird seinem regierten Worte nachgesetzt, quo ab, 
-					<bibl>
+					<bibl type="primary">
 						<author>Plaut.</author>
 						<title>Astr. fr.</title>
 						119.
 					</bibl>
 					 – öfter (bes. bei Dichtern) von demselben getrennt, damnis dives ab ipsa suis, 
-					<bibl>
+					<bibl type="primary">
 						<author>Ov.</author>
 						<title>her.</title>
 						9, 96:
 					</bibl>
 					 u. so 
-					<bibl>
+					<bibl type="primary">
 						<author>Cic.</author>
 						<title>Arch.</title>
 						12.
 					</bibl>
 					 
-					<bibl>
+					<bibl type="primary">
 						<author>Ov.</author>
 						<title>her.</title>
 						12, 18.
 					</bibl>
 					 – In der Zusammensetzung bezeichnet ab unser ab od. weg, zB. abire, abgehen, weggehen, abdere, wegtun; und im Sinne des Abweichens, absonus, abtönend; u. selbst in abuti, abnutzen. Arch. Nbf. af (s. 
-					<bibl>
+					<bibl type="primary">
 						<author>Prisc.</author>
 						1
 					</bibl>
@@ -499,7 +499,7 @@
 				<etym>abacus</etym>
 				<sense>
 					, der Prunktische, spatia, 
-					<bibl>
+					<bibl type="primary">
 						<author>Plin.</author>
 						35, 3
 					</bibl>
@@ -517,9 +517,9 @@
 				<etym>εξέλασις</etym>
 				<sense>
 					, das Wegtreiben, 
-					<bibl>
+					<bibl type="secondary">
 						<author>Hier.</author>
-						<bibl>
+						<bibl type="primary">
 							<author>Ierem.</author>
 							1, 5, 15.
 						</bibl>
@@ -537,19 +537,19 @@
 				<etym>abigo</etym>
 				<sense>
 					, der Wegtreiber des Viehes, Viehdieb, boum, 
-					<bibl>
+					<bibl type="primary">
 						<author>Firm.</author>
 						<title>de err.</title>
 						5, 2:
 					</bibl>
 					 pecorum, 
-					<bibl>
+					<bibl type="primary">
 						<author>Firm.</author>
 						<title>Mat.</title>
 						6, 31:
 					</bibl>
 					 animalium, 
-					<bibl>
+					<bibl type="primary">
 						<author>Cassiod.</author>
 						<title>var.</title>
 						4, 49:
@@ -572,7 +572,7 @@
 				<orth key="abāctus">abāctus</orth>
 				<sense>
 					² Us, m. (abigo), das (gewaltsame) Wegtreiben, Plur., cum abactus hospitum exerceret, da er den Gastfreunden ihr Vieh wegtrieb, 
-					<bibl>
+					<bibl type="primary">
 						<author>Plin.</author>
 						<title>pan.</title>
 						20, 4.
@@ -589,7 +589,7 @@
 				<gen>m.</gen>
 				<sense>
 					 (Demin. v. abacus), ein kleiner Würfel von gefärbtem Glas zu Mosaikarbeiten, 
-					<bibl>
+					<bibl type="primary">
 						<author>Plin.</author>
 						36, 199.
 					</bibl>
@@ -606,7 +606,7 @@
 				<etym>ἄβαξ</etym>
 				<sense>
 					 dah. latein. abax, bacis, m., 
-					<bibl>
+					<bibl type="primary">
 						<author>Prisc.</author>
 						7, 42
 					</bibl>
@@ -614,12 +614,12 @@
 				</sense>
 				<sense level="1" n="I">
 					der Abecetisch, d.h. das nach dem dekadischen Ziffersystem in viereckige Felder abgeteilte Rechenbrett, 
-					<bibl>
+					<bibl type="primary">
 						<author>Pers.</author>
 						1, 132.
 					</bibl>
 					 – übh. der Rechentisch, abaco et pulvisculo se dedere, sich mit Geometrie beschäftigen, 
-					<bibl>
+					<bibl type="primary">
 						<author>Apul.</author>
 						<title>apol.</title>
 						16.
@@ -628,13 +628,13 @@
 				</sense>
 				<sense level="1" n="II">
 					jedes in Felder abgeteilte Spielbrett, eburneis quadrigis cotidie in abaco ludere, 
-					<bibl>
+					<bibl type="primary">
 						<author>Suet.</author>
 						<title>Ner.</title>
 						22, 1:
 					</bibl>
 					 diem abaco et latrunculis conterere, 
-					<bibl>
+					<bibl type="primary">
 						<author>Macr.</author>
 						<title>sat.</title>
 						1, 5, 11.
@@ -645,7 +645,7 @@
 				<sense level="1" n="IV">architekt. t.t.:</sense>
 				<sense level="2" n="a">
 					die obere Platte auf dem Kapitäle der Säulen, 
-					<bibl>
+					<bibl type="primary">
 						<author>Vitr.</author>
 						3, 5, 5.
 					</bibl>

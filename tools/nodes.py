@@ -22,6 +22,7 @@ def PrimarySource(text, node, regexp, normalizer):
 	identifier = getListFromDictRegExp(items, "identifier", 4)
 
 	bibl = cElementTree.SubElement(node, "bibl")
+	bibl.set("type", "primary")
 
 	aNode = cElementTree.SubElement(bibl, "author")
 	lastNode = aNode
@@ -72,6 +73,7 @@ def SecondarySource(text, node, regexp, normalizer):
 		SecondaryAuthor = items["SecondaryAuthor2"]
 
 	SecBiblNode = cElementTree.SubElement(node, "bibl")
+	SecBiblNode.set("type", "secondary")
 
 	SecAuthorNode = cElementTree.SubElement(SecBiblNode, "author")
 	SecAuthorNode.text = SecondaryAuthor
