@@ -490,9 +490,6 @@
 					</bibl>
 				</sense>
 			</entryFree>
-		</div0>
-		<div0 n="ABACINUS" type="alphabetic letter">
-			<head lang="la"/>
 			<entryFree n="4">
 				<orth key="abacinus">abacinus</orth>
 				<itype>a, um</itype>
@@ -506,9 +503,6 @@
 					 ed. Detl. 
 				</sense>
 			</entryFree>
-		</div0>
-		<div0 n="ABĀCTIO" type="alphabetic letter">
-			<head lang="la"/>
 			<entryFree n="5">
 				<orth key="abāctio">abāctio</orth>
 				<itype>ōnis</itype>
@@ -525,9 +519,6 @@
 					 Gloss. II, 302, 50. 
 				</sense>
 			</entryFree>
-		</div0>
-		<div0 n="ABĀCTOR" type="alphabetic letter">
-			<head lang="la"/>
 			<entryFree n="6">
 				<orth key="abāctor">abāctor</orth>
 				<itype>ōris</itype>
@@ -555,17 +546,11 @@
 					 absol., Apul., Sulp. Sev. u.a. Spät. 
 				</sense>
 			</entryFree>
-		</div0>
-		<div0 n="ABĀCTUS" type="alphabetic letter">
-			<head lang="la"/>
 			<entryFree n="7">
 				<orth key="abāctus">abāctus</orth>
 				<itype>a, um</itype>
 				<sense> s. abigo. </sense>
 			</entryFree>
-		</div0>
-		<div0 n="ABĀCTUS" type="alphabetic letter">
-			<head lang="la"/>
 			<entryFree n="8">
 				<orth key="abāctus">abāctus</orth>
 				<sense>
@@ -578,9 +563,6 @@
 					 
 				</sense>
 			</entryFree>
-		</div0>
-		<div0 n="ABACULUS" type="alphabetic letter">
-			<head lang="la"/>
 			<entryFree n="9">
 				<orth key="abaculus">abaculus</orth>
 				<itype>ī</itype>
@@ -594,9 +576,6 @@
 					 
 				</sense>
 			</entryFree>
-		</div0>
-		<div0 n="ABACUS" type="alphabetic letter">
-			<head lang="la"/>
 			<entryFree n="10">
 				<orth key="abacus">abacus</orth>
 				<itype>ī</itype>

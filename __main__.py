@@ -74,15 +74,15 @@ div = {}
 head = {}
 with open("input/body.xml") as f:
 
-	char = None
+	char = ""
 	#In this document, we have one line = one word definition, h1 represent orth
 	for line in f.readlines():
 		#We split the line around the <h1> tag
 		h1, senses_text = divideText(line, entryFreeId)
 		h1 = polishH1(h1)
 		senses_text = polishSenses(senses_text)
-		if h1[0] != char:
-			char = h1
+		if h1[0].lower() != char.lower():
+			char = h1[0].upper()
 			div[char] = cElementTree.SubElement(body, "div0")
 			div[char].set("type", "alphabetic letter")
 			div[char].set("n", char.upper())
