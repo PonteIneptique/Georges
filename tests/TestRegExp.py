@@ -34,6 +34,15 @@ def test_editor_matcher():
 	assert results["identifier1"] == "35,"
 	assert results["editor"] == "Detl."
 
+	text = "Augustin. de rhet. p. 144, 2 ed. Halm."
+	results =[m.groupdict() for m in matrix["primarySource"]["grouper"].finditer(text)][0]
+	print(results)
+	assert results["opus"] == "de rhet."
+	assert results["author"] == "Augustin."
+	assert results["identifier4"] == "2"
+	assert results["identifier1"] == "p. 144,"
+	assert results["editor"] == "Halm."
+
 def test_secondary_source_matcher():
 	print ("Testing Secondary Source Matcher")
 	texts = [
