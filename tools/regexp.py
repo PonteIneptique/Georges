@@ -109,6 +109,8 @@ class RegExp(object):
 		regexp += "(?:\s(?P<identifier3>" + NumeRegExp + "[0-9]+\,)){0,1}"
 		regexp += "(?:\s(?P<identifier4>" + NumeRegExp + "[0-9]+[\.:]{0,1})){1}"
 
+		regexp += "(?:[\s])*(?:ed\.\s(?P<editor>[\w]+[\.]*)){0,1}"
+
 		return regexp
 
 	def secondarySource(self):

@@ -39,6 +39,12 @@ def PrimarySource(text, node, regexp, normalizer):
 	else:
 		title = ""
 
+	if items["editor"]:
+		editorNode = cElementTree.SubElement(bibl, "editor")
+		editorNode.text = items["editor"]
+
+		lastNode = editorNode
+
 	if identifier:
 		lastNode.tail = " ".join(identifier)
 

@@ -17,11 +17,22 @@ def test_primary_source_matcher():
 	print ("Testing Primary Source Matcher")
 	texts = [
 		"Ter. Andr. 868",
-		"Liv. 21, 5, 9."
+		"Liv. 21, 5, 9.",
+		"Plin. 35, 3 ed. Detl."
 	]
 	for text in texts:
 		assert matrix["primarySource"]["matcher"].match(text) != None
 
+def test_editor_matcher():
+	print ("Testing matcher for editor on 'Plin. 35, 3 ed. Detl.'")
+	text = "Plin. 35, 3 ed. Detl."
+	results =[m.groupdict() for m in matrix["primarySource"]["grouper"].finditer(text)][0]
+
+	assert results["opus"] == None
+	assert results["author"] == "Plin."
+	assert results["identifier4"] == "3"
+	assert results["identifier1"] == "35,"
+	assert results["editor"] == "Detl."
 
 def test_secondary_source_matcher():
 	print ("Testing Secondary Source Matcher")
