@@ -111,7 +111,7 @@ with open("input/body.xml") as f:
 
 		if len(senses_text_split) == 1:
 			#We check for itype, etym, gen...
-			FirstLine.process(text, entryFree)
+			FirstLine.process(senses_text_split[0], entryFree)
 		else:
 			index_sense = 1
 			id = None

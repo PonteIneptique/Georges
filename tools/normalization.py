@@ -98,6 +98,11 @@ class Normalizer(object):
 			dic[author1][book1] = (author2, book2)
 		return dic
 
+
+	def remove_accents(self, input_str):
+		nkfd_form = unicodedata.normalize('NFKD', unicode(input_str))
+		return u"".join([c for c in nkfd_form if not unicodedata.combining(c)])
+
 	def getAuthorDictionary(self):
 		dic = {}
 		with open(self.files["PrimarySource"]["Authors"]["normalizing"]) as f:
