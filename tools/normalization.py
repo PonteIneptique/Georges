@@ -8,7 +8,36 @@ class Normalizer(object):
 	def __init__(self):
 		super(Normalizer, self).__init__()
 
-		self.path = os.path.dirname((os.path.abspath(__file__))) + "/"
+		self.root = os.path.dirname((os.path.abspath(__file__))) + "/../thesaurus/"
+
+		self.files = {
+			"SecondarySource" : {
+				"Authors" : {
+					"exclude" : self.root + "SecondarySource/Authors/exclude.csv",
+					"normalizing" : self.root + "SecondarySource/Authors/normalizing.csv",
+					"known" : self.root + "./SecondarySource/Authors/known.csv"
+				}
+			},
+			"PrimarySource" : {
+				"Authors" : {
+					"exclude" : self.root + "PrimarySource/Authors/exclude.csv",
+					"normalizing" : self.root + "PrimarySource/Authors/normalizing.csv",
+					"known" : self.root + "./PrimarySource/Authors/known.csv"
+				},
+				"Books" : {
+					"exclude" : self.root + "./PrimarySource/Books/exclude.csv",
+					"normalizing" : self.root + "PrimarySource/Books/normalizing.csv",
+					"known" : self.root + "./PrimarySource/Books/known.csv"
+				}
+			},
+			"Grammar" : {
+				"exclude" : self.root + "./Grammar/exclude.csv",
+				"normalizing" : self.root + "Grammar/normalizing.csv",
+				"known" : self.root + "./Grammar/known.csv"
+			}
+		}
+
+
 		self.dictionaries = {}
 		self.dictionaries["author"] = self.getDictionary("author")
 		self.dictionaries["primarySource"] =  self.getDictionary("primarySource")
@@ -16,6 +45,7 @@ class Normalizer(object):
 		self.lists = {}
 		self.lists["author"] = self.getAuthorList()
 		self.lists["book"] = self.getPrimarySourceList()
+
 
 	def getAuthorList(self):
 		data = self.getDictionary("author")
@@ -41,7 +71,7 @@ class Normalizer(object):
 
 	def getPrimarySourceList(self):
 		dic = []
-		with open(self.path + "../dictionary/normalizing-book.csv") as f:
+		with open(self.files["PrimarySource"]["Books"]["normalizing"]) as f:
 			lines = [line.replace("\n", "") for line in f.readlines()]
 			f.close()
 
@@ -53,7 +83,7 @@ class Normalizer(object):
 
 	def getPrimarySourceDictionary(self):
 		dic = {}
-		with open(self.path + "../dictionary/normalizing-book.csv") as f:
+		with open(self.files["PrimarySource"]["Books"]["normalizing"]) as f:
 			lines = [line.replace("\n", "") for line in f.readlines()]
 			f.close()
 
@@ -68,9 +98,14 @@ class Normalizer(object):
 			dic[author1][book1] = (author2, book2)
 		return dic
 
+
+	def remove_accents(self, input_str):
+		nkfd_form = unicodedata.normalize('NFKD', unicode(input_str))
+		return u"".join([c for c in nkfd_form if not unicodedata.combining(c)])
+
 	def getAuthorDictionary(self):
 		dic = {}
-		with open(self.path + "../dictionary/author-synonyms.csv") as f:
+		with open(self.files["PrimarySource"]["Authors"]["normalizing"]) as f:
 			lines = [line.replace("\n", "") for line in f.readlines()]
 			f.close()
 
@@ -94,3 +129,23 @@ class Normalizer(object):
 			t = ReplacementBookDictionary[author][book]
 			return t[0], t[1]
 		return author, book
+
+	def getFilename(self, element, csv):
+		if len(element.split(".")) > 1:
+			source, element = element.split(".")
+			filename = self.files[source][element][csv]
+		else:
+			filename = self.files[element][csv]
+		return filename
+
+	def getExclude(self, element):
+		with open(self.getFilename(element, "exclude")) as f:
+			lines = [line.replace("\n", "") for line in f.readlines()]
+			f.close()
+		return lines
+
+	def getKnown(self, element):
+		with open(self.getFilename(element, "known")) as f:
+			lines = [line.replace("\n", "") for line in f.readlines()]
+			f.close()
+		return lines

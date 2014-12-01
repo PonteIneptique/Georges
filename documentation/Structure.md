@@ -35,6 +35,7 @@ It wont take care of the header, because the header is not generated with this t
 		<bibl>
 			<author>Not Optional</author>
 			<book>Optional</book>
+			<editor>Optional</editor>
 			Some identifier for the part of the book
 		</bibl>
 	</sense>

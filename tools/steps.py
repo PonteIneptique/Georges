@@ -13,7 +13,11 @@ class Step(Steps):
 		"""
 		fn -> function to create node
 		"""
-		self.matcher = matrix[name]["matcher"]
+		if "matcher" in matrix[name]:
+			self.matcher = matrix[name]["matcher"]
+		else:
+			self.matcher = False
+
 		self.matrix = matrix
 
 		self.nodeMaker = fn
@@ -48,14 +52,18 @@ class Step(Steps):
 
 
 	def process(self, text, node):
-		caught = self.matcher.split(text)
-		caught = [c for c in caught if c]
+		if self.matcher:						#
+			caught = self.matcher.split(text)
+			caught = [c for c in caught if c]
 
-		for element in caught:
-			if self.matcher.match(element):
-				node = self.nodeMaker(element, node, self.matrix, self.normalizer)
-			else:
-				node = self.next(node, element)
+			for element in caught:
+				if self.matcher.match(element):
+					node = self.nodeMaker(element, node, self.matrix, self.normalizer)
+				else:
+					node = self.next(node, element)
+		else:
+			node, text = self.nodeMaker(text, node, self.matrix, self.normalizer)
+			node = self.next(node, text)
 
 		return node
 

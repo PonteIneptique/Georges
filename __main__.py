@@ -15,11 +15,11 @@ from tools.nodes import Greek as GreekNodification
 from tools.nodes import PrimarySource as PrimarySourceNodification
 from tools.nodes import SecondarySource as SecondarySourceNodification
 from tools.nodes import Quote as QuoteNodification
+from tools.nodes import FirstLine as FirstLineNodification
 
 from tools.divers import polishSenses
 from tools.divers import divideText
 from tools.divers import polishH1
-from tools.divers import firstLine
 from tools.divers import getLevel
 from tools.divers import prettify
 
@@ -53,6 +53,14 @@ SecondarySource = Step(
 #We set up a link to what we think should be first step, to avoid changing it directly in the code later
 FirstStep = SecondarySource
 
+#We setup the first line situation 
+FirstLine = Step(
+	name="firstLine",
+	matrix = regexp.matrices,
+	fn = FirstLineNodification,
+	normalizer = normalizer,
+	child = FirstStep
+)
 #Configuration
 entryFreeId = 1
 limit = 10 #For the sample
@@ -66,15 +74,15 @@ div = {}
 head = {}
 with open("input/body.xml") as f:
 
-	char = None
+	char = ""
 	#In this document, we have one line = one word definition, h1 represent orth
 	for line in f.readlines():
 		#We split the line around the <h1> tag
 		h1, senses_text = divideText(line, entryFreeId)
 		h1 = polishH1(h1)
 		senses_text = polishSenses(senses_text)
-		if h1[0] != char:
-			char = h1
+		if h1[0].lower() != char.lower():
+			char = h1[0].upper()
 			div[char] = cElementTree.SubElement(body, "div0")
 			div[char].set("type", "alphabetic letter")
 			div[char].set("n", char.upper())
@@ -102,15 +110,8 @@ with open("input/body.xml") as f:
 		senses_text_split = [s for s in senses_text_split if s != None]
 
 		if len(senses_text_split) == 1:
-
 			#We check for itype, etym, gen...
-			text = firstLine(senses_text, entryFree)
-
-
-			#When a sense has no number before it
-			senses.append(cElementTree.SubElement(entryFree, "sense"))
-			node = senses[len(senses) - 1 ]
-			node = FirstStep.process(text, node)
+			FirstLine.process(senses_text_split[0], entryFree)
 		else:
 			index_sense = 1
 			id = None
@@ -138,10 +139,7 @@ with open("input/body.xml") as f:
 						node.set("level", str(levelN))
 						node = FirstStep.process(text, node)
 					else: #We dont have text
-						text = firstLine(text, entryFree)
-						senses.append(cElementTree.SubElement(entryFree, "sense"))
-						node = senses[len(senses) - 1 ]
-						node = FirstStep.process(text, node)
+						node = FirstLine.process(text, entryFree)
 				else:
 					id = text
 					levelN, levelDictionary = getLevel(id, levelDictionary)
@@ -161,13 +159,13 @@ if not break_on_sample:
 
 
 	#Exporter Part
-	AuthorBookPrimarySource = Exporter(".//bibl[@type='primary']", "./output/author-with-title-primary-source.csv")
-	AuthorPrimarySourceResults = Exporter(".//bibl[@type='primary']/author", "./output/author-primary-source.csv")
-	AuthorSecondarySourceResults = Exporter(".//bibl[@type='secondary']/author", "./output/author-secondary-source.csv")
+	AuthorBookPrimarySource = Exporter(".//bibl[@type='primary']", "./output/CSVs/author-with-title-primary-source.csv")
+	AuthorPrimarySourceResults = Exporter(".//bibl[@type='primary']/author", "./output/CSVs/author-primary-source.csv")
+	AuthorSecondarySourceResults = Exporter(".//bibl[@type='secondary']/author", "./output/CSVs/author-secondary-source.csv")
 else:
-	AuthorBookPrimarySource = Exporter(".//bibl[@type='primary']", "./output/author-with-title-primary-source-sample.csv")
-	AuthorPrimarySourceResults = Exporter(".//bibl[@type='primary']/author", "./output/author-primary-source-sample.csv")
-	AuthorSecondarySourceResults = Exporter(".//bibl[@type='secondary']/author", "./output/author-secondary-sample-source.csv")
+	AuthorBookPrimarySource = Exporter(".//bibl[@type='primary']", "./output/CSVs/author-with-title-primary-source-sample.csv")
+	AuthorPrimarySourceResults = Exporter(".//bibl[@type='primary']/author", "./output/CSVs/author-primary-source-sample.csv")
+	AuthorSecondarySourceResults = Exporter(".//bibl[@type='secondary']/author", "./output/CSVs/author-secondary-sample-source.csv")
 
 AuthorBookPrimarySource.search(body, True)
 AuthorBookPrimarySource.write()

@@ -36,3 +36,6 @@ Those two types of regular expression are used for different things:
 - the `grouper` will be used to find - if needed - subgroups. 
 
 The good thing with this ? In the RegExp class inside [tools/regexp.py](../tools/regexp.py), you will find the function `self.getMatcher` to remove from your grouper regular expression strings the group names, transforming `(?P<myname>[a-z])` into `(?:[a-z])`. Easy isn't it ?
+
+##Full grouping function
+**Important** In the case of some interesting situation, like the firstLine, our matcher should match the whole first line and return the rest of the text. To allow us to do that, if there is no matcher for a regexp, the nodes maker should return a tuple where [0] is the node, [1] is the text to process for child.

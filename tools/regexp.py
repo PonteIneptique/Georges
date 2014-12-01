@@ -11,7 +11,7 @@ class RegExp(object):
 		self.normalization = normalization
 
 		self.Normalizer = Normalizer
-		
+
 		self.matrices = {
  			"primarySource" : {
 				"matcher" : self.generate("primarySource", False),
@@ -32,6 +32,9 @@ class RegExp(object):
 			"greek" : {
 				"matcher" :  self.generate("greek"),
 				"grouper" : re.compile("(?P<match>(?:(?:[\p{Greek}µ']+)+[\s\.\,]*)+)")
+			},
+			"firstLine" : {
+				"grouper" : self.generate("firstLine")
 			}
 		}
 
@@ -41,7 +44,8 @@ class RegExp(object):
 			"primarySource" 	: self.primarySource,
 			"secondarySource"	: self.secondarySource,
 			"quote"			: self.quotes,
-			"greek" : self.greek
+			"greek" : self.greek,
+			"firstLine" : self.firstLine
 		}
 
 		regexp = mappings[category]()	# We call the function through the dictionary
@@ -66,9 +70,11 @@ class RegExp(object):
 		data = data + [self.regularize(entry) for entry in self.Normalizer.lists[category]]
 		return data
 
-	def regularize(self, text):
+	def regularize(self, text, nonCapturing = True):
 		""" Make sure than some string are regular expression compliant """ 
 		text = text.replace("\n", "").replace(" ", "\s").replace(".", "\.")
+		if not nonCapturing:
+			return text
 		return "(?:{0})".format(text)
 
 
@@ -103,6 +109,8 @@ class RegExp(object):
 		regexp += "(?:\s(?P<identifier3>" + NumeRegExp + "[0-9]+\,)){0,1}"
 		regexp += "(?:\s(?P<identifier4>" + NumeRegExp + "[0-9]+[\.:]{0,1})){1}"
 
+		regexp += "(?:[\s])*(?:ed\.\s(?P<editor>[\w]+[\.]*)){0,1}"
+
 		return regexp
 
 	def secondarySource(self):
@@ -110,7 +118,10 @@ class RegExp(object):
 		
 		author = "[A-Z]{1}[\w]+(?:\.){0,1}"
 
-		regexp  = "(?:"
+		regexp  = "(?!"
+		regexp +=	"|".join([self.regularize(string, nonCapturing = False) for string in self.Normalizer.getExclude("SecondarySource.Authors")])
+		regexp += ")"
+		regexp += "(?:"
 		regexp += 	"(?:"
 		regexp += 		"(?P<SecondaryAuthor1>" + author + ")+"
 		regexp += 		"(?:\s(?:zu|in|im)\s){1}"
@@ -118,7 +129,7 @@ class RegExp(object):
 		regexp += 		"(?:s\.[\s]+)+"
 		regexp += 		"(?P<SecondaryAuthor2>" + author + ")+[\s]+"
 		regexp += 	")"
-		regexp += ")"
+		regexp += ")"		
 		regexp += "(?P<Quoted>(?:" + self.primarySource() + ")+(?:\s)*){1}"
 
 		return regexp
@@ -136,3 +147,23 @@ class RegExp(object):
 	def greek(self):
 		regexp = "((?:(?:[\p{Greek}µ']+)+[\s\.\,]*)+)"
 		return regexp
+
+	def firstLine(self):
+		#We need to get the normalizer working
+		abkurzung ="|".join([self.regularize(string, nonCapturing = False) for string in self.Normalizer.getKnown("Grammar")])
+		#
+		regexp  = "^"
+		regexp += "(?:\s{0,1}(?P<itype1>[\w]+)[,\s]){0,1}"
+		regexp += "(?:\s{0,1}(?P<itype2>[\w]+)[,\s]){0,1}"
+		regexp += "(?:\s{0,1}(?P<itype3>[\w]+)[,\s]){0,1}"
+		regexp += "(?:\s{0,1}(?P<itype4>[\w]+)[,\s]){0,1}"
+		regexp += "(?:\s(?P<gen>" + abkurzung + "+)){0,1}"
+		regexp += "(?:\s*\("
+		regexp +=	"(?P<etym1>[\w\s]+)"
+		regexp += "\)){0,1}"
+		regexp += "(?:\s*=\s*(?P<etym2>[\w\s]+)){0,1}"
+		regexp += "(?P<rest>.*)"
+
+		return regexp
+		
+	
