@@ -1,1 +1,1 @@
-bei,zu,zum,auf
+bei ,zu ,zum ,auf 

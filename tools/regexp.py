@@ -11,7 +11,8 @@ class LanguageDetector(object):
 		with open(os.path.dirname(os.path.abspath(__file__)) + "/stopwords/" + lang + ".txt") as f:
 			stopwords = f.read().split(",")
 
-		regexp = "((?:zB\.|[;\(\)]|{0})[\s]*)".format("|".join(stopwords))
+		self.stopwords = stopwords
+		regexp = "((?:zB\.|t\.t\.|[;\(\)\–\:]+|{0})[\s]*)".format("|".join(stopwords))
 		self.largeSplitter = re.compile(regexp)
 
 	def score(self, text):
@@ -34,6 +35,25 @@ class LanguageDetector(object):
 			return True
 		else:
 			return False
+
+	def grouper(self, text):
+		splitted = self.largeSplitter.split(text)
+
+		strings = []
+		for string in splitted:
+			if string in self.stopwords:
+				score = 1
+			else:
+				score = self.score(string)
+			if len(strings) == 0:
+				strings.append((string, score))
+			else:
+				if strings[-1][1] == score:
+					strings[-1] = (strings[-1][0] + string, score)
+				else:
+					strings.append((string, score))
+
+		return strings
 
 	def group(self, text):
 		pass
