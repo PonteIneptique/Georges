@@ -49,7 +49,7 @@ class RegExp(object):
 
 		self.matrices = {
 			"german" : {
-				"matcher" : LanguageMarker()
+				"matcher" : LanguageDetector()
 			},
  			"primarySource" : {
 				"matcher" : self.generate("primarySource", False),
