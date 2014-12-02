@@ -1,4 +1,9 @@
+import xml.etree.cElementTree as cElementTree
+import copy
+import regex as re
 
+
+from tools.exporter import Exporter
 from tools.normalization import Normalizer
 from tools.regexp import RegExp
 from tools.steps import Step
@@ -25,22 +30,58 @@ class Generator(object):
 			"sample" : sample
 		}
 
-	def output(self):
-		new NotImplemented("Ouput is not NotImplemented")
+		self.root = None
+		self.body = None
+		self.sample = None
+
+	def generate(self):
+		raise NotImplemented("Ouput is not NotImplemented")
+
+	def xml(self, sample = False):
+		body = self.body
+		root = self.root
+		if sample:
+			pathKey = "sample"
+		else:
+			pathKey = "completes"
+
+		with open(self.path[pathKey], "w") as f:
+			f.write(prettify(self.root))
+			f.close()
+
+		if self.sample:
+			with open(self.path[pathKey], "w") as f:
+				f.write(prettify(self.sample))
+				f.close()
 
 	def quoted(self, sample = False):
-		with open("output/output.xml", "w") as f:
-			f.write(cElementTree.tostring(root, 'unicode'))
-			f.close()
-		
+		body = self.body
+		root = self.root
+		if not sample:
+			#Exporter Part
+			AuthorBookPrimarySource = Exporter(".//bibl[@type='primary']", "./output/CSVs/author-with-title-primary-source.csv")
+			AuthorPrimarySourceResults = Exporter(".//bibl[@type='primary']/author", "./output/CSVs/author-primary-source.csv")
+			AuthorSecondarySourceResults = Exporter(".//bibl[@type='secondary']/author", "./output/CSVs/author-secondary-source.csv")
+		else:
+			AuthorBookPrimarySource = Exporter(".//bibl[@type='primary']", "./output/CSVs/author-with-title-primary-source-sample.csv")
+			AuthorPrimarySourceResults = Exporter(".//bibl[@type='primary']/author", "./output/CSVs/author-primary-source-sample.csv")
+			AuthorSecondarySourceResults = Exporter(".//bibl[@type='secondary']/author", "./output/CSVs/author-secondary-sample-source.csv")
+
+		AuthorBookPrimarySource.search(body, True)
+		AuthorBookPrimarySource.write()
+
+		AuthorPrimarySourceResults.search(body)
+		AuthorPrimarySourceResults.write()
+
+		AuthorSecondarySourceResults.search(body)
+		AuthorSecondarySourceResults.write()
 
 class Georges(Generator):
 	"""docstring for Generator"""
-	def __init__(self, source):
-		super(Generator, self).__init__()
-		self.source = source
+	def __init__(self, *args, **kwargs):
+		super(Georges, self).__init__(*args, **kwargs)
 
-	def output(self, limit = 10, sample = False):
+	def generate(self, limit = 10, sample = False):
 		normalizer = Normalizer()
 		regexp = RegExp(normalizer)
 
@@ -81,8 +122,8 @@ class Georges(Generator):
 		)
 		#Configuration
 		entryFreeId = 1
-		limit = 10 #For the sample
-		break_on_sample = True
+		limit = limit #For the sample
+		break_on_sample = sample
 		ignoreReplacer = False #Ignore the merger for Werken
 
 		root = cElementTree.Element("text")
@@ -163,12 +204,14 @@ class Georges(Generator):
 							levelN, levelDictionary = getLevel(id, levelDictionary)
 
 				if entryFreeId == limit:
-					with open("output/sample.xml", "w") as f:
-						f.write(prettify(copy.deepcopy(root)))
-						f.close()
+					if not sample:
+						self.sample = copy.deepcopy(root)
 					if break_on_sample:
 						break
 				entryFreeId += 1 
+
+		self.root = root
+		self.body = body
 		return root, body
 
 		
