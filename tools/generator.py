@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+# -*- coding: UTF-8 -*-
+
 import xml.etree.cElementTree as cElementTree
 import copy
 import regex as re
