@@ -1,12 +1,41 @@
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
 
+import os
 import regex as re
 from langdetect import detect_langs
 
-class LanguageMarker(object):
+class LanguageDetector(object):
 	def __init__(self, lang = "de"):
 		self.lang = lang
+		with open(os.path.dirname(os.path.abspath(__file__)) + "/stopwords/" + lang + ".txt") as f:
+			stopwords = f.read().split(",")
+
+		regexp = "((?:zB\.|[;\(\)]|{0})[\s]*)".format("|".join(stopwords))
+		self.largeSplitter = re.compile(regexp)
+		
+	def score(self, text):
+		try:
+			scores = detect_langs(text)
+			for score in scores:
+				if score.lang == "de":
+					if score.prob > 0.99:
+						return 1
+					else:
+						return 0
+			return 0
+		except:
+			return 0
+
+	def match(self, text):
+		splitted = self.splitter.split(text)
+		results = [self.score(text) for text in splitted]
+		if sum(results) > 0:
+			return True
+		else:
+			return False
+
+	def group(self, text):
 
 class RegExp(object):
 	"""docstring for RegExp"""
@@ -18,6 +47,9 @@ class RegExp(object):
 		self.Normalizer = Normalizer
 
 		self.matrices = {
+			"german" : {
+				"matcher" : LanguageMarker()
+			},
  			"primarySource" : {
 				"matcher" : self.generate("primarySource", False),
 				"grouper" : self.generate("primarySource")
