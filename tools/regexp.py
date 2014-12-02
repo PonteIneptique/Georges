@@ -2,6 +2,11 @@
 # -*- coding: UTF-8 -*-
 
 import regex as re
+from langdetect import detect_langs
+
+class LanguageMarker(object):
+	def __init__(self, lang = "de"):
+		self.lang = lang
 
 class RegExp(object):
 	"""docstring for RegExp"""
