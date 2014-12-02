@@ -13,7 +13,7 @@ class LanguageDetector(object):
 
 		regexp = "((?:zB\.|[;\(\)]|{0})[\s]*)".format("|".join(stopwords))
 		self.largeSplitter = re.compile(regexp)
-		
+
 	def score(self, text):
 		try:
 			scores = detect_langs(text)
@@ -28,7 +28,7 @@ class LanguageDetector(object):
 			return 0
 
 	def match(self, text):
-		splitted = self.splitter.split(text)
+		splitted = self.largeSplitter.split(text)
 		results = [self.score(text) for text in splitted]
 		if sum(results) > 0:
 			return True
@@ -36,6 +36,7 @@ class LanguageDetector(object):
 			return False
 
 	def group(self, text):
+		pass
 
 class RegExp(object):
 	"""docstring for RegExp"""
