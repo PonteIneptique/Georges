@@ -11,9 +11,15 @@ class LanguageDetector(object):
 		with open(os.path.dirname(os.path.abspath(__file__)) + "/stopwords/" + lang + ".txt") as f:
 			stopwords = f.read().split(",")
 
+		with open(os.path.dirname(os.path.abspath(__file__)) + "/stopwords/la.txt") as f:
+			latin_stopwords = f.read().split(",")
+
 		self.stopwords = stopwords
-		regexp = "((?:zB\.|t\.t\.|[;\(\)\–\:]+|{0})[\s]*)".format("|".join(stopwords))
+		regexp = "((?:(?:[\s]+)(?:{0}))|[;\(\)\–\:\,\.]+)(?:[\s]+)".format("|".join(stopwords + latin_stopwords))
 		self.largeSplitter = re.compile(regexp)
+
+		self.dots = re.compile("([;\(\)\–\:\,\.]+)")
+
 
 		self.abbreviations = {}
 		with open(os.path.dirname(os.path.abspath(__file__)) + "/abbr/" + lang + ".csv") as f:
@@ -25,11 +31,13 @@ class LanguageDetector(object):
 		self.replaceRegExp = re.compile(regexp)
 
 	def replace(self, match):
-		print(match.group())
 		if match.group(0) in self.abbreviations:
 			return self.abbreviations[match.group(0)]
 		else:
 			return match.group(0)
+
+	def normalize(self, text):
+		return self.replaceRegExp.sub(self.replace, text + ".")
 
 
 	def score(self, text):
@@ -47,28 +55,31 @@ class LanguageDetector(object):
 
 	def match(self, text):
 		splitted = self.largeSplitter.split(text)
-		results = [self.score(text) for text in splitted]
-		if sum(results) > 0:
-			return True
-		else:
-			return False
+		for text in splitted:
+			if self.score(text) == 1:
+				return True
+		return False
 
 	def grouper(self, text):
 		splitted = self.largeSplitter.split(text)
-		print(splitted)
-		print([(t, self.score(t)) for t in splitted])
 		strings = []
 		for string in splitted:
-			if string in self.stopwords:
+			if string in self.stopwords or string + "." in self.stopwords:
 				score = 1
+			elif self.dots.match(string):
+				if len(strings) > 0:
+					score = strings[-1][1]
+				else:
+					score = 1
 			else:
 				normalized_string = self.normalize(string)
 				score = self.score(normalized_string)
+
 			if len(strings) == 0:
 				strings.append((string, score))
 			else:
 				if strings[-1][1] == score:
-					strings[-1] = (strings[-1][0] + string, score)
+					strings[-1] = (strings[-1][0] + " " + string, score)
 				else:
 					strings.append((string, score))
 
