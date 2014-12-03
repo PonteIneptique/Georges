@@ -15,6 +15,23 @@ class LanguageDetector(object):
 		regexp = "((?:zB\.|t\.t\.|[;\(\)\–\:]+|{0})[\s]*)".format("|".join(stopwords))
 		self.largeSplitter = re.compile(regexp)
 
+		self.abbreviations = {}
+		with open(os.path.dirname(os.path.abspath(__file__)) + "/abbr/" + lang + ".csv") as f:
+			for line in f.readlines():
+				l = line.replace("\n", "").split(";")
+				self.abbreviations[l[0]] = l[1]
+		
+		regexp = "({0})".format("|".join([t.replace(".", "\.") for t in self.abbreviations]))
+		self.replaceRegExp = re.compile(regexp)
+
+	def replace(self, match):
+		print(match.group())
+		if match.group(0) in self.abbreviations:
+			return self.abbreviations[match.group(0)]
+		else:
+			return match.group(0)
+
+
 	def score(self, text):
 		try:
 			scores = detect_langs(text)
@@ -38,13 +55,15 @@ class LanguageDetector(object):
 
 	def grouper(self, text):
 		splitted = self.largeSplitter.split(text)
-
+		print(splitted)
+		print([(t, self.score(t)) for t in splitted])
 		strings = []
 		for string in splitted:
 			if string in self.stopwords:
 				score = 1
 			else:
-				score = self.score(string)
+				normalized_string = self.normalize(string)
+				score = self.score(normalized_string)
 			if len(strings) == 0:
 				strings.append((string, score))
 			else:
